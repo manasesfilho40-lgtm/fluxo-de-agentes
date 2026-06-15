@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluxo de Agentes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        :root {
+            --sidebar-bg: #1a1a1a;
+            --sidebar-hover: #2d2d2d;
+            --main-bg: #1f1f1f;
+            --chat-bg: #1f1f1f;
+            --input-bg: #2b2b2b;
+            --border-color: #2f2f2f;
+            --text-primary: #ececec;
+            --text-secondary: #a1a1a1;
+            --accent: #e57032;
+            --accent-hover: #f0854a;
+            --button-bg: #2d2d2d;
+            --button-hover: #3d3d3d;
+            --header-bg: rgba(31, 31, 31, 0.8);
+            --success: #22c55e;
+            --error: #ef4444;
+            --warning: #f59e0b;
+            --info: #3b82f6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--main-bg);
+            color: var(--text-primary);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+        }
+
+        /* LOGIN SCREEN */
+        .login-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--main-bg); z-index: 9999;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .login-overlay.hidden { display: none; }
+        .login-box {
+            background: var(--sidebar-bg); border: 1px solid var(--border-color);
+            border-radius: 16px; padding: 40px; width: 100%; max-width: 380px;
+        }
+        .login-box h2 { text-align: center; margin-bottom: 8px; font-size: 1.4rem; }
+        .login-box .subtitle { text-align: center; color: var(--text-secondary); margin-bottom: 24px; font-size: 0.85rem; }
+        .login-field { margin-bottom: 16px; }
+        .login-field label { display: block; font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 6px; }
+        .login-field input {
+            width: 100%; padding: 10px 14px; background: var(--input-bg); border: 1px solid var(--border-color);
+            border-radius: 8px; color: var(--text-primary); font-size: 0.9rem; outline: none; transition: border-color 0.2s;
+        }
+        .login-field input:focus { border-color: var(--accent); }
+        .login-btn {
+            width: 100%; padding: 12px; background: var(--accent); border: none; border-radius: 8px;
+            color: white; font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: background 0.2s;
+        }
+        .login-btn:hover { background: var(--accent-hover); }
+        .login-error { color: var(--error); font-size: 0.8rem; text-align: center; margin-top: 12px; display: none; }
+
+        /* SIDEBAR */
+        .sidebar { width: 280px; height: 100vh; background: var(--sidebar-bg); border-right: 1px solid var(--border-color); display: flex; flex-direction: column; transition: transform 0.3s ease; }
+        .sidebar-header { padding: 14px 16px; border-bottom: 1px solid var(--border-color); }
+        .new-chat-btn { width: 100%; padding: 10px 14px; background: var(--button-bg); border: none; border-radius: 10px; color: var(--text-primary); font-size: 0.88rem; font-weight: 500; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: background 0.2s; }
+        .new-chat-btn:hover { background: var(--button-hover); }
+        .sidebar-nav { padding: 12px 0; flex: 1; overflow-y: auto; }
+        .nav-section { padding: 6px 16px; }
+        .nav-section-title { font-size: 0.7rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+        .nav-item { display: flex; align-items: center; gap: 12px; padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 0.85rem; color: var(--text-secondary); transition: all 0.2s; margin-bottom: 2px; text-decoration: none; }
+        .nav-item:hover { background: var(--sidebar-hover); color: var(--text-primary); }
+        .nav-item.active { background: var(--sidebar-hover); color: var(--text-primary); }
+        .nav-item i { width: 18px; text-align: center; font-size: 0.9rem; }
+        .nav-item .badge { background: var(--accent); color: white; font-size: 0.65rem; padding: 2px 6px; border-radius: 10px; margin-left: auto; }
+        .chat-history { padding: 6px 16px; }
+        .chat-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 8px; cursor: pointer; font-size: 0.85rem; color: var(--text-secondary); transition: all 0.2s; margin-bottom: 2px; }
+        .chat-item:hover { background: var(--sidebar-hover); color: var(--text-primary); }
+        .sidebar-footer { padding: 12px 16px; border-top: 1px solid var(--border-color); }
+        .user-info { display: flex; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 8px; cursor: pointer; transition: background 0.2s; }
+        .user-info:hover { background: var(--sidebar-hover); }
+        .user-avatar { width: 28px; height: 28px; border-radius: 50%; background: linear-gradient(135deg, #3b82f6, #8b5cf6); display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; }
+        .user-name { font-size: 0.85rem; font-weight: 500; color: var(--text-primary); }
+        .user-plan { font-size: 0.75rem; color: var(--text-secondary); }
+
+        /* MAIN */
+        .main { flex: 1; display: flex; flex-direction: column; position: relative; }
+        .header { display: flex; align-items: center; justify-content: space-between; padding: 12px 24px; background: var(--header-bg); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 10; }
+        .header-left { display: flex; align-items: center; gap: 16px; }
+        .menu-toggle { display: none; background: none; border: none; color: var(--text-secondary); font-size: 1.1rem; cursor: pointer; padding: 4px; }
+        .header-title { font-size: 0.9rem; font-weight: 500; color: var(--text-secondary); }
+        .header-right { display: flex; align-items: center; gap: 12px; }
+        .api-status { display: flex; align-items: center; gap: 6px; font-size: 0.75rem; color: var(--text-secondary); padding: 4px 10px; border-radius: 6px; background: var(--button-bg); }
+        .api-status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--error); }
+        .api-status.connected .api-status-dot { background: var(--success); }
+
+        /* CHAT AREA */
+        .chat-container { flex: 1; overflow-y: auto; padding: 24px; display: flex; flex-direction: column; align-items: center; }
+        .welcome-screen { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 60vh; text-align: center; width: 100%; max-width: 720px; }
+        .welcome-icon { width: 64px; height: 64px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; color: var(--accent); font-size: 2rem; }
+        .welcome-title { font-size: 1.75rem; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; letter-spacing: -0.02em; }
+        .welcome-subtitle { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6; max-width: 480px; margin-bottom: 32px; }
+        .agent-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; width: 100%; max-width: 600px; }
+        .agent-card { background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 16px; cursor: pointer; transition: all 0.2s; text-align: left; }
+        .agent-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .agent-card i { font-size: 1.25rem; color: var(--accent); margin-bottom: 8px; }
+        .agent-card h4 { font-size: 0.9rem; font-weight: 600; color: var(--text-primary); margin-bottom: 4px; }
+        .agent-card p { font-size: 0.75rem; color: var(--text-secondary); }
+
+        /* INPUT */
+        .input-container { padding: 16px 24px 32px; background: var(--chat-bg); width: 100%; max-width: 720px; margin: 0 auto; }
+        .input-wrapper { background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 16px; padding: 12px 16px; display: flex; align-items: flex-end; gap: 10px; transition: border-color 0.2s; }
+        .input-wrapper:focus-within { border-color: var(--accent); }
+        .attach-btn { background: none; border: none; color: var(--text-secondary); font-size: 1.1rem; cursor: pointer; padding: 6px; border-radius: 8px; transition: all 0.2s; flex-shrink: 0; position: relative; }
+        .attach-btn:hover { background: var(--button-hover); color: var(--text-primary); }
+        .attach-btn.recording { color: var(--error); animation: pulse 1s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .message-input { flex: 1; background: none; border: none; color: var(--text-primary); font-size: 0.95rem; font-family: inherit; resize: none; outline: none; max-height: 120px; min-height: 24px; padding: 4px 0; }
+        .message-input::placeholder { color: var(--text-secondary); }
+        .send-btn { background: var(--accent); border: none; color: white; width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.2s; flex-shrink: 0; }
+        .send-btn:hover { background: var(--accent-hover); }
+        .send-btn:disabled { background: var(--button-bg); cursor: not-allowed; }
+        .input-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+        .model-selector { display: flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.8rem; color: var(--text-secondary); transition: background 0.2s; border: none; background: none; position: relative; }
+        .model-selector:hover { background: var(--button-hover); }
+        .model-dropdown { position: absolute; bottom: 100%; left: 0; background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 8px 0; min-width: 150px; display: none; z-index: 100; margin-bottom: 8px; }
+        .model-dropdown.show { display: block; }
+        .model-dropdown-section { padding: 4px 0; }
+        .model-dropdown-title { font-size: 0.7rem; font-weight: 600; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; padding: 6px 14px 4px; }
+        .model-dropdown-divider { height: 1px; background: var(--border-color); margin: 4px 0; }
+        .model-option { display: flex; align-items: center; gap: 8px; padding: 8px 14px; font-size: 0.85rem; color: var(--text-secondary); cursor: pointer; transition: background 0.2s; }
+        .model-option:hover { background: var(--sidebar-hover); color: var(--text-primary); }
+        .model-option.active { color: var(--accent); }
+        .model-option i { width: 16px; }
+        .input-hints { display: flex; gap: 8px; margin-top: 12px; justify-content: center; flex-wrap: wrap; }
+        .hint-btn { background: var(--button-bg); border: 1px solid var(--border-color); color: var(--text-secondary); padding: 8px 16px; border-radius: 20px; font-size: 0.82rem; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+        .hint-btn:hover { background: var(--button-hover); color: var(--text-primary); border-color: var(--text-secondary); }
+
+        /* MESSAGES */
+        .messages-container { width: 100%; max-width: 720px; display: none; flex-direction: column; gap: 24px; }
+        .messages-container.active { display: flex; }
+        .message { display: flex; gap: 14px; animation: fadeIn 0.3s ease; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+        .message-avatar { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; }
+        .message-avatar.user { background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: white; }
+        .message-avatar.agent { background: linear-gradient(135deg, var(--accent), #f0854a); color: white; }
+        .message-content { flex: 1; padding-top: 4px; }
+        .message-header { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+        .message-author { font-size: 0.88rem; font-weight: 600; color: var(--text-primary); }
+        .message-time { font-size: 0.75rem; color: var(--text-secondary); }
+        .message-model { font-size: 0.7rem; color: var(--accent); background: rgba(229, 112, 50, 0.1); padding: 2px 8px; border-radius: 4px; margin-left: auto; }
+        .message-text { font-size: 0.95rem; line-height: 1.6; color: var(--text-primary); }
+        .message-text pre { background: var(--input-bg); padding: 16px; border-radius: 8px; overflow-x: auto; margin: 12px 0; font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85rem; }
+        .message-text code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 0.85rem; background: var(--input-bg); padding: 2px 6px; border-radius: 4px; }
+        .message-text p { margin-bottom: 12px; }
+        .message-text ul, .message-text ol { margin-left: 20px; margin-bottom: 12px; }
+        .message-text li { margin-bottom: 4px; }
+        .typing-indicator { display: flex; gap: 4px; padding: 8px 0; }
+        .typing-indicator span { width: 8px; height: 8px; background: var(--text-secondary); border-radius: 50%; animation: typing 1.4s infinite; }
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes typing { 0%, 60%, 100% { transform: translateY(0); opacity: 0.4; } 30% { transform: translateY(-4px); opacity: 1; } }
+
+        /* ========== AGENTS DASHBOARD ========== */
+        .agents-dashboard { display: none; width: 100%; max-width: 960px; }
+        .agents-dashboard.active { display: block; }
+        .dashboard-header { margin-bottom: 24px; }
+        .dashboard-header h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 4px; }
+        .dashboard-header p { color: var(--text-secondary); font-size: 0.9rem; }
+        .dashboard-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-bottom: 24px; }
+        .dash-card { background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; transition: all 0.2s; }
+        .dash-card:hover { border-color: var(--accent); }
+        .dash-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .dash-card-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; }
+        .dash-card-icon.hunter { background: rgba(59, 130, 246, 0.15); color: var(--info); }
+        .dash-card-icon.analyst { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+        .dash-card-icon.builder { background: rgba(34, 197, 94, 0.15); color: var(--success); }
+        .dash-card-icon.prospector { background: rgba(139, 92, 246, 0.15); color: #8b5cf6; }
+        .dash-card h3 { font-size: 1rem; font-weight: 600; }
+        .dash-card .status { font-size: 0.75rem; color: var(--text-secondary); }
+        .dash-card p { font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 12px; line-height: 1.5; }
+        .dash-card-actions { display: flex; gap: 8px; }
+        .dash-btn { padding: 8px 14px; border-radius: 8px; border: none; font-size: 0.8rem; font-weight: 500; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 6px; }
+        .dash-btn.primary { background: var(--accent); color: white; }
+        .dash-btn.primary:hover { background: var(--accent-hover); }
+        .dash-btn.secondary { background: var(--button-bg); color: var(--text-secondary); border: 1px solid var(--border-color); }
+        .dash-btn.secondary:hover { background: var(--button-hover); color: var(--text-primary); }
+        .dash-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        /* Pipeline runs */
+        .pipeline-section { margin-top: 24px; }
+        .pipeline-section h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; }
+        .pipeline-runs { display: flex; flex-direction: column; gap: 8px; }
+        .pipeline-run { background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; gap: 12px; }
+        .pipeline-run .status-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+        .pipeline-run .status-dot.running { background: var(--warning); animation: pulse 1s infinite; }
+        .pipeline-run .status-dot.completed { background: var(--success); }
+        .pipeline-run .status-dot.error { background: var(--error); }
+        .pipeline-run .info { flex: 1; }
+        .pipeline-run .info .agent-name { font-weight: 600; font-size: 0.9rem; }
+        .pipeline-run .info .time { font-size: 0.75rem; color: var(--text-secondary); }
+        .pipeline-run .run-status { font-size: 0.75rem; padding: 3px 10px; border-radius: 12px; font-weight: 500; }
+        .pipeline-run .run-status.running { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+        .pipeline-run .run-status.completed { background: rgba(34, 197, 94, 0.15); color: var(--success); }
+        .pipeline-run .run-status.error { background: rgba(239, 68, 68, 0.15); color: var(--error); }
+
+        /* Stats */
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px; }
+        .stat-card { background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 10px; padding: 16px; text-align: center; }
+        .stat-card .stat-value { font-size: 1.8rem; font-weight: 700; color: var(--accent); }
+        .stat-card .stat-label { font-size: 0.75rem; color: var(--text-secondary); margin-top: 4px; }
+
+        /* Leads table */
+        .leads-section { margin-top: 24px; }
+        .leads-section h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; }
+        .leads-table { width: 100%; border-collapse: collapse; }
+        .leads-table th, .leads-table td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border-color); font-size: 0.85rem; }
+        .leads-table th { color: var(--text-secondary); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.5px; }
+        .leads-table tr:hover td { background: var(--sidebar-hover); }
+        .score-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-weight: 600; font-size: 0.8rem; }
+        .score-badge.bad { background: rgba(239, 68, 68, 0.15); color: var(--error); }
+        .score-badge.mid { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+        .score-badge.good { background: rgba(34, 197, 94, 0.15); color: var(--success); }
+
+        /* Prospector panel */
+        .prospector-panel { display: none; width: 100%; max-width: 720px; }
+        .prospector-panel.active { display: block; }
+        .prospector-form { background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 24px; margin-bottom: 20px; }
+        .prospector-form h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+        .form-group { display: flex; flex-direction: column; gap: 4px; }
+        .form-group label { font-size: 0.78rem; color: var(--text-secondary); }
+        .form-group input, .form-group select, .form-group textarea {
+            padding: 8px 12px; background: var(--main-bg); border: 1px solid var(--border-color);
+            border-radius: 8px; color: var(--text-primary); font-size: 0.85rem; outline: none; font-family: inherit;
+        }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--accent); }
+        .form-group textarea { min-height: 80px; resize: vertical; }
+        .send-prospect-btn { width: 100%; padding: 12px; background: var(--accent); border: none; border-radius: 8px; color: white; font-size: 0.9rem; font-weight: 600; cursor: pointer; margin-top: 8px; transition: background 0.2s; }
+        .send-prospect-btn:hover { background: var(--accent-hover); }
+        .send-prospect-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .envios-history { background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 20px; }
+        .envios-history h3 { font-size: 1rem; font-weight: 600; margin-bottom: 12px; }
+        .envio-item { display: flex; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--border-color); }
+        .envio-item:last-child { border-bottom: none; }
+        .envio-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; }
+        .envio-icon.email { background: rgba(59, 130, 246, 0.15); color: var(--info); }
+        .envio-icon.whatsapp { background: rgba(34, 197, 94, 0.15); color: var(--success); }
+        .envio-info { flex: 1; }
+        .envio-info .envio-name { font-weight: 500; font-size: 0.88rem; }
+        .envio-info .envio-detail { font-size: 0.75rem; color: var(--text-secondary); }
+        .envio-status { font-size: 0.7rem; padding: 2px 8px; border-radius: 10px; font-weight: 500; }
+        .envio-status.enviado { background: rgba(34, 197, 94, 0.15); color: var(--success); }
+        .envio-status.preparado { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+        .envio-status.erro { background: rgba(239, 68, 68, 0.15); color: var(--error); }
+
+        /* Upload preview */
+        .upload-preview { display: none; background: var(--input-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 8px 12px; margin-bottom: 8px; align-items: center; gap: 8px; }
+        .upload-preview.active { display: flex; }
+        .upload-preview .file-icon { color: var(--accent); }
+        .upload-preview .file-name { flex: 1; font-size: 0.82rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .upload-preview .remove-file { background: none; border: none; color: var(--text-secondary); cursor: pointer; font-size: 0.9rem; }
+        .upload-preview .remove-file:hover { color: var(--error); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sidebar { position: fixed; left: 0; top: 0; z-index: 100; transform: translateX(-100%); }
+            .sidebar.open { transform: translateX(0); }
+            .menu-toggle { display: block; }
+            .header { padding: 12px 16px; }
+            .agent-cards { grid-template-columns: 1fr; }
+            .chat-container { padding: 16px; }
+            .input-container { padding: 12px 16px 24px; }
+            .welcome-title { font-size: 1.5rem; }
+            .hint-btn span { display: none; }
+            .dashboard-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .form-row { grid-template-columns: 1fr; }
+        }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #3d3d3d; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #4d4d4d; }
+    </style>
+</head>
+<body>
+    <!-- LOGIN -->
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-box">
+            <div style="text-align:center; margin-bottom:16px; font-size:2rem; color:var(--accent);">
+                <i class="fas fa-robot"></i>
+            </div>
+            <h2>Fluxo de Agentes</h2>
+            <p class="subtitle">Entre para acessar o sistema de agentes</p>
+            <div class="login-field">
+                <label>Usuario</label>
+                <input type="text" id="loginUser" placeholder="admin">
+            </div>
+            <div class="login-field">
+                <label>Senha</label>
+                <input type="password" id="loginPass" placeholder="Senha">
+            </div>
+            <button class="login-btn" onclick="doLogin()">Entrar</button>
+            <div class="login-error" id="loginError">Credenciais invalidas</div>
+        </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="new-chat-btn" onclick="newChat()">
+                <i class="fas fa-plus"></i> Novo bate-papo
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Navegacao</div>
+                <a href="#" class="nav-item active" onclick="showView('chat'); return false;">
+                    <i class="fas fa-comment-dots"></i> Chat
+                </a>
+                <a href="#" class="nav-item" onclick="showView('agents'); return false;">
+                    <i class="fas fa-robot"></i> Agentes
+                    <span class="badge" id="activeAgentsBadge" style="display:none">0</span>
+                </a>
+                <a href="#" class="nav-item" onclick="showView('prospector'); return false;">
+                    <i class="fas fa-paper-plane"></i> Prospecção
+                </a>
+                <a href="#" class="nav-item" onclick="showView('leads'); return false;">
+                    <i class="fas fa-database"></i> Leads
+                </a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Modelos de IA</div>
+                <a href="#" class="nav-item active" onclick="selectModel('nvidia')">
+                    <i class="fas fa-server"></i> NVIDIA (Gratuito)
+                </a>
+                <a href="#" class="nav-item" onclick="selectModel('gemini')">
+                    <i class="fas fa-brain"></i> Gemini
+                </a>
+                <a href="#" class="nav-item" onclick="selectModel('openai')">
+                    <i class="fas fa-bolt"></i> GPT-4
+                </a>
+                <a href="#" class="nav-item" onclick="selectModel('anthropic')">
+                    <i class="fas fa-feather"></i> Claude
+                </a>
+            </div>
+            <div class="chat-history" id="chatHistory">
+                <div class="nav-section-title">Conversas Recentes</div>
+            </div>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="user-info" onclick="doLogout()">
+                <div class="user-avatar" id="userAvatarSidebar">A</div>
+                <div>
+                    <div class="user-name" id="userNameSidebar">admin</div>
+                    <div class="user-plan">Sair <i class="fas fa-sign-out-alt" style="font-size:0.7rem"></i></div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+        <header class="header">
+            <div class="header-left">
+                <button class="menu-toggle" onclick="toggleSidebar()"><i class="fas fa-bars"></i></button>
+                <span class="header-title" id="headerTitle">Fluxo de Agentes</span>
+            </div>
+            <div class="header-right">
+                <div class="api-status" id="apiStatus">
+                    <span class="api-status-dot"></span>
+                    <span>Desconectado</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="chat-container" id="chatContainer">
+            <!-- CHAT VIEW -->
+            <div id="chatView">
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="welcome-icon"><i class="fas fa-sparkles"></i></div>
+                    <h1 class="welcome-title" id="greeting">Ola!</h1>
+                    <p class="welcome-subtitle">Escolha um agente especializado ou envie uma mensagem para comecar.</p>
+                    <div class="agent-cards">
+                        <div class="agent-card" onclick="startAgentChat('general')">
+                            <i class="fas fa-comments"></i><h4>Assistente Geral</h4><p>Tarefas diversas e perguntas</p>
+                        </div>
+                        <div class="agent-card" onclick="startAgentChat('web')">
+                            <i class="fas fa-globe"></i><h4>Agente Web</h4><p>Pesquisa e scraping</p>
+                        </div>
+                        <div class="agent-card" onclick="startAgentChat('code')">
+                            <i class="fas fa-code"></i><h4>Agente de Codigo</h4><p>Programacao e revisao</p>
+                        </div>
+                        <div class="agent-card" onclick="startAgentChat('analysis')">
+                            <i class="fas fa-chart-bar"></i><h4>Analista</h4><p>Dados e insights</p>
+                        </div>
+                        <div class="agent-card" onclick="startAgentChat('sales')">
+                            <i class="fas fa-bullhorn"></i><h4>Prospeccao</h4><p>Vendas e leads</p>
+                        </div>
+                        <div class="agent-card" onclick="startAgentChat('marketing')">
+                            <i class="fas fa-bullseye"></i><h4>Marketing</h4><p>Estrategia digital</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="messages-container" id="messagesContainer"></div>
+            </div>
+
+            <!-- AGENTS DASHBOARD VIEW -->
+            <div class="agents-dashboard" id="agentsView">
+                <div class="dashboard-header">
+                    <h2>Pipeline de Agentes</h2>
+                    <p>Execute e monitore os agentes automatizados do pipeline de prospeccao</p>
+                </div>
+                <div class="stats-grid" id="statsGrid">
+                    <div class="stat-card"><div class="stat-value" id="statLeads">-</div><div class="stat-label">Leads Coletados</div></div>
+                    <div class="stat-card"><div class="stat-value" id="statAnalisados">-</div><div class="stat-label">Sites Analisados</div></div>
+                    <div class="stat-card"><div class="stat-value" id="statConstruidos">-</div><div class="stat-label">Sites Construidos</div></div>
+                    <div class="stat-card"><div class="stat-value" id="statEnvios">-</div><div class="stat-label">Envios Realizados</div></div>
+                </div>
+                <div class="dashboard-grid">
+                    <div class="dash-card">
+                        <div class="dash-card-header">
+                            <div class="dash-card-icon hunter"><i class="fas fa-search"></i></div>
+                            <div><h3>Site Hunter</h3><div class="status">Caçador de sites</div></div>
+                        </div>
+                        <p>Busca sites de empresas com design ruim via Google Maps e diretorios.</p>
+                        <div class="dash-card-actions">
+                            <button class="dash-btn primary" onclick="runPipeline('site-hunter')"><i class="fas fa-play"></i> Executar</button>
+                            <button class="dash-btn secondary" onclick="loadLeads()"><i class="fas fa-eye"></i> Ver Leads</button>
+                        </div>
+                    </div>
+                    <div class="dash-card">
+                        <div class="dash-card-header">
+                            <div class="dash-card-icon analyst"><i class="fas fa-chart-line"></i></div>
+                            <div><h3>Site Analyst</h3><div class="status">Analista de sites</div></div>
+                        </div>
+                        <p>Analisa problemas de cada site (visual, tecnico, conversao) e gera relatorio detalhado.</p>
+                        <div class="dash-card-actions">
+                            <button class="dash-btn primary" onclick="runPipeline('site-analyst')"><i class="fas fa-play"></i> Executar</button>
+                            <button class="dash-btn secondary" onclick="showView('leads')"><i class="fas fa-eye"></i> Ver Analises</button>
+                        </div>
+                    </div>
+                    <div class="dash-card">
+                        <div class="dash-card-header">
+                            <div class="dash-card-icon builder"><i class="fas fa-hammer"></i></div>
+                            <div><h3>Site Builder</h3><div class="status">Construtor de sites</div></div>
+                        </div>
+                        <p>Reconstroi sites com design moderno, responsivo e focado em conversao de clientes.</p>
+                        <div class="dash-card-actions">
+                            <button class="dash-btn primary" onclick="runPipeline('site-builder')"><i class="fas fa-play"></i> Executar</button>
+                            <button class="dash-btn secondary"><i class="fas fa-folder"></i> Ver Sites</button>
+                        </div>
+                    </div>
+                    <div class="dash-card">
+                        <div class="dash-card-header">
+                            <div class="dash-card-icon prospector"><i class="fas fa-paper-plane"></i></div>
+                            <div><h3>Prospector</h3><div class="status">Especialista em prospecção</div></div>
+                        </div>
+                        <p>Envia mensagens personalizadas por email e WhatsApp para donos de empresas.</p>
+                        <div class="dash-card-actions">
+                            <button class="dash-btn primary" onclick="runPipeline('prospector')"><i class="fas fa-play"></i> Executar</button>
+                            <button class="dash-btn secondary" onclick="showView('prospector')"><i class="fas fa-eye"></i> Ver Envios</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pipeline-section">
+                    <h3>Execucoes Recentes</h3>
+                    <div class="pipeline-runs" id="pipelineRuns">
+                        <div style="text-align:center; color:var(--text-secondary); padding:20px; font-size:0.85rem;">Nenhuma execucao registrada</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROSPECTOR VIEW -->
+            <div class="prospector-panel" id="prospectorView">
+                <div class="dashboard-header">
+                    <h2>Prospeccao de Clientes</h2>
+                    <p>Envie mensagens personalizadas por email e WhatsApp</p>
+                </div>
+                <div class="prospector-form">
+                    <h3><i class="fas fa-paper-plane" style="color:var(--accent)"></i> Nova Mensagem</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nome da Clinica</label>
+                            <select id="prospectorClinica" onchange="fillProspectorData()">
+                                <option value="">Selecione uma clinica...</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Canal</label>
+                            <select id="prospectorCanal">
+                                <option value="email">Email</option>
+                                <option value="whatsapp">WhatsApp</option>
+                                <option value="both">Ambos</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" id="prospectorEmail" placeholder="contato@clinica.com.br">
+                        </div>
+                        <div class="form-group">
+                            <label>WhatsApp / Telefone</label>
+                            <input type="text" id="prospectorTelefone" placeholder="(11) 99999-9999">
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom:12px">
+                        <label>URL do Site</label>
+                        <input type="text" id="prospectorUrl" placeholder="https://clinica.com.br">
+                    </div>
+                    <details style="margin-bottom:12px; cursor:pointer">
+                        <summary style="font-size:0.82rem; color:var(--text-secondary); padding:4px 0;">Dados adicionais para personalizacao profunda (opcional)</summary>
+                        <div style="padding-top:8px">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Endereco da Clinica</label>
+                                    <input type="text" id="prospectorEndereco" placeholder="Rua X, 123 - Centro, Sao Paulo">
+                                </div>
+                                <div class="form-group">
+                                    <label>Servicos Principais</label>
+                                    <input type="text" id="prospectorServicos" placeholder="implantes, ortodontia, clareamento">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Equipe / Dentista</label>
+                                    <input type="text" id="prospectorEquipe" placeholder="Dr. Joao e equipe">
+                                </div>
+                                <div class="form-group">
+                                    <label>Diferenciais</label>
+                                    <input type="text" id="prospectorDiferenciais" placeholder="atendimento humanizado, equipamentos modernos">
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+                    <div class="form-group" style="margin-bottom:12px">
+                        <label>Mensagem Personalizada (opcional - deixe vazio para gerar automatica)</label>
+                        <textarea id="prospectorMensagem" placeholder="Deixe vazio para o agente gerar uma mensagem personalizada com base na analise do site..."></textarea>
+                    </div>
+                    <div style="display:flex; gap:8px">
+                        <button class="send-prospect-btn" style="flex:1" onclick="generateProspectionMessage(event)"><i class="fas fa-magic"></i> Gerar Mensagem com IA</button>
+                        <button class="send-prospect-btn" style="flex:1" onclick="sendProspection(event)"><i class="fas fa-paper-plane"></i> Enviar</button>
+                    </div>
+                </div>
+
+                <!-- EMAIL PREVIEW -->
+                <div id="emailPreview" style="display:none; background:var(--input-bg); border:1px solid var(--border-color); border-radius:12px; padding:20px; margin-bottom:20px;">
+                    <h3 style="font-size:1rem; font-weight:600; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+                        <i class="fas fa-eye" style="color:var(--accent)"></i> Pre-visualizacao do Email
+                        <button onclick="document.getElementById('emailPreview').style.display='none'" style="margin-left:auto; background:none; border:none; color:var(--text-secondary); cursor:pointer; font-size:0.9rem;"><i class="fas fa-times"></i></button>
+                    </h3>
+                    <div id="emailPreviewSubject" style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:8px;"></div>
+                    <div id="emailPreviewBody" style="background:var(--main-bg); border-radius:8px; padding:16px; max-height:400px; overflow-y:auto; font-size:0.85rem; line-height:1.6;"></div>
+                </div>
+
+                <!-- WHATSAPP PREVIEW -->
+                <div id="whatsappPreview" style="display:none; background:var(--input-bg); border:1px solid var(--border-color); border-radius:12px; padding:20px; margin-bottom:20px;">
+                    <h3 style="font-size:1rem; font-weight:600; margin-bottom:12px; display:flex; align-items:center; gap:8px;">
+                        <i class="fab fa-whatsapp" style="color:#25d366"></i> Pre-visualizacao WhatsApp
+                        <button onclick="document.getElementById('whatsappPreview').style.display='none'" style="margin-left:auto; background:none; border:none; color:var(--text-secondary); cursor:pointer; font-size:0.9rem;"><i class="fas fa-times"></i></button>
+                    </h3>
+                    <div id="whatsappPreviewBody" style="background:#0b141a; border-radius:12px; padding:16px; max-height:300px; overflow-y:auto; font-size:0.85rem; line-height:1.6; color:#e9edef; white-space:pre-wrap;"></div>
+                </div>
+
+                <div class="envios-history" id="enviosHistory">
+                    <h3>Historico de Envios</h3>
+                    <div id="enviosList"><div style="text-align:center; color:var(--text-secondary); padding:16px; font-size:0.85rem;">Nenhum envio registrado</div></div>
+                </div>
+            </div>
+
+            <!-- LEADS VIEW -->
+            <div class="agents-dashboard" id="leadsView">
+                <div class="dashboard-header">
+                    <h2>Leads Coletados</h2>
+                    <p>Todas as empresas encontradas pelo pipeline</p>
+                </div>
+                <div style="overflow-x:auto">
+                    <table class="leads-table" id="leadsTable">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Cidade</th>
+                                <th>Score</th>
+                                <th>Classificacao</th>
+                                <th>Telefone</th>
+                                <th>Acoes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leadsTableBody">
+                            <tr><td colspan="6" style="text-align:center; color:var(--text-secondary); padding:20px;">Carregando leads...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- INPUT AREA -->
+        <div class="input-container" id="inputArea">
+            <div class="upload-preview" id="uploadPreview">
+                <i class="fas fa-file file-icon"></i>
+                <span class="file-name" id="uploadFileName"></span>
+                <button class="remove-file" onclick="removeUpload()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="input-wrapper">
+                <button class="attach-btn" title="Anexar arquivo" onclick="document.getElementById('fileInput').click()">
+                    <i class="fas fa-paperclip"></i>
+                </button>
+                <input type="file" id="fileInput" style="display:none" onchange="handleFileSelect(event)" accept=".txt,.json,.csv,.md,.html,.css,.js,.png,.jpg,.jpeg,.gif,.pdf">
+                <textarea class="message-input" id="messageInput" rows="1" placeholder="Digite sua mensagem ou escolha um agente acima..." oninput="autoResize(this)" onkeydown="handleKeydown(event)"></textarea>
+                <div class="input-actions">
+                    <button class="model-selector" onclick="toggleModelDropdown(event)" id="modelSelector">
+                        <i class="fas fa-robot"></i>
+                        <span id="selectedModel">Nemotron 70B</span>
+                        <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i>
+                        <div class="model-dropdown" id="modelDropdown">
+                            <div class="model-dropdown-section">
+                                <div class="model-dropdown-title">NVIDIA (Gratuito)</div>
+                                <div class="model-option active" onclick="selectModelOption('nvidia-nemotron-70b', event)"><i class="fas fa-server"></i> Nemotron 70B</div>
+                                <div class="model-option" onclick="selectModelOption('nvidia-nemotron-super', event)"><i class="fas fa-server"></i> Nemotron Super 49B</div>
+                                <div class="model-option" onclick="selectModelOption('nvidia-nemotron-ultra', event)"><i class="fas fa-server"></i> Nemotron Ultra 253B</div>
+                                <div class="model-option" onclick="selectModelOption('meta-llama-405b', event)"><i class="fas fa-server"></i> Llama 405B</div>
+                                <div class="model-option" onclick="selectModelOption('meta-llama-maverick', event)"><i class="fas fa-server"></i> Llama 4 Maverick</div>
+                                <div class="model-option" onclick="selectModelOption('mistral-large', event)"><i class="fas fa-server"></i> Mistral Large 675B</div>
+                                <div class="model-option" onclick="selectModelOption('mistral-small', event)"><i class="fas fa-server"></i> Mistral Small</div>
+                                <div class="model-option" onclick="selectModelOption('qwen3-coder', event)"><i class="fas fa-server"></i> Qwen3 Coder 480B</div>
+                                <div class="model-option" onclick="selectModelOption('qwen3.5', event)"><i class="fas fa-server"></i> Qwen3.5 397B</div>
+                                <div class="model-option" onclick="selectModelOption('deepseek-r1', event)"><i class="fas fa-server"></i> DeepSeek R1</div>
+                                <div class="model-option" onclick="selectModelOption('deepseek-v3', event)"><i class="fas fa-server"></i> DeepSeek V3</div>
+                                <div class="model-option" onclick="selectModelOption('minimax-m3', event)"><i class="fas fa-server"></i> MiniMax M3</div>
+                                <div class="model-option" onclick="selectModelOption('minimax-m27', event)"><i class="fas fa-server"></i> MiniMax M2.7</div>
+
+                            </div>
+                            <div class="model-dropdown-divider"></div>
+                            <div class="model-dropdown-section">
+                                <div class="model-dropdown-title">Outros Provedores</div>
+                                <div class="model-option" onclick="selectModelOption('gemini', event)"><i class="fas fa-brain"></i> Gemini</div>
+                                <div class="model-option" onclick="selectModelOption('openai', event)"><i class="fas fa-bolt"></i> GPT-4</div>
+                                <div class="model-option" onclick="selectModelOption('anthropic', event)"><i class="fas fa-feather"></i> Claude</div>
+                            </div>
+                        </div>
+                    </button>
+                    <button class="attach-btn" id="micBtn" title="Gravar audio" onmousedown="startRecording()" onmouseup="stopRecording()" onmouseleave="stopRecording()">
+                        <i class="fas fa-microphone"></i>
+                    </button>
+                    <button class="send-btn" onclick="sendMessage()" id="sendBtn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="input-hints">
+                <button class="hint-btn" onclick="setMessage('Escreva um e-mail profissional')"><i class="fas fa-pen"></i> <span>Escrever</span></button>
+                <button class="hint-btn" onclick="setMessage('Explique um conceito complexo')"><i class="fas fa-graduation-cap"></i> <span>Aprender</span></button>
+                <button class="hint-btn" onclick="setMessage('Revise e otimize este codigo')"><i class="fas fa-code"></i> <span>Codigo</span></button>
+                <button class="hint-btn" onclick="setMessage('Crie uma estrategia de marketing')"><i class="fas fa-bullseye"></i> <span>Marketing</span></button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // =============================================================================
+        // CONFIG
+        // =============================================================================
+        const API_BASE = window.location.origin;
+        let selectedModel = 'nvidia';
+        let currentAgent = 'general';
+        let chatHistory = [];
+        let conversations = [];
+        let authToken = null;
+        let allLeads = [];
+        let selectedFile = null;
+        let mediaRecorder = null;
+        let audioChunks = [];
+        let currentView = 'chat';
+
+        function sanitizeHTML(str) {
+            if (!str) return '';
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        // =============================================================================
+        // AUTH
+        // =============================================================================
+        async function doLogin() {
+            const user = document.getElementById('loginUser').value;
+            const pass = document.getElementById('loginPass').value;
+            try {
+                const res = await fetch(`${API_BASE}/api/auth/login`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({username: user, password: pass})
+                });
+                const data = await res.json();
+                if (res.ok) {
+                    authToken = data.token;
+                    localStorage.setItem('auth_token', authToken);
+                    document.getElementById('loginOverlay').classList.add('hidden');
+                    document.getElementById('userNameSidebar').textContent = data.name || user;
+                    document.getElementById('userAvatarSidebar').textContent = (data.name || user)[0].toUpperCase();
+                    init();
+                } else {
+                    document.getElementById('loginError').style.display = 'block';
+                    document.getElementById('loginError').textContent = data.detail || 'Credenciais invalidas';
+                }
+            } catch(e) {
+                document.getElementById('loginError').style.display = 'block';
+                document.getElementById('loginError').textContent = 'Erro de conexao com o servidor';
+            }
+        }
+
+        function doLogout() {
+            authToken = null;
+            localStorage.removeItem('auth_token');
+            document.getElementById('loginOverlay').classList.remove('hidden');
+        }
+
+        async function checkAuth() {
+            const saved = localStorage.getItem('auth_token');
+            if (saved) {
+                try {
+                    const res = await fetch(`${API_BASE}/api/auth/check`, {
+                        headers: {'Authorization': `Bearer ${saved}`}
+                    });
+                    const data = await res.json();
+                    if (data.authenticated) {
+                        authToken = saved;
+                        document.getElementById('loginOverlay').classList.add('hidden');
+                        document.getElementById('userNameSidebar').textContent = data.name || data.user;
+                        document.getElementById('userAvatarSidebar').textContent = (data.name || data.user)[0].toUpperCase();
+                        return true;
+                    }
+                } catch(e) {}
+            }
+            return false;
+        }
+
+        function authHeaders() {
+            return authToken ? {'Authorization': `Bearer ${authToken}`} : {};
+        }
+
+        // =============================================================================
+        // INIT
+        // =============================================================================
+        async function init() {
+            setGreeting();
+            checkApiStatus();
+            loadConversations();
+            loadLeadsForProspector();
+            loadPipelineRuns();
+            loadEnviosHistory();
+            setInterval(checkApiStatus, 30000);
+            setInterval(loadPipelineRuns, 10000);
+        }
+
+        function setGreeting() {
+            const hour = new Date().getHours();
+            let g = 'Boa noite';
+            if (hour >= 6 && hour < 12) g = 'Bom dia';
+            else if (hour >= 12 && hour < 18) g = 'Boa tarde';
+            document.getElementById('greeting').textContent = `${g}!`;
+        }
+
+        // =============================================================================
+        // VIEWS
+        // =============================================================================
+        function showView(view) {
+            currentView = view;
+            document.getElementById('chatView').style.display = view === 'chat' ? 'block' : 'none';
+            document.getElementById('agentsView').classList.toggle('active', view === 'agents');
+            document.getElementById('prospectorView').classList.toggle('active', view === 'prospector');
+            document.getElementById('leadsView').classList.toggle('active', view === 'leads');
+            document.getElementById('inputArea').style.display = (view === 'chat' || view === 'prospector') ? 'block' : 'none';
+
+            const titles = {chat: 'Fluxo de Agentes', agents: 'Pipeline de Agentes', prospector: 'Prospeccao', leads: 'Leads'};
+            document.getElementById('headerTitle').textContent = titles[view] || 'Fluxo de Agentes';
+
+            document.querySelectorAll('.sidebar-nav .nav-item').forEach(el => el.classList.remove('active'));
+            const navItems = document.querySelectorAll('.sidebar-nav .nav-item');
+            const viewMap = {chat: 0, agents: 1, prospector: 2, leads: 3};
+            if (navItems[viewMap[view]]) navItems[viewMap[view]].classList.add('active');
+
+            if (view === 'agents') loadPipelineRuns();
+            if (view === 'leads') loadLeads();
+            if (view === 'prospector') { loadLeadsForProspector(); loadEnviosHistory(); }
+        }
+
+        // =============================================================================
+        // API STATUS
+        // =============================================================================
+        async function checkApiStatus() {
+            const statusEl = document.getElementById('apiStatus');
+            try {
+                const res = await fetch(`${API_BASE}/api/health`);
+                if (res.ok) { statusEl.classList.add('connected'); statusEl.querySelector('span:last-child').textContent = 'Conectado'; }
+                else throw new Error();
+            } catch(e) { statusEl.classList.remove('connected'); statusEl.querySelector('span:last-child').textContent = 'Offline'; }
+        }
+
+        // =============================================================================
+        // CHAT
+        // =============================================================================
+        function autoResize(textarea) { textarea.style.height = 'auto'; textarea.style.height = Math.min(textarea.scrollHeight, 120) + 'px'; }
+        function handleKeydown(event) { if (event.key === 'Enter' && !event.shiftKey) { event.preventDefault(); sendMessage(); } }
+        function toggleSidebar() { document.getElementById('sidebar').classList.toggle('open'); }
+        function toggleModelDropdown(event) { event.stopPropagation(); document.getElementById('modelDropdown').classList.toggle('show'); }
+
+        function selectModelOption(model, event) {
+            event.stopPropagation();
+            selectedModel = model;
+            const names = {'nvidia-nemotron-70b':'Nemotron 70B','nvidia-nemotron-super':'Nemotron Super','nvidia-nemotron-ultra':'Nemotron Ultra','meta-llama-405b':'Llama 405B','meta-llama-maverick':'Llama Maverick','mistral-large':'Mistral Large','mistral-small':'Mistral Small','qwen3-coder':'Qwen3 Coder','qwen3.5':'Qwen3.5','deepseek-r1':'DeepSeek R1','deepseek-v3':'DeepSeek V3','minimax-m3':'MiniMax M3','minimax-m27':'MiniMax M2.7','gemini':'Gemini','openai':'GPT-4','anthropic':'Claude'};
+            document.getElementById('selectedModel').textContent = names[model] || model;
+            document.querySelectorAll('.model-option').forEach(el => el.classList.remove('active'));
+            event.target.closest('.model-option').classList.add('active');
+            document.getElementById('modelDropdown').classList.remove('show');
+        }
+
+        function selectModel(model) {
+            selectedModel = model;
+            const names = {nvidia:'NVIDIA',gemini:'Gemini',openai:'GPT-4',anthropic:'Claude'};
+            document.getElementById('selectedModel').textContent = names[model];
+        }
+
+        function setMessage(text) { const i = document.getElementById('messageInput'); i.value = text; i.focus(); autoResize(i); }
+        function startAgentChat(type) {
+            currentAgent = type;
+            const names = {general:'Assistente Geral',web:'Agente Web',code:'Agente de Codigo',analysis:'Analista',sales:'Prospeccao',marketing:'Marketing'};
+            setMessage(`[${names[type]}] `);
+        }
+
+        function addMessage(text, type, model = null) {
+            const c = document.getElementById('messagesContainer');
+            const now = new Date();
+            const time = `${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
+            const d = document.createElement('div');
+            d.className = 'message';
+            const av = type === 'user' ? 'user' : 'agent';
+            const icon = type === 'user' ? 'M' : '<i class="fas fa-sparkles"></i>';
+            const author = type === 'user' ? 'Voce' : 'Agente';
+            const mb = model ? `<span class="message-model">${model}</span>` : '';
+            d.innerHTML = `<div class="message-avatar ${av}">${icon}</div><div class="message-content"><div class="message-header"><span class="message-author">${author}</span><span class="message-time">${time}</span>${mb}</div><div class="message-text">${formatText(text)}</div></div>`;
+            c.appendChild(d);
+            c.scrollTop = c.scrollHeight;
+        }
+
+        function addTypingIndicator() {
+            const c = document.getElementById('messagesContainer');
+            const d = document.createElement('div');
+            d.className = 'message'; d.id = 'typingIndicator';
+            d.innerHTML = `<div class="message-avatar agent"><i class="fas fa-sparkles"></i></div><div class="message-content"><div class="message-header"><span class="message-author">Agente</span></div><div class="message-text"><div class="typing-indicator"><span></span><span></span><span></span></div></div></div>`;
+            c.appendChild(d); c.scrollTop = c.scrollHeight;
+        }
+
+        function removeTypingIndicator() { const i = document.getElementById('typingIndicator'); if (i) i.remove(); }
+
+        function formatText(text) {
+            if (!text) return '';
+            text = text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+            text = text.replace(/```(\w*)\n?([\s\S]*?)```/g,'<pre><code>$2</code></pre>');
+            text = text.replace(/`([^`]+)`/g,'<code>$1</code>');
+            text = text.replace(/\n- /g,'\n• ');
+            text = text.split('\n\n').map(p => `<p>${p}</p>`).join('');
+            text = text.replace(/\n/g,'<br>');
+            return text;
+        }
+
+        async function sendMessage() {
+            const input = document.getElementById('messageInput');
+            const message = input.value.trim();
+            if (!message) return;
+            document.getElementById('welcomeScreen').style.display = 'none';
+            const c = document.getElementById('messagesContainer');
+            c.classList.add('active');
+            addMessage(message, 'user');
+            chatHistory.push({role:'user', content: message});
+            input.value = ''; input.style.height = 'auto';
+            document.getElementById('sendBtn').disabled = true;
+            addTypingIndicator();
+
+            let finalMessage = message;
+            if (selectedFile) {
+                const uploadResult = await uploadFile(selectedFile);
+                if (uploadResult && uploadResult.success) {
+                    finalMessage += `\n\n[Arquivo anexado: ${selectedFile.name} (${uploadResult.path})]`;
+                } else {
+                    finalMessage += `\n\n[Arquivo anexado: ${selectedFile.name}]`;
+                }
+                removeUpload();
+            }
+
+            try {
+                const res = await fetch(`${API_BASE}/api/chat`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json', ...authHeaders()},
+                    body: JSON.stringify({message: finalMessage, model: selectedModel, history: chatHistory})
+                });
+                removeTypingIndicator();
+                if (!res.ok) throw new Error('Erro na API');
+                const data = await res.json();
+                addMessage(data.response, 'agent', selectedModel.toUpperCase());
+                chatHistory.push({role:'assistant', content: data.response});
+                saveConversation();
+            } catch(e) {
+                removeTypingIndicator();
+                addMessage('Erro ao conectar com a API. Verifique se o servidor esta rodando.', 'agent');
+            }
+            document.getElementById('sendBtn').disabled = false;
+        }
+
+        function newChat() {
+            chatHistory = [];
+            document.getElementById('messagesContainer').innerHTML = '';
+            document.getElementById('messagesContainer').classList.remove('active');
+            document.getElementById('welcomeScreen').style.display = 'flex';
+            document.getElementById('messageInput').value = '';
+            document.getElementById('messageInput').style.height = 'auto';
+        }
+
+        function loadConversations() {
+            const c = document.getElementById('chatHistory');
+            const saved = localStorage.getItem('conversations');
+            if (saved) {
+                conversations = JSON.parse(saved);
+                c.querySelectorAll('.chat-item').forEach(i => i.remove());
+                conversations.slice(-5).forEach(conv => {
+                    const item = document.createElement('div');
+                    item.className = 'chat-item';
+                    item.innerHTML = `<i class="fas fa-comment"></i><span>${sanitizeHTML(conv.title)}</span>`;
+                    item.onclick = () => loadConversation(conv.id);
+                    c.appendChild(item);
+                });
+            }
+        }
+
+        function saveConversation() {
+            if (chatHistory.length > 0) {
+                const conv = {id: Date.now(), title: chatHistory[0].content.substring(0,50)+'...', history: [...chatHistory], model: selectedModel, createdAt: new Date().toISOString()};
+                conversations.push(conv);
+                if (conversations.length > 50) {
+                    conversations = conversations.slice(-50);
+                }
+                localStorage.setItem('conversations', JSON.stringify(conversations));
+                loadConversations();
+            }
+        }
+
+        function loadConversation(id) {
+            const conv = conversations.find(c => c.id === id);
+            if (conv) {
+                chatHistory = conv.history;
+                selectedModel = conv.model || 'nvidia-nemotron-70b';
+                document.getElementById('welcomeScreen').style.display = 'none';
+                document.getElementById('messagesContainer').classList.add('active');
+                const c = document.getElementById('messagesContainer');
+                c.innerHTML = '';
+                chatHistory.forEach(msg => addMessage(msg.content, msg.role === 'user' ? 'user' : 'agent', msg.role === 'assistant' ? selectedModel.toUpperCase() : null));
+            }
+        }
+
+        // =============================================================================
+        // FILE UPLOAD
+        // =============================================================================
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            selectedFile = file;
+            document.getElementById('uploadFileName').textContent = file.name;
+            document.getElementById('uploadPreview').classList.add('active');
+            event.target.value = '';
+        }
+
+        function removeUpload() {
+            selectedFile = null;
+            document.getElementById('uploadPreview').classList.remove('active');
+        }
+
+        async function uploadFile(file) {
+            const formData = new FormData();
+            formData.append('file', file);
+            try {
+                const res = await fetch(`${API_BASE}/api/upload`, {method: 'POST', headers: authHeaders(), body: formData});
+                return await res.json();
+            } catch(e) { return {error: e.message}; }
+        }
+
+        // =============================================================================
+        // AUDIO RECORDING
+        // =============================================================================
+        let isRecording = false;
+
+        async function startRecording() {
+            if (isRecording) return;
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({audio: true});
+                mediaRecorder = new MediaRecorder(stream);
+                audioChunks = [];
+                mediaRecorder.ondataavailable = e => { if (e.data.size > 0) audioChunks.push(e.data); };
+                mediaRecorder.onstop = async () => {
+                    stream.getTracks().forEach(t => t.stop());
+                    const blob = new Blob(audioChunks, {type: 'audio/webm'});
+                    if (blob.size > 100) {
+                        addMessage('[Audio gravado - processando...]', 'user');
+                        const formData = new FormData();
+                        formData.append('audio', blob, 'audio.webm');
+                        try {
+                            const res = await fetch(`${API_BASE}/api/audio/transcribe`, {method:'POST', headers: authHeaders(), body: formData});
+                            const data = await res.json();
+                            if (data.transcription) addMessage(data.transcription, 'agent');
+                        } catch(e) { addMessage('Erro ao processar audio.', 'agent'); }
+                    }
+                    isRecording = false;
+                    document.getElementById('micBtn').classList.remove('recording');
+                };
+                mediaRecorder.start();
+                isRecording = true;
+                document.getElementById('micBtn').classList.add('recording');
+            } catch(e) {
+                alert('Permissao de microfone necessaria. Habilite nas configuracoes do navegador.');
+            }
+        }
+
+        function stopRecording() {
+            if (mediaRecorder && isRecording) { mediaRecorder.stop(); }
+        }
+
+        // =============================================================================
+        // PIPELINE
+        // =============================================================================
+        async function runPipeline(agent) {
+            try {
+                const res = await fetch(`${API_BASE}/api/pipeline/run`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json', ...authHeaders()},
+                    body: JSON.stringify({agent: agent, params: {}})
+                });
+                const data = await res.json();
+                loadPipelineRuns();
+            } catch(e) { alert('Erro ao executar pipeline: ' + e.message); }
+        }
+
+        async function loadPipelineRuns() {
+            try {
+                const res = await fetch(`${API_BASE}/api/pipeline/runs`, {headers: authHeaders()});
+                const data = await res.json();
+                const container = document.getElementById('pipelineRuns');
+                if (!data.runs || data.runs.length === 0) {
+                    container.innerHTML = '<div style="text-align:center; color:var(--text-secondary); padding:20px; font-size:0.85rem;">Nenhuma execucao registrada</div>';
+                    return;
+                }
+                container.innerHTML = data.runs.reverse().map(r => {
+                    const agentNames = {'site-hunter':'Site Hunter','site-analyst':'Site Analyst','site-builder':'Site Builder','prospector':'Prospector'};
+                    const time = r.started_at ? new Date(r.started_at).toLocaleString('pt-BR') : '';
+                    return `<div class="pipeline-run"><div class="status-dot ${r.status}"></div><div class="info"><div class="agent-name">${sanitizeHTML(agentNames[r.agent] || r.agent)}</div><div class="time">${time}</div></div><span class="run-status ${r.status}">${r.status === 'running' ? 'Executando...' : r.status === 'completed' ? 'Concluido' : 'Erro'}</span></div>`;
+                }).join('');
+            } catch(e) {}
+        }
+
+        // =============================================================================
+        // LEADS
+        // =============================================================================
+        async function loadLeads() {
+            try {
+                const res = await fetch(`${API_BASE}/api/leads`, {headers: authHeaders()});
+                const data = await res.json();
+                allLeads = data.leads || [];
+                renderLeadsTable(allLeads);
+                updateStats(allLeads);
+            } catch(e) {}
+        }
+
+        function renderLeadsTable(leads) {
+            const tbody = document.getElementById('leadsTableBody');
+            if (!leads.length) { tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:var(--text-secondary); padding:20px;">Nenhum lead encontrado</td></tr>'; return; }
+            tbody.innerHTML = leads.map((l, i) => {
+                const scoreClass = l.score <= 4 ? 'bad' : l.score <= 6 ? 'mid' : 'good';
+                return `<tr><td><strong>${sanitizeHTML(l.nome || 'N/A')}</strong><br><span style="font-size:0.75rem; color:var(--text-secondary)">${sanitizeHTML(l.url || '')}</span></td><td>${sanitizeHTML(l.cidade || l.estado || '-')}</td><td><span class="score-badge ${scoreClass}">${sanitizeHTML(String(l.score || '-'))}/10</span></td><td>${sanitizeHTML(l.classificacao || '-')}</td><td>${sanitizeHTML(l.telefone || l.whatsapp || '-')}</td><td><button class="dash-btn secondary" onclick="selectLeadForProspector(${i})" style="padding:4px 8px; font-size:0.75rem"><i class="fas fa-paper-plane"></i></button></td></tr>`;
+            }).join('');
+        }
+
+        function updateStats(leads) {
+            document.getElementById('statLeads').textContent = leads.length;
+        }
+
+        async function loadLeadsForProspector() {
+            try {
+                const res = await fetch(`${API_BASE}/api/leads`, {headers: authHeaders()});
+                const data = await res.json();
+                allLeads = data.leads || [];
+                const select = document.getElementById('prospectorClinica');
+                select.innerHTML = '<option value="">Selecione uma clinica...</option>';
+                allLeads.forEach((l, i) => {
+                    select.innerHTML += `<option value="${i}">${sanitizeHTML(l.name)} (${l.score || '?'}pts)</option>`;
+                });
+            } catch(e) {}
+        }
+
+        function selectLeadForProspector(index) {
+            showView('prospector');
+            setTimeout(() => {
+                document.getElementById('prospectorClinica').value = index;
+                fillProspectorData();
+            }, 100);
+        }
+
+        function fillProspectorData() {
+            const idx = document.getElementById('prospectorClinica').value;
+            if (idx === '') return;
+            const lead = allLeads[parseInt(idx)];
+            if (!lead) return;
+            document.getElementById('prospectorEmail').value = lead.email || '';
+            document.getElementById('prospectorTelefone').value = lead.telefone || lead.whatsapp || '';
+            document.getElementById('prospectorUrl').value = lead.url || '';
+            document.getElementById('prospectorEndereco').value = lead.endereco || '';
+            document.getElementById('emailPreview').style.display = 'none';
+            document.getElementById('whatsappPreview').style.display = 'none';
+        }
+
+        // =============================================================================
+        // PROSPECTOR
+        // =============================================================================
+        async function generateProspectionMessage(event) {
+            const idx = document.getElementById('prospectorClinica').value;
+            if (idx === '') { alert('Selecione uma clinica primeiro.'); return; }
+            const lead = allLeads[parseInt(idx)];
+            const btn = event.target;
+            btn.disabled = true; btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Gerando...';
+            try {
+                const res = await fetch(`${API_BASE}/api/prospector/generate`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json', ...authHeaders()},
+                    body: JSON.stringify({
+                        clinica_nome: lead.nome,
+                        clinica_url: lead.url || '',
+                        canal: 'email',
+                        clinica_endereco: document.getElementById('prospectorEndereco').value || '',
+                        clinica_servicos: document.getElementById('prospectorServicos').value || '',
+                        clinica_equipe: document.getElementById('prospectorEquipe').value || '',
+                        clinica_diferenciais: document.getElementById('prospectorDiferenciais').value || '',
+                        mensagem_personalizada: document.getElementById('prospectorMensagem').value || ''
+                    })
+                });
+                const data = await res.json();
+                if (data.email_html) {
+                    document.getElementById('emailPreviewSubject').textContent = 'Assunto: ' + (data.email_assunto || '');
+                    document.getElementById('emailPreviewBody').innerHTML = data.email_html;
+                    document.getElementById('emailPreview').style.display = 'block';
+                }
+                if (data.whatsapp) {
+                    document.getElementById('whatsappPreviewBody').textContent = data.whatsapp;
+                    document.getElementById('whatsappPreview').style.display = 'block';
+                }
+                if (!data.email_html && !data.whatsapp && data.mensagem_gerada) {
+                    document.getElementById('prospectorMensagem').value = data.mensagem_gerada || '';
+                }
+            } catch(e) { alert('Erro ao gerar mensagem'); }
+            btn.disabled = false; btn.innerHTML = '<i class="fas fa-magic"></i> Gerar Mensagem com IA';
+        }
+
+        async function sendProspection(event) {
+            const idx = document.getElementById('prospectorClinica').value;
+            if (idx === '') { alert('Selecione uma clinica primeiro.'); return; }
+            const lead = allLeads[parseInt(idx)];
+            const btn = event.target;
+            btn.disabled = true; btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            try {
+                const res = await fetch(`${API_BASE}/api/prospector/send`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json', ...authHeaders()},
+                    body: JSON.stringify({
+                        clinica_nome: lead.nome,
+                        clinica_url: lead.url || '',
+                        clinica_email: document.getElementById('prospectorEmail').value,
+                        clinica_telefone: document.getElementById('prospectorTelefone').value,
+                        canal: document.getElementById('prospectorCanal').value,
+                        mensagem_personalizada: document.getElementById('prospectorMensagem').value,
+                        clinica_endereco: document.getElementById('prospectorEndereco').value || '',
+                        clinica_servicos: document.getElementById('prospectorServicos').value || '',
+                        clinica_equipe: document.getElementById('prospectorEquipe').value || '',
+                        clinica_diferenciais: document.getElementById('prospectorDiferenciais').value || ''
+                    })
+                });
+                const data = await res.json();
+                loadEnviosHistory();
+                alert('Mensagem processada com sucesso!');
+                document.getElementById('emailPreview').style.display = 'none';
+                document.getElementById('whatsappPreview').style.display = 'none';
+            } catch(e) { alert('Erro ao enviar: ' + e.message); }
+            btn.disabled = false; btn.innerHTML = '<i class="fas fa-paper-plane"></i> Enviar';
+        }
+
+        async function loadEnviosHistory() {
+            try {
+                const res = await fetch(`${API_BASE}/api/prospector/history`, {headers: authHeaders()});
+                const data = await res.json();
+                const container = document.getElementById('enviosList');
+                const envios = data.envios || [];
+                if (!envios.length) { container.innerHTML = '<div style="text-align:center; color:var(--text-secondary); padding:16px; font-size:0.85rem;">Nenhum envio registrado</div>'; return; }
+                container.innerHTML = envios.slice().reverse().map(e => {
+                    const iconClass = e.canal === 'email' ? 'email' : 'whatsapp';
+                    const iconName = e.canal === 'email' ? 'fa-envelope' : 'fa-whatsapp';
+                    const time = e.data_envio ? new Date(e.data_envio).toLocaleString('pt-BR') : '';
+                    return `<div class="envio-item"><div class="envio-icon ${iconClass}"><i class="fas ${iconName}"></i></div><div class="envio-info"><div class="envio-name">${sanitizeHTML(e.nome || 'N/A')}</div><div class="envio-detail">${sanitizeHTML(e.email || e.telefone || '')} - ${time}</div></div><span class="envio-status ${e.status}">${e.status}</span></div>`;
+                }).join('');
+            } catch(e) {}
+        }
+
+        // =============================================================================
+        // GLOBAL EVENT LISTENERS
+        // =============================================================================
+        document.addEventListener('click', function(event) {
+            const dropdown = document.getElementById('modelDropdown');
+            const selector = document.getElementById('modelSelector');
+            if (!selector.contains(event.target)) dropdown.classList.remove('show');
+            const sidebar = document.getElementById('sidebar');
+            const toggle = document.querySelector('.menu-toggle');
+            if (window.innerWidth <= 768 && sidebar.classList.contains('open')) {
+                if (!sidebar.contains(event.target) && !toggle.contains(event.target)) sidebar.classList.remove('open');
+            }
+        });
+
+        document.getElementById('loginPass').addEventListener('keydown', function(e) { if (e.key === 'Enter') doLogin(); });
+        document.getElementById('loginUser').addEventListener('keydown', function(e) { if (e.key === 'Enter') doLogin(); });
+
+        // START
+        checkAuth().then(authenticated => { if (authenticated) init(); });
+    </script>
+</body>
+</html>

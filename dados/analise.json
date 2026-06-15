@@ -1,0 +1,348 @@
+{
+  "data_analise": "2026-06-14",
+  "total_sites": 10,
+  "sites_analisados": [
+    {
+      "nome": "Clínica Odontológica CSCN",
+      "url": "https://www.clinodontocscn.com.br/",
+      "telefone": "(11) 3031-5278",
+      "score": 2,
+      "problemas": [
+        {
+          "categoria": "Visual",
+          "severidade": "alta",
+          "descricao": "Design extremamente antigo, parece site de 2005. Uso de fontes Lucida Bright Italic que parecem amadoras"
+        },
+        {
+          "categoria": "Visual",
+          "severidade": "alta",
+          "descricao": "Cores ruins: verde (#60AD79) com cinza e fundo branco, combinação desagradável"
+        },
+        {
+          "categoria": "Layout",
+          "severidade": "alta",
+          "descricao": "Layout quebrado com divs fixas (width:333px), não responsivo"
+        },
+        {
+          "categoria": "Layout",
+          "severidade": "alta",
+          "descricao": "Posicionamento absolute em elementos que quebra o layout em diferentes telas"
+        },
+        {
+          "categoria": "Técnico",
+          "severidade": "alta",
+          "descricao": "HTML ultrapassado com inline styles, sem semântica, sem viewport meta tag"
+        },
+        {
+          "categoria": "Técnico",
+          "severidade": "alta",
+          "descricao": "Imagens PNG com fundo transparente de baixa qualidade, sem WebP"
+        },
+        {
+          "categoria": "Conversão",
+          "severidade": "alta",
+          "descricao": "Sem botão de WhatsApp flutuante, sem formulário de agendamento online"
+        },
+        {
+          "categoria": "Conversão",
+          "severidade": "media",
+          "descricao": "CTA fraco: 'Venha nos conhecer! Agende uma consulta gratuita!' sem botão claro"
+        },
+        {
+          "categoria": "SEO",
+          "severidade": "media",
+          "descricao": "Title genérico, meta description ok mas poderia ser melhor"
+        }
+      ],
+      "melhorias": [
+        "Recriar do zero com HTML moderno + Tailwind CSS",
+        "Usar paleta de cores profissional (azul escuro + branco + cinza)",
+        "Implementar design responsivo mobile-first",
+        "Adicionar botão flutuante de WhatsApp",
+        "Criar formulário de agendamento online",
+        "Usar fontes modernas (Inter, Montserrat)",
+        "Adicionar imagens profissionais de alta qualidade",
+        "Implementar SEO técnico completo",
+        "Adicionar seção de depoimentos",
+        "Criar CTA forte e visível"
+      ]
+    },
+    {
+      "nome": "Odonto Sorriso",
+      "url": "https://odontosorrisosp.com.br/",
+      "telefone": "(11) 96471-7640",
+      "score": 4,
+      "problemas": [
+        {
+          "categoria": "Performance",
+          "severidade": "alta",
+          "descricao": "WordPress com 15+ plugins carregados: Elementor, JetEngine, DethemeKit, ElementsKit, Sticky Header, etc."
+        },
+        {
+          "categoria": "Performance",
+          "severidade": "alta",
+          "descricao": "Múltiplos arquivos CSS e JS carregados, jQuery 1.12.4 (ultrapassado), site extremamente pesado"
+        },
+        {
+          "categoria": "Visual",
+          "severidade": "media",
+          "descricao": "Excesso de animações (fadeIn, fadeInDown, fadeInUp, fadeInLeft, bounceIn) que poluem a experiência"
+        },
+        {
+          "categoria": "Visual",
+          "severidade": "media",
+          "descricao": "Menus dropdown complexos com muitas opções, difícil navegação"
+        },
+        {
+          "categoria": "Técnico",
+          "severidade": "alta",
+          "descricao": "WordPress 7.0 (versão muito antiga), plugins desatualizados, riscos de segurança"
+        },
+        {
+          "categoria": "Técnico",
+          "severidade": "media",
+          "descricao": "Imagens com lazyload mas sem WebP, sem otimização adequada"
+        },
+        {
+          "categoria": "Conversão",
+          "severidade": "media",
+          "descricao": "WhatsApp não é flutuante, está apenas no banner principal"
+        }
+      ],
+      "melhorias": [
+        "Migrar para site estático (HTML + Tailwind) para eliminar dependências",
+        "Remover todos os plugins desnecessários",
+        "Simplificar menu de navegação",
+        "Reduzir animações para apenas as essenciais",
+        "Atualizar para versões seguras de WordPress (se manter WP)",
+        "Otimizar imagens para WebP",
+        "Adicionar WhatsApp flutuante",
+        "Melhorar velocidade de carregamento"
+      ]
+    },
+    {
+      "nome": "Odontologia SP",
+      "url": "https://odontologiasp.com.br/",
+      "telefone": "(11) 96262-7205",
+      "score": 5,
+      "problemas": [
+        {
+          "categoria": "Visual",
+          "severidade": "media",
+          "descricao": "Design genérico de template WordPress, não se destaca de outras clínicas"
+        },
+        {
+          "categoria": "Visual",
+          "severidade": "media",
+          "descricao": "Paleta de cores básica (azul + branco), sem identidade visual forte"
+        },
+        {
+          "categoria": "Performance",
+          "severidade": "media",
+          "descricao": "WordPress com Elementor + múltiplos plugins de cache (WP Rocket, etc.)"
+        },
+        {
+          "categoria": "Técnico",
+          "severidade": "media",
+          "descricao": "Muitos plugins de SEO (Rank Math PRO), mas SEO básico ok"
+        },
+        {
+          "categoria": "Conversão",
+          "severidade": "media",
+          "descricao": "Botão de WhatsApp existe mas não é flutuante, difícil de encontrar"
+        },
+        {
+          "categoria": "Conteúdo",
+          "severidade": "baixa",
+          "descricao": "Textos ok mas poderiam ser mais persuasivos e focados em conversão"
+        }
+      ],
+      "melhorias": [
+        "Criar identidade visual única e memorável",
+        "Modernizar design com estilo mais premium",
+        "Otimizar performance removendo plugins desnecessários",
+        "Tornar WhatsApp flutuante e mais visível",
+        "Melhorar textos para aumentar conversão",
+        "Adicionar prova social (depoimentos, números)"
+      ]
+    },
+    {
+      "nome": "Dentista São Paulo",
+      "url": "https://saopaulodentista.com.br/",
+      "telefone": "(11) 95213-7463",
+      "score": 6,
+      "problemas": [
+        {
+          "categoria": "Visual",
+          "severidade": "media",
+          "descricao": "Design funcional mas básico, parece template genérico"
+        },
+        {
+          "categoria": "Conteúdo",
+          "severidade": "alta",
+          "descricao": "Textos extremamente repetitivos: mesma frase 'Encontre o cuidado dental que você merece' aparece 15+ vezes"
+        },
+        {
+          "categoria": "Conteúdo",
+          "severidade": "media",
+          "descricao": "Conteúdo gerado para SEO (keyword stuffing), não natural"
+        },
+        {
+          "categoria": "Visual",
+          "severidade": "baixa",
+          "descricao": "Cards de serviços todos iguais, sem variação visual"
+        },
+        {
+          "categoria": "Conversão",
+          "severidade": "baixa",
+          "descricao": "WhatsApp flutuante existe e funciona bem"
+        }
+      ],
+      "melhorias": [
+        "Reescrever textos únicos para cada serviço",
+        "Remover keyword stuffing (mesma frase repetida)",
+        "Diferenciar visualmente os cards de serviço",
+        "Adicionar mais prova social",
+        "Melhorar design para parecer mais premium"
+      ]
+    },
+    {
+      "nome": "Clínica Oásis",
+      "url": "https://oasiscuida.live/",
+      "telefone": "Não encontrado",
+      "score": 7,
+      "problemas": [
+        {
+          "categoria": "Técnico",
+          "severidade": "baixa",
+          "descricao": "Usa Hostinger Website Builder, limitações de customização"
+        },
+        {
+          "categoria": "Conversão",
+          "severidade": "media",
+          "descricao": "Telefone/WhatsApp não encontrado facilmente no site"
+        }
+      ],
+      "melhorias": [
+        "Adicionar telefone e WhatsApp claramente visíveis",
+        "Personalizar mais o design do builder"
+      ]
+    },
+    {
+      "nome": "Phile Odontologia",
+      "url": "https://www.phileodontologia.com.br/",
+      "telefone": "(11) 98700-9378",
+      "score": 7,
+      "problemas": [
+        {
+          "categoria": "Visual",
+          "severidade": "baixa",
+          "descricao": "Design profissional mas poderia ser mais moderno"
+        },
+        {
+          "categoria": "Performance",
+          "severidade": "baixa",
+          "descricao": "Site pode ser mais leve e rápido"
+        }
+      ],
+      "melhorias": [
+        "Modernizar design para estilo mais premium",
+        "Otimizar performance"
+      ]
+    },
+    {
+      "nome": "Well Clinic Odontologia",
+      "url": "https://www.wellclinic.com/",
+      "telefone": "Não encontrado",
+      "score": 7,
+      "problemas": [
+        {
+          "categoria": "Conversão",
+          "severidade": "media",
+          "descricao": "Contato não é facilmente visível"
+        }
+      ],
+      "melhorias": [
+        "Tornar contato mais visível",
+        "Adicionar CTA mais forte"
+      ]
+    },
+    {
+      "nome": "Sorridents",
+      "url": "https://sorridents.com.br/",
+      "telefone": "Não encontrado",
+      "score": 6,
+      "problemas": [
+        {
+          "categoria": "Visual",
+          "severidade": "media",
+          "descricao": "Design genérico de rede de clínicas, não se destaca"
+        },
+        {
+          "categoria": "Conversão",
+          "severidade": "media",
+          "descricao": "Falta CTA forte e WhatsApp visível"
+        }
+      ],
+      "melhorias": [
+        "Criar identidade visual mais forte",
+        "Adicionar WhatsApp flutuante",
+        "Melhorar CTA"
+      ]
+    },
+    {
+      "nome": "Benatti Odontologia",
+      "url": "https://benattiodontologia.com.br/",
+      "telefone": "Não encontrado",
+      "score": 7,
+      "problemas": [
+        {
+          "categoria": "Conversão",
+          "severidade": "baixa",
+          "descricao": "Contato poderia ser mais visível"
+        }
+      ],
+      "melhorias": [
+        "Melhorar visibilidade do contato"
+      ]
+    },
+    {
+      "nome": "HMeister Odontologia",
+      "url": "https://www.hmeister.com.br/",
+      "telefone": "Não encontrado",
+      "score": 6,
+      "problemas": [
+        {
+          "categoria": "Visual",
+          "severidade": "media",
+          "descricao": "Design ok mas não se destaca"
+        },
+        {
+          "categoria": "Conversão",
+          "severidade": "media",
+          "descricao": "Falta CTA forte"
+        }
+      ],
+      "melhorias": [
+        "Modernizar design",
+        "Adicionar CTA mais forte",
+        "Melhorar WhatsApp visível"
+      ]
+    }
+  ],
+  "resumo": {
+    "precisam_recriar": 2,
+    "precisam_melhorias": 4,
+    "bons": 4,
+    "melhores_candidatos_para_renovacao": [
+      {
+        "nome": "Clínica Odontológica CSCN",
+        "motivo": "Site extremamente antigo, precisa recriar do zero. Localização premium (Faria Lima) indica que podem pagar pelo serviço."
+      },
+      {
+        "nome": "Odonto Sorriso",
+        "motivo": "WordPress pesado e problemático, migrar para site leve resolve todos os problemas."
+      }
+    ]
+  }
+}

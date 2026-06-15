@@ -1,0 +1,70 @@
+[
+  {
+    "nome": "Click Sorriso Odonto",
+    "url": "https://clicksorrisoodonto.com.br",
+    "telefone": "(11) 3289-8568",
+    "whatsapp": "(11) 94925-7483",
+    "email": "contato@clicksorrisoodonto.com.br",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "endereco": "Av. Paulista, 2073 - Cj. 1407 Horsa I, Conjunto Nacional, Cerqueira César",
+    "cep": "01311-300",
+    "score_visual": 3,
+    "classificacao": "ruim",
+    "tema_wordpress": "Dentalia",
+    "problemas_principais": [
+      "Design antigo (parece site de 2010)",
+      "Tema Dentalia genérico e pesado",
+      "CSS inline massivo e bagunçado",
+      "Layout confuso com muitas seções",
+      "Falta de hierarquia visual clara",
+      "Sem depoimentos de pacientes em destaque",
+      "Galeria de serviços pouco atrativa",
+      "CTA fraco - botão genérico",
+      "Falta de prova social forte"
+    ],
+    "observacoes": "Clínica com 36+ anos de experiência (desde 1985), especializada em odontologia orgânica. Dra. Regina Tiemi Toshimitsu Koba - CROSP 32843. Localizada no Conjunto Nacional na Av. Paulista. Boa localização mas site não converte.",
+    "data_coleta": "2026-06-14"
+  },
+  {
+    "nome": "Moliah Odontologia",
+    "url": "https://moliahodonto.com.br",
+    "telefone": "(11) 95656-5890",
+    "email": "adm@moliahodonto.com.br",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "endereco": "Rua Dona Adma Jafet, 74 - Bela Vista, São Paulo",
+    "score_visual": 5,
+    "classificacao": "medio",
+    "tema_wordpress": "Hello Elementor + Elementor Pro",
+    "problemas_principais": [
+      "Design ok mas sem personalidade",
+      "Estrutura Elementor genérica",
+      "Falta de identidade visual forte",
+      "Contadores animados mas sem impacto"
+    ],
+    "observacoes": "Clínica mais nova, focada em estética dental. Estrutura decente mas poderia ser muito melhor.",
+    "data_coleta": "2026-06-14"
+  },
+  {
+    "nome": "Lira Odonto",
+    "url": "https://liraodonto.com.br",
+    "telefone_paraizo": "(11) 3373-4444",
+    "telefone_alto_pinheiros": "(11) 2574-0958",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "endereco_paraizo": "Rua Leôncio de Carvalho, 306, conj 41 - Paraíso",
+    "endereco_alto_pinheiros": "Av. São Gualter, 1008 - Alto de Pinheiros",
+    "score_visual": 5,
+    "classificacao": "medio",
+    "tema_wordpress": "Polyclinic2025 + Beaver Builder",
+    "problemas_principais": [
+      "Slider pesado SmartSlider3",
+      "Muitas páginas e submenu complexo",
+      "Layout sobrecarregado",
+      "Falta de foco na conversão"
+    ],
+    "observacoes": "Clínica referência com 2 unidades. Dirigida pelo Prof. Dr. Fernando da Cunha Ribeiro (USP). Excelente conteúdo mas site complexo demais.",
+    "data_coleta": "2026-06-14"
+  }
+]
