@@ -23,18 +23,42 @@ fluxo-de-agentes/
 ## Como Rodar
 
 ```bash
-# Instalar dependencias
+# 1. Clonar o repositorio
+git clone https://github.com/manasesfilho40-lgtm/fluxo-de-agentes.git
+cd fluxo-de-agentes
+
+# 2. Instalar dependencias
 pip install -r backend/requirements.txt
 
-# Configurar variaveis de ambiente
+# 3. Configurar variaveis de ambiente
 copy .env.example .env
-# Edite .env com suas chaves
+# 4. Edite .env com suas chaves de API (veja abaixo)
 
-# Iniciar servidor
+# 5. Iniciar servidor
 python app.py
 ```
 
 Acesse: http://localhost:8000
+
+## Configuracao das Chaves de API
+
+Edite o arquivo `.env` e adicione suas chaves:
+
+### NVIDIA AI (Gratuito - Recomendado)
+1. Acesse: https://org.ngc.nvidia.com/setup/personal-keys
+2. Crie uma API key
+3. Adicione no `.env`: `NVIDIA_API_KEY=nvapi-sua_chave_aqui`
+
+### Google Gemini (Gratuito - Opcional)
+1. Acesse: https://aistudio.google.com/app/u/1/apikey
+2. Crie uma API key
+3. Adicione no `.env`: `GOOGLE_API_KEY=sua_chave_aqui`
+
+### Modelos Disponiveis
+- **NVIDIA**: Nemotron 70B, Llama, Mistral, DeepSeek, MiniMax, Qwen
+- **Google**: Gemini 2.0 Flash
+- **OpenAI**: GPT-4 (requer pagamento)
+- **Anthropic**: Claude (requer pagamento)
 
 ## Funcionalidades
 
@@ -51,3 +75,14 @@ Acesse: http://localhost:8000
 
 - Usuario: `admin`
 - Senha: `admin123`
+
+## Troubleshooting
+
+| Problema | Solucao |
+|----------|---------|
+| `Erro 403 - Authorization failed` | Verifique se a `NVIDIA_API_KEY` no `.env` está correta e reinicie o servidor |
+| Modelo nao responde | Troque para outro modelo no dropdown (Gemini é gratuito e alternativa) |
+
+## Licenca
+
+Projeto privado - uso pessoal e colaborativo.
