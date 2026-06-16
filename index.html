@@ -417,7 +417,14 @@
             <div class="agents-dashboard" id="agentsView">
                 <div class="dashboard-header">
                     <h2>Pipeline de Agentes</h2>
-                    <p>Execute e monitore os agentes automatizados do pipeline de prospeccao</p>
+                    <p>Execute e monitore os agentes automatizados para QUALQUER tipo de negócio</p>
+                </div>
+                <div class="segmento-bar" id="segmentoBar" style="display:none; margin-bottom:16px; padding:16px; background:var(--card-bg); border-radius:12px; border:1px solid var(--border-color);">
+                    <label style="display:block; font-size:0.85rem; font-weight:600; margin-bottom:8px; color:var(--text-secondary);"><i class="fas fa-store"></i> Nicho / Segmento:</label>
+                    <select id="segmentoSelect" onchange="saveSegmento()" style="width:100%; padding:10px 12px; border-radius:8px; border:1px solid var(--border-color); background:var(--input-bg); color:var(--text-main); font-size:0.9rem; cursor:pointer;">
+                        <option value="">🔍 Carregando segmentos...</option>
+                    </select>
+                    <p style="font-size:0.8rem; color:var(--text-secondary); margin-top:8px;">Escolha o tipo de negócio para personalizar a busca, análise e rebuild do site.</p>
                 </div>
                 <div class="stats-grid" id="statsGrid">
                     <div class="stat-card"><div class="stat-value" id="statLeads">-</div><div class="stat-label">Leads Coletados</div></div>
@@ -787,7 +794,7 @@
             const viewMap = {chat: 0, agents: 1, prospector: 2, leads: 3};
             if (navItems[viewMap[view]]) navItems[viewMap[view]].classList.add('active');
 
-            if (view === 'agents') loadPipelineRuns();
+            if (view === 'agents') { loadPipelineRuns(); loadSegmentos(); }
             if (view === 'leads') loadLeads();
             if (view === 'prospector') { loadLeadsForProspector(); loadEnviosHistory(); }
         }
@@ -1031,14 +1038,53 @@
         }
 
         // =============================================================================
+        // SEGMENTOS
+        // =============================================================================
+        let segmentosCache = [];
+        let currentSegmento = localStorage.getItem('currentSegmento') || '';
+
+        async function loadSegmentos() {
+            const bar = document.getElementById('segmentoBar');
+            const select = document.getElementById('segmentoSelect');
+            if (!bar || !select) return;
+            try {
+                const res = await fetch(`${API_BASE}/api/segmentos`);
+                const data = await res.json();
+                const segmentos = data.segmentos || [];
+                if (!segmentos.length) { bar.style.display = 'none'; return; }
+                segmentosCache = segmentos;
+                let html = '<option value=\"\">Todos os nichos / Geral</option>';
+                segmentos.forEach(s => {
+                    html += `<option value=\"${s.slug}\">${s.nome}</option>`;
+                });
+                select.innerHTML = html;
+                if (currentSegmento) select.value = currentSegmento;
+                bar.style.display = 'block';
+            } catch(e) { console.warn('Erro ao carregar segmentos:', e); bar.style.display = 'none'; }
+        }
+
+        function saveSegmento() {
+            const val = document.getElementById('segmentoSelect').value;
+            currentSegmento = val;
+            localStorage.setItem('currentSegmento', val);
+            addSystemMessage(`Nicho selecionado: ${val ? (segmentosCache.find(s=>s.slug===val)?.nome || val) : 'Todos / Geral'}`);
+        }
+
+        function getSegmentoParam() {
+            return currentSegmento ? { segmento: currentSegmento } : {};
+        }
+
+        // =============================================================================
         // PIPELINE
         // =============================================================================
         async function runPipeline(agent) {
+            const segmento = document.getElementById('segmentoSelect')?.value || '';
+            const params = { ...getSegmentoParam() };
             try {
                 const res = await fetch(`${API_BASE}/api/pipeline/run`, {
                     method: 'POST',
                     headers: {'Content-Type': 'application/json', ...authHeaders()},
-                    body: JSON.stringify({agent: agent, params: {}})
+                    body: JSON.stringify({agent: agent, segmento: segmento, params: params})
                 });
                 const data = await res.json();
                 loadPipelineRuns();

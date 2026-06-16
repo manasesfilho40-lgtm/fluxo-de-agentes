@@ -1,0 +1,165 @@
+{
+  "descricao": "Configuracao de segmentos/nichos de negocio suportados pelo sistema",
+  "segmentos": [
+    {
+      "slug": "odontologia",
+      "nome": "Clinicas Odontologicas",
+      "singular": "Clinica Odontologica",
+      "palavras_chave": ["dentista", "odontologia", "implante", "ortodontia", "clinica dental"],
+      "diretorio_saida": "sites-odontologia",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
+    },
+    {
+      "slug": "medico",
+      "nome": "Clinicas Medicas e Consultorios",
+      "singular": "Clinica Medica",
+      "palavras_chave": ["medico", "clinica medica", "cardiologista", "ortopedista", "dermatologista", "ginecologista"],
+      "diretorio_saida": "sites-medico",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "equipe.html"]
+    },
+    {
+      "slug": "fisioterapia",
+      "nome": "Clinicas de Fisioterapia",
+      "singular": "Clinica de Fisioterapia",
+      "palavras_chave": ["fisioterapia", "fisioterapeuta", "reabilitacao", "pilates"],
+      "diretorio_saida": "sites-fisioterapia",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
+    },
+    {
+      "slug": "estetica",
+      "nome": "Clinicas de Estetica",
+      "singular": "Clinica de Estetica",
+      "palavras_chave": ["estetica", "spa", "massagem", "depilacao", "sobrancelha", "esteticista"],
+      "diretorio_saida": "sites-estetica",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
+    },
+    {
+      "slug": "advocacia",
+      "nome": "Escritorios de Advocacia",
+      "singular": "Escritorio de Advocacia",
+      "palavras_chave": ["advogado", "advocacia", "direito", "escritorio", "consultoria juridica"],
+      "diretorio_saida": "sites-advocacia",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "areas.html"]
+    },
+    {
+      "slug": "contabilidade",
+      "nome": "Escritorios de Contabilidade",
+      "singular": "Escritorio de Contabilidade",
+      "palavras_chave": ["contabilidade", "contador", "auditoria", "fiscal", "escritorio contabil"],
+      "diretorio_saida": "sites-contabilidade",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
+    },
+    {
+      "slug": "restaurante",
+      "nome": "Restaurantes e Lanchonetes",
+      "singular": "Restaurante",
+      "palavras_chave": ["restaurante", "lanchonete", "padaria", "pizzaria", "cafe", "buffet"],
+      "diretorio_saida": "sites-restaurante",
+      "paginas": ["index.html", "cardapio.html", "sobre.html", "contato.html", "reservas.html"]
+    },
+    {
+      "slug": "academia",
+      "nome": "Academias e Studios",
+      "singular": "Academia",
+      "palavras_chave": ["academia", "fitness", "crossfit", "studio", "personal trainer", "pilates"],
+      "diretorio_saida": "sites-academia",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "aulas.html"]
+    },
+    {
+      "slug": "imobiliaria",
+      "nome": "Imobiliarias e Corretoras",
+      "singular": "Imobiliaria",
+      "palavras_chave": ["imobiliaria", "corretor", "imoveis", "aluguel", "venda", "casa", "apartamento"],
+      "diretorio_saida": "sites-imobiliaria",
+      "paginas": ["index.html", "imoveis.html", "sobre.html", "contato.html"]
+    },
+    {
+      "slug": "construcao",
+      "nome": "Construcao Civil e Reformas",
+      "singular": "Empresa de Construcao",
+      "palavras_chave": ["construcao", "reforma", "pedreiro", "arquiteto", "construtora"],
+      "diretorio_saida": "sites-construcao",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "portfolio.html"]
+    },
+    {
+      "slug": "veterinario",
+      "nome": "Clinicas Veterinarias",
+      "singular": "Clinica Veterinaria",
+      "palavras_chave": ["veterinario", "clinica veterinaria", "pet", "petshop", "banho e tosa"],
+      "diretorio_saida": "sites-veterinario",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
+    },
+    {
+      "slug": "salao",
+      "nome": "Saloes de Beleza e Barbearias",
+      "singular": "Salao de Beleza",
+      "palavras_chave": ["salao", "barbearia", "cabeleireiro", "manicure", "estetica"],
+      "diretorio_saida": "sites-salao",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
+    },
+    {
+      "slug": "pet",
+      "nome": "Pet Shops e Servicos Pet",
+      "singular": "Pet Shop",
+      "palavras_chave": ["pet shop", "petshop", "banho e tosa", "ração", "veterinario", "pets"],
+      "diretorio_saida": "sites-pet",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "produtos.html"]
+    },
+    {
+      "slug": "auto",
+      "nome": "Oficinas e Servicos Automotivos",
+      "singular": "Oficina Mecanica",
+      "palavras_chave": ["oficina", "mecanica", "auto", "carro", "pneus", "estetica automotiva"],
+      "diretorio_saida": "sites-auto",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
+    },
+    {
+      "slug": "moda_retail",
+      "nome": "Lojas de Ropa e Moda",
+      "singular": "Loja de Moda",
+      "palavras_chave": ["loja", "rounpa", "moda", "boutique", "fashion", "vestuario"],
+      "diretorio_saida": "sites-moda",
+      "paginas": ["index.html", "produtos.html", "sobre.html", "contato.html"]
+    },
+    {
+      "slug": "educacao",
+      "nome": "Escolas e Cursos Profissionalizantes",
+      "singular": "Instituicao de Educacao",
+      "palavras_chave": ["escola", "curso", "treinamento", "colegio", "faculdade", "graduacao"],
+      "diretorio_saida": "sites-educacao",
+      "paginas": ["index.html", "cursos.html", "sobre.html", "contato.html", "matricula.html"]
+    },
+    {
+      "slug": "hoteis",
+      "nome": "Hoteis e Pousadas",
+      "singular": "Hotel",
+      "palavras_chave": ["hotel", "pousada", "hospedagem", "turismo", "hostel"],
+      "diretorio_saida": "sites-hoteis",
+      "paginas": ["index.html", "acomodacoes.html", "sobre.html", "contato.html", "reservas.html"]
+    },
+    {
+      "slug": "software",
+      "nome": "Empresas de Tecnologia e Software",
+      "singular": "Empresa de Software",
+      "palavras_chave": ["software", "sistema", "tecnologia", "app", "desenvolvimento", "ti"],
+      "diretorio_saida": "sites-software",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "portfolio.html"]
+    },
+    {
+      "slug": "eventos",
+      "nome": "Buffets e Casas de Festas",
+      "singular": "Casa de Festas",
+      "palavras_chave": ["buffet", "festa", "eventos", "casamento", "decoracao"],
+      "diretorio_saida": "sites-eventos",
+      "paginas": ["index.html", "galeria.html", "sobre.html", "contato.html", "orcamento.html"]
+    },
+    {
+      "slug": "transporte",
+      "nome": "Transporte e Logistica",
+      "singular": "Empresa de Transporte",
+      "palavras_chave": ["transporte", "mudanca", "logistica", "frete", "caminhao"],
+      "diretorio_saida": "sites-transporte",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "cotacao.html"]
+    }
+  ]
+}

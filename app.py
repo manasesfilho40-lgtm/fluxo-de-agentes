@@ -70,6 +70,7 @@ class AgentTask(BaseModel):
 
 class PipelineRequest(BaseModel):
     agent: str  # site-hunter, site-analyst, site-builder, prospector
+    segmento: Optional[str] = None  # e.g. restaurante, imobiliaria, advogado
     params: Optional[Dict[str, Any]] = {}
 
 class ProspectorRequest(BaseModel):
@@ -647,6 +648,11 @@ async def list_nvidia_models():
             for k, v in NVIDIAProvider.MODELS.items()
         ]
     }
+
+@app.get("/api/segmentos")
+async def list_segmentos():
+    segmentos_path = os.path.join(DATA_DIR, "config", "segmentos.json")
+    return load_json(filename=segmentos_path, default={"segmentos": []})
 
 # =============================================================================
 # PIPELINE - INTEGRACAO COM OPENCODE AGENTS

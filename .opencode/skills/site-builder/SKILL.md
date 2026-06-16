@@ -1,6 +1,6 @@
 ---
 name: site-builder
-description: Reconstrói sites de empresas com design profissional, seguindo um design system rigoroso e identidade visual única
+description: Reconstrói sites de empresas de QUALQUER SEGMENTO com design profissional e identidade visual única
 ---
 
 # Skill: Site Builder

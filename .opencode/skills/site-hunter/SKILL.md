@@ -1,11 +1,11 @@
 ---
 name: site-hunter
-description: Busca sites de empresas com design ruim via Google Maps e diretórios, tira screenshots e classifica visualmente a qualidade do design
+description: Busca sites de empresas com design ruim via Google Maps e diretórios, tira screenshots e classifica visualmente a qualidade do design (QUALQUER NEGÓCIO)
 ---
 
 # Skill: Site Hunter
 
-Esta skill fornece instruções detalhadas para o agente `site-hunter` encontrar e classificar sites de empresas de qualquer segmento.
+Esta skill fornece instruções detalhadas para o agente `site-hunter` encontrar e classificar sites de empresas de **QUALQUER** segmento.
 
 ## Como Usar
 

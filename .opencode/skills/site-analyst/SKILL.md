@@ -1,11 +1,11 @@
 ---
 name: site-analyst
-description: Analisa sites de empresas e extrai dados únicos para personalização
+description: Analisa sites de empresas de QUALQUER SEGMENTO e extrai dados únicos para personalização
 ---
 
 # Skill: Site Analyst
 
-Esta skill fornece instruções para o agente `site-analyst` analisar sites de empresas de qualquer segmento e extrair informações que tornam o rebuild único.
+Esta skill fornece instruções para o agente `site-analyst` analisar sites de empresas de **QUALQUER** segmento e extrair informações que tornam o rebuild único.
 
 ## Objetivo
 
