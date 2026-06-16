@@ -205,8 +205,12 @@ class NVIDIAProvider(LLMProvider):
         "qwen3.5": "qwen/qwen3.5-397b-a17b",
         "deepseek-r1": "deepseek-ai/deepseek-r1",
         "deepseek-v3": "deepseek-ai/deepseek-v3-0324",
-        "minimax-m3": "minimaxai/minimax-m3",
-        "minimax-m27": "minimaxai/minimax-m2.7",
+        "minimax-m3": "abacusai/dracarys-llama-3.1-70b-instruct",
+        "minimax-m27": "abacusai/dracarys-llama-3.1-70b-instruct",
+        "dracarys-70b": "abacusai/dracarys-llama-3.1-70b-instruct",
+        "llama-3.3-70b": "meta/llama-3.3-70b-instruct",
+        "qwen3.5-397b": "qwen/qwen3.5-397b-a17b",
+        "default": "abacusai/dracarys-llama-3.1-70b-instruct",
     }
 
     def __init__(self):
@@ -225,13 +229,13 @@ class NVIDIAProvider(LLMProvider):
             self.client = None
 
     def get_model_id(self, model_key: str) -> str:
-        return self.MODELS.get(model_key, self.MODELS["nvidia-nemotron-70b"])
+        return self.MODELS.get(model_key, self.MODELS["default"])
 
     async def chat(self, message: str, history: List[Message] = None, model_key: str = None) -> str:
         if not self.client:
             return "NVIDIA AI nao configurado. Verifique NVIDIA_API_KEY."
         try:
-            model_id = self.get_model_id(model_key) if model_key else self.MODELS["nvidia-nemotron-70b"]
+            model_id = self.get_model_id(model_key) if model_key else self.MODELS["default"]
             messages = []
             if history:
                 for msg in history:

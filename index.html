@@ -642,8 +642,8 @@
                                 <div class="model-option" onclick="selectModelOption('qwen3.5', event)"><i class="fas fa-server"></i> Qwen3.5 397B</div>
                                 <div class="model-option" onclick="selectModelOption('deepseek-r1', event)"><i class="fas fa-server"></i> DeepSeek R1</div>
                                 <div class="model-option" onclick="selectModelOption('deepseek-v3', event)"><i class="fas fa-server"></i> DeepSeek V3</div>
-                                <div class="model-option" onclick="selectModelOption('minimax-m3', event)"><i class="fas fa-server"></i> MiniMax M3</div>
-                                <div class="model-option" onclick="selectModelOption('minimax-m27', event)"><i class="fas fa-server"></i> MiniMax M2.7</div>
+                                <div class="model-option" onclick="selectModelOption('minimax-m3', event)"><i class="fas fa-server"></i> Dracarys 70B</div>
+                                <div class="model-option" onclick="selectModelOption('minimax-m27', event)"><i class="fas fa-server"></i> Llama 3.3 70B</div>
 
                             </div>
                             <div class="model-dropdown-divider"></div>
@@ -822,7 +822,7 @@
         function selectModelOption(model, event) {
             event.stopPropagation();
             selectedModel = model;
-            const names = {'nvidia-nemotron-70b':'Nemotron 70B','nvidia-nemotron-super':'Nemotron Super','nvidia-nemotron-ultra':'Nemotron Ultra','meta-llama-405b':'Llama 405B','meta-llama-maverick':'Llama Maverick','mistral-large':'Mistral Large','mistral-small':'Mistral Small','qwen3-coder':'Qwen3 Coder','qwen3.5':'Qwen3.5','deepseek-r1':'DeepSeek R1','deepseek-v3':'DeepSeek V3','minimax-m3':'MiniMax M3','minimax-m27':'MiniMax M2.7','gemini':'Gemini','openai':'GPT-4','anthropic':'Claude'};
+            const names = {'nvidia-nemotron-70b':'Nemotron 70B','nvidia-nemotron-super':'Nemotron Super','nvidia-nemotron-ultra':'Nemotron Ultra','meta-llama-405b':'Llama 405B','meta-llama-maverick':'Llama Maverick','mistral-large':'Mistral Large','mistral-small':'Mistral Small','qwen3-coder':'Qwen3 Coder','qwen3.5':'Qwen3.5','deepseek-r1':'DeepSeek R1','deepseek-v3':'DeepSeek V3','minimax-m3':'Dracarys 70B','minimax-m27':'Llama 3.3 70B','gemini':'Gemini','openai':'GPT-4','anthropic':'Claude'};
             document.getElementById('selectedModel').textContent = names[model] || model;
             document.querySelectorAll('.model-option').forEach(el => el.classList.remove('active'));
             event.target.closest('.model-option').classList.add('active');
