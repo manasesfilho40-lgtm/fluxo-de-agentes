@@ -1,0 +1,375 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2563eb" />
+  <title>Sorriso Perfeito - Clínica Odontológica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+:root {
+  --accent: #2563eb;
+  --accent-light: #3b82f6;
+  --accent-solid: #1d4ed8;
+  --bg-start: #f0f4ff;
+  --bg-end: #e0e7ff;
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-solid: #ffffff;
+  --surface-solid-hover: #ffffff;
+  --card-bg: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --border-subtle: rgba(37, 99, 235, 0.08);
+  --border-active: rgba(37, 99, 235, 0.25);
+  --success-bg: #dcfce7;
+  --success-border: rgba(22, 163, 74, 0.15);
+  --chip-bg: #dbeafe;
+  --shadow-card: 0 18px 50px rgba(37, 99, 235, 0.08);
+  --shadow-card-hover: 0 18px 34px rgba(37, 99, 235, 0.1);
+  --shadow-button: 0 18px 34px rgba(37, 99, 235, 0.2);
+  --shadow-floating: 0 18px 40px rgba(37, 99, 235, 0.12);
+  --shadow-hero: 0 24px 70px rgba(37, 99, 235, 0.1);
+  --shadow-brand: 0 16px 30px rgba(37, 99, 235, 0.25);
+  --radius-card: 30px;
+  --radius-chip: 20px;
+  --radius-button: 999px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-primary);
+  background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  color-scheme: light;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body,#root{min-height:100%}
+body{margin:0}
+img{display:block;max-width:100%}
+button,input{font:inherit}
+button{border:0;background:none;padding:0;cursor:pointer}
+input{width:100%;border:none;outline:none;background:transparent}
+
+.booking-app{min-height:100vh;padding:28px;background:linear-gradient(180deg,var(--bg-start) 0%,var(--bg-end) 100%)}
+.hero-shell,.content-grid{width:min(1280px,100%);margin:0 auto}
+.hero-shell{padding:24px;border-radius:36px;background:var(--surface);border:1px solid rgba(255,255,255,0.85);backdrop-filter:blur(18px);box-shadow:var(--shadow-hero)}
+
+.topbar,.hero-grid,.hero-actions,.stats-row,.service-top,.summary-row,.section-heading,.picker-label,.booking-header,.brand,.benefit-item,.professional-card,.success-card,.service-card{display:flex}
+.topbar,.service-top,.summary-row,.section-heading,.booking-header,.brand,.success-card{justify-content:space-between}
+.topbar,.hero-actions,.stats-row,.picker-label,.brand,.benefit-item,.professional-card,.success-card{align-items:center}
+
+.topbar{gap:16px;margin-bottom:28px}
+.brand{gap:14px}
+.brand-badge{width:54px;height:54px;border-radius:18px;display:inline-flex;align-items:center;justify-content:center;color:#fff;background:var(--accent);box-shadow:var(--shadow-brand);font-size:24px}
+.brand strong{display:block;font-size:1.12rem;letter-spacing:-0.03em}
+.brand p,.hero-copy p,.visual-copy span,.section-tag,.service-card p,.professional-info span,.professional-info p,.booking-header p,.field-group label,.summary-row span,.success-card p,.benefit-item p{margin:0;color:var(--text-secondary)}
+.brand p{margin-top:4px;font-size:0.92rem}
+
+.topbar-button,.primary-action,.submit-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;border-radius:var(--radius-button);font-weight:700;transition:transform 0.2s ease,box-shadow 0.2s ease}
+.topbar-button:hover,.primary-action:hover,.submit-button:hover{transform:translateY(-1px)}
+.topbar-button{padding:13px 18px;color:var(--accent);background:var(--chip-bg)}
+
+.hero-grid{gap:24px;grid-template-columns:minmax(0,1.05fr) minmax(360px,0.95fr);display:grid}
+.hero-copy{padding:12px 8px 12px 4px}
+.eyebrow,.section-tag{display:inline-flex;align-items:center;gap:8px;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.12em;font-weight:700}
+.eyebrow{color:#3b82f6}
+.hero-copy h1,.section-heading h2,.booking-header h2{margin:0;letter-spacing:-0.05em;color:var(--accent)}
+.hero-copy h1{margin-top:16px;font-size:clamp(3rem,6vw,5.5rem);line-height:0.94;max-width:640px}
+.hero-copy p{margin-top:18px;max-width:560px;font-size:1.05rem;line-height:1.8}
+.hero-actions{gap:14px;flex-wrap:wrap;margin-top:28px}
+.primary-action,.submit-button{padding:16px 22px;color:#fff;background:var(--accent);box-shadow:var(--shadow-button)}
+.hero-note{display:inline-flex;align-items:center;gap:10px;padding:14px 16px;border-radius:var(--radius-button);background:rgba(255,255,255,0.95);color:#475569;box-shadow:0 10px 26px rgba(37,99,235,0.08)}
+.stats-row{gap:14px;margin-top:36px;flex-wrap:wrap}
+
+.stat-card,.section-card,.booking-card,.visual-card,.floating-card,.service-card,.summary-card,.success-card{border-radius:var(--radius-card)}
+.stat-card{min-width:160px;padding:18px 20px;background:rgba(255,255,255,0.9);box-shadow:0 12px 30px rgba(37,99,235,0.08)}
+.stat-card strong{display:block;font-size:1.45rem;color:var(--accent);letter-spacing:-0.04em}
+.stat-card span{display:block;margin-top:6px;color:var(--text-secondary)}
+
+.hero-visual{position:relative;min-height:520px}
+.visual-card.main{position:relative;height:100%;min-height:520px;overflow:hidden;box-shadow:0 22px 60px rgba(37,99,235,0.15)}
+.visual-card img{width:100%;height:100%;object-fit:cover}
+.visual-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(37,99,235,0.1),rgba(37,99,235,0.65))}
+.visual-copy{position:absolute;left:26px;right:26px;bottom:26px;z-index:1}
+.visual-copy span{display:block;margin-bottom:8px;color:rgba(255,255,255,0.9)}
+.visual-copy strong{display:block;max-width:260px;font-size:1.8rem;line-height:1.08;letter-spacing:-0.04em;color:#fff}
+
+.floating-card{position:absolute;right:26px;bottom:80px;gap:12px;padding:18px 20px;max-width:280px;background:var(--surface-solid-hover);box-shadow:var(--shadow-floating);z-index:10}
+.floating-card strong,.summary-row strong,.service-top strong,.success-card strong{color:var(--accent)}
+.floating-card p{margin:4px 0 0;color:var(--text-secondary)}
+
+.content-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(360px,0.82fr);gap:24px;margin-top:24px;align-items:start}
+.content-column,.booking-column{display:grid;gap:24px}
+.section-card,.booking-card{padding:24px;background:var(--surface-solid);border:1px solid rgba(255,255,255,0.9);box-shadow:var(--shadow-card)}
+.section-heading,.booking-header{flex-direction:column;align-items:flex-start;gap:8px}
+.section-heading h2,.booking-header h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.02}
+
+.intro-card .benefit-list{display:grid;gap:14px;margin-top:22px}
+.benefit-item{gap:14px;padding:16px 18px;border-radius:22px;background:var(--card-bg)}
+.benefit-item p{line-height:1.6}
+.benefit-icon,.success-icon{width:34px;height:34px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;color:#fff;background:var(--accent)}
+
+.service-grid,.professional-grid{display:grid;gap:16px;margin-top:22px}
+.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.service-card{text-align:left;padding:20px;background:var(--card-bg);border:1px solid transparent;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease}
+.service-card:hover,.professional-card:hover,.picker-chip:hover,.time-chip:hover{transform:translateY(-1px)}
+.service-card.active,.professional-card.active,.picker-chip.active,.time-chip.active{border-color:var(--border-active);background:#fff;box-shadow:var(--shadow-card-hover)}
+
+.service-top{gap:12px;align-items:flex-start}
+.service-top h3,.professional-info h3{margin:0;font-size:1.08rem;color:var(--accent)}
+.service-card p{margin-top:12px;line-height:1.6}
+.service-card span{display:inline-block;margin-top:14px;padding:8px 12px;border-radius:var(--radius-button);background:var(--chip-bg);color:var(--text-muted);font-weight:600;font-size:0.88rem}
+
+.professional-card{gap:16px;padding:14px;text-align:left;background:var(--card-bg);border:1px solid transparent;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease}
+.professional-card img{width:96px;height:96px;border-radius:24px;object-fit:cover;flex-shrink:0}
+.professional-info{display:grid;gap:8px}
+.professional-info span{display:block;margin-top:4px;font-size:0.92rem}
+.professional-info p{line-height:1.6}
+
+.booking-column{position:sticky;top:24px}
+.booking-card{gap:20px}
+.section-tag.dark{color:#3b82f6}
+.field-group{display:grid;gap:10px;margin-top:18px}
+.field-group label{font-weight:600;color:#475569}
+.field-group input{padding:16px 18px;border-radius:18px;background:var(--card-bg);border:1px solid transparent;color:var(--text-primary)}
+.field-group input:focus{border-color:var(--border-active);background:#fff}
+
+.picker-group{display:grid;gap:14px;margin-top:22px}
+.picker-label{gap:10px;color:var(--accent);font-weight:700}
+.chip-grid{display:grid;gap:10px}
+.chip-grid.two-columns{grid-template-columns:repeat(2,minmax(0,1fr))}
+.times-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.picker-chip,.time-chip{padding:14px 12px;border-radius:var(--radius-chip);background:var(--card-bg);border:1px solid transparent;transition:transform 0.2s ease,box-shadow 0.2s ease,border-color 0.2s ease}
+.picker-chip{text-align:left}
+.picker-chip strong,.time-chip{color:var(--text-primary)}
+.picker-chip span{display:block;margin-top:4px;color:var(--text-secondary);font-size:0.92rem}
+
+.summary-card{margin-top:22px;padding:18px 18px 6px;background:var(--card-bg)}
+.summary-row{gap:16px;padding-bottom:12px;margin-bottom:12px;border-bottom:1px solid var(--border-subtle)}
+.summary-row.total{border-bottom:0;margin-bottom:0}
+.submit-button{width:100%;margin-top:6px}
+.success-card{gap:14px;margin-top:18px;padding:16px 18px;background:var(--success-bg);border:1px solid var(--success-border)}
+.success-card p{margin-top:6px;line-height:1.6}
+.ui-icon{width:18px;height:18px;flex-shrink:0}
+
+@media(max-width:1100px){.hero-grid,.content-grid{grid-template-columns:1fr}.booking-column{position:static}.floating-card{left:16px}}
+@media(max-width:760px){.booking-app{padding:14px}.hero-shell,.section-card,.booking-card{padding:18px;border-radius:28px}.topbar{flex-direction:column;align-items:flex-start}.topbar-button{width:100%}.service-grid,.chip-grid.two-columns,.times-grid{grid-template-columns:1fr}.visual-card.main,.hero-visual{min-height:420px}.floating-card{position:absolute;left:auto;right:14px;bottom:80px;max-width:280px}.professional-card{align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" data-presets="react">
+const{useState}=React;
+
+const config={business:{name:"Sorriso Perfeito",tagline:"Clínica Odontológica",description:"Agende sua consulta com dentistas especializados em um ambiente moderno, acolhedor e com tecnologia de ponta.",heroImage:"https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",heroOverlayText:"Seu sorriso merece o melhor cuidado.",heroCtaText:"Agendar consulta"},stats:[{value:"5 min",label:"para agendar"},{value:"+2.500",label:"pacientes atendidos"},{value:"4,9/5",label:"avaliação média"}],benefits:["Equipe de dentistas especializados em diversas áreas","Confirmação imediata do agendamento por WhatsApp","Infraestrutura moderna com equipamentos de última geração"],services:[{id:"avaliacao",name:"Avaliação Geral",duration:"30 min",price:"R$ 80",description:"Consulta completa para avaliar sua saúde bucal e criar plano de tratamento."},{id:"limpeza",name:"Limpeza Profissional",duration:"45 min",price:"R$ 150",description:"Profilaxia profissional com ultrassom para remover placa e tártaro."},{id:"clareamento",name:"Clareamento Dental",duration:"60 min",price:"R$ 600",description:"Clareamento a laser seguro e eficaz para um sorriso mais branco."},{id:"tratamento",name:"Tratamento de Canal",duration:"90 min",price:"R$ 1.200",description:"Endodontia com tecnologia de microscopia para maior precisão."}],professionals:[{id:"dra-ana",name:"Dra. Ana Paula",role:"Ortodontista",specialty:"Aparelhos, Invisalign e alinhadores",image:"https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80"},{id:"dr-carlos",name:"Dr. Carlos Eduardo",role:"Implodontista",specialty:"Implantes e reabilitação oral",image:"https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80"},{id:"dra-marina",name:"Dra. Marina Silva",role:"Odontopediatra",specialty:"Atendimento infantil humanizado",image:"https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80"}],timeSlots:["08:00","09:00","10:00","11:00","13:30","14:30","15:30","16:30","17:30","18:30"],introTitle:"Agendamento simples e rápido",servicesTitle:"Escolha seu tratamento",professionalsTitle:"Profissionais especializados"};
+
+function getUpcomingDates(){const fw=new Intl.DateTimeFormat("pt-BR",{weekday:"short"});const fd=new Intl.DateTimeFormat("pt-BR",{day:"2-digit",month:"2-digit"});return Array.from({length:6},(_,i)=>{const d=new Date();d.setDate(d.getDate()+i);const w=fw.format(d).replace(".","").charAt(0).toUpperCase()+fw.format(d).replace(".","").slice(1);const f=fd.format(d);const iso=d.toISOString().split("T")[0];return{id:iso,weekday:w,full:f,label:w+" · "+f}});}
+
+function ArrowRightIcon(){return React.createElement("svg",{className:"ui-icon",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":2},React.createElement("path",{d:"M5 12h14",strokeLinecap:"round"}),React.createElement("path",{d:"m13 6 6 6-6 6",strokeLinecap:"round","stroke-linejoin":"round"}));}
+function CalendarIcon(){return React.createElement("svg",{className:"ui-icon",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":2},React.createElement("rect",{x:3,y:5,width:18,height:16,rx:3}),React.createElement("path",{d:"M8 3v4",strokeLinecap:"round"}),React.createElement("path",{d:"M16 3v4",strokeLinecap:"round"}),React.createElement("path",{d:"M3 10h18",strokeLinecap:"round"}));}
+function ClockIcon(){return React.createElement("svg",{className:"ui-icon",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":2},React.createElement("circle",{cx:12,cy:12,r:9}),React.createElement("path",{d:"M12 7v5l3 2",strokeLinecap:"round","stroke-linejoin":"round"}));}
+function CheckIcon(){return React.createElement("svg",{className:"ui-icon",viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":2},React.createElement("path",{d:"m5 12 4 4L19 6",strokeLinecap:"round","stroke-linejoin":"round"}));}
+
+function App(){
+  const dates=getUpcomingDates();
+  const[selectedServiceId,setSelectedServiceId]=useState(config.services[0].id);
+  const[selectedProfessionalId,setSelectedProfessionalId]=useState(config.professionals[0].id);
+  const[selectedDateId,setSelectedDateId]=useState(dates[0].id);
+  const[selectedTime,setSelectedTime]=useState(config.timeSlots[1]);
+  const[name,setName]=useState("");
+  const[phone,setPhone]=useState("");
+  const[submitted,setSubmitted]=useState(false);
+  const selectedService=config.services.find(s=>s.id===selectedServiceId)??config.services[0];
+  const selectedProfessional=config.professionals.find(p=>p.id===selectedProfessionalId)??config.professionals[0];
+  const selectedDate=dates.find(d=>d.id===selectedDateId)??dates[0];
+
+  function handleSubmit(e){e.preventDefault();setSubmitted(true);}
+
+  return React.createElement("main",{className:"booking-app"},
+    React.createElement("section",{className:"hero-shell"},
+      React.createElement("header",{className:"topbar"},
+        React.createElement("div",{className:"brand"},
+          React.createElement("span",{className:"brand-badge"},"🦷"),
+          React.createElement("div",null,
+            React.createElement("strong",null,config.business.name),
+            React.createElement("p",null,config.business.tagline)
+          )
+        ),
+        React.createElement("a",{className:"topbar-button",href:"#agendar"},"Agendar agora")
+      ),
+      React.createElement("div",{className:"hero-grid"},
+        React.createElement("section",{className:"hero-copy"},
+          React.createElement("span",{className:"eyebrow"},"Odontologia de excelência"),
+          React.createElement("h1",null,"Seu sorriso em boas mãos."),
+          React.createElement("p",null,config.business.description),
+          React.createElement("div",{className:"hero-actions"},
+            React.createElement("a",{className:"primary-action",href:"#agendar"},
+              React.createElement("span",null,config.business.heroCtaText),
+              React.createElement(ArrowRightIcon,null)
+            ),
+            React.createElement("div",{className:"hero-note"},
+              React.createElement(CalendarIcon,null),
+              React.createElement("span",null,"Confirmação imediata por WhatsApp")
+            )
+          ),
+          React.createElement("div",{className:"stats-row"},
+            config.stats.map(item=>React.createElement("div",{className:"stat-card",key:item.label},
+              React.createElement("strong",null,item.value),
+              React.createElement("span",null,item.label)
+            ))
+          )
+        ),
+        React.createElement("aside",{className:"hero-visual"},
+          React.createElement("div",{className:"visual-card main"},
+            React.createElement("img",{src:config.business.heroImage,alt:config.business.name}),
+            React.createElement("div",{className:"visual-overlay"}),
+            React.createElement("div",{className:"visual-copy"},
+              React.createElement("span",null,"Excelência em cada detalhe"),
+              React.createElement("strong",null,config.business.heroOverlayText)
+            )
+          ),
+          React.createElement("div",{className:"floating-card"},
+            React.createElement(ClockIcon,null),
+            React.createElement("div",null,
+              React.createElement("strong",null,"Hoje com disponibilidade"),
+              React.createElement("p",null,"8 horários livres para hoje")
+            )
+          )
+        )
+      )
+    ),
+    React.createElement("section",{className:"content-grid"},
+      React.createElement("section",{className:"content-column"},
+        React.createElement("div",{className:"section-card intro-card"},
+          React.createElement("div",{className:"section-heading"},
+            React.createElement("span",{className:"section-tag"},"Como funciona"),
+            React.createElement("h2",null,config.introTitle)
+          ),
+          React.createElement("div",{className:"benefit-list"},
+            config.benefits.map((b,i)=>React.createElement("div",{className:"benefit-item",key:i},
+              React.createElement("span",{className:"benefit-icon"},React.createElement(CheckIcon,null)),
+              React.createElement("p",null,b)
+            ))
+          )
+        ),
+        React.createElement("div",{className:"section-card"},
+          React.createElement("div",{className:"section-heading"},
+            React.createElement("span",{className:"section-tag"},"Tratamentos"),
+            React.createElement("h2",null,config.servicesTitle)
+          ),
+          React.createElement("div",{className:"service-grid"},
+            config.services.map(s=>React.createElement("button",{
+              key:s.id,className:"service-card "+(selectedServiceId===s.id?"active":""),
+              onClick:()=>setSelectedServiceId(s.id),type:"button"
+            },
+              React.createElement("div",{className:"service-top"},
+                React.createElement("h3",null,s.name),
+                React.createElement("strong",null,s.price)
+              ),
+              React.createElement("p",null,s.description),
+              React.createElement("span",null,s.duration)
+            ))
+          )
+        ),
+        React.createElement("div",{className:"section-card"},
+          React.createElement("div",{className:"section-heading"},
+            React.createElement("span",{className:"section-tag"},"Equipe"),
+            React.createElement("h2",null,config.professionalsTitle)
+          ),
+          React.createElement("div",{className:"professional-grid"},
+            config.professionals.map(p=>React.createElement("button",{
+              key:p.id,className:"professional-card "+(selectedProfessionalId===p.id?"active":""),
+              onClick:()=>setSelectedProfessionalId(p.id),type:"button"
+            },
+              React.createElement("img",{src:p.image,alt:p.name}),
+              React.createElement("div",{className:"professional-info"},
+                React.createElement("div",null,
+                  React.createElement("h3",null,p.name),
+                  React.createElement("span",null,p.role)
+                ),
+                React.createElement("p",null,p.specialty)
+              )
+            ))
+          )
+        )
+      ),
+      React.createElement("aside",{className:"booking-column",id:"agendar"},
+        React.createElement("form",{className:"booking-card",onSubmit:handleSubmit},
+          React.createElement("div",{className:"booking-header"},
+            React.createElement("span",{className:"section-tag dark"},"Agendar"),
+            React.createElement("h2",null,"Reserve sua consulta"),
+            React.createElement("p",null,"Preencha os dados e confirme em menos de 1 minuto.")
+          ),
+          React.createElement("div",{className:"field-group"},
+            React.createElement("label",{htmlFor:"name"},"Seu nome"),
+            React.createElement("input",{id:"name",type:"text",placeholder:"Ex: Maria Silva",value:name,onChange:e=>setName(e.target.value),required:true})
+          ),
+          React.createElement("div",{className:"field-group"},
+            React.createElement("label",{htmlFor:"phone"},"WhatsApp"),
+            React.createElement("input",{id:"phone",type:"tel",placeholder:"(11) 99999-9999",value:phone,onChange:e=>setPhone(e.target.value),required:true})
+          ),
+          React.createElement("div",{className:"picker-group"},
+            React.createElement("div",{className:"picker-label"},
+              React.createElement(CalendarIcon,null),
+              React.createElement("span",null,"Data")
+            ),
+            React.createElement("div",{className:"chip-grid two-columns"},
+              dates.map(d=>React.createElement("button",{
+                key:d.id,className:"picker-chip "+(selectedDateId===d.id?"active":""),
+                onClick:()=>setSelectedDateId(d.id),type:"button"
+              },
+                React.createElement("strong",null,d.weekday),
+                React.createElement("span",null,d.full)
+              ))
+            )
+          ),
+          React.createElement("div",{className:"picker-group"},
+            React.createElement("div",{className:"picker-label"},
+              React.createElement(ClockIcon,null),
+              React.createElement("span",null,"Horário")
+            ),
+            React.createElement("div",{className:"chip-grid times-grid"},
+              config.timeSlots.map(s=>React.createElement("button",{
+                key:s,className:"time-chip "+(selectedTime===s?"active":""),
+                onClick:()=>setSelectedTime(s),type:"button"
+              },s))
+            )
+          ),
+          React.createElement("div",{className:"summary-card"},
+            React.createElement("div",{className:"summary-row"},
+              React.createElement("span",null,"Serviço"),
+              React.createElement("strong",null,selectedService.name)
+            ),
+            React.createElement("div",{className:"summary-row"},
+              React.createElement("span",null,"Profissional"),
+              React.createElement("strong",null,selectedProfessional.name)
+            ),
+            React.createElement("div",{className:"summary-row"},
+              React.createElement("span",null,"Quando"),
+              React.createElement("strong",null,selectedDate.label+" • "+selectedTime)
+            ),
+            React.createElement("div",{className:"summary-row total"},
+              React.createElement("span",null,"Total"),
+              React.createElement("strong",null,selectedService.price)
+            )
+          ),
+          React.createElement("button",{className:"submit-button",type:"submit"},"Confirmar agendamento"),
+          submitted&&React.createElement("div",{className:"success-card"},
+            React.createElement("span",{className:"success-icon"},React.createElement(CheckIcon,null)),
+            React.createElement("div",null,
+              React.createElement("strong",null,"Consulta agendada com sucesso!"),
+              React.createElement("p",null,(name||"Cliente")+", sua consulta de "+selectedService.name.toLowerCase()+" com "+selectedProfessional.name+" ficou para "+selectedDate.label+" às "+selectedTime+". Entraremos em contato pelo WhatsApp.")
+            )
+          )
+        )
+      )
+    )
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(React.createElement(App));
+  </script>
+</body>
+</html>

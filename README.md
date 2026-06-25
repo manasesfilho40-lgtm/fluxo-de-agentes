@@ -6,17 +6,33 @@ Sistema completo de agentes inteligentes para prospeccao de clinicas odontologic
 
 ```
 fluxo-de-agentes/
-├── app.py                 # Backend FastAPI v3.0
-├── index.html             # Frontend completo
-├── .env.example           # Template de configuracao
-├── opencode.json          # Configuracao dos agentes OpenCode
-├── dados/
-│   ├── leads.json         # 13 leads consolidados
-│   ├── analise.json       # Analise de 10 sites
-│   └── analises/          # Analises individuais por clinica
+├── src/                   # Codigo fonte Python
+│   ├── app.py             # Backend FastAPI v3.0
+│   ├── cache.py           # Sistema de cache
+│   ├── scraper_fast.py    # Scraper rapido
+│   └── ...                # Outros scripts Python
+├── scripts/               # Scripts de busca e verificacao
+│   ├── busca_100.js       # Scripts JavaScript
+│   ├── check_*.ps1        # Scripts PowerShell
+│   └── ...                # Outros scripts
+├── leads/                 # Arquivos de leads por cidade
+│   ├── leads.json         # Leads consolidados
+│   ├── leads_sp.json      # Leads Sao Paulo
+│   └── ...                # Outros estados/cidades
+├── dados/                 # Dados e analises
+│   ├── analise.json       # Analise de sites
+│   ├── barbearias_*.json  # Dados de barbearias
+│   └── ...                # Outros dados
+├── config/                # Configuracoes
+│   ├── .env               # Variaveis de ambiente
+│   ├── .env.example       # Template de configuracao
+│   └── opencode.json      # Configuracao dos agentes
+├── templates/             # Templates HTML
+│   └── index.html         # Frontend completo
+├── docs/                  # Documentacao
+├── tests/                 # Testes
 ├── uploads/               # Arquivos enviados
-├── tests/
-│   └── test_api.py        # Testes basicos
+├── backup/                # Backups
 └── .opencode/             # Agentes e skills do OpenCode
 ```
 
@@ -31,11 +47,11 @@ cd fluxo-de-agentes
 pip install -r backend/requirements.txt
 
 # 3. Configurar variaveis de ambiente
-copy .env.example .env
-# 4. Edite .env com suas chaves de API (veja abaixo)
+copy config\.env.example config\.env
+# 4. Edite config\.env com suas chaves de API (veja abaixo)
 
 # 5. Iniciar servidor
-python app.py
+python src/app.py
 ```
 
 Acesse: http://localhost:8000

@@ -1,0 +1,218 @@
+[
+  {
+    "nome": "Nava Barbearia",
+    "segmento": "barbearia",
+    "url": "https://www.navabarbearia.com.br/",
+    "telefone": "(81) 9 8177-4711",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Avenida Conselheiro Aguiar, 2756, Loja 1, Boa Viagem, Recife"
+  },
+  {
+    "nome": "Kaizen Barbearia",
+    "segmento": "barbearia",
+    "url": "https://barbeariakaizen.com/",
+    "telefone": "(81) 983695567",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Av. Caxangá, 4035 – loja 05 – Iputinga, Recife – PE, 50670-000"
+  },
+  {
+    "nome": "Baffi Barbearia",
+    "segmento": "barbearia",
+    "url": "https://baffibarbearia.com.br/",
+    "telefone": "(81) 99125 6083",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Shopping Parnamirim - R. João Tude de Melo, 77 - Loja 10 - Parnamirim, Recife - PE, 52060-010"
+  },
+  {
+    "nome": "Confraria da Barba - Graças",
+    "segmento": "barbearia",
+    "url": "https://www.confrariadabarba.com.br/recife/",
+    "telefone": "(81) 3221-2757",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua do Cupim, 53, Graças - Recife - PE, 52011-070"
+  },
+  {
+    "nome": "Confraria da Barba - Boa Viagem",
+    "segmento": "barbearia",
+    "url": "https://www.confrariadabarba.com.br/recife-boaviagem/",
+    "telefone": "(81) 3465-9408",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Av. Engenheiro Domingos Ferreira, 861 - Boa Viagem - Recife - PE, 51011-051"
+  },
+  {
+    "nome": "Confraria da Barba - Casa Forte",
+    "segmento": "barbearia",
+    "url": "https://www.confrariadabarba.com.br/casa-forte/",
+    "telefone": "(81) 3132-5740",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua Alfredo Fernandes, 61 - Casa Forte - Recife - PE, 52060-320"
+  },
+  {
+    "nome": "Santé Barbearia Premium",
+    "segmento": "barbearia",
+    "url": "https://santebarbearia.com.br/",
+    "telefone": "(81) 92003 3891",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua Cônego Barata, 97 - Tamarineira, Recife - PE"
+  },
+  {
+    "nome": "RM Barbearia",
+    "segmento": "barbearia",
+    "url": "https://rm-barbearia.vercel.app/",
+    "telefone": "(81) 9714-4809",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua Erundina Negreiros de Araújo, 523 - Córrego do Jenipapo, Recife - PE, 52091-026"
+  },
+  {
+    "nome": "Chezz Barbearia - Casa Forte",
+    "segmento": "barbearia",
+    "url": "https://chezz-barbearia-casaforte.localo.site/",
+    "telefone": "+55 81 99272-4994",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Avenida Dezessete de Agosto, 1648, Recife - PE, 52060-485"
+  },
+  {
+    "nome": "Chezz Barbearia - Graças",
+    "segmento": "barbearia",
+    "url": "https://guiapj.com.br/consulta-cnpj/62048960000189",
+    "telefone": "(81) 3019-8491",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua Alberto Paiva, 347, Loja 05, Graças, Recife - PE, 52050-260"
+  },
+  {
+    "nome": "Nox Barbearia",
+    "segmento": "barbearia",
+    "url": "https://barbeariaspertodemim.com/e/nox-barbearia-acksga/",
+    "telefone": "(81) 9-9931-0472",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Av Governador Agamenon Magalhaes, 153, Loja 32 2 Expansao, Santo Amaro, Recife - PE, 50110-000"
+  },
+  {
+    "nome": "Barbearia Emporio da Barba",
+    "segmento": "barbearia",
+    "url": "https://barbeariaspertodemim.com/e/barbearia-emporio-da-barba-bialva/",
+    "telefone": "(81) 9-9707-6687",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Av Conselheiro Rosa e Silva, 670, Sala 0003, Graças, Recife - PE, 52050-245"
+  },
+  {
+    "nome": "Naipe Barber Shop",
+    "segmento": "barbearia",
+    "url": "https://barbeariaspertodemim.com/e/naipe-barber-shop-aoasie/",
+    "telefone": "(81) 9-8820-8963",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Av Santos Dumont, 616, Loja 0005, Graças, Recife - PE, 52050-050"
+  },
+  {
+    "nome": "Woman Barber",
+    "segmento": "barbearia",
+    "url": "https://barbeariaspertodemim.com/e/woman-barber-acmfja/",
+    "telefone": "(81) 9-9750-4000",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua Carlos Pereira Falcao, 509, Loja 0102, Boa Viagem, Recife - PE, 51021-350"
+  },
+  {
+    "nome": "A Barbearia",
+    "segmento": "barbearia",
+    "url": "https://barbeariaspertodemim.com/e/a-barbearia-xqzcs/",
+    "telefone": "(81) 9-9843-8754",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Av Sao Paulo, 485, Loja 02, Jardim São Paulo, Recife - PE, 50781-600"
+  },
+  {
+    "nome": "Barbearia Correia",
+    "segmento": "barbearia",
+    "url": "https://barbeariaspertodemim.com/e/barbearia-correia-apqmbz/",
+    "telefone": "(81) 9-8163-4576",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua Goncalves Dias, 07, Campo Grande, Recife - PE, 52031-040"
+  },
+  {
+    "nome": "Luambarber",
+    "segmento": "barbearia",
+    "url": "https://barbeariaspertodemim.com/e/luambarber-yfwkk/",
+    "telefone": "(81) 9-9708-2854",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua Camaratuba, 280, Casa, Pina, Recife - PE, 51110-070"
+  },
+  {
+    "nome": "Barbearia 13 de Novembro",
+    "segmento": "barbearia",
+    "url": "https://www.salaodebeleza.org/sobre/barbearia-13-de-novembro-recife-pe",
+    "telefone": "(81) 99741-5729",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Av. Expedicionário Francisco Vitoriano, 74 - COHAB, Recife - PE, 51310-000"
+  },
+  {
+    "nome": "Lapidar Salão de Beleza e Barbearia",
+    "segmento": "barbearia",
+    "url": "https://www.salaodebeleza.org/sobre/lapidar-salao-de-beleza-e-barbearia-recife-pe",
+    "telefone": "(81) 3127-4554",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "R. Jean Emile Favre, 769, Ipsep, Recife - PE, 51190-450"
+  },
+  {
+    "nome": "Bigodon Barbearia",
+    "segmento": "barbearia",
+    "url": "https://barbeariaspertodemim.com/e/bigodon-barbearia-amxfra/",
+    "telefone": "(81) 9-8414-0110",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua Visconde de Jequitinhonha, 2466, Boa Viagem, Recife - PE, 51030-020"
+  },
+  {
+    "nome": "Barbearia Deus e Fiel",
+    "segmento": "barbearia",
+    "url": "https://barbeariaspertodemim.com/e/barbearia-deus-e-fiel-azpjva/",
+    "telefone": "(81) 9-9986-4323",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua do Campo, 339, Ilha Joana Bezerra, Recife - PE, 50080-600"
+  },
+  {
+    "nome": "Seu Vitorino Barbearia",
+    "segmento": "barbearia",
+    "url": "https://avaliacoesbrasil.com/barbearia/recife/seu-vitorino-barbearia/",
+    "telefone": "(81) 3033-3399",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "Rua Conde de Irajá, 930 - Torre, Recife - PE, 50710-310"
+  },
+  {
+    "nome": "Barbearia Trois",
+    "segmento": "barbearia",
+    "url": "https://www.riomarrecife.com.br/loja/trois-barbearia",
+    "telefone": "8140043230",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "RioMar Recife - Piso L1"
+  },
+  {
+    "nome": "Coronel Barbershop",
+    "segmento": "barbearia",
+    "url": "https://avaliacoesbrasil.com/barbearia/recife/coronel-barbershop/",
+    "telefone": "(81) 99800-8465",
+    "cidade": "Recife",
+    "estado": "PE",
+    "endereco": "R. Cel. Urbano Ribeiro de Sena, 907 - Cajueiro, Recife - PE, 52221-045"
+  }
+]

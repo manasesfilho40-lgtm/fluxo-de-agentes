@@ -1,0 +1,122 @@
+[
+  {
+    "id": "001",
+    "nome": "Confraria da Barba - Cambuí",
+    "segmento": "barbearia",
+    "url": "https://www.confrariadabarba.com.br/cambui",
+    "telefone": "(19) 3342-3638",
+    "whatsapp": "5519992582266",
+    "email": "atendimento@cambui.confrariadabarba.com.br",
+    "endereco": "Rua Padre Almeida, 238 - Cambuí, Campinas - SP",
+    "cidade": "Campinas",
+    "estado": "SP"
+  },
+  {
+    "id": "002",
+    "nome": "A Barbearia - Nova Campinas",
+    "segmento": "barbearia",
+    "url": "https://www.abarbearia.net/a-barbearia-unidade-nova-campinas",
+    "telefone": "(19) 3388-7820",
+    "whatsapp": "5519989907633",
+    "email": null,
+    "endereco": "Av. Dr. Moraes Salles, 2068 - Nova Campinas, Campinas - SP, 13100-201",
+    "cidade": "Campinas",
+    "estado": "SP"
+  },
+  {
+    "id": "003",
+    "nome": "A Barbearia - Taquaral",
+    "segmento": "barbearia",
+    "url": "https://www.abarbearia.net/a-barbearia-unidade-taquaral",
+    "telefone": "(19) 3368-1477",
+    "whatsapp": "5519986114949",
+    "email": null,
+    "endereco": "Av. Dr. Armando Sales de Oliveira, 625 - Taquaral, Campinas - SP, 13076-015",
+    "cidade": "Campinas",
+    "estado": "SP"
+  },
+  {
+    "id": "004",
+    "nome": "A Barbearia - Cambuí",
+    "segmento": "barbearia",
+    "url": "https://www.abarbearia.net/a-barbearia-unidade-cambui",
+    "telefone": "(19) 3254-0736",
+    "whatsapp": "5519998768710",
+    "email": null,
+    "endereco": "R. Maria Monteiro, 1576 - Cambuí, Campinas - SP, 13025-152",
+    "cidade": "Campinas",
+    "estado": "SP"
+  },
+  {
+    "id": "005",
+    "nome": "A Barbearia - Mansões",
+    "segmento": "barbearia",
+    "url": "https://www.abarbearia.net/a-barbearia-unidade-mansoes",
+    "telefone": "(19) 3296-6162",
+    "whatsapp": "5519994752506",
+    "email": null,
+    "endereco": "R. Adelino Martins, 402 - Mansões Santo Antônio, Campinas - SP, 13087-510",
+    "cidade": "Campinas",
+    "estado": "SP"
+  },
+  {
+    "id": "006",
+    "nome": "Penny Lane Barbershop - Unidade Principal",
+    "segmento": "barbearia",
+    "url": "https://www.pennylanebarbearia.com.br",
+    "telefone": "(19) 3232-7718",
+    "whatsapp": "5519971000070",
+    "email": null,
+    "endereco": "Rua Álvaro Muller, 699 - Vila Itapura, Campinas - SP",
+    "cidade": "Campinas",
+    "estado": "SP"
+  },
+  {
+    "id": "007",
+    "nome": "Penny Lane Barbershop - Cambuí",
+    "segmento": "barbearia",
+    "url": "https://www.pennylanebarbearia.com.br",
+    "telefone": "(19) 3307-7147",
+    "whatsapp": "5519971000070",
+    "email": null,
+    "endereco": "Rua Coronel Quirino, 2009 - Cambuí, Campinas - SP",
+    "cidade": "Campinas",
+    "estado": "SP"
+  },
+  {
+    "id": "008",
+    "nome": "Penny Lane Barbershop - Nova Campinas",
+    "segmento": "barbearia",
+    "url": "https://www.pennylanebarbearia.com.br",
+    "telefone": "(19) 3325-7988",
+    "whatsapp": "5519971000070",
+    "email": null,
+    "endereco": "Av. Moraes Sales, 1340 - Nova Campinas, Campinas - SP",
+    "cidade": "Campinas",
+    "estado": "SP"
+  },
+  {
+    "id": "009",
+    "nome": "Barbearia Zero19",
+    "segmento": "barbearia",
+    "url": "https://barbeariazero19.com.br",
+    "telefone": "(19) 3213-2121",
+    "whatsapp": "5519993499073",
+    "email": null,
+    "endereco": "Av. Império do Sol Nascente, 752 - Jardim Aurélia, Campinas - SP",
+    "cidade": "Campinas",
+    "estado": "SP"
+  },
+  {
+    "id": "010",
+    "nome": "Barbearia Robson",
+    "segmento": "barbearia",
+    "url": null,
+    "telefone": "(19) 98128-7544",
+    "whatsapp": "5519981287544",
+    "email": null,
+    "endereco": "Rua Orlando Carpino, 211 - Jardim Chapadão, Campinas - SP, 13070-143",
+    "cidade": "Campinas",
+    "estado": "SP"
+  }
+]

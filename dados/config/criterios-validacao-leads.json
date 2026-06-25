@@ -1,0 +1,95 @@
+{
+  "descricao": "Configuracao de criterios de validacao de leads para prospecao B2B",
+  "versao": "2.0",
+  "data_atualizacao": "2026-06-24",
+  "campanha_atual": "site-hunter-odontologia-petshop",
+  "nichos_alvo": ["odontologia", "pet_shop"],
+  "criterios_validacao": {
+    "odontologia": {
+      "nome_nicho": "Clinicas Odontologicas",
+      "avaliacoes_minimas": 40,
+      "categorias_permitidas": [
+        "Clínica odontológica",
+        "Dentista",
+        "Consultório odontológico",
+        "Implante dentário",
+        "Ortodontia"
+      ],
+      "red_flags": [
+        "Menos de 40 avaliacoes",
+        "Categoria nao e odontologica (ex: clinica geral)",
+        "Site inativo ou sem presenca online",
+        "Sem telefone ou contato"
+      ],
+      "bonus_prioridade": {
+        "descricao": "2 ou mais dentistas no mesmo local",
+        "racional": "Agenda mais complexa = dor maior = maior necessidade de solucao",
+        "campo_coleta": "num_dentistas"
+      },
+      "strings_busca": [
+        "clinica odontologica",
+        "dentista",
+        "implante dental",
+        "ortodontia",
+        "endodontia",
+        "clinica dental",
+        "odontologia estetica"
+      ]
+    },
+    "pet_shop": {
+      "nome_nicho": "Pet Shops (Banho e Tosa)",
+      "avaliacoes_minimas": 30,
+      "categorias_permitidas": [
+        "Pet shop",
+        "Banho e tosa",
+        "Tosa higienica",
+        "Pet shop com banho e tosa"
+      ],
+      "red_flags": [
+        "Menos de 30 avaliacoes",
+        "Apenas loja de produtos sem servico de banho/tosa",
+        "E clinica veterinaria (nicho separado)",
+        "Site inativo ou sem presenca online",
+        "Sem telefone ou contato"
+      ],
+      "bonus_prioridade": {
+        "descricao": "Oferece delivery, buscar e levar, ou servico a domicilio",
+        "racional": "Ja tem operacao logistica. Agenda e o proximo gargalo obvio.",
+        "campo_coleta": "tem_delivery"
+      },
+      "strings_busca": [
+        "pet shop",
+        "banho e tosa",
+        "tosa higienica",
+        "pet shop delivery",
+        "buscar e levar pet",
+        "tosa a domicilio",
+        "pet shop com delivery"
+      ]
+    }
+  },
+  "regras_gerais": {
+    "cities_prioritarias": [
+      "Sao Paulo", "Campinas", "Santos", "Ribeirao Preto",
+      "Rio de Janeiro", "Niteroi", "Campos dos Goytacazes",
+      "Belo Horizonte", "Uberlandia", "Juiz de Fora",
+      "Salvador", "Feira de Santana",
+      "Porto Alegre", "Caxias do Sul", "Gramado",
+      "Curitiba", "Londrina", "Maringa",
+      "Florianopolis", "Joinville", "Blumenau",
+      "Recife", "Olinda",
+      "Fortaleza",
+      "Goiania"
+    ],
+    "diretorios_busca": [
+      "empresas.com.br",
+      "lista.com.br",
+      "solutudo.com.br",
+      "guiamais.com.br",
+      "citygoog.com.br",
+      "ibi7.com.br"
+    ],
+    "formato_saida": "leads.json",
+    "delay_entre_requisicoes_seg": "2-5"
+  }
+}

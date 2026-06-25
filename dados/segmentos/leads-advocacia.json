@@ -1,0 +1,118 @@
+[
+  {
+    "id": "adv-001",
+    "nome": "Azevedo & Advogados Associados",
+    "segmento": "advocacia",
+    "url": "https://azevedoeadvogados.com.br",
+    "telefone": "(11) 3355-7788",
+    "whatsapp": "551133557788",
+    "email": "contato@azevedoeadvogados.com.br",
+    "endereco": "Av. Paulista, 1578 - Conjunto 1204, Bela Vista - São Paulo, SP",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "score_visual": 2,
+    "problemas_encontrados": [
+      "Design antiquado (site de 2008)",
+      "Cores institucionales azul e dourado sem harmonia",
+      "Sem versão mobile",
+      "Sem botão de WhatsApp",
+      "Menu confuso com 12 itens",
+      "Letra pequena e ilegível",
+      "Sem depoimentos ou cases",
+      "CTA 'Contato' perdido no menu"
+    ],
+    "dados_extraidos": {
+      "socios": ["Dr. Carlos Roberto de Azevedo - OAB/SP 45.678"],
+      "anos_experiencia": 25,
+      "areas_atuacao": ["Direito Civil", "Direito Trabalhista", "Direito Empresarial"],
+      "resultados": ["R$ 15Mi em recuperações"]
+    },
+    "data_encontro": "2026-06-16"
+  },
+  {
+    "id": "adv-002",
+    "nome": "Moreno Sociedade de Advogados",
+    "segmento": "advocacia",
+    "url": "https://morenoadvogados.com.br",
+    "telefone": "(11) 3834-2233",
+    "whatsapp": "551138342233",
+    "email": "contato@morenoadvogados.com.br",
+    "endereco": "Rua Augusta, 2520 - Sala 12, Consolação - São Paulo, SP",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "score_visual": 3,
+    "problemas_encontrados": [
+      "WordPress com tema genérico 'LegalPress'",
+      "Banner com slider pesado e lento",
+      "Cores azul e dourado clichê",
+      "Sem área de atuação destacada",
+      "Depoimentos com foto de banco",
+      "Sem statistics ou números",
+      "Telefone pequeno no header"
+    ],
+    "dados_extraidos": {
+      "socios": ["Dra. Patricia Moreno - OAB/SP 78.901", "Dr. Fernando Moreno - OAB/SP 56.432"],
+      "anos_experiencia": 18,
+      "areas_atuacao": ["Direito de Família", "Direito Sucessório", "Direito Contratual"],
+      "resultados": ["500+ casos resolvidos"]
+    },
+    "data_encontro": "2026-06-16"
+  },
+  {
+    "id": "adv-003",
+    "nome": "Lima & Carvalho Advogados",
+    "segmento": "advocacia",
+    "url": "https://limacarvalhoadvogados.com.br",
+    "telefone": "(11) 3055-9900",
+    "whatsapp": "551130559900",
+    "email": "atendimento@limacarvalhoadv.com.br",
+    "endereco": "Av. Faria Lima, 3505 - 15º andar, Itaim Bibi - São Paulo, SP",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "score_visual": 4,
+    "problemas_encontrados": [
+      "HTML antigo com tabelas de layout",
+      "Popup de 'Consulte agora' irritante",
+      "Sem responsividade",
+      "Imagens pixelizadas",
+      "Fundo azul-gradient horrível",
+      "Sem informações de equipe",
+      "Copy genérico 'Advocacia de excelência'"
+    ],
+    "dados_extraidos": {
+      "socios": ["Dr. Roberto Lima - OAB/SP 34.567", "Dra. Ana Paula Carvalho - OAB/SP 89.012"],
+      "anos_experiencia": 22,
+      "areas_atuacao": ["Direito Empresarial", "Direito Tributário", "Direito Societário"],
+      "resultados": ["100+ empresas atendidas"]
+    },
+    "data_encontro": "2026-06-16"
+  },
+  {
+    "id": "adv-004",
+    "nome": "Santos & Nakamura Advogados",
+    "segmento": "advocacia",
+    "url": "https://santosnakamura.adv.br",
+    "telefone": "(11) 3223-4455",
+    "whatsapp": "551132234455",
+    "email": "contato@santosnakamura.adv.br",
+    "endereco": "Rua da Consolação, 2477 - Conjunto 52, Consolação - São Paulo, SP",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "score_visual": 3,
+    "problemas_encontrados": [
+      "Site com problemas de carregamento",
+      "Menu dropdown quebrado",
+      "Sem página de áreas de atuação",
+      "Texto corrido sem hierarquia",
+      "Links quebrados para páginas internas",
+      "Footer incompleto sem endereço completo"
+    ],
+    "dados_extraidos": {
+      "socios": ["Dr. Marcos Santos - OAB/SP 23.456", "Dr. Eduardo Nakamura - OAB/SP 67.890"],
+      "anos_experiencia": 15,
+      "areas_atuacao": ["Direito Civil", "Direito do Consumidor", "Responsabilidade Civil"],
+      "resultados": ["95% de casos favoráveis"]
+    },
+    "data_encontro": "2026-06-16"
+  }
+]

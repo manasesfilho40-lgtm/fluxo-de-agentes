@@ -1,0 +1,315 @@
+{
+  "analysis_date": "2026-06-18",
+  "objective": "Analyze professional Brazilian restaurant website design patterns vs AI-generated look",
+  "sites_analyzed": [
+    {
+      "restaurant": "Restaurante America",
+      "url": "https://www.restauranteamerica.com.br/",
+      "fetch_status": "success",
+      "segment": "American/burger restaurant - 40+ years, 14 locations in São Paulo",
+      "technology_stack": {
+        "cms": "WordPress 6.1.10",
+        "page_builder": "Elementor Pro 3.9.2",
+        "theme": "OceanWP 1.8.4",
+        "plugins": ["Contact Form 7 5.7.2", "Sticky Header", "Google Site Kit", "Click to Chat WhatsApp"],
+        "analytics": "Google Analytics 4 + Google Ads",
+        "cdn_fonts": "Google Fonts"
+      },
+      "color_palette": {
+        "primary": "Dark/black header with white text",
+        "accent": "Warm tones from food photography (reds, oranges, browns)",
+        "background": "White (#ffffff) for content, dark overlays on images",
+        "text": "Dark text on light backgrounds, white text on dark/image backgrounds",
+        "observation": "Colors are driven by photography rather than a strict brand palette - the food IS the color scheme"
+      },
+      "typography": {
+        "heading_fonts": ["Roboto Slab (serif)", "Abril Fatface (display serif)"],
+        "body_fonts": ["Roboto (sans-serif)", "Montserrat (sans-serif)"],
+        "font_weights_used": "400, 500, 600, 700",
+        "observation": "Mix of slab serif for headings (warmth, tradition) with clean sans-serif for readability. NOT using generic fonts like Arial"
+      },
+      "layout_structure": {
+        "header": {
+          "type": "Transparent/sticky header over hero",
+          "elements": ["Logo (left)", "Navigation center", "Social icons (right)"],
+          "behavior": "Shrinks on scroll (sticky header plugin)"
+        },
+        "hero_section": {
+          "type": "Full-width image slider/carousel",
+          "elements": ["Food photography background", "Dish name overlay", "Short description", "CTA button to menu"],
+          "slides": ["Polpettone", "Burger Patriota", "Salmão Mediterrâneo", "Farofino", "Promo Colombos"],
+          "navigation": "Arrow controls, autoplay 5s"
+        },
+        "sections_order": [
+          "Hero slider",
+          "O America (about/brand story)",
+          "Delivery (iFood integration)",
+          "Restaurantes (all 14 locations with hours)",
+          "Fale Conosco (contact)"
+        ],
+        "grid": "Boxed container (not full-width), centered content"
+      },
+      "navigation_style": {
+        "type": "Horizontal centered nav",
+        "items": ["O AMERICA", "CARDÁPIO", "DELIVERY", "RESTAURANTES", "FALE CONOSCO"],
+        "mobile": "Hamburger menu",
+        "font": "Uppercase, Montserrat",
+        "hover_effect": "Underline fade animation",
+        "behavior": "Anchor links to sections on single page"
+      },
+      "image_usage": {
+        "hero": "Large, professional food photography with shallow depth of field",
+        "about_section": "Restaurant interior/atmosphere shot",
+        "delivery_section": "Food + iFood logo",
+        "locations": "None (text-only location listing)",
+        "contact": "Food photo as background",
+        "quality": "HIGH - professional food photography, proper lighting, appetizing styling",
+        "format": "WebP/optimized, lazy loading"
+      },
+      "what_makes_it_look_professional": [
+        "Professional food photography with consistent style (warm tones, shallow DOF)",
+        "Real brand with 40 years of history - specific, authentic content",
+        "Multiple real locations with specific addresses and hours",
+        "Integration with iFood (real delivery platform)",
+        "Social media links to active accounts (@americaburger)",
+        "Real email addresses for different departments",
+        "WhatsApp plugin for instant contact",
+        "Specific promotional content (Colombos promotion with PDF regulation)",
+        "Reservation system link (usetag.me)",
+        "Cookie consent banner (GDPR compliance)",
+        "Google Analytics and Ads tracking",
+        "Subtle animations (hover effects, slider transitions)",
+        "Responsive design with mobile menu"
+      ],
+      "what_would_make_it_look_AI_generated": [
+        "Too-perfect symmetry in layout",
+        "Generic stock food photos instead of actual restaurant food",
+        "Perfectly balanced color palette (real sites are messier)",
+        "Lack of specific, quirky details",
+        "No real social proof (reviews, press mentions)",
+        "Copyright date stuck at 2022"
+      ]
+    },
+    {
+      "restaurant": "Mocotó",
+      "url": "https://mocoto.com.br/",
+      "fetch_status": "partial - blocked by server, data from search results and cached pages",
+      "segment": "Brazilian sertaneja food - since 1973, Michelin Bib Gourmand, 63rd best in Latin America",
+      "technology_stack": {
+        "cms": "WordPress",
+        "design_agency": "galpaodecriacao.com.br",
+        "custom_development": "Yes - highly custom WordPress theme",
+        "reservation": "GetInApp widget",
+        "delivery": "iFood integration",
+        "payments": "Cielo checkout (gift cards)"
+      },
+      "color_palette": {
+        "primary": "Earth tones - warm browns, terracotta, cream",
+        "accent": "Deep greens, muted yellows",
+        "background": "Warm off-white/cream backgrounds",
+        "text": "Dark brown/charcoal on light, cream on dark",
+        "observation": "Earth tones that evoke the Sertão (Brazilian countryside) - colors match the brand story perfectly"
+      },
+      "typography": {
+        "heading_fonts": ["Custom/display serif with mixed case"],
+        "body_fonts": ["Clean sans-serif"],
+        "special_effect": "Mixed capitalization pattern: 'o r e sTauRante', 'meNu', 't eaM'",
+        "observation": "HIGHLY DISTINCTIVE typography - the mixed case is intentional brand personality. This is NOT something AI would generate. It's a design choice that makes the brand memorable"
+      },
+      "layout_structure": {
+        "sections_order": [
+          "The Restaurant (brand story with recognition/awards)",
+          "Menu (with Portuguese/English/Emporium tabs)",
+          "Team (chef profiles with real stories)",
+          "Contact + Reservation",
+          "Job Application",
+          "Pet-Friendly Policy",
+          "Gift Cards"
+        ],
+        "grid": "Full-width sections with centered content",
+        "spacing": "Generous whitespace, editorial feel"
+      },
+      "navigation_style": {
+        "type": "Minimal, possibly hidden or hamburger-only",
+        "observation": "Site prioritizes content over navigation - editorial approach"
+      },
+      "image_usage": {
+        "hero": "Restaurant atmosphere and food photography",
+        "team": "Real chef photos with authentic backstories",
+        "observation": "Images tell a story of authenticity and craft"
+      },
+      "what_makes_it_look_professional": [
+        "Authentic brand story spanning 50+ years (since 1973)",
+        "Real awards and recognition (Michelin Bib Gourmand, World Restaurant Awards, 63rd in Latin America)",
+        "Specific, unique typography choices (mixed case) that show deliberate brand personality",
+        "Real team members with genuine backstories",
+        "Pet-friendly policy with specific rules (shows real operational detail)",
+        "Gift card system with real terms and conditions",
+        "Job application form with specific questions",
+        "Designed by a real agency (galpaodecriacao.com.br)",
+        "Multiple locations with specific addresses",
+        "Reservation system integration",
+        "Dual language support (Portuguese/English)",
+        "Editorial content approach - not just selling, telling a story"
+      ],
+      "what_would_make_it_look_AI_generated": [
+        "Perfectly consistent typography (the mixed case proves it's human-designed)",
+        "Stock photos instead of real team photos",
+        "Generic 'about us' text without specific awards/details",
+        "Perfectly symmetrical layouts",
+        "Lack of quirky brand voice"
+      ]
+    },
+    {
+      "restaurant": "Cantino Domingos",
+      "url": "https://www.cantinodomingos.com.br/",
+      "fetch_status": "failed - server blocked automated access",
+      "segment": "Traditional Italian restaurant in São Paulo",
+      "notes": "Could not directly access the website. Analysis based on domain patterns and context from similar traditional Italian restaurants in SP",
+      "inferred_patterns_from_similar_traditional_SP_italian_restaurants": {
+        "typical_colors": ["Deep reds/burgundy", "Gold/cream", "Dark wood browns", "White/cream"],
+        "typical_typography": ["Serif fonts for elegance", "Script/cursive for Italian feel", "Classic sans-serif for body"],
+        "typical_sections": ["History/tradition", "Menu (cardápio)", "Reservations", "Events", "Gallery"],
+        "typical_elements": ["Family photos", "Italian heritage imagery", "Wine references", "Traditional decor photos"]
+      }
+    }
+  ],
+  "professional_vs_ai_generated_patterns": {
+    "color_palettes": {
+      "professional_patterns": [
+        "Colors emerge FROM the brand story (Mocotó = Sertão earth tones)",
+        "Not perfectly balanced - intentional asymmetry",
+        "Photography drives the color scheme (food IS the palette)",
+        "Muted/warm tones for restaurants (not neon/bright)",
+        "2-3 core colors max, rest comes from photography"
+      ],
+      "ai_generated_tells": [
+        "Perfectly complementary color wheels",
+        "Too many colors or too-perfect gradients",
+        "Neon or overly saturated primary colors",
+        "Colors that don't relate to the food/cuisine type",
+        "Every section has a different background color"
+      ]
+    },
+    "typography": {
+      "professional_patterns": [
+        "1-2 font families maximum",
+        "Serif for headings (warmth, tradition) + Sans-serif for body (readability)",
+        "Intentional, quirky typography choices (Mocotó's mixed case)",
+        "Font weights used strategically (bold for emphasis, light for secondary)",
+        "Letter-spacing adjustments for uppercase text",
+        "Google Fonts loaded efficiently"
+      ],
+      "ai_generated_tells": [
+        "3+ different font families",
+        "Perfectly matching fonts that feel generic",
+        "No intentional 'imperfections' in typography",
+        "All text the same size/weight",
+        "Script fonts used randomly",
+        "Font choices that don't match the brand personality"
+      ]
+    },
+    "layout": {
+      "professional_patterns": [
+        "Single-page with anchor navigation (Restaurante America)",
+        "Editorial/storytelling layout (Mocotó)",
+        "Hero = food photography, NOT stock images",
+        "Content flows logically: Story → Food → Locations → Contact",
+        "Whitespace used generously",
+        "Boxed content within full-width sections",
+        "Sticky header that transforms on scroll",
+        "Mobile-first responsive design"
+      ],
+      "ai_generated_tells": [
+        "Every section has identical card layouts",
+        "Perfectly centered everything",
+        "Symmetrical grids with no visual hierarchy",
+        "Stock photography instead of real photos",
+        "Generic template feel",
+        "No scroll animations or transitions"
+      ]
+    },
+    "content_and_copy": {
+      "professional_patterns": [
+        "Specific, factual claims (40 years, 14 locations, 63rd best)",
+        "Real awards and certifications (Michelin, World Restaurant Awards)",
+        "Authentic brand voice with personality",
+        "Real addresses, phone numbers, emails",
+        "Integration with real platforms (iFood, GetInApp, Cielo)",
+        "Legal documents (promotion regulations, terms and conditions)",
+        "Department-specific contact info",
+        "Real team member profiles with genuine stories"
+      ],
+      "ai_generated_tells": [
+        "Generic marketing speak ('best food in town')",
+        "No specific facts or numbers",
+        "Perfectly polished copy with no personality",
+        "Fake reviews or testimonials",
+        "Placeholder phone numbers/emails",
+        "No real integrations"
+      ]
+    },
+    "technical_indicators": {
+      "professional_signals": [
+        "Cookie consent banner (GDPR compliance)",
+        "Google Analytics + Ads tracking",
+        "Real CMS with version numbers",
+        "Custom domain with SSL",
+        "Social media links to active accounts",
+        "Real third-party integrations",
+        "Proper meta tags and SEO",
+        "Schema.org markup",
+        "Working contact forms",
+        "Real reservation systems"
+      ],
+      "ai_generated_tells": [
+        "No analytics tracking",
+        "Generic hosting/platform signatures",
+        "Missing or broken social links",
+        "No real integrations",
+        "Placeholder content",
+        "Missing meta tags",
+        "No SSL or custom domain"
+      ]
+    }
+  },
+  "key_takeaways_for_building_authentic_restaurant_sites": {
+    "must_have_elements": [
+      "Real, professional food photography (not stock)",
+      "Authentic brand story with specific details",
+      "Real contact info (phone, WhatsApp, email)",
+      "Actual location(s) with address and hours",
+      "Integration with delivery platforms (iFood)",
+      "Reservation system",
+      "Social media links to real accounts",
+      "Mobile responsive design",
+      "Cookie consent and analytics",
+      "WhatsApp for instant contact"
+    ],
+    "design_principles": [
+      "Let photography drive the color palette",
+      "Use serif + sans-serif font pairing",
+      "Tell a story, don't just sell",
+      "Include real team/chef profiles",
+      "Show real awards and recognition",
+      "Use generous whitespace",
+      "Make navigation simple and intuitive",
+      "Add subtle animations (not flashy)",
+      "Include specific operational details",
+      "Have a unique brand voice"
+    ],
+    "common_sections_for_restaurants": [
+      "Hero with signature dish photography",
+      "Brand story / About the restaurant",
+      "Menu / Cardápio (with prices or link to PDF)",
+      "Delivery integration (iFood logo + link)",
+      "Gallery / Ambiance photos",
+      "Locations with addresses and hours",
+      "Team / Chef profiles",
+      "Reservations",
+      "Contact (form + WhatsApp + phone)",
+      "Social media feed or links",
+      "Footer with all info"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "name": "google-maps-odontologia-petshop-brasil",
+  "title": "Google Maps Scraper - Odontologia & Pet Shop Brasil",
+  "description": "Busca clinicas odontologicas (40+ avaliacoes) e pet shops banho/tosa (30+ avaliacoes) no Brasil via Google Maps",
+  "version": "1.0",
+  "meta": {
+    "templateId": "google-maps-scraper"
+  },
+  "input": {
+    "searchTerms": [
+      "clinica odontologica Sao Paulo",
+      "dentista Rio de Janeiro",
+      "implante dental Belo Horizonte",
+      "ortodontia Curitiba",
+      "pet shop Sao Paulo",
+      "banho e tosa Rio de Janeiro",
+      "pet shop delivery Belo Horizonte",
+      "tosa higienica Curitiba"
+    ],
+    "locationQuery": "Brasil",
+    "maxPlaces": 500,
+    "language": "pt-BR",
+    "maxReviews": 0,
+    "maxImages": 0,
+    "skipClosed": true,
+    "onlyOpenNow": false,
+    "minRating": 3.5,
+    "maxRating": 5,
+    "minReviews": 30,
+    "maxReviews": 10000,
+    "categoryFilters": [
+      "dentist",
+      "dental_clinic",
+      "pet_store",
+      "pet_groomer"
+    ],
+    "exportFormat": "json",
+    "includeWebsites": true,
+    "includePhones": true,
+    "includeEmails": false,
+    "includeAddress": true,
+    "includePlusCode": false,
+    "includeOpeningHours": true,
+    "includePopularTimes": false,
+    "includeReviews": false,
+    "includeReviewText": false,
+    "includeOwnerResponse": false,
+    "customFields": [
+      "category",
+      "categories",
+      "placeId",
+      "cid",
+      "location",
+      "website",
+      "phone",
+      "phoneUnformatted",
+      "fullAddress",
+      "street",
+      "city",
+      "state",
+      "postalCode",
+      "countryCode",
+      "neighborhood",
+      "rating",
+      "reviewsCount",
+      "priceLevel",
+      "permanentlyClosed",
+      "temporarilyClosed",
+      "openingHours",
+      "popularTimes",
+      "reviews",
+      "ownerResponse"
+    ]
+  },
+  "options": {
+    "build": "latest",
+    "memoryMbytes": 4096,
+    "timeoutSecs": 3600,
+    "maxPaidDatasetItems": 10000
+  }
+}

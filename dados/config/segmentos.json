@@ -1,45 +1,46 @@
 {
-  "descricao": "Configuracao de segmentos/niches de negocio suportados pelo sistema",
+  "descricao": "Configuracao de segmentos/niches de negocio - Foco: Odontologia e Pet Shop",
+  "versao": "2.0",
+  "data_atualizacao": "2026-06-24",
+  "segmentos_foco": ["odontologia", "pet_shop"],
   "segmentos": [
-    {
-      "slug": "advocacia",
-      "nome": "Escritorios de Advocacia",
-      "singular": "Escritorio de Advocacia",
-      "palavras_chave": ["advogado", "advocacia", "direito", "escritorio juridico", "consultoria juridica", "advogado corporativo", "sociedade de advogados"],
-      "diretorio_saida": "sites-advocacia",
-      "paginas": ["index.html", "areas.html", "sobre.html", "equipe.html", "contato.html"],
-      "referencias": {
-        "premium": ["Clio", "FindLaw", "Morgan & Morgan", "Lawyer Monthly"],
-        "inspiracao": ["Land-book", "Lapa Ninja", "Awwwards"],
-        "urls": ["https://www.clio.com", "https://www.findlaw.com", "https://www.morganlaw.com"]
-      },
-      "estrutura": {
-        "hero": {
-          "titulo": "Autoridade e experiência em [Área do Direito]",
-          "subtitulo": "Mais de [X] anos defendendo seus direitos com excelência",
-          "cta_principal": "Fale com um Advogado",
-          "cta_secundario": "Conheça Nossa Equipe"
-        },
-        "secoes": [
-          {"nome": "Resultados", "descricao": "Casos exitosos e valores recuperados"},
-          {"nome": "Áreas de Atuação", "descricao": "列表 de áreas do direito"},
-          {"nome": "Depoimentos", "descricao": "Clientes satisfeitos"},
-          {"nome": "Sobre o Escritório", "descricao": "Historia e valores"},
-          {"nome": "CTA", "descricao": "Consulta inicial gratuita"}
-        ],
-        "cor_secundaria": "#1E3A5F",
-        "cor_acento": "#C9A227"
-      },
-      "ctas": ["Fale com um Advogado", "Solicite Consulta", "Conheça Nossa Equipe", "Baixe Guia de Direitos"],
-      "dados_obrigatorios": ["nome_socios", "oab", "anos_experiencia", "areas_atuacao", "resultados_conquistados"]
-    },
     {
       "slug": "odontologia",
       "nome": "Clinicas Odontologicas",
       "singular": "Clinica Odontologica",
-      "palavras_chave": ["dentista", "odontologia", "implante", "ortodontia", "clinica dental", "tratamento dental"],
+      "palavras_chave": [
+        "clinica odontologica",
+        "dentista",
+        "implante dental",
+        "ortodontia",
+        "endodontia",
+        "clinica dental",
+        "odontologia estetica",
+        "protese dental",
+        "clareamento dental"
+      ],
       "diretorio_saida": "sites-odontologia",
       "paginas": ["index.html", "servicos.html", "sobre.html", "equipe.html", "depoimentos.html", "contato.html"],
+      "validacao_lead": {
+        "avaliacoes_minimas": 40,
+        "categorias_permitidas": [
+          "Clínica odontológica",
+          "Dentista",
+          "Consultório odontológico",
+          "Implante dentário",
+          "Ortodontia"
+        ],
+        "red_flags": [
+          "Menos de 40 avaliacoes",
+          "Categoria nao e odontologica (ex: clinica geral)",
+          "Site inativo ou sem presenca online"
+        ],
+        "bonus_prioridade": {
+          "descricao": "2 ou mais dentistas no mesmo local",
+          "racional": "Agenda mais complexa = dor maior = maior necessidade de solucao de gestao",
+          "campo_coleta": "num_dentistas"
+        }
+      },
       "referencias": {
         "premium": ["Nuffield Dental", "Mayo Clinic Dentistry", "Crains Dental", "Ideal Sleep Dentistry"],
         "inspiracao": ["Land-book", "Lapa Ninja", "Awwwards", "Dribbble Healthcare"],
@@ -55,289 +56,110 @@
         "secoes": [
           {"nome": "Antes e Depois", "descricao": "Resultados reais de pacientes"},
           {"nome": "Equipe", "descricao": "Dentistas especializados"},
-          {"nome": "Tratamentos", "descricao": "Serviços ofrecidos"},
-          {"nome": "Avaliações", "descricao": "Depoimentos no Google"},
-          {"nome": "Agendamento", "descricao": "WhatsApp ou formulário"}
+          {"nome": "Tratamentos", "descricao": "Servicos oferecidos"},
+          {"nome": "Avaliacoes", "descricao": "Depoimentos no Google"},
+          {"nome": "Agendamento", "descricao": "WhatsApp ou formulario"}
         ],
         "cor_secundaria": "#3B82F6",
         "cor_acento": "#10B981"
       },
       "ctas": ["Agende sua Avaliação Gratuita", "Veja Antes e Depois", "Fale pelo WhatsApp", "Conheça Nossa Equipe"],
-      "dados_obrigatorios": ["dentistas", "especialidades", "tratamentos_oferecidos", "齐齐哈尔", "Convenios"]
+      "dados_obrigatorios": ["dentistas", "especialidades", "tratamentos_oferecidos", "convenios"]
     },
     {
-      "slug": "imobiliaria",
-      "nome": "Imobiliarias e Corretoras",
-      "singular": "Imobiliaria",
-      "palavras_chave": ["imobiliaria", "corretor de imoveis", "imoveis", "aluguel", "venda de casas", "apartamento", "lancamentos", "incorporadora"],
-      "diretorio_saida": "sites-imobiliaria",
-      "paginas": ["index.html", "imoveis.html", "sobre.html", "corretores.html", "contato.html"],
+      "slug": "pet_shop",
+      "nome": "Pet Shops (Banho e Tosa)",
+      "singular": "Pet Shop",
+      "palavras_chave": [
+        "pet shop",
+        "banho e tosa",
+        "tosa higienica",
+        "pet shop delivery",
+        "buscar e levar pet",
+        "tosa a domicilio",
+        "pet shop com delivery",
+        "hospedagem pet",
+        "cuidador de animais"
+      ],
+      "diretorio_saida": "sites-pet-shop",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "produtos.html"],
+      "validacao_lead": {
+        "avaliacoes_minimas": 30,
+        "categorias_permitidas": [
+          "Pet shop",
+          "Banho e tosa",
+          "Tosa higienica",
+          "Pet shop com banho e tosa"
+        ],
+        "red_flags": [
+          "Menos de 30 avaliacoes",
+          "Apenas loja de produtos sem servico de banho/tosa",
+          "E clinica veterinaria (nicho separado)",
+          "Site inativo ou sem presenca online"
+        ],
+        "bonus_prioridade": {
+          "descricao": "Oferece delivery, buscar e levar, ou servico a domicilio",
+          "racional": "Ja tem operacao logistica. Agenda e o proximo gargalo obvio = propensao a investir",
+          "campo_coleta": "tem_delivery"
+        }
+      },
       "referencias": {
-        "premium": ["Compass", "Sotheby's International Realty", "Coldwell Banker", "Berkshire Hathaway"],
-        "inspiracao": ["Land-book", "Lapa Ninja", "Awwwards", "Siteinspire"],
-        "urls": ["https://www.compass.com", "https://www.sothebysrealty.com", "https://www.coldwellbanker.com"]
+        "premium": ["PetSmart", "Petco", "Chewy", "Pet Paradise"],
+        "inspiracao": ["Land-book", "Lapa Ninja", "Awwwards", "Dribbble Pets"],
+        "urls": ["https://www.petsmart.com", "https://www.petco.com", "https://www.chewy.com"]
       },
       "estrutura": {
         "hero": {
-          "titulo": "Encontre o imóvel dos seus sonhos",
-          "subtitulo": "Mais de [X] imóveis disponíveis em [Cidade]",
-          "cta_principal": "Buscar Imóveis",
-          "cta_secundario": "Fale com um Corretor"
+          "titulo": "Cuidamos do seu pet como se fosse nosso",
+          "subtitulo": "Banho, tosa e servicos com muito carinho e profissionalismo",
+          "cta_principal": "Agende seu Horario",
+          "cta_secundario": "Conheça Nossos Servicos"
         },
         "secoes": [
-          {"nome": "Busca de Imóveis", "descricao": "Filtros por tipo, bairro, preço"},
-          {"nome": "Em Destaque", "descricao": "Imóveis selecionados"},
-          {"nome": "Corretores", "descricao": "Equipe especializada"},
-          {"nome": "Bairros/Regiões", "descricao": "Cobertura por área"},
-          {"nome": "Formulário", "descricao": "Contato e simulação"}
+          {"nome": "Servicos", "descricao": "Banho, tosa, hospedagem"},
+          {"nome": "Galeria", "descricao": "Fotos dos pets atendidos"},
+          {"nome": "Avaliacoes", "descricao": "Depoimentos dos tutores"},
+          {"nome": "Planos", "descricao": "Pacotes e assinaturas"},
+          {"nome": "Localizacao", "descricao": "Mapa e endereco"}
         ],
-        "cor_secundaria": "#1C1917",
-        "cor_acento": "#B87D5E"
+        "cor_secundaria": "#F59E0B",
+        "cor_acento": "#EF4444"
       },
-      "ctas": ["Buscar Imóveis", "Agendar Visita", "Solicitar Proposta", "Falar com Corretor"],
-      "dados_obrigatorios": ["imoveis_em_destaque", "bairros_atendidos", "equipe_corretores", "creci"]
-    },
-    {
-      "slug": "energia_solar",
-      "nome": "Empresas de Energia Solar",
-      "singular": "Empresa de Energia Solar",
-      "palavras_chave": ["energia solar", "painel solar", "fotovoltaico", "geracao solar", "sistema solar", "inversor", "off-grid", "on-grid"],
-      "diretorio_saida": "sites-energia-solar",
-      "paginas": ["index.html", "simulador.html", "como-funciona.html", "sobre.html", "contato.html"],
-      "referencias": {
-        "premium": ["Sunrun", "Tesla Energy", "Vivint Solar", "SunPower"],
-        "inspiracao": ["Land-book", "Lapa Ninja", "Awwwards", "Webdesign Inspiration"],
-        "urls": ["https://www.sunrun.com", "https://www.tesla.com/energy", "https://www.vivintsolar.com"]
-      },
-      "estrutura": {
-        "hero": {
-          "titulo": "Economize até 90% na sua conta de luz",
-          "subtitulo": "Instalação de sistemas fotovoltaicos residenciais e comerciais",
-          "cta_principal": "Solicite um Orçamento",
-          "cta_secundario": "Simule sua Economia"
-        },
-        "secoes": [
-          {"nome": "Economia Gerada", "descricao": "Cálculo de economia em reais"},
-          {"nome": "Simulador", "descricao": "Ferramenta de cálculo online"},
-          {"nome": "Processo de Instalação", "descricao": "Passo a passo da instalação"},
-          {"nome": "Estudos de Caso", "descricao": "Projetos realizados"},
-          {"nome": "Orçamento", "descricao": "Formulário para cotação"}
-        ],
-        "cor_secundaria": "#059669",
-        "cor_acento": "#FBBF24"
-      },
-      "ctas": ["Solicite Orçamento Grátis", "Simule sua Economia", "Veja Projetos Realizados", "Fale com Especialista"],
-      "dados_obrigatorios": ["potencias_sistema", "economia_media", "projetos_realizados", "tempo_garantia", "anexos_necessarios"]
-    },
-    {
-      "slug": "contabilidade",
-      "nome": "Escritorios de Contabilidade",
-      "singular": "Escritorio de Contabilidade",
-      "palavras_chave": ["contabilidade", "contador", "escritorio contábil", "auditoria", "fiscal", "folha de pagamento", "consultoria tributário"],
-      "diretorio_saida": "sites-contabilidade",
-      "paginas": ["index.html", "servicos.html", "sobre.html", "niches.html", "contato.html"],
-      "referencias": {
-        "premium": ["Bench Accounting", "Pilot", "Wave Financial", "QuickBooks Online"],
-        "inspiracao": ["Land-book", "Lapa Ninja", "Awwwards", "One Page Love"],
-        "urls": ["https://www.bench.co", "https://pilot.com", "https://www.waveapps.com"]
-      },
-      "estrutura": {
-        "hero": {
-          "titulo": "Sua contabilidade simplificada",
-          "subtitulo": "Mais tempo para focar no crescimento do seu negócio",
-          "cta_principal": "Solicite Diagnóstico",
-          "cta_secundario": "Conheça Nossos Serviços"
-        },
-        "secoes": [
-          {"nome": "Serviços", "descricao": "O que oferecemos"},
-          {"nome": "Nichos Atendidos", "descricao": "Segmentos específicos"},
-          {"nome": "Benefícios", "descricao": "Vantagens competitivas"},
-          {"nome": "Depoimentos", "descricao": "Clientes satisfeitos"},
-          {"nome": "CTA", "descricao": "Diagnóstico gratuito"}
-        ],
-        "cor_secundaria": "#1E3A5F",
-        "cor_acento": "#10B981"
-      },
-      "ctas": ["Solicite Diagnóstico Gratuito", "Conheça Nossos Planos", "Fale com Especialista", "Baixe Check-list Tributário"],
-      "dados_obrigatorios": ["servicos_oferecidos", "nichos_atendidos", "diferenciais", "anos_experiencia", "equipe"]
-    },
-    {
-      "slug": "estetica",
-      "nome": "Clínicas de Estética",
-      "singular": "Clínica de Estética",
-      "palavras_chave": ["estetica", "clinica estetica", "tratamento facial", "tratamento corporal", "dermatologia", "beleza", "sobrancelha", "depilação", "massagem"],
-      "diretorio_saida": "sites-estetica",
-      "paginas": ["index.html", "procedimentos.html", "sobre.html", "equipe.html", "avaliacoes.html", "contato.html"],
-      "referencias": {
-        "premium": ["Ideal Image", "Massage Heights", "European Wax Center", "Beautycounter"],
-        "inspiracao": ["Land-book", "Lapa Ninja", "Awwwards", "Dribbble Beauty"],
-        "urls": ["https://www.idealimage.com", "https://www.massageheights.com", "https://www.waxcenter.com"]
-      },
-      "estrutura": {
-        "hero": {
-          "titulo": "Realce sua beleza natural",
-          "subtitulo": "Tratamentos estéticos avançados com resultados visíveis",
-          "cta_principal": "Agende sua Avaliação",
-          "cta_secundario": "Conheça Nossos Procedimentos"
-        },
-        "secoes": [
-          {"nome": "Antes e Depois", "descricao": "Resultados reais"},
-          {"nome": "Procedimentos", "descricao": "Tratamentos oferecidos"},
-          {"nome": "Avaliações", "descricao": "Depoimentos de clientes"},
-          {"nome": "Equipe", "descricao": "Profissionais especializadas"},
-          {"nome": "Agendamento", "descricao": "WhatsApp ou formulário"}
-        ],
-        "cor_secundaria": "#EC4899",
-        "cor_acento": "#F472B6"
-      },
-      "ctas": ["Agende sua Avaliação Gratuita", "Veja Resultados Reais", "Fale pelo WhatsApp", "Conheça Nossa Equipe"],
-      "dados_obrigatorios": ["procedimentos_oferecidos", "equipamentos", "equipe", "antes_depois", "produtos_utilizados"]
-    },
-    {
-      "slug": "reformas",
-      "nome": "Empresas de Reformas e Construção",
-      "singular": "Empresa de Reformas",
-      "palavras_chave": ["reformas", "construção", "reforma residencial", "reforma comercial", "pedreiro", "arquiteto", "decoração", "projeto", "ambientes"],
-      "diretorio_saida": "sites-reformas",
-      "paginas": ["index.html", "portfolio.html", "servicos.html", "sobre.html", "contato.html"],
-      "referencias": {
-        "premium": ["Houzz", "Angi", "HomeAdvisor", "Porch"],
-        "inspiracao": ["Land-book", "Lapa Ninja", "Awwwards", "Behance Architecture"],
-        "urls": ["https://www.houzz.com", "https://www.angi.com", "https://www.homeadvisor.com"]
-      },
-      "estrutura": {
-        "hero": {
-          "titulo": "Transforme sua casa em um novo lar",
-          "subtitulo": "Reformas e construções com qualidade e pontualidade",
-          "cta_principal": "Solicite Orçamento",
-          "cta_secundario": "Veja Nossos Projetos"
-        },
-        "secoes": [
-          {"nome": "Portfólio", "descricao": "Projetos realizados"},
-          {"nome": "Projetos Realizados", "descricao": "Galeria de antes e depois"},
-          {"nome": "Processo", "descricao": "Passo a passo do trabalho"},
-          {"nome": "Orçamento Rápido", "descricao": "Formulário simplificado"},
-          {"nome": "Depoimentos", "descricao": "Clientes satisfeitos"}
-        ],
-        "cor_secundaria": "#92400E",
-        "cor_acento": "#D97706"
-      },
-      "ctas": ["Solicite Orçamento Gratuito", "Veja Projetos Realizados", "Agende Visita Técnica", "Fale pelo WhatsApp"],
-      "dados_obrigatorios": ["projetos_realizados", "tipos_reforma", "equipe", "tempo_medio", "garantia"]
+      "ctas": ["Agende pelo WhatsApp", "Solicite Buscar e Levar", "Veja Nossos Planos", "Fale Conosco"],
+      "dados_obrigatorios": ["servicos_oferecidos", "faixa_preco", "horario_funcionamento", "tem_delivery"]
     }
   ],
-  "segmentos_existentes": [
-    {
-      "slug": "medico",
-      "nome": "Clínicas Médicas e Consultórios",
-      "singular": "Clínica Médica",
-      "palavras_chave": ["medico", "clinica medica", "cardiologista", "ortopedista", "dermatologista", "ginecologista"],
-      "diretorio_saida": "sites-medico",
-      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "equipe.html"]
-    },
-    {
-      "slug": "fisioterapia",
-      "nome": "Clínicas de Fisioterapia",
-      "singular": "Clínica de Fisioterapia",
-      "palavras_chave": ["fisioterapia", "fisioterapeuta", "reabilitacao", "pilates"],
-      "diretorio_saida": "sites-fisioterapia",
-      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
-    },
-    {
-      "slug": "restaurante",
-      "nome": "Restaurantes e Lanchonetes",
-      "singular": "Restaurante",
-      "palavras_chave": ["restaurante", "lanchonete", "padaria", "pizzaria", "cafe", "buffet"],
-      "diretorio_saida": "sites-restaurante",
-      "paginas": ["index.html", "cardapio.html", "sobre.html", "contato.html", "reservas.html"]
-    },
-    {
-      "slug": "academia",
-      "nome": "Academias e Studios",
-      "singular": "Academia",
-      "palavras_chave": ["academia", "fitness", "crossfit", "studio", "personal trainer", "pilates"],
-      "diretorio_saida": "sites-academia",
-      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "aulas.html"]
-    },
-    {
-      "slug": "veterinario",
-      "nome": "Clínicas Veterinárias",
-      "singular": "Clínica Veterinária",
-      "palavras_chave": ["veterinario", "clinica veterinaria", "pet", "petshop", "banho e tosa"],
-      "diretorio_saida": "sites-veterinario",
-      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
-    },
-    {
-      "slug": "salao",
-      "nome": "Salões de Beleza e Barbearias",
-      "singular": "Salão de Beleza",
-      "palavras_chave": ["salao", "barbearia", "cabeleireiro", "manicure", "estetica"],
-      "diretorio_saida": "sites-salao",
-      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
-    },
-    {
-      "slug": "pet",
-      "nome": "Pet Shops e Serviços Pet",
-      "singular": "Pet Shop",
-      "palavras_chave": ["pet shop", "petshop", "banho e tosa", "ração", "veterinario", "pets"],
-      "diretorio_saida": "sites-pet",
-      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "produtos.html"]
-    },
-    {
-      "slug": "auto",
-      "nome": "Oficinas e Serviços Automotivos",
-      "singular": "Oficina Mecânica",
-      "palavras_chave": ["oficina", "mecanica", "auto", "carro", "pneus", "estetica automotiva"],
-      "diretorio_saida": "sites-auto",
-      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html"]
-    },
-    {
-      "slug": "moda_retail",
-      "nome": "Lojas de Roupa e Moda",
-      "singular": "Loja de Moda",
-      "palavras_chave": ["loja", "roupa", "moda", "boutique", "fashion", "vestuario"],
-      "diretorio_saida": "sites-moda",
-      "paginas": ["index.html", "produtos.html", "sobre.html", "contato.html"]
-    },
-    {
-      "slug": "educacao",
-      "nome": "Escolas e Cursos Profissionalizantes",
-      "singular": "Instituição de Educação",
-      "palavras_chave": ["escola", "curso", "treinamento", "colegio", "faculdade", "graduacao"],
-      "diretorio_saida": "sites-educacao",
-      "paginas": ["index.html", "cursos.html", "sobre.html", "contato.html", "matricula.html"]
-    },
-    {
-      "slug": "hoteis",
-      "nome": "Hotéis e Pousadas",
-      "singular": "Hotel",
-      "palavras_chave": ["hotel", "pousada", "hospedagem", "turismo", "hostel"],
-      "diretorio_saida": "sites-hoteis",
-      "paginas": ["index.html", "acomodacoes.html", "sobre.html", "contato.html", "reservas.html"]
-    },
-    {
-      "slug": "software",
-      "nome": "Empresas de Tecnologia e Software",
-      "singular": "Empresa de Software",
-      "palavras_chave": ["software", "sistema", "tecnologia", "app", "desenvolvimento", "ti"],
-      "diretorio_saida": "sites-software",
-      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "portfolio.html"]
-    },
-    {
-      "slug": "eventos",
-      "nome": "Buffets e Casas de Festas",
-      "singular": "Casa de Festas",
-      "palavras_chave": ["buffet", "festa", "eventos", "casamento", "decoracao"],
-      "diretorio_saida": "sites-eventos",
-      "paginas": ["index.html", "galeria.html", "sobre.html", "contato.html", "orcamento.html"]
-    },
-    {
-      "slug": "transporte",
-      "nome": "Transporte e Logística",
-      "singular": "Empresa de Transporte",
-      "palavras_chave": ["transporte", "mudanca", "logistica", "frete", "caminhao"],
-      "diretorio_saida": "sites-transporte",
-      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "cotacao.html"]
+  "configuracoes_gerais": {
+    "cidades_prioritarias": [
+      "Sao Paulo", "Campinas", "Santos", "Ribeirao Preto",
+      "Rio de Janeiro", "Niteroi", "Campos dos Goytacazes",
+      "Belo Horizonte", "Uberlandia", "Juiz de Fora",
+      "Salvador", "Feira de Santana",
+      "Porto Alegre", "Caxias do Sul", "Gramado",
+      "Curitiba", "Londrina", "Maringa",
+      "Florianopolis", "Joinville", "Blumenau",
+      "Recife", "Olinda",
+      "Fortaleza",
+      "Goiania"
+    ],
+    "diretorios_busca": [
+      "empresas.com.br",
+      "lista.com.br",
+      "solutudo.com.br",
+      "guiamais.com.br",
+      "citygoog.com.br",
+      "ibi7.com.br"
+    ],
+    "formato_saida_lead": {
+      "nome": "string",
+      "segmento": "string (odontologia | pet_shop)",
+      "sub_segmento": "string",
+      "url": "string",
+      "telefone": "string",
+      "whatsapp": "string",
+      "email": "string",
+      "cidade": "string",
+      "estado": "string (UF)"
     }
-  ]
+  }
 }

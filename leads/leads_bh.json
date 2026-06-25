@@ -1,0 +1,167 @@
+[
+  {
+    "id": "bh-001",
+    "nome": "Barbearia Guilherme Lino",
+    "segmento": "barbearia",
+    "url": "https://guilhermelino.com.br",
+    "telefone": "(31) 3455-6337",
+    "whatsapp": "5531980321983",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Rua João Fernandes, 6 - Liberdade, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-002",
+    "nome": "Barbearia Graciano",
+    "segmento": "barbearia",
+    "url": "https://barbeariagraciano.com.br",
+    "telefone": "(31) 99228-9737",
+    "whatsapp": "5531992289737",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Av. Uruguai, 250 - Sion, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-003",
+    "nome": "Clube da Barba BH",
+    "segmento": "barbearia",
+    "url": "https://clubedabarbabh.com.br",
+    "telefone": "(31) 3643-0024",
+    "whatsapp": "5531975449071",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Rua Gentios, 163 - Loja 1 e 2 - Luxemburgo, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-004",
+    "nome": "Savassi Barbearia",
+    "segmento": "barbearia",
+    "url": "https://savassibarbearia.com.br",
+    "telefone": "",
+    "whatsapp": "553193140043",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Savassi, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-005",
+    "nome": "Gonçalves Barbearia",
+    "segmento": "barbearia",
+    "url": "https://barbeariagonalves.com.br",
+    "telefone": "(31) 3261-6029",
+    "whatsapp": "5531986110715",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Rua Tomé de Souza, 981 - Savassi, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-006",
+    "nome": "Barbearia Clip",
+    "segmento": "barbearia",
+    "url": "https://barbeariaclip.com.br",
+    "telefone": "(31) 3309-1000",
+    "whatsapp": "5531982802323",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Av. Prof. Mário Werneck, 1956 - Buritis, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-007",
+    "nome": "Groove Barbershop",
+    "segmento": "barbearia",
+    "url": "https://groovebarbearia.com.br",
+    "telefone": "(31) 3582-9451",
+    "whatsapp": "",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Rua Sergipe, 1016 - Savassi, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-008",
+    "nome": "Folk Barbearia",
+    "segmento": "barbearia",
+    "url": "https://folkbarbearia.com.br",
+    "telefone": "(31) 3267-9607",
+    "whatsapp": "",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Av. Prudente de Morais, 275 - Loja 07 - Cidade Jardim, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-009",
+    "nome": "D'Luk Barbearia",
+    "segmento": "barbearia",
+    "url": "https://dlukbarbearia.com",
+    "telefone": "(31) 2526-2019",
+    "whatsapp": "",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "R. Francisco Deslandes, 1068 - Anchieta, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-010",
+    "nome": "Jack Hair Barber",
+    "segmento": "barbearia",
+    "url": "https://salaojack.com.br",
+    "telefone": "",
+    "whatsapp": "5531992268984",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Av. Amazonas, 931 - Centro, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-011",
+    "nome": "Barbearia do Rapha",
+    "segmento": "barbearia",
+    "url": "https://barbeariadorapha.com.br",
+    "telefone": "(31) 3055-3007",
+    "whatsapp": "5531993326451",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Rua Professor Moraes, 476 - Loja 1 - Savassi, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-012",
+    "nome": "Bordô Barbearia",
+    "segmento": "barbearia",
+    "url": "https://bordobarbearia.com.br",
+    "telefone": "",
+    "whatsapp": "",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Rua Grão Mogol, 333 - Loja 15 - Carmo, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-013",
+    "nome": "Barbearia Paradise",
+    "segmento": "barbearia",
+    "url": "https://barbeariaparadise.com.br",
+    "telefone": "",
+    "whatsapp": "",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Rua Juiz de Fora, 1374 - Santo Agostinho, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-014",
+    "nome": "Mens Barbearia",
+    "segmento": "barbearia",
+    "url": "https://mensbarbearia.com.br",
+    "telefone": "(31) 3785-8180",
+    "whatsapp": "",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Av. Bias Forte, 851 - Lourdes, Belo Horizonte - MG"
+  },
+  {
+    "id": "bh-015",
+    "nome": "MR. Barbosa",
+    "segmento": "barbearia",
+    "url": "https://misterbarbosa.com.br",
+    "telefone": "",
+    "whatsapp": "",
+    "cidade": "Belo Horizonte",
+    "estado": "MG",
+    "endereco": "Rua Izabel Bueno, 1047 - Loja - Jaraguá, Belo Horizonte - MG"
+  }
+]

@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2563eb" />
+  <title>Agendamentos - Sorriso Perfeito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+:root {
+  --accent: #2563eb;
+  --accent-light: #3b82f6;
+  --bg-start: #f0f4ff;
+  --bg-end: #e0e7ff;
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-solid: #ffffff;
+  --surface-solid-hover: #ffffff;
+  --card-bg: #f8fafc;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --border-subtle: rgba(37, 99, 235, 0.08);
+  --border-active: rgba(37, 99, 235, 0.25);
+  --success-bg: #dcfce7;
+  --success-border: rgba(22, 163, 74, 0.15);
+  --chip-bg: #dbeafe;
+  --danger-bg: #fef2f2;
+  --shadow-card: 0 18px 50px rgba(37, 99, 235, 0.08);
+  --shadow-button: 0 18px 34px rgba(37, 99, 235, 0.2);
+  --radius-card: 30px;
+  --radius-chip: 20px;
+  --radius-button: 999px;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-primary);
+  background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
+  color-scheme: light;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0}
+body{min-height:100vh}
+img{display:block;max-width:100%}
+button,input{font:inherit}
+button{border:0;background:none;padding:0;cursor:pointer}
+input{width:100%;border:none;outline:none;background:transparent}
+
+.admin-app{min-height:100vh;padding:28px;background:linear-gradient(180deg,var(--bg-start) 0%,var(--bg-end) 100%)}
+.admin-container{width:min(1280px,100%);margin:0 auto}
+
+.login-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--bg-start) 0%,var(--bg-end) 100%)}
+.login-box{background:var(--surface-solid);padding:48px;border-radius:36px;box-shadow:var(--shadow-card);border:1px solid rgba(255,255,255,0.9);width:100%;max-width:420px;text-align:center}
+.login-box h2{color:var(--accent);letter-spacing:-0.04em;margin-bottom:8px}
+.login-box p{color:var(--text-secondary);margin-bottom:28px}
+
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:20px 28px;border-radius:30px;background:var(--surface-solid);border:1px solid rgba(255,255,255,0.9);box-shadow:var(--shadow-card);margin-bottom:28px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand-badge{width:44px;height:44px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;color:#fff;background:var(--accent);font-size:20px}
+.brand strong{display:block;font-size:1rem;letter-spacing:-0.02em;color:var(--accent)}
+.nav-links{display:flex;gap:8px}
+.nav-link{padding:10px 16px;border-radius:var(--radius-button);color:var(--text-secondary);font-weight:500;font-size:0.9rem;transition:all 0.2s ease;text-decoration:none}
+.nav-link:hover{background:var(--chip-bg);color:var(--accent)}
+.nav-link.active{background:var(--accent);color:#fff}
+.logout-btn{padding:10px 16px;border-radius:var(--radius-button);background:#fef2f2;color:#dc2626;font-weight:600;font-size:0.85rem;transition:all 0.2s ease}
+.logout-btn:hover{background:#fee2e2}
+
+.admin-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px;flex-wrap:wrap;gap:16px}
+.admin-header h1{font-size:2rem;color:var(--accent);letter-spacing:-0.04em}
+.admin-header-right{display:flex;align-items:center;gap:12px}
+.admin-date{font-size:0.9rem;color:var(--text-secondary)}
+
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px}
+.stat-card{background:var(--surface-solid);padding:22px 24px;border-radius:var(--radius-card);border:1px solid rgba(255,255,255,0.9);box-shadow:var(--shadow-card)}
+.stat-card__number{font-size:2.2rem;font-weight:800;color:var(--accent);letter-spacing:-0.04em}
+.stat-card__label{font-size:0.85rem;color:var(--text-secondary);margin-top:4px}
+
+.filters{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap}
+.search-input{flex:1;min-width:240px;padding:14px 18px;border-radius:18px;background:var(--card-bg);border:1px solid transparent;font-size:0.95rem;color:var(--text-primary)}
+.search-input:focus{border-color:var(--border-active);background:#fff}
+.filter-btn{padding:12px 18px;border-radius:var(--radius-chip);background:var(--card-bg);border:1px solid transparent;font-weight:600;font-size:0.88rem;color:var(--text-secondary);transition:all 0.2s ease}
+.filter-btn:hover{transform:translateY(-1px)}
+.filter-btn.active{background:var(--accent);color:#fff;box-shadow:var(--shadow-button)}
+
+.table-card{background:var(--surface-solid);border-radius:var(--radius-card);border:1px solid rgba(255,255,255,0.9);box-shadow:var(--shadow-card);overflow:hidden}
+table{width:100%;border-collapse:collapse}
+th{background:var(--card-bg);padding:16px 20px;text-align:left;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.1em;font-weight:700;color:var(--text-secondary)}
+td{padding:18px 20px;border-bottom:1px solid var(--border-subtle);font-size:0.95rem}
+tr:last-child td{border-bottom:none}
+tr:hover{background:var(--card-bg)}
+.patient-name{font-weight:600;color:var(--accent)}
+.patient-email{display:block;font-size:0.82rem;color:var(--text-muted);margin-top:2px;font-weight:400}
+
+.status{display:inline-block;padding:6px 14px;border-radius:999px;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em}
+.status--pending{background:#fef3c7;color:#92400e}
+.status--confirmed{background:var(--chip-bg);color:var(--accent)}
+.status--completed{background:#dbeafe;color:#1e40af}
+.status--cancelled{background:var(--danger-bg);color:#dc2626}
+
+.action-btns{display:flex;gap:8px}
+.action-btn{padding:8px 14px;border-radius:12px;font-size:0.82rem;font-weight:600;transition:all 0.2s ease}
+.action-btn:hover{transform:translateY(-1px)}
+.action-btn--confirm{background:var(--accent);color:#fff}
+.action-btn--cancel{background:var(--danger-bg);color:#dc2626}
+
+.empty-state{text-align:center;padding:60px 20px;color:var(--text-secondary)}
+.footer{margin-top:40px;text-align:center;padding:20px;color:var(--text-muted);font-size:0.85rem}
+
+@media(max-width:900px){.stats-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.admin-app{padding:14px}.topbar{flex-direction:column;gap:16px;padding:18px;border-radius:24px}.nav-links{flex-wrap:wrap;justify-content:center}.admin-header h1{font-size:1.5rem}.table-card{overflow-x:auto}table{min-width:700px}}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel" data-presets="react">
+const{useState,useEffect}=React;
+
+const initialAppointments=[
+  {id:1,nome:"Maria Oliveira",telefone:"(11) 98765-4321",email:"maria.oliveira@email.com",servico:"Avaliação Geral",data:"2026-06-25",hora:"09:00",status:"pending"},
+  {id:2,nome:"João Santos",telefone:"(11) 91234-5678",email:"joao.santos@email.com",servico:"Tratamento de Canal",data:"2026-06-25",hora:"10:30",status:"confirmed"},
+  {id:3,nome:"Ana Costa",telefone:"(11) 99876-5432",email:"ana.costa@email.com",servico:"Clareamento Dental",data:"2026-06-26",hora:"14:00",status:"pending"},
+  {id:4,nome:"Pedro Lima",telefone:"(11) 95555-1234",email:"pedro.lima@email.com",servico:"Implante Dentário",data:"2026-06-26",hora:"15:30",status:"confirmed"},
+  {id:5,nome:"Carla Mendes",telefone:"(11) 97777-8888",email:"carla.mendes@email.com",servico:"Ortodontia",data:"2026-06-24",hora:"11:00",status:"completed"},
+  {id:6,nome:"Roberto Ferreira",telefone:"(11) 93333-2222",email:"roberto.ferreira@email.com",servico:"Restauração",data:"2026-06-24",hora:"16:00",status:"cancelled"},
+  {id:7,nome:"Fernanda Silva",telefone:"(11) 96666-1111",email:"fernanda.silva@email.com",servico:"Facetas de Porcelana",data:"2026-06-27",hora:"09:30",status:"pending"},
+  {id:8,nome:"Marcos Souza",telefone:"(11) 94444-3333",email:"marcos.souza@email.com",servico:"Limpeza Profissional",data:"2026-06-27",hora:"10:00",status:"confirmed"}
+];
+
+function CalendarIcon(){return React.createElement("svg",{width:18,height:18,viewBox:"0 0 24 24",fill:"none",stroke:"currentColor","stroke-width":2},React.createElement("rect",{x:3,y:5,width:18,height:16,rx:3}),React.createElement("path",{d:"M8 3v4",strokeLinecap:"round"}),React.createElement("path",{d:"M16 3v4",strokeLinecap:"round"}),React.createElement("path",{d:"M3 10h18",strokeLinecap:"round"}));}
+
+function App(){
+  const[isLoggedIn,setIsLoggedIn]=useState(false);
+  const[loginEmail,setLoginEmail]=useState("admin@sorriso-perfeito.com.br");
+  const[loginPassword,setLoginPassword]=useState("admin123");
+  const[appointments,setAppointments]=useState([]);
+  const[currentFilter,setCurrentFilter]=useState("all");
+  const[searchTerm,setSearchTerm]=useState("");
+
+  useEffect(()=>{
+    const stored=localStorage.getItem("clinic_appointments");
+    if(stored){setAppointments(JSON.parse(stored))}else{setAppointments(initialAppointments);localStorage.setItem("clinic_appointments",JSON.stringify(initialAppointments))}
+  },[]);
+
+  function handleLogin(e){e.preventDefault();if(loginEmail==="admin@sorriso-perfeito.com.br"&&loginPassword==="admin123"){setIsLoggedIn(true)}else{alert("Credenciais inválidas. Use admin@sorriso-perfeito.com.br / admin123")}}
+
+  function handleLogout(){setIsLoggedIn(false)}
+
+  function updateStatus(id,newStatus){const updated=appointments.map(a=>a.id===id?{...a,status:newStatus}:a);setAppointments(updated);localStorage.setItem("clinic_appointments",JSON.stringify(updated))}
+
+  function filteredAppointments(){return appointments.filter(a=>{const matchesFilter=currentFilter==="all"||a.status===currentFilter;const matchesSearch=a.nome.toLowerCase().includes(searchTerm.toLowerCase())||a.telefone.includes(searchTerm)||a.servico.toLowerCase().includes(searchTerm.toLowerCase());return matchesFilter&&matchesSearch})}
+
+  function formatDate(dateStr){const d=new Date(dateStr+"T00:00:00");return d.toLocaleDateString("pt-BR",{day:"2-digit",month:"2-digit",year:"numeric"})}
+
+  if(!isLoggedIn){
+    return React.createElement("div",{className:"login-screen"},
+      React.createElement("div",{className:"login-box"},
+        React.createElement("span",{className:"brand-badge",style:"margin:0 auto 20px"},"🦷"),
+        React.createElement("h2",null,"Painel Administrativo"),
+        React.createElement("p",null,"Acesse para gerenciar os agendamentos"),
+        React.createElement("form",{onSubmit:handleLogin},
+          React.createElement("div",{style:"display:grid;gap:16px;text-align:left;margin-bottom:24px"},
+            React.createElement("div",null,
+              React.createElement("label",{style:"display:block;font-weight:600;color:#475569;margin-bottom:8px;font-size:0.9rem"},"E-mail"),
+              React.createElement("input",{type:"email",value:loginEmail,onChange:e=>setLoginEmail(e.target.value),style:"width:100%;padding:14px 16px;border-radius:16px;background:var(--card-bg);font-size:1rem;color:var(--text-primary);border:1px solid transparent",required:true})
+            ),
+            React.createElement("div",null,
+              React.createElement("label",{style:"display:block;font-weight:600;color:#475569;margin-bottom:8px;font-size:0.9rem"},"Senha"),
+              React.createElement("input",{type:"password",value:loginPassword,onChange:e=>setLoginPassword(e.target.value),style:"width:100%;padding:14px 16px;border-radius:16px;background:var(--card-bg);font-size:1rem;color:var(--text-primary);border:1px solid transparent",required:true})
+            )
+          ),
+          React.createElement("button",{type:"submit",style:"width:100%;padding:14px;border-radius:999px;background:var(--accent);color:#fff;font-weight:700;font-size:1rem;box-shadow:var(--shadow-button)"},"Entrar")
+        ),
+        React.createElement("p",{style:"margin-top:20px;font-size:0.82rem;color:var(--text-muted)"},"Demo: admin@sorriso-perfeito.com.br / admin123")
+      )
+    );
+  }
+
+  const filtered=filteredAppointments();
+  const stats={total:appointments.length,pending:appointments.filter(a=>a.status==="pending").length,confirmed:appointments.filter(a=>a.status==="confirmed").length,completed:appointments.filter(a=>a.status==="completed").length};
+  const today=new Date().toLocaleDateString("pt-BR",{weekday:"long",day:"2-digit",month:"long",year:"numeric"});
+
+  return React.createElement("div",{className:"admin-app"},
+    React.createElement("div",{className:"admin-container"},
+      React.createElement("nav",{className:"topbar"},
+        React.createElement("div",{className:"brand"},
+          React.createElement("span",{className:"brand-badge"},"🦷"),
+          React.createElement("strong",null,"Sorriso Perfeito")
+        ),
+        React.createElement("div",{className:"nav-links"},
+          React.createElement("a",{href:"index.html",className:"nav-link"},"Ver Site"),
+          React.createElement("span",{className:"nav-link active"},"Agendamentos")
+        ),
+        React.createElement("button",{className:"logout-btn",onClick:handleLogout},"Sair")
+      ),
+      React.createElement("div",{className:"admin-header"},
+        React.createElement("h1",null,"Agendamentos"),
+        React.createElement("div",{className:"admin-header-right"},
+          React.createElement("span",{className:"admin-date"},React.createElement(CalendarIcon,null)," ",today)
+        )
+      ),
+      React.createElement("div",{className:"stats-grid"},
+        React.createElement("div",{className:"stat-card"},React.createElement("div",{className:"stat-card__number"},stats.total),React.createElement("div",{className:"stat-card__label"},"Total de agendamentos")),
+        React.createElement("div",{className:"stat-card"},React.createElement("div",{className:"stat-card__number"},stats.pending),React.createElement("div",{className:"stat-card__label"},"Pendentes")),
+        React.createElement("div",{className:"stat-card"},React.createElement("div",{className:"stat-card__number"},stats.confirmed),React.createElement("div",{className:"stat-card__label"},"Confirmados")),
+        React.createElement("div",{className:"stat-card"},React.createElement("div",{className:"stat-card__number"},stats.completed),React.createElement("div",{className:"stat-card__label"},"Concluídos"))
+      ),
+      React.createElement("div",{className:"filters"},
+        React.createElement("input",{type:"text",className:"search-input",placeholder:"Buscar por nome, telefone ou serviço...",value:searchTerm,onChange:e=>setSearchTerm(e.target.value)}),
+        React.createElement("button",{className:"filter-btn "+(currentFilter==="all"?"active":""),onClick:()=>setCurrentFilter("all")},"Todos"),
+        React.createElement("button",{className:"filter-btn "+(currentFilter==="pending"?"active":""),onClick:()=>setCurrentFilter("pending")},"Pendentes"),
+        React.createElement("button",{className:"filter-btn "+(currentFilter==="confirmed"?"active":""),onClick:()=>setCurrentFilter("confirmed")},"Confirmados"),
+        React.createElement("button",{className:"filter-btn "+(currentFilter==="completed"?"active":""),onClick:()=>setCurrentFilter("completed")},"Concluídos"),
+        React.createElement("button",{className:"filter-btn "+(currentFilter==="cancelled"?"active":""),onClick:()=>setCurrentFilter("cancelled")},"Cancelados")
+      ),
+      React.createElement("div",{className:"table-card"},
+        filtered.length===0?
+        React.createElement("div",{className:"empty-state"},React.createElement("p",null,"Nenhum agendamento encontrado")):
+        React.createElement("table",null,
+          React.createElement("thead",null,
+            React.createElement("tr",null,
+              React.createElement("th",null,"Paciente"),
+              React.createElement("th",null,"Telefone"),
+              React.createElement("th",null,"Serviço"),
+              React.createElement("th",null,"Data / Hora"),
+              React.createElement("th",null,"Status"),
+              React.createElement("th",null,"Ações")
+            )
+          ),
+          React.createElement("tbody",null,
+            filtered.map(a=>
+              React.createElement("tr",{key:a.id},
+                React.createElement("td",null,React.createElement("span",{className:"patient-name"},a.nome),React.createElement("span",{className:"patient-email"},a.email)),
+                React.createElement("td",null,a.telefone),
+                React.createElement("td",null,a.servico),
+                React.createElement("td",null,formatDate(a.data),React.createElement("br",null),React.createElement("strong",null,a.hora)),
+                React.createElement("td",null,React.createElement("span",{className:"status status--"+a.status},a.status==="pending"?"Pendente":a.status==="confirmed"?"Confirmado":a.status==="completed"?"Concluído":"Cancelado")),
+                React.createElement("td",null,
+                  React.createElement("div",{className:"action-btns"},
+                    a.status==="pending"&&React.createElement("button",{className:"action-btn action-btn--confirm",onClick:()=>updateStatus(a.id,"confirmed")},"Confirmar"),
+                    a.status==="confirmed"&&React.createElement("button",{className:"action-btn action-btn--confirm",onClick:()=>updateStatus(a.id,"completed")},"Concluir"),
+                    (a.status==="pending"||a.status==="confirmed")&&React.createElement("button",{className:"action-btn action-btn--cancel",onClick:()=>updateStatus(a.id,"cancelled")},"Cancelar")
+                  )
+                )
+              )
+            )
+          )
+        )
+      ),
+      React.createElement("footer",{className:"footer"},"© 2024 Clínica Sorriso Perfeito - Todos os direitos reservados")
+    )
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
+  </script>
+</body>
+</html>
