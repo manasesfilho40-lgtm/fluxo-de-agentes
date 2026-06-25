@@ -1,0 +1,166 @@
+{
+  "empresa": {
+    "nome": "Marques e Montanha Advocacia",
+    "segmento": "Advocacia",
+    "endereco": "Avenida Angelina, 508, Vila Leonor, São Paulo, SP, 02077-000",
+    "telefone": "(11) 98537-9587",
+    "whatsapp": "5511985379587",
+    "email": "contato@marquesemontanha.adv.br",
+    "horarios": "Seg-Sex: 09:00-12:00 e 13:00-17:00 | Sáb/Dom/Feriado: Fechado",
+    "cnpj": "NÃO ENCONTRADO"
+  },
+  "diferenciais": [
+    "Atendimento personalizado e acolhedor com estratégias jurídicas construídas caso a caso",
+    "Total transparência em todas as etapas do processo com postura ética e comprometida com resultados",
+    "Equipe com 16 anos de experiência e atualização técnica contínua em Direito de Família, Civil e Trabalhista",
+    "Atendimento humanizado e empático, priorizando o bem-estar e os interesses do cliente",
+    "Foco em transformar desafios jurídicos em soluções seguras, claras e eficientes"
+  ],
+  "servicos": [
+    {
+      "nome": "Direito de Família e Sucessões",
+      "descricao": "Atuação completa em divórcios consensuais e litigiosos, guarda e visitas, pensão alimentícia, inventários, partilhas e planejamento sucessório. Proteção patrimonial e familiar com sensibilidade e técnica.",
+      "indicacoes": [
+        "Divórcio e separação",
+        "Guarda de filhos e regime de visitas",
+        "Pensão alimentícia (fixação, revisão, execução)",
+        "Inventário judicial e extrajudicial",
+        "Planejamento sucessório e testamentos"
+      ]
+    },
+    {
+      "nome": "Direito Civil",
+      "descricao": "Assessoria preventiva e contenciosa em contratos, responsabilidade civil, cobranças e indenizações. Soluções jurídicas para proteger direitos patrimoniais e resolver conflitos civis com estratégia.",
+      "indicacoes": [
+        "Elaboração e revisão de contratos",
+        "Responsabilidade civil e danos morais/materiais",
+        "Ações de cobrança e execução de títulos",
+        "Indenizações por danos diversos",
+        "Assessoria jurídica preventiva para pessoas físicas e jurídicas"
+      ]
+    },
+    {
+      "nome": "Direito Trabalhista",
+      "descricao": "Reclamações trabalhistas, consultoria para empregados e empregadores, análise de vínculos e direitos trabalhistas, acordos e negociações. Defesa dos direitos laborais com expertise técnica.",
+      "indicacoes": [
+        "Reclamações trabalhistas (horas extras, verbas rescisórias, adicionais)",
+        "Consultoria trabalhista para empresas e empregados",
+        "Análise de vínculo empregatício e direitos",
+        "Negociação e acordos trabalhistas",
+        "Assessoria em demissões e contratações"
+      ]
+    },
+    {
+      "nome": "Atuação Contenciosa Jurídica",
+      "descricao": "Representação judicial estratégica em processos cíveis, de família e trabalhistas. Acompanhamento processual completo com foco na melhor solução para o cliente.",
+      "indicacoes": [
+        "Ações judiciais em andamento",
+        "Recursos e sustentações orais",
+        "Acompanhamento processual personalizado"
+      ]
+    },
+    {
+      "nome": "Assessoria e Consultoria Jurídica",
+      "descricao": "Orientação jurídica preventiva para evitar litígios, análise de riscos legais e suporte na tomada de decisões estratégicas.",
+      "indicacoes": [
+        "Pareceres jurídicos",
+        "Análise de contratos e documentos",
+        "Due diligence jurídica",
+        "Gestão de riscos legais"
+      ]
+    },
+    {
+      "nome": "Advocacia Preventiva",
+      "descricao": "Atuação antecipada para evitar problemas jurídicos futuros, com estruturação contratual, compliance e planejamento patrimonial.",
+      "indicacoes": [
+        "Planejamento patrimonial e sucessório",
+        "Estruturação de negócios e contratos",
+        "Compliance e adequação legal",
+        "Prevenção de litígios familiares e trabalhistas"
+      ]
+    }
+  ],
+  "equipe": [
+    {
+      "nome": "Dra. Meire Marques",
+      "cargo": "Sócia Fundadora - Advogada",
+      "oab": "OAB/SP 195.822",
+      "formacao": [
+        "Bacharel em Direito pela Universidade São Francisco (1996-2000)",
+        "Pós-Graduação pela Escola Paulista de Advocacia (ESA) – Direito de Família e Sucessões",
+        "Pós-Graduação pela Escola Paulista de Direito (EPD) – Direito Digital"
+      ],
+      "descricao": "Sou movida pelo desejo de proteger e empoderar os vulneráveis, buscando justiça, segurança e acolhimento para todos."
+    },
+    {
+      "nome": "Dra. Ana Maria Montanha de Oliveira",
+      "cargo": "Sócia Fundadora - Advogada",
+      "oab": "OAB/SP 286.865",
+      "formacao": [
+        "Bacharel em Direito pela Universidade Cidade de São Paulo (2004-2007)",
+        "Pós-Graduação pela Escola Paulista de Direito (EPD) – Direito Previdenciário"
+      ],
+      "descricao": "Acredito em proteger e empoderar, especialmente em contextos familiares, garantindo acesso à justiça e apoio para superar desafios."
+    }
+  ],
+  "historia": "A Marques e Montanha Advocacia é um escritório com mais de 16 anos de experiência, dedicado a oferecer soluções jurídicas eficazes, éticas e personalizadas. Fundado pelas advogadas Dra. Meire Marques e Dra. Ana Maria Montanha de Oliveira, o escritório nasceu do compromisso de defender os interesses de seus clientes com responsabilidade e transparência.\n\nAo longo de sua trajetória, a banca consolidou-se nas áreas de Direito de Família e Sucessões, Direito Civil e Direito Trabalhista, sempre mantendo como pilares a ética profissional, o atendimento humanizado e a busca por resultados concretos. A equipe é formada por advogados altamente qualificados, comprometidos em proporcionar um atendimento estratégico e acolhedor.\n\nA missão do escritório é prover apoio jurídico com empatia, garantindo que cada cliente tenha voz e acesso aos seus direitos fundamentais. A visão é ser o escritório mais recomendado em São Paulo para Direito Civil e de Família, com 95% de satisfação dos clientes. Os valores que norteiam a atuação são: Família, Confiança, Proteção, Justiça, Respeito, Empatia, Servir, Responsabilidade e Coragem.\n\nCada cliente é tratado como único, com compreensão profunda de sua situação, orientação clara e soluções jurídicas eficientes, sempre com empatia e dedicação.",
+  "infraestrutura": [
+    "Escritório físico na Avenida Angelina, 508 - Vila Leonor, São Paulo/SP",
+    "Atendimento presencial e remoto",
+    "Sistema de acompanhamento processual",
+    "Biblioteca jurídica e acesso a bases de dados legais",
+    "Infraestrutura para videoconferências e atendimento online"
+  ],
+  "tom_de_voz": "acolhedor",
+  "palavras_chave": [
+    "advocacia São Paulo",
+    "direito de família SP",
+    "advogado família Vila Leonor",
+    "direito civil São Paulo",
+    "advogado trabalhista SP",
+    "divórcio São Paulo",
+    "inventário SP",
+    "planejamento sucessório",
+    "pensão alimentícia SP",
+    "escritório advocacia zona norte SP"
+  ],
+  "design_insights": {
+    "tom_visual": "profissional e acolhedor",
+    "cores_detectadas": [
+      "#1B3A5C",
+      "#2E86C1",
+      "#F8F9FA",
+      "#FFFFFF",
+      "#333333"
+    ],
+    "funciona_bem": [
+      "Hero section clara com proposta de valor e CTA direto",
+      "WhatsApp proeminente em múltiplos pontos da página",
+      "Fotos reais das duas sócias com OAB visível",
+      "Áreas de atuação bem estruturadas com subcategorias",
+      "Blog/publicações ativas com artigos recentes (2026)",
+      "Depoimento/filosofia das sócidas humaniza a marca",
+      "Informações de contato completas (endereço, telefones, emails, WhatsApp)",
+      "Horário de funcionamento claramente exposto",
+      "Missão, Visão e Valores bem definidos",
+      "Navegação simples e intuitiva"
+    ],
+    "nao_funciona": [
+      "Site construído em plataforma Solusite (template limitado, pouco personalizável)",
+      "Não responsivo adequado para mobile (layout fixo/antigo)",
+      "Botões 'Ver mais' e 'Saiba mais' com javascript:void(0) - não funcionam",
+      "Formulário de contato genérico sem validação aparente",
+      "Emails protegidos por Cloudflare (não clicáveis diretamente)",
+      "Imagens em WebP via CDN externo (dependência de terceiros)",
+      "Sem SSL próprio aparente (subdomínio solutudo)",
+      "Ausência de casos de sucesso/resultados concretos (apenas filosofia)",
+      "Não há área do cliente ou portal do cliente",
+      "SEO limitado (meta tags básicas, URLs não amigáveis)",
+      "Carregamento lento devido a scripts externos da plataforma",
+      "Design datado, não transmite modernidade e autoridade digital",
+      "Falta de prova social (avaliações Google, depoimentos de clientes)",
+      "CTAs redundantes sem hierarquia clara",
+      "Não há FAQ ou dúvidas frequentes"
+    ]
+  }
+}

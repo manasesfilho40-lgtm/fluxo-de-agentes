@@ -1,0 +1,96 @@
+{
+  "empresa": {
+    "nome": "Restaurante America",
+    "segmento": "Restaurante",
+    "endereco": "Av. Brigadeiro Faria Lima, 3477 - Jardim Paulistano, São Paulo - SP",
+    "telefone": "(11) 3044-1852",
+    "whatsapp": "551130441852",
+    "email": "contato@restauranteamerica.com.br",
+    "horarios": "Não encontrado no site",
+    "cnpj": "Não encontrado no site"
+  },
+  "diferenciais": [
+    "Restaurante na Faria Lima (localização premium)",
+    "Cardápio variado com pratos italianos",
+    "Serviço de delivery próprio"
+  ],
+  "servicos": [
+    {
+      "nome": "Almoço Executivo",
+      "descricao": "Buffet por quilo com opções de pratos quentes, saladas e sobremesas",
+      "indicacoes": ["Almoço de trabalho", "Reuniões de negócios"]
+    },
+    {
+      "nome": "Jantar",
+      "descricao": "Cardápio à la carte com pratos italianos e opções de vinho",
+      "indicacoes": ["Jantar romântico", "Reuniões familiares"]
+    },
+    {
+      "nome": "Delivery",
+      "descricao": "Serviço de entrega própria para a região de Vila Olímpia e arredores",
+      "indicacoes": ["Comida no escritório", "Jantar em casa"]
+    },
+    {
+      "nome": "Eventos",
+      "descricao": "Espaço para eventos corporativos e particular com até 80 pessoas",
+      "indicacoes": ["Aniversários", "Confraternizações", "Eventos empresariais"]
+    }
+  ],
+  "equipe": [
+    {
+      "nome": "Equipe especializada",
+      "cargo": "Cozinha e atendimento"
+    }
+  ],
+  "historia": "O Restaurante America é um restaurante tradicional localizado na Faria Lima, em São Paulo. Com mais de 20 anos de história, é conhecido pela qualidade de sua comida italiana e pelo atendimento acolhedor. O restaurante se destaca pela localização premium e pela variedade de opções no cardápio.",
+  "infraestrutura": [
+    "Salão principal com 60 lugares",
+    "Área externa com 20 lugares",
+    "Espaço para eventos até 80 pessoas",
+    "Estacionamento para 15 carros"
+  ],
+  "tom_de_voz": "formal",
+  "palavras_chave": ["restaurante Faria Lima São Paulo", "restaurante italiano Vila Olímpia", "delivery Vila Olímpia", "almoço executivo Faria Lima"],
+  "design_insights": {
+    "tom_visual": "tradicional mas desatualizado",
+    "cores_detectadas": ["#000000", "#FFFFFF", "#8B4513"],
+    "funciona_bem": [
+      "Cardápio visível na navegação",
+      "WhatsApp clicável",
+      "Ícones de redes sociais presentes"
+    ],
+    "nao_funciona": [
+      "Design antigo (parece site de 2015)",
+      "Layout confuso com excesso de informações",
+      "Falta de hierarquia visual clara",
+      "Cores ruins (verde escuro com vermelho)",
+      "Imagens de baixa qualidade",
+      "Navegação confusa",
+      "Falta de CTA forte",
+      "Falta de depoimentos e prova social"
+    ]
+  },
+  "problemas_tecnicos": [
+    "WordPress 6.1.10 (versão desatualizada)",
+    "Elementor Pro 3.9.2 (versão antiga)",
+    "Múltiplos plugins carregados",
+    "Muitas fontes Google carregadas (Roboto, Roboto Slab, Abril Fatface, Montserrat)",
+    "CSS inline excessivo",
+    "Múltiplos arquivos CSS e JS",
+    "jQuery 3.6.1 (poderia ser mais leve)",
+    "Falta de otimização de imagens",
+    "Falta de cache adequado"
+  ],
+  "melhorias_sugeridas": [
+    "Recriar do zero com HTML moderno + Tailwind CSS",
+    "Simplificar a navegação",
+    "Criar identidade visual única e moderna",
+    "Melhorar a hierarquia visual",
+    "Adicionar seção de depoimentos",
+    "Melhorar as imagens dos pratos",
+    "Criar CTA forte e visível",
+    "Otimizar para mobile",
+    "Adicionar formulário de reservas",
+    "Melhorar a velocidade de carregamento"
+  ]
+}

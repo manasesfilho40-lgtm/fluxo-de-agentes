@@ -1,0 +1,1962 @@
+{
+  "campanha": "apify-google-maps-odontologia-petshop",
+  "data_geracao": "2026-06-24T22:50:21.941347",
+  "total_leads": 16,
+  "leads_prioridade": [
+    {
+      "nome": "Gabpetsallon",
+      "segmento": "pet_shop",
+      "url": "https://gabpetsallon.com.br/",
+      "telefone": "+55 41 99550-0091",
+      "whatsapp": "5541995500091",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "Rua Bom Jesus de Iguape, 1545 - Hauer, Curitiba - PR, 81610-040, Brasil",
+      "avaliacoes": 57,
+      "categoria_oficial": [
+        "Banho e tosa",
+        "Hotel para animais de estimação",
+        "Pet Shop"
+      ],
+      "rating": 5,
+      "place_id": "ChIJZSpArO3l3JQRcV52gWWK61E",
+      "latitude": -25.4785832,
+      "longitude": -49.2458337,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "Fechado"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 17:00"
+        }
+      ],
+      "score_validacao": "prioridade",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Dudapetcare",
+      "segmento": "pet_shop",
+      "url": "https://www.dudapetcare.com.br/",
+      "telefone": "+55 41 99628-1892",
+      "whatsapp": "5541996281892",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Curupis, 1930 - Santa Quiteria, Curitiba - PR, 80330-040, Brasil",
+      "avaliacoes": 41,
+      "categoria_oficial": [
+        "Banho e tosa",
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJR9-kovXj3JQRRHr2CxveihA",
+      "latitude": -25.4686439,
+      "longitude": -49.3046333,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 17:30"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 17:30"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 17:30"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 17:30"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 17:30"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 17:30"
+        }
+      ],
+      "score_validacao": "prioridade",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "121Pets",
+      "segmento": "pet_shop",
+      "url": "https://121pets.com.br/banho-tosa/",
+      "telefone": "+55 41 99926-9710",
+      "whatsapp": "5541999269710",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Flávio Dallegrave, 1160 - Loja 2 - Alto da XV, Curitiba - PR, 80045-315, Brasil",
+      "avaliacoes": 228,
+      "categoria_oficial": [
+        "Banho e tosa",
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJM65S8kfl3JQR15A0Qp_a02I",
+      "latitude": -25.4268455,
+      "longitude": -49.2483341,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "Fechado"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 17:00"
+        }
+      ],
+      "score_validacao": "prioridade",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Pracadosbichos",
+      "segmento": "pet_shop",
+      "url": "https://pracadosbichos.com.br/",
+      "telefone": "+55 41 99850-9607",
+      "whatsapp": "5541998509607",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. André de Barros, 41 - Loja AB2 - Centro, Curitiba - PR, 80010-080, Brasil",
+      "avaliacoes": 254,
+      "categoria_oficial": [
+        "Pet Shop",
+        "Banho e tosa"
+      ],
+      "rating": 4.8,
+      "place_id": "ChIJSYqjeW7k3JQRCniHlR-79x0",
+      "latitude": -25.4359361,
+      "longitude": -49.2720163,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 19:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 19:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 19:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 17:30"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 19:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 19:00"
+        }
+      ],
+      "score_validacao": "prioridade",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Hpsdentario",
+      "segmento": "odontologia",
+      "url": "http://www.hpsdentario.com.br/",
+      "telefone": "+55 51 3332-9300",
+      "whatsapp": "555133329300",
+      "email": "",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "endereco": "Av. Venâncio Aires, 1185 - Farroupilha, Porto Alegre - RS, 90040-192, Brasil",
+      "avaliacoes": 159,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista"
+      ],
+      "rating": 3.5,
+      "place_id": "ChIJ27iXpk14GZURZxeyYG1MSKQ",
+      "latitude": -30.037185,
+      "longitude": -51.209184,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "sábado",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "domingo",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "Atendimento 24 horas"
+        }
+      ],
+      "score_validacao": "prioridade",
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Nosodontosalvador",
+      "segmento": "odontologia",
+      "url": "https://www.nosodontosalvador.com.br/",
+      "telefone": "+55 71 3488-8861",
+      "whatsapp": "557134888861",
+      "email": "",
+      "cidade": "Salvador",
+      "estado": "BA",
+      "endereco": "716 EDF tk tower - Av. Prof. Magalhães Neto 1856, EDF TKTower, sala 715 - Pituba, Salvador - BA, 40301-155, Brasil",
+      "avaliacoes": 170,
+      "categoria_oficial": [
+        "Dentista"
+      ],
+      "rating": 4.8,
+      "place_id": "ChIJsfAVmVsDFgcRfPxpGFGOK8k",
+      "latitude": -12.9846301,
+      "longitude": -38.451513,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "Fechado"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 12:00, 13:00 to 18:00"
+        }
+      ],
+      "score_validacao": "prioridade",
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Redeodonto",
+      "segmento": "odontologia",
+      "url": "https://www.redeodonto.com.br/rede-odonto-porto-alegre",
+      "telefone": "+55 51 3212-1615",
+      "whatsapp": "555132121615",
+      "email": "",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "endereco": "Tv. Eng. Acilino de Carvalho, 10 - 4º andar - Centro Histórico, Porto Alegre - RS, 90010-200, Brasil",
+      "avaliacoes": 268,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista",
+        "Ortodontista",
+        "Serviço de clareamento dental"
+      ],
+      "rating": 4.8,
+      "place_id": "ChIJfe7ZZQ95GZURmDhIUTkFxjY",
+      "latitude": -30.0302387,
+      "longitude": -51.2280939,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:30 to 12:30"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 12:00, 13:00 to 18:00"
+        }
+      ],
+      "score_validacao": "prioridade",
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Psdentario",
+      "segmento": "odontologia",
+      "url": "http://www.psdentario.com.br/",
+      "telefone": "+55 51 3225-6499",
+      "whatsapp": "555132256499",
+      "email": "",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "endereco": "Av. Venâncio Aires, 1111 - Farroupilha, Porto Alegre - RS, 90040-193, Brasil",
+      "avaliacoes": 310,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Periodontia e implantes dentários",
+        "Dentista",
+        "Endodontista",
+        "Ortodontista",
+        "Periodontista"
+      ],
+      "rating": 4.5,
+      "place_id": "ChIJM--HmU14GZURmB1tz4cQrLs",
+      "latitude": -30.0375363,
+      "longitude": -51.2098488,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "sábado",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "domingo",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "Atendimento 24 horas"
+        }
+      ],
+      "score_validacao": "prioridade",
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado"
+    }
+  ],
+  "leads_qualificados": [
+    {
+      "nome": "Odontologiafms",
+      "segmento": "odontologia",
+      "url": "http://odontologiafms.com/",
+      "telefone": "+55 51 99137-5444",
+      "whatsapp": "5551991375444",
+      "email": "",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "endereco": "Rua Dona Laura, 207 - sala 203 - Rio Branco, Porto Alegre - RS, 90430-091, Brasil",
+      "avaliacoes": 46,
+      "categoria_oficial": [
+        "Dentista"
+      ],
+      "rating": 5,
+      "place_id": "ChIJKVcNAi15GZURyLZ_Q__m8ms",
+      "latitude": -30.029891,
+      "longitude": -51.203654,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 19:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 19:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 19:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "Fechado"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 19:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 19:00"
+        }
+      ],
+      "score_validacao": "qualificado",
+      "sinais_dor": [],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Odontoalegre",
+      "segmento": "odontologia",
+      "url": "https://odontoalegre.com.br/",
+      "telefone": "+55 51 3228-2800",
+      "whatsapp": "555132282800",
+      "email": "",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "endereco": "R. dos Andradas, 1091 - sala 61 A - Centro Histórico, Porto Alegre - RS, 90020-007, Brasil",
+      "avaliacoes": 77,
+      "categoria_oficial": [
+        "Dentista",
+        "Clínica de implante dentário",
+        "Ortodontista"
+      ],
+      "rating": 4.7,
+      "place_id": "ChIJAQCQGgl5GZURgrZXqIhRviQ",
+      "latitude": -30.0299994,
+      "longitude": -51.22926,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "Fechado"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 18:00"
+        }
+      ],
+      "score_validacao": "qualificado",
+      "sinais_dor": [],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Lp",
+      "segmento": "odontologia",
+      "url": "https://lp.zafinneodontologia.com.br/",
+      "telefone": "+55 51 98916-0194",
+      "whatsapp": "5551989160194",
+      "email": "",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "endereco": "R. Schiller, 14 - Rio Branco, Porto Alegre - RS, 90430-100, Brasil",
+      "avaliacoes": 67,
+      "categoria_oficial": [
+        "Dentista",
+        "Clínica odontológica"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJ3b_AdXF5GZURo8zyZGI9mMg",
+      "latitude": -30.0302871,
+      "longitude": -51.2014999,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 18:30"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 18:30"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 18:30"
+        },
+        {
+          "day": "sábado",
+          "hours": "Fechado"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 18:30"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 18:30"
+        }
+      ],
+      "score_validacao": "qualificado",
+      "sinais_dor": [],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Dentalarteclinicas",
+      "segmento": "odontologia",
+      "url": "http://www.dentalarteclinicas.com.br/",
+      "telefone": "+55 71 99214-8006",
+      "whatsapp": "5571992148006",
+      "email": "",
+      "cidade": "Salvador",
+      "estado": "BA",
+      "endereco": "R. Prof. Plínio Garcez de Sena, 1 - setor A - Mussurunga l, Salvador - BA, 41490-340, Brasil",
+      "avaliacoes": 57,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJ8R-6tdQXFgcR8hqY8qFum84",
+      "latitude": -12.9201405,
+      "longitude": -38.3632495,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:30 to 12:30"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "score_validacao": "qualificado",
+      "sinais_dor": [],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Medradoodontologia",
+      "segmento": "odontologia",
+      "url": "https://medradoodontologia.com.br/",
+      "telefone": "+55 71 99294-1924",
+      "whatsapp": "5571992941924",
+      "email": "",
+      "cidade": "Salvador",
+      "estado": "BA",
+      "endereco": "Av. Centenário, 2883 - Chame-Chame, 40150-370, 4° andar, Sl 408 - Barra, Salvador - BA, 40150-370, Brasil",
+      "avaliacoes": 59,
+      "categoria_oficial": [
+        "Dentista",
+        "Dentista cosmético",
+        "Clínica odontológica",
+        "Periodontia e implantes dentários",
+        "Clínica de implante dentário",
+        "Endodontista",
+        "Cirurgião dentista",
+        "Ortodontista",
+        "Odontopediatra",
+        "Periodontista"
+      ],
+      "rating": 5,
+      "place_id": "ChIJWwKdYycFFgcR1EVmretNbQc",
+      "latitude": -13.0059863,
+      "longitude": -38.5227006,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "sábado",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "Atendimento 24 horas"
+        }
+      ],
+      "score_validacao": "qualificado",
+      "sinais_dor": [],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Salvadordentalstudio",
+      "segmento": "odontologia",
+      "url": "https://www.salvadordentalstudio.com.br/",
+      "telefone": "+55 71 99953-5070",
+      "whatsapp": "5571999535070",
+      "email": "",
+      "cidade": "Salvador",
+      "estado": "BA",
+      "endereco": "Edf. Tancredo Neves Trade Center - R. Alceu Amoroso Lima, 786 - Sala 901 - Ed - Caminho das Árvores, Salvador - BA, 41820-770, Brasil",
+      "avaliacoes": 93,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista cosmético",
+        "Periodontia e implantes dentários",
+        "Clínica de implante dentário",
+        "Ortodontista"
+      ],
+      "rating": 5,
+      "place_id": "ChIJ-6WQFA0bFgcRwiiWTkPLeVw",
+      "latitude": -12.9819883,
+      "longitude": -38.4529942,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 12:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "score_validacao": "qualificado",
+      "sinais_dor": [],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Odontocentroclinica",
+      "segmento": "odontologia",
+      "url": "http://odontocentroclinica.com/",
+      "telefone": "+55 71 99206-6996",
+      "whatsapp": "5571992066996",
+      "email": "",
+      "cidade": "Salvador",
+      "estado": "BA",
+      "endereco": "Rua Conselheiro Junqueira Ayres, 92 - sala 05 - Barris, Salvador - BA, 40070-080, Brasil",
+      "avaliacoes": 47,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista",
+        "Endodontista",
+        "Ortodontista"
+      ],
+      "rating": 4.7,
+      "place_id": "ChIJzcUTFIsFFgcRM2rHCHI1qMI",
+      "latitude": -12.9838256,
+      "longitude": -38.513975,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        }
+      ],
+      "score_validacao": "qualificado",
+      "sinais_dor": [],
+      "observacoes": "Qualificado"
+    },
+    {
+      "nome": "Sorrifacilgoiania",
+      "segmento": "odontologia",
+      "url": "https://www.sorrifacilgoiania.com.br/",
+      "telefone": "+55 62 3413-5060",
+      "whatsapp": "556234135060",
+      "email": "",
+      "cidade": "Goiânia",
+      "estado": "GO",
+      "endereco": "Sorrifácil Clínica Odontológica - R. 9, 1528 - St. Marista, Goiânia - GO, 74150-130, Brasil",
+      "avaliacoes": 83,
+      "categoria_oficial": [
+        "Dentista",
+        "Periodontia e implantes dentários",
+        "Clínica de implante dentário",
+        "Endodontista",
+        "Cirurgião dentista",
+        "Ortodontista"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJ-64Rb5HxXpMRyS1ashQp8ck",
+      "latitude": -16.6924022,
+      "longitude": -49.2664196,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 19:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 19:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 19:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 12:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 19:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 19:00"
+        }
+      ],
+      "score_validacao": "qualificado",
+      "sinais_dor": [],
+      "observacoes": "Qualificado"
+    }
+  ],
+  "leads_rejeitados": 18,
+  "nichos": [
+    "odontologia",
+    "pet_shop"
+  ],
+  "rejeitados_limpeza": [
+    {
+      "nome": "Ecocaobacacheri",
+      "segmento": "pet_shop",
+      "url": "",
+      "telefone": "+55 41 3205-3351",
+      "whatsapp": "554132053351",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "Rua Desembargador Arthur Leme, 351 - Bacacheri, Curitiba - PR, 82510-220, Brasil",
+      "avaliacoes": 184,
+      "categoria_oficial": [
+        "Banho e tosa",
+        "Pet Shop"
+      ],
+      "rating": 5,
+      "place_id": "ChIJMx4g_OLn3JQRRakAZBmDolQ",
+      "latitude": -25.3993945,
+      "longitude": -49.2434039,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 13:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 18:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://ecocaobacacheri.p3w.com.br/",
+      "red_flags": [
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "App",
+      "segmento": "pet_shop",
+      "url": "",
+      "telefone": "+55 41 98476-0586",
+      "whatsapp": "5541984760586",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "Rua Esper Jorge Chueri, 888 A - Cajuru, Curitiba - PR, 82930-220, Brasil",
+      "avaliacoes": 84,
+      "categoria_oficial": [
+        "Pet Shop",
+        "Banho e tosa"
+      ],
+      "rating": 5,
+      "place_id": "ChIJHeaTsjbl3JQRUbcIr1PISu0",
+      "latitude": -25.4516145,
+      "longitude": -49.2089734,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 13:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 18:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://app.zoop.pet/formOnline/company/298/create",
+      "red_flags": [
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Instagram",
+      "segmento": "pet_shop",
+      "url": "",
+      "telefone": "+55 41 98867-2288",
+      "whatsapp": "5541988672288",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Fagundes Varela, 585 - Jardim Social, Curitiba - PR, 82520-040, Brasil",
+      "avaliacoes": 114,
+      "categoria_oficial": [
+        "Pet Shop",
+        "Creche",
+        "Banho e tosa",
+        "Empresa de hospedagem na Web"
+      ],
+      "rating": 5,
+      "place_id": "ChIJR6GdxsHl3JQRq4lqBWTZJlA",
+      "latitude": -25.4155391,
+      "longitude": -49.2353163,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 17:30"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 17:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://www.instagram.com/paraisopet2023?igsh=cWFkNnFhdWhrNnpq&utm_source=qr",
+      "red_flags": [
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Pt Br",
+      "segmento": "pet_shop",
+      "url": "",
+      "telefone": "+55 41 99141-8485",
+      "whatsapp": "5541991418485",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "Estacionamento próprio - Rua Augusto Stresser, |, 725 - Loja 2 e 3 - Juvevê, Curitiba - PR, 80040-310, Brasil",
+      "avaliacoes": 200,
+      "categoria_oficial": [
+        "Pet Shop",
+        "Veterinário",
+        "Farmácia veterinária"
+      ],
+      "rating": 4.6,
+      "place_id": "ChIJCb2oljrk3JQRwFqJ4WLGRI0",
+      "latitude": -25.4167205,
+      "longitude": -49.2547582,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 16:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 18:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://pt-br.facebook.com/petshopnossopet/",
+      "red_flags": [
+        "clinica_veterinaria",
+        "sem_banho_tosa_nas_categorias",
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Facebook",
+      "segmento": "pet_shop",
+      "url": "",
+      "telefone": "+55 41 98401-5380",
+      "whatsapp": "5541984015380",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Rosana Mansur de Macedo, 206 - Capão da Imbuia, Curitiba - PR, 82810-720, Brasil",
+      "avaliacoes": 30,
+      "categoria_oficial": [
+        "Banho e tosa",
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJ_-RwIXnl3JQRt84nFltthd4",
+      "latitude": -25.4321892,
+      "longitude": -49.2092397,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "07:30 to 17:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "07:30 to 17:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "Fechado"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "07:30 to 17:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 17:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://www.facebook.com/share/1BqGQb72vV/",
+      "red_flags": [
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Instagram",
+      "segmento": "pet_shop",
+      "url": "",
+      "telefone": "+55 41 99877-1240",
+      "whatsapp": "5541998771240",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Pref. Ângelo Lopes, 36 - Cristo Rei, Curitiba - PR, 80050-330, Brasil",
+      "avaliacoes": 35,
+      "categoria_oficial": [
+        "Pet Shop"
+      ],
+      "rating": 4.7,
+      "place_id": "ChIJIeEzSFPk3JQRd6kLalIgFPs",
+      "latitude": -25.4350844,
+      "longitude": -49.2440936,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 18:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "http://www.instagram.com/petcasacuritiba.",
+      "red_flags": [
+        "sem_banho_tosa_nas_categorias",
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Pettosaearte",
+      "segmento": "pet_shop",
+      "url": "",
+      "telefone": "+55 41 3205-9410",
+      "whatsapp": "554132059410",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "Rua Cândido Xavier, 780 - Água Verde, Curitiba - PR, 80240-280, Brasil",
+      "avaliacoes": 137,
+      "categoria_oficial": [
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJM9bgq5Tj3JQRiUEtETC4YaM",
+      "latitude": -25.453145,
+      "longitude": -49.2909426,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:30 to 18:30"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:30 to 18:30"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:30 to 18:30"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 15:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:30 to 18:30"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:30 to 18:30"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://pettosaearte.wixsite.com/website",
+      "red_flags": [
+        "sem_banho_tosa_nas_categorias",
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Instagram",
+      "segmento": "pet_shop",
+      "url": "",
+      "telefone": "+55 41 3044-5971",
+      "whatsapp": "554130445971",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Ferdinando Darif, 575 - Campina do Siqueira, Curitiba - PR, 80730-090, Brasil",
+      "avaliacoes": 97,
+      "categoria_oficial": [
+        "Banho e tosa",
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJsbzrH4bj3JQR4XtDBSjgVjQ",
+      "latitude": -25.4404716,
+      "longitude": -49.3074907,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 18:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://www.instagram.com/caminhodoparque",
+      "red_flags": [
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Wa",
+      "segmento": "pet_shop",
+      "url": "",
+      "telefone": "+55 41 98483-8964",
+      "whatsapp": "5541984838964",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Dep. Cunha Bueno, 309 - Cidade Industrial de Curitiba, Curitiba - PR, 81450-320, Brasil",
+      "avaliacoes": 135,
+      "categoria_oficial": [
+        "Pet Shop",
+        "Banho e tosa"
+      ],
+      "rating": 5,
+      "place_id": "ChIJBTDiZP7j3JQRwA76ERQL-RE",
+      "latitude": -25.4946645,
+      "longitude": -49.3469342,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "11:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 16:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "11:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "Fechado"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://wa.me/5541984838964",
+      "red_flags": [
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Reidosanimais",
+      "segmento": "pet_shop",
+      "url": "https://www.reidosanimais.com.br/",
+      "telefone": "+55 41 3262-5131",
+      "whatsapp": "554132625131",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "Av. Manoel Ribas, 5238 - Santa Felicidade, Curitiba - PR, 82400-000, Brasil",
+      "avaliacoes": 162,
+      "categoria_oficial": [
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJn5Z_7y7h3JQRGFNgAwjEgqM",
+      "latitude": -25.4088301,
+      "longitude": -49.32362,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 20:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 20:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 20:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 20:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "09:00 to 17:00"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 20:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 20:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado",
+      "red_flags": [
+        "sem_banho_tosa_nas_categorias"
+      ]
+    },
+    {
+      "nome": "Nutripetshop",
+      "segmento": "pet_shop",
+      "url": "http://www.nutripetshop.com.br/",
+      "telefone": "+55 41 99899-2385",
+      "whatsapp": "5541998992385",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Estados Unidos, 1881 - Boa Vista, Curitiba - PR, 82540-030, Brasil",
+      "avaliacoes": 252,
+      "categoria_oficial": [
+        "Pet Shop"
+      ],
+      "rating": 4.8,
+      "place_id": "ChIJzWNCEoTm3JQRQEib3uRnpPk",
+      "latitude": -25.3983015,
+      "longitude": -49.2499518,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 15:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 18:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado",
+      "red_flags": [
+        "sem_banho_tosa_nas_categorias"
+      ]
+    },
+    {
+      "nome": "Linktr",
+      "segmento": "pet_shop",
+      "url": "",
+      "telefone": "+55 41 99524-4059",
+      "whatsapp": "5541995244059",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Nicarágua, 1805 - Lj 2 - Bacacheri, Curitiba - PR, 82515-260, Brasil",
+      "avaliacoes": 571,
+      "categoria_oficial": [
+        "Pet Shop"
+      ],
+      "rating": 5,
+      "place_id": "ChIJ6aFPn8zn3JQRkTE_gWCr4FY",
+      "latitude": -25.3949846,
+      "longitude": -49.2325948,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 13:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "Fechado"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://linktr.ee/mihmados_pet",
+      "red_flags": [
+        "sem_banho_tosa_nas_categorias",
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Hiperzoo",
+      "segmento": "pet_shop",
+      "url": "https://hiperzoo.com.br/",
+      "telefone": "+55 41 3051-7780",
+      "whatsapp": "554130517780",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "Shopping Curitiba, Rua Brigadeiro Franco, 2300 - Piso L1 - Centro, Curitiba - PR, 80250-930, Brasil",
+      "avaliacoes": 654,
+      "categoria_oficial": [
+        "Pet Shop"
+      ],
+      "rating": 4.4,
+      "place_id": "ChIJ5Z_Mj43l3JQR6IBaIbABDDU",
+      "latitude": -25.4409909,
+      "longitude": -49.2774894,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "10:00 to 22:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "10:00 to 22:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "10:00 to 22:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "10:00 to 22:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "14:00 to 20:00"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "10:00 to 22:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "10:00 to 22:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado",
+      "red_flags": [
+        "sem_banho_tosa_nas_categorias"
+      ]
+    },
+    {
+      "nome": "Pracadosbichos",
+      "segmento": "pet_shop",
+      "url": "https://pracadosbichos.com.br/",
+      "telefone": "+55 41 3308-8525",
+      "whatsapp": "554133088525",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Mateus Leme, 677 - São Francisco, Curitiba - PR, 80510-192, Brasil",
+      "avaliacoes": 380,
+      "categoria_oficial": [
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJLfybhvnl3JQRnpv2hjBWCbE",
+      "latitude": -25.4214244,
+      "longitude": -49.2710073,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 21:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 21:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 21:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 20:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 21:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 21:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado",
+      "red_flags": [
+        "sem_banho_tosa_nas_categorias"
+      ]
+    },
+    {
+      "nome": "Hiperzoo",
+      "segmento": "pet_shop",
+      "url": "http://www.hiperzoo.com.br/",
+      "telefone": "+55 41 99948-0414",
+      "whatsapp": "5541999480414",
+      "email": "",
+      "cidade": "Curitiba",
+      "estado": "PR",
+      "endereco": "R. Brasílio Itiberê, 509 - Jardim Botânico, Curitiba - PR, 80210-060, Brasil",
+      "avaliacoes": 559,
+      "categoria_oficial": [
+        "Pet Shop"
+      ],
+      "rating": 4.6,
+      "place_id": "ChIJqcf2L7nl3JQRrlTT2rT2nRM",
+      "latitude": -25.4401091,
+      "longitude": -49.2501142,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 21:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 21:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 21:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 21:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "08:00 to 20:00"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 21:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 21:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Verificar se tem delivery/buscar-levar no site"
+      ],
+      "observacoes": "Qualificado",
+      "red_flags": [
+        "sem_banho_tosa_nas_categorias"
+      ]
+    },
+    {
+      "nome": "Doctoralia",
+      "segmento": "odontologia",
+      "url": "",
+      "telefone": "+55 51 98435-0875",
+      "whatsapp": "5551984350875",
+      "email": "",
+      "cidade": "Porto Alegre",
+      "estado": "RS",
+      "endereco": "Av. Osvaldo Aranha, 1022 - Bom Fim, Porto Alegre - RS, 90035-191, Brasil",
+      "avaliacoes": 152,
+      "categoria_oficial": [
+        "Dentista",
+        "Clínica odontológica",
+        "Cirurgião dentista"
+      ],
+      "rating": 5,
+      "place_id": "ChIJA5MA_hl5GZURwEdfCRzQUVQ",
+      "latitude": -30.0346111,
+      "longitude": -51.2119431,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "07:00 to 20:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "07:00 to 20:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "07:00 to 20:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 13:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "07:00 to 20:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "07:00 to 20:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://www.doctoralia.com.br/jessica-b-soares/dentista/porto-alegre",
+      "red_flags": [
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Instagram",
+      "segmento": "odontologia",
+      "url": "",
+      "telefone": "+55 86 98130-1836",
+      "whatsapp": "5586981301836",
+      "email": "",
+      "cidade": "José de Freitas",
+      "estado": "PI",
+      "endereco": "R. Joaquim Sampaio, 104 - Centro, José de Freitas - PI, 64110-000, Brasil",
+      "avaliacoes": 312,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista",
+        "Endodontista",
+        "Cirurgião dentista"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJb0C1wLQBjgcRlwHLFBOFEvU",
+      "latitude": -4.7599384,
+      "longitude": -42.5741799,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 12:00, 14:00 to 20:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 12:00, 14:00 to 20:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 12:00, 14:00 to 20:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 12:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 12:00, 14:00 to 20:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 12:00, 14:00 to 20:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "http://instagram.com/coifejosedefreitas",
+      "red_flags": [
+        "sem_site_proprio_valido"
+      ]
+    },
+    {
+      "nome": "Instagram",
+      "segmento": "odontologia",
+      "url": "",
+      "telefone": "+55 85 99995-2827",
+      "whatsapp": "5585999952827",
+      "email": "",
+      "cidade": "Fortaleza",
+      "estado": "CE",
+      "endereco": "R. Major Facundo, 1462 - José Bonifácio, Fortaleza - CE, 60025-101, Brasil",
+      "avaliacoes": 119,
+      "categoria_oficial": [
+        "Dentista"
+      ],
+      "rating": 4.6,
+      "place_id": "ChIJ2SOe5QBJxwcRK6mi1mFF3V0",
+      "latitude": -3.7356053,
+      "longitude": -38.5306521,
+      "horario_funcionamento": [
+        {
+          "day": "quarta-feira",
+          "hours": "08:30 to 17:00"
+        },
+        {
+          "day": "quinta-feira",
+          "hours": "08:30 to 17:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:30 to 17:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:30 to 12:30"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:30 to 17:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:30 to 17:00"
+        }
+      ],
+      "score_validacao": "rejeitado",
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado | URL inválida (social/forms/aggregator)",
+      "url_original_maps": "https://instagram.com/megadent.insta?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==",
+      "red_flags": [
+        "sem_site_proprio_valido"
+      ]
+    }
+  ]
+}

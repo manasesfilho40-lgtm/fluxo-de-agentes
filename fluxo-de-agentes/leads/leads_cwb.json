@@ -1,0 +1,69 @@
+[
+  {
+    "id": "cwb-001",
+    "nome": "Barbearia Goldman",
+    "segmento": "barbearia",
+    "url": "https://www.barbeariagoldman.com.br",
+    "telefone": "(41) 99702-3434",
+    "whatsapp": "5541997023434",
+    "email": null,
+    "endereco": "Av. República Argentina, 713 - Água Verde, Curitiba - PR, 80240-210",
+    "cidade": "Curitiba",
+    "estado": "PR",
+    "score_visual": 4,
+    "classificacao": "ruim",
+    "problemas_encontrados": [
+      "Site feito em Google Sites (básico)",
+      "Design simples e sem personalidade",
+      "Falta de galeria de fotos profissional",
+      "Sem depoimentos de clientes",
+      "Layout poco atrativo"
+    ],
+    "data_encontro": "2026-06-24",
+    "fonte": "websearch"
+  },
+  {
+    "id": "cwb-002",
+    "nome": "Barbearia Curitiba",
+    "segmento": "barbearia",
+    "url": "https://barbeariacuritiba.online",
+    "telefone": "(41) 98755-5372",
+    "whatsapp": "5541987555372",
+    "email": null,
+    "endereco": "Curitiba, PR",
+    "cidade": "Curitiba",
+    "estado": "PR",
+    "score_visual": 7,
+    "classificacao": "ok",
+    "problemas_encontrados": [
+      "Site funcional mas genérico",
+      "Imagens de banco de imagens",
+      "Falta endereço específico",
+      "Poderia ter mais diferenciais visuais"
+    ],
+    "data_encontro": "2026-06-24",
+    "fonte": "websearch"
+  },
+  {
+    "id": "cwb-003",
+    "nome": "Yorman Stylo Barbearia",
+    "segmento": "barbearia",
+    "url": "https://yormanstylo.com",
+    "telefone": "(41) 98763-9367",
+    "whatsapp": "5541987639367",
+    "email": "contato@yormanstylo.com",
+    "endereco": "Rua Paulo Setúbal, 4236, Loja 2 - Boqueirão, Curitiba - PR",
+    "cidade": "Curitiba",
+    "estado": "PR",
+    "score_visual": 8,
+    "classificacao": "ok",
+    "problemas_encontrados": [
+      "Site bem estruturado",
+      "Design moderno",
+      "Poucos diferenciais visuais",
+      "Galeria poderia ter mais fotos"
+    ],
+    "data_encontro": "2026-06-24",
+    "fonte": "websearch"
+  }
+]

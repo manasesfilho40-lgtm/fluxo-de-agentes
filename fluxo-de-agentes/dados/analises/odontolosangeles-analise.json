@@ -1,0 +1,192 @@
+{
+  "empresa": {
+    "nome": "Los Angeles Odontologia",
+    "nome_fantasia": "Clínica Los Angeles",
+    "segmento": "Odontologia",
+    "endereco": "Rua Los Angeles, nº 21 - Cidade Monções, São Paulo - SP, CEP 04564-030",
+    "endereco_completo": {
+      "rua": "Rua Los Angeles",
+      "numero": "21",
+      "bairro": "Cidade Monções",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "cep": "04564-030"
+    },
+    "telefone": "(11) 2659-1448",
+    "whatsapp": "5511989513858",
+    "email": "contato@odontolosangeles.com.br",
+    "horarios": "Não informado no site",
+    "cnpj": "NÃO ENCONTRADO",
+    "unidades": [
+      {
+        "nome": "Unidade São Paulo",
+        "telefone": "(11) 2659-1448",
+        "whatsapp": "(11) 98951-3858",
+        "endereco": "Rua Los Angeles, nº 21 - Cidade Monções, São Paulo - SP, CEP 04564-030"
+      },
+      {
+        "nome": "Unidade Hortolândia",
+        "telefone": "(19) 99611-6089",
+        "whatsapp": "(19) 99611-6089",
+        "endereco": "Av. Santana, 2260 – sala 06, Edifício Lotus – Jardim Golden Park Residence, Hortolândia - SP, CEP 13189-101"
+      }
+    ],
+    "responsavel_tecnico": {
+      "nome": "Dr. Ivori Procópio de Oliveira Junior",
+      "cro": "107307"
+    },
+    "redes_sociais": {
+      "facebook": "https://www.facebook.com/drivoriprocopiojr",
+      "instagram": "https://www.instagram.com/odontolosangelesoficial/"
+    },
+    "desenvolvedor_site": "SuperDental®"
+  },
+  "diferenciais": [
+    "Equipe especializada e comprometida com profissionalismo em realizar o melhor tratamento odontológico",
+    "Clínica completa com diversidade de tratamentos: Implantes, Ortodontia, Prótese Dentária, Clínico Geral, Odontopediatria, Periodontia, Dentística",
+    "Atendimento personalizado pensando no bem-estar e satisfação do paciente na particularidade de cada cliente",
+    "Estrutura moderna com investimento no que há de mais moderno em tecnologias para melhores resultados",
+    "Mais de 10 anos de atuação no segmento de odontologia na Cidade Monções",
+    "Duas unidades de atendimento (São Paulo e Hortolândia)"
+  ],
+  "servicos": [
+    {
+      "nome": "Clareamento Dental",
+      "descricao": "Técnica que utiliza agentes clareadores para recuperar a cor original dos dentes, perdida durante a vida. Oferece duas modalidades: caseiro (com moldeira supervisionada pelo dentista) e consultório (com agente mais potente e fonte de energia ativadora - luz halógena ou laser - realizado em apenas uma sessão).",
+      "indicacoes": ["Dentes amarelados/escurecidos por envelhecimento", "Manchas por alimentos/bebidas", "Pacientes que buscam estética do sorriso"],
+      "tipos": ["Caseiro (supervisionado)", "Consultório (uma sessão com laser/luz)"]
+    },
+    {
+      "nome": "Implante Dentário",
+      "descricao": "Especialidade (implantodontia) que visa personalizar técnicas para implantar ou reimplantar dentes utilizando implante ósseo integrado de titânio. O dispositivo é posicionado cirurgicamente no osso da mandíbula ou maxila para receber prótese fixa. Oferece dois tipos de prótese: overdenture (resina, 2-6 implantes, removível pelo paciente) e protocolo (porcelana/resina, 4-8 implantes, parafusada, só removível pelo dentista).",
+      "indicacoes": ["Perda dentária", "Substituição de pontes, dentaduras e roaches", "Recuperação da mastigação, autoestima e qualidade de vida"],
+      "contraindicacoes": ["Diabetes não controlado", "Tabagismo", "Tuberculose", "Doenças do sistema nervoso central", "Hipertonia muscular mastigatória", "Hipertensão", "Doenças cardíacas", "Estomatite e doenças da cavidade oral", "Inflamação gengival", "Má higiene bucal", "Cáries próximas ao local"]
+    },
+    {
+      "nome": "Lentes de Contato Dental",
+      "descricao": "Tratamento estético com próteses de porcelana ultrafinas (~0,2mm) sobrepostas aos dentes naturais, sem desgaste dental. Vida útil estimada de ~10 anos. Único tratamento estético que não desgasta dentes naturais e permite reversibilidade. Instalação simples: limpeza da superfície, adesivo e fixação.",
+      "indicacoes": ["Descoloração dental", "Dentes fraturados/lascados/desgastados", "Diastema (lacunas entre dentes)", "Anomalias da arcada dentária", "Revestimento de coroas/obturações com tonalidade alterada"],
+      "publico_alvo": "Adultos com saúde bucal em dia (cáries tratadas previamente)"
+    },
+    {
+      "nome": "Extração de Siso",
+      "descricao": "Remoção cirúrgica dos terceiros molares (sisos) quando causam problemas ou não há espaço na arcada.",
+      "indicacoes": ["Sisos inclusos", "Dor e inflamação", "Falta de espaço na arcada", "Prevenção de problemas futuros"]
+    },
+    {
+      "nome": "Harmonização Facial",
+      "descricao": "Procedimentos estéticos para equilibrar e harmonizar a face, complementando o tratamento odontológico.",
+      "indicacoes": ["Melhora da estética facial", "Equilíbrio do sorriso com a face", "Rejuvenescimento facial"]
+    },
+    {
+      "nome": "Laserterapia",
+      "descricao": "Uso de laser de baixa potência para tratamento de dores, inflamações, cicatrização e hipersensibilidade dentária.",
+      "indicacoes": ["Dores orofaciais", "Inflamações gengivais", "Pós-operatório", "Hipersensibilidade", "Cicatrização de lesões"]
+    },
+    {
+      "nome": "Odontopediatria",
+      "descricao": "Especialidade voltada ao atendimento odontológico infantil, com foco em prevenção e tratamento precoce.",
+      "indicacoes": ["Prevenção de cáries em crianças", "Acompanhamento do desenvolvimento dental", "Tratamento de traumas dentários", "Orientação de higiene bucal infantil"]
+    },
+    {
+      "nome": "Ortodontia",
+      "descricao": "Correção do posicionamento dos dentes e ossos maxilares para melhorar a estética e função mastigatória.",
+      "indicacoes": ["Dentes tortos/apinhados", "Mordida cruzada/aberta/profunda", "Desalinhamento da arcada", "Problemas de ATM relacionados à mordida"]
+    },
+    {
+      "nome": "Periodontia",
+      "descricao": "Tratamento das doenças que afetam os tecidos de suporte dos dentes (gengiva, osso, ligamento periodontal).",
+      "indicacoes": ["Gengivite", "Periodontite", "Sangramento gengival", "Retração gengival", "Mobilidade dentária", "Halitose de origem periodontal"]
+    },
+    {
+      "nome": "Prótese Fixa",
+      "descricao": "Reabilitação de dentes perdidos ou danificados com coroas e pontes fixadas sobre dentes naturais ou implantes.",
+      "indicacoes": ["Dentes muito destruídos", "Perda de um ou mais dentes", "Substituição de próteses antigas", "Estética e função mastigatória"]
+    },
+    {
+      "nome": "Tratamento de Canal (Endodontia)",
+      "descricao": "Tratamento da polpa dental (nervo) quando inflamada ou infectada, visando salvar o dente natural.",
+      "indicacoes": ["Dor de dente intensa", "Sensibilidade prolongada ao quente/frio", "Abscesso dentário", "Trauma dental", "Cárie profunda atingindo a polpa"]
+    }
+  ],
+  "equipe": [
+    {
+      "nome": "Dr. Ivori Procópio de Oliveira Junior",
+      "cargo": "Responsável Técnico / Cirurgião-Dentista",
+      "cro": "107307",
+      "foto": "https://odontolosangeles.com.br/wp-content/uploads/2023/12/evori-1920w.webp"
+    }
+  ],
+  "historia": "A Clínica Los Angeles atua há mais de 10 anos no segmento de odontologia na Cidade Monções, São Paulo. Fundada com o objetivo de levar excelência aos pacientes, a clínica tem como pilares o Cuidado, a Atenção e a Confiança. O cuidar pelo melhor trabalho com profissionais excelentes, a atenção com as necessidades de cada paciente e a confiança de que tudo é feito com qualidade garantem que os pacientes possam demonstrar sua felicidade com um sorriso mais bonito. Sentir-se bem é um estado de saúde e felicidade, e a melhor forma de demonstrar sua felicidade é dando um sorriso aberto. A Los Angeles Odontologia veio garantir que a saúde da sua boca esteja sempre em dia.",
+  "infraestrutura": [
+    "Estrutura moderna e tecnológica",
+    "Equipamentos para implantodontia",
+    "Laserterapia (laser de baixa potência)",
+    "Tecnologia para clareamento a laser/luz halógena",
+    "Laboratório para confecção de próteses e lentes de contato",
+    "Ambiente preparado para Odontopediatria",
+    "Duas unidades físicas (São Paulo e Hortolândia)"
+  ],
+  "tom_de_voz": "profissional",
+  "palavras_chave": [
+    "implante dentário São Paulo",
+    "clareamento dental Cidade Monções",
+    "lentes de contato dental",
+    "ortodontia São Paulo",
+    "dentista Hortolândia",
+    "harmonização facial",
+    "tratamento de canal",
+    "odontopediatria",
+    "periodontia",
+    "prótese fixa"
+  ],
+  "design_insights": {
+    "tom_visual": "profissional e acolhedor",
+    "cores_detectadas": [
+      "#00a82d (verde-azulado principal - botões, links, detalhes)",
+      "#f3f3f3 (cinza claro - fundos, ícones)",
+      "#ffffff (branco - fundo principal)",
+      "#333333 (cinza escuro - textos)",
+      "#1a1a1a (preto suave - rodapé)"
+    ],
+    "funciona_bem": [
+      "WhatsApp extremamente proeminente (botão flutuante fixo + múltiplos CTAs na página)",
+      "Navegação clara com menu de tratamentos organizado em dropdown",
+      "Duas unidades bem apresentadas com endereços completos",
+      "Responsável técnico com CRO visível (credibilidade)",
+      "Conteúdo educativo detalhado nas páginas de tratamento (ex: implante, clareamento, lentes)",
+      "Blog com artigos educativos (autoridade)",
+      "Logo visível no header e footer",
+      "Redes sociais no footer",
+      "Desenvolvido por especialista em odontologia (SuperDental®)"
+    ],
+    "nao_funciona": [
+      "Navegação repetida excessivamente no HTML (acessibilidade/SEO prejudicado)",
+      "Não há horários de funcionamento claros no site",
+      "Equipe mostra apenas o responsável técnico - outros profissionais não aparecem",
+      "Não há fotos da clínica/equipamentos (apenas fotos de stock/ilustrativas)",
+      "Não há depoimentos de pacientes/provas sociais",
+      "Não há seção 'Antes e Depois' de casos reais",
+      "Formulário de contato não encontrado (apenas WhatsApp e telefone)",
+      "CNPJ não informado",
+      "Ausência de selos de segurança/certificações visíveis",
+      "Meta description e tags SEO não otimizadas (título genérico)",
+      "Cores de baixo contraste em alguns elementos (cinza claro #f3f3f3 sobre branco)"
+    ],
+    "sugestoes_melhoria": [
+      "Adicionar horários de funcionamento visíveis no header e footer",
+      "Criar página 'Nossa Equipe' com todos os profissionais, fotos, especialidades e CROs",
+      "Adicionar galeria 'Antes e Depois' com casos reais (com autorização)",
+      "Incluir depoimentos de pacientes com foto/nome (prova social)",
+      "Inserir fotos reais da clínica, equipamentos e ambiente",
+      "Adicionar formulário de contato/agendamento além do WhatsApp",
+      "Exibir CNPJ e alvará de funcionamento no footer",
+      "Otimizar SEO: titles únicos por página, meta descriptions, schema.org LocalBusiness",
+      "Melhorar contraste de cores para acessibilidade (WCAG AA)",
+      "Reduzir repetição de navegação no HTML (HTML limpo)",
+      "Adicionar seção de convênios/seguros aceitos",
+      "Criar FAQ por tratamento",
+      "Implementar agendamento online integrado"
+    ]
+  }
+}

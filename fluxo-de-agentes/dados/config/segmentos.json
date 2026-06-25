@@ -1,0 +1,165 @@
+{
+  "descricao": "Configuracao de segmentos/niches de negocio - Foco: Odontologia e Pet Shop",
+  "versao": "2.0",
+  "data_atualizacao": "2026-06-24",
+  "segmentos_foco": ["odontologia", "pet_shop"],
+  "segmentos": [
+    {
+      "slug": "odontologia",
+      "nome": "Clinicas Odontologicas",
+      "singular": "Clinica Odontologica",
+      "palavras_chave": [
+        "clinica odontologica",
+        "dentista",
+        "implante dental",
+        "ortodontia",
+        "endodontia",
+        "clinica dental",
+        "odontologia estetica",
+        "protese dental",
+        "clareamento dental"
+      ],
+      "diretorio_saida": "sites-odontologia",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "equipe.html", "depoimentos.html", "contato.html"],
+      "validacao_lead": {
+        "avaliacoes_minimas": 40,
+        "categorias_permitidas": [
+          "Clínica odontológica",
+          "Dentista",
+          "Consultório odontológico",
+          "Implante dentário",
+          "Ortodontia"
+        ],
+        "red_flags": [
+          "Menos de 40 avaliacoes",
+          "Categoria nao e odontologica (ex: clinica geral)",
+          "Site inativo ou sem presenca online"
+        ],
+        "bonus_prioridade": {
+          "descricao": "2 ou mais dentistas no mesmo local",
+          "racional": "Agenda mais complexa = dor maior = maior necessidade de solucao de gestao",
+          "campo_coleta": "num_dentistas"
+        }
+      },
+      "referencias": {
+        "premium": ["Nuffield Dental", "Mayo Clinic Dentistry", "Crains Dental", "Ideal Sleep Dentistry"],
+        "inspiracao": ["Land-book", "Lapa Ninja", "Awwwards", "Dribbble Healthcare"],
+        "urls": ["https://www.nuffieldhealth.co.uk", "https://www.mayoclinic.org/patient-care/health-libraries", "https://www.crainsdentalcare.com"]
+      },
+      "estrutura": {
+        "hero": {
+          "titulo": "Seu sorriso merece o melhor cuidado",
+          "subtitulo": "Tratamentos odontológicos com tecnologia de ponta",
+          "cta_principal": "Agende sua Avaliação",
+          "cta_secundario": "Veja Nossos Tratamentos"
+        },
+        "secoes": [
+          {"nome": "Antes e Depois", "descricao": "Resultados reais de pacientes"},
+          {"nome": "Equipe", "descricao": "Dentistas especializados"},
+          {"nome": "Tratamentos", "descricao": "Servicos oferecidos"},
+          {"nome": "Avaliacoes", "descricao": "Depoimentos no Google"},
+          {"nome": "Agendamento", "descricao": "WhatsApp ou formulario"}
+        ],
+        "cor_secundaria": "#3B82F6",
+        "cor_acento": "#10B981"
+      },
+      "ctas": ["Agende sua Avaliação Gratuita", "Veja Antes e Depois", "Fale pelo WhatsApp", "Conheça Nossa Equipe"],
+      "dados_obrigatorios": ["dentistas", "especialidades", "tratamentos_oferecidos", "convenios"]
+    },
+    {
+      "slug": "pet_shop",
+      "nome": "Pet Shops (Banho e Tosa)",
+      "singular": "Pet Shop",
+      "palavras_chave": [
+        "pet shop",
+        "banho e tosa",
+        "tosa higienica",
+        "pet shop delivery",
+        "buscar e levar pet",
+        "tosa a domicilio",
+        "pet shop com delivery",
+        "hospedagem pet",
+        "cuidador de animais"
+      ],
+      "diretorio_saida": "sites-pet-shop",
+      "paginas": ["index.html", "servicos.html", "sobre.html", "contato.html", "produtos.html"],
+      "validacao_lead": {
+        "avaliacoes_minimas": 30,
+        "categorias_permitidas": [
+          "Pet shop",
+          "Banho e tosa",
+          "Tosa higienica",
+          "Pet shop com banho e tosa"
+        ],
+        "red_flags": [
+          "Menos de 30 avaliacoes",
+          "Apenas loja de produtos sem servico de banho/tosa",
+          "E clinica veterinaria (nicho separado)",
+          "Site inativo ou sem presenca online"
+        ],
+        "bonus_prioridade": {
+          "descricao": "Oferece delivery, buscar e levar, ou servico a domicilio",
+          "racional": "Ja tem operacao logistica. Agenda e o proximo gargalo obvio = propensao a investir",
+          "campo_coleta": "tem_delivery"
+        }
+      },
+      "referencias": {
+        "premium": ["PetSmart", "Petco", "Chewy", "Pet Paradise"],
+        "inspiracao": ["Land-book", "Lapa Ninja", "Awwwards", "Dribbble Pets"],
+        "urls": ["https://www.petsmart.com", "https://www.petco.com", "https://www.chewy.com"]
+      },
+      "estrutura": {
+        "hero": {
+          "titulo": "Cuidamos do seu pet como se fosse nosso",
+          "subtitulo": "Banho, tosa e servicos com muito carinho e profissionalismo",
+          "cta_principal": "Agende seu Horario",
+          "cta_secundario": "Conheça Nossos Servicos"
+        },
+        "secoes": [
+          {"nome": "Servicos", "descricao": "Banho, tosa, hospedagem"},
+          {"nome": "Galeria", "descricao": "Fotos dos pets atendidos"},
+          {"nome": "Avaliacoes", "descricao": "Depoimentos dos tutores"},
+          {"nome": "Planos", "descricao": "Pacotes e assinaturas"},
+          {"nome": "Localizacao", "descricao": "Mapa e endereco"}
+        ],
+        "cor_secundaria": "#F59E0B",
+        "cor_acento": "#EF4444"
+      },
+      "ctas": ["Agende pelo WhatsApp", "Solicite Buscar e Levar", "Veja Nossos Planos", "Fale Conosco"],
+      "dados_obrigatorios": ["servicos_oferecidos", "faixa_preco", "horario_funcionamento", "tem_delivery"]
+    }
+  ],
+  "configuracoes_gerais": {
+    "cidades_prioritarias": [
+      "Sao Paulo", "Campinas", "Santos", "Ribeirao Preto",
+      "Rio de Janeiro", "Niteroi", "Campos dos Goytacazes",
+      "Belo Horizonte", "Uberlandia", "Juiz de Fora",
+      "Salvador", "Feira de Santana",
+      "Porto Alegre", "Caxias do Sul", "Gramado",
+      "Curitiba", "Londrina", "Maringa",
+      "Florianopolis", "Joinville", "Blumenau",
+      "Recife", "Olinda",
+      "Fortaleza",
+      "Goiania"
+    ],
+    "diretorios_busca": [
+      "empresas.com.br",
+      "lista.com.br",
+      "solutudo.com.br",
+      "guiamais.com.br",
+      "citygoog.com.br",
+      "ibi7.com.br"
+    ],
+    "formato_saida_lead": {
+      "nome": "string",
+      "segmento": "string (odontologia | pet_shop)",
+      "sub_segmento": "string",
+      "url": "string",
+      "telefone": "string",
+      "whatsapp": "string",
+      "email": "string",
+      "cidade": "string",
+      "estado": "string (UF)"
+    }
+  }
+}

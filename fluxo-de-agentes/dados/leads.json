@@ -1,0 +1,204 @@
+{
+  "campanha": "apify-coleta-massa",
+  "data_geracao": "2026-06-25T15:11:30.374023",
+  "total_cidades": 118,
+  "total_batches": 48,
+  "erros": [
+    {
+      "batch": 1,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 2,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 3,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 4,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 5,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 6,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 7,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 8,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 9,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 10,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 11,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 12,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 13,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 14,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 15,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 16,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 17,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 18,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 19,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 20,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 21,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 22,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 23,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 24,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 25,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 26,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 27,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 28,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 29,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 30,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 31,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 32,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 33,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 34,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 35,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 36,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 37,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 38,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 39,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 40,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 41,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 42,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 43,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 44,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 45,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 46,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 47,
+      "erro": "Monthly usage hard limit exceeded"
+    },
+    {
+      "batch": 48,
+      "erro": "Monthly usage hard limit exceeded"
+    }
+  ],
+  "total_leads": 0,
+  "leads_prioridade": 0,
+  "leads_qualificados": 0,
+  "leads_dados": []
+}

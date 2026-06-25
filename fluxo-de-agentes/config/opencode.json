@@ -1,0 +1,73 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "router": {
+      "name": "router",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://localhost:20128/v1",
+        "apiKey": "dummy"
+      },
+      "models": {
+        "qwen": {
+          "name": "Qwen",
+          "limit": {
+            "context": 128000,
+            "output": 8000
+          }
+        }
+      }
+    }
+  },
+  "mcp": {
+    "playwright": {
+      "type": "local",
+      "command": ["npx", "-y", "@anthropic-ai/mcp-playwright"],
+      "enabled": true,
+      "env": {
+        "HEADLESS": "true"
+      }
+    }
+  },
+  "agent": {
+    "site-hunter": {
+      "description": "Encontra sites de empresas com design ruim via Google Maps e diretórios",
+      "mode": "subagent",
+      "permission": {
+        "bash": "allow",
+        "websearch": "allow",
+        "webfetch": "allow",
+        "edit": "allow"
+      }
+    },
+    "site-analyst": {
+      "description": "Analisa sites de empresas e extrai dados para personalização",
+      "mode": "subagent",
+      "permission": {
+        "bash": "allow",
+        "webfetch": "allow",
+        "read": "allow",
+        "edit": "allow"
+      }
+    },
+    "site-builder": {
+      "description": "Reconstrói sites de empresas com design profissional",
+      "mode": "subagent",
+      "permission": {
+        "bash": "allow",
+        "edit": "allow",
+        "write": "allow"
+      }
+    },
+    "prospector": {
+      "description": "Envia mensagens de prospecção por email e WhatsApp para empresas",
+      "mode": "subagent",
+      "permission": {
+        "bash": "allow",
+        "read": "allow",
+        "edit": "allow",
+        "webfetch": "allow"
+      }
+    }
+  }
+}

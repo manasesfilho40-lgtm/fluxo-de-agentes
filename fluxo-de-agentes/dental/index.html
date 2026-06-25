@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aether Intelligence — Plataforma de IA Empresarial que transforma dados brutos em decisões estratégicas." />
+    <title>Aether Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">sorriso<span>.</span></a>
+      <nav class="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#agendar" class="btn btn--coral">Agendar</a>
+      </nav>
+      <button class="menu-btn" aria-label="Menu">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h12M3 9h12M3 12h12"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <div class="hero__tag">
+            <span>●</span> Vila Mariana, SP — Aberto agora
+          </div>
+          <h1>Dentista que<br>você <em>realmente</em><br>quer visitar</h1>
+          <p class="hero__desc">Não, não é piada. Somos uma clínica que faz você sentir que ir ao dentista não é castigo. Tecnologia, conforto e zero drama.</p>
+          <div class="hero__actions">
+            <a href="#agendar" class="btn btn--coral btn--lg">Quero agendar</a>
+            <a href="#servicos" class="btn btn--ghost btn--lg">Ver serviços</a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__circle">🦷</div>
+          <div class="hero__float hero__float--1">
+            <strong>4.9</strong> ★★★★★ Google
+          </div>
+          <div class="hero__float hero__float--2">
+            <strong>15+</strong> anos transformando sorrisos
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Implante</span> <em>*</em>
+      <span>Clareamento</span> <em>*</em>
+      <span>Ortodontia</span> <em>*</em>
+      <span>Lentes</span> <em>*</em>
+      <span>Periodontia</span> <em>*</em>
+      <span>Próteses</span> <em>*</em>
+      <span>Implante</span> <em>*</em>
+      <span>Clareamento</span> <em>*</em>
+      <span>Ortodontia</span> <em>*</em>
+      <span>Lentes</span> <em>*</em>
+      <span>Periodontia</span> <em>*</em>
+      <span>Próteses</span> <em>*</em>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS -->
+  <section class="section" id="servicos">
+    <div class="container">
+      <div class="section__label">Serviços</div>
+      <div class="section__title">O que a gente faz<br>de melhor</div>
+      <p class="section__desc" style="margin-bottom:48px;">Cada tratamento pensado para você sair sorrindo — e voltar sorrindo mais.</p>
+      <div class="services">
+        <div class="service service--wide">
+          <div>
+            <div class="service__icon">🦷</div>
+            <h3>Implante Dentário</h3>
+            <p>Titânio puro, planejamento 3D e resultado que parece natural. Porque parece — porque é.</p>
+            <div class="service__meta">
+              <span><strong>R$ 3.500</strong> a partir</span>
+              <span>2-3 sessões</span>
+            </div>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__icon">✨</div>
+          <h3>Clareamento</h3>
+          <p>Laser de última geração. Uma sessão, até 8 tons mais branco. Sem sensibilidade.</p>
+          <div class="service__meta">
+            <span><strong>R$ 800</strong> a partir</span>
+            <span>1 sessão</span>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__icon">🔬</div>
+          <h3>Ortodontia</h3>
+          <p>Alinhadores invisíveis ou autoligados. Seu sorriso alinhado sem ninguém perceber.</p>
+          <div class="service__meta">
+            <span><strong>R$ 4.500</strong> a partir</span>
+            <span>12-18 meses</span>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__icon">💎</div>
+          <h3>Lentes de Contato</h3>
+          <p>Porcelanas ultrafinas. Sorriso de novela sem cirurgia. É sério.</p>
+          <div class="service__meta">
+            <span><strong>R$ 2.800</strong> a partir</span>
+            <span>2-3 sessões</span>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__icon">🩺</div>
+          <h3>Periodontia</h3>
+          <p>Gengiva saudável = sorriso saudável. Tratamento com laser, rápido e indolor.</p>
+          <div class="service__meta">
+            <span><strong>R$ 600</strong> a partir</span>
+            <span>1-2 sessões</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__number">15+</div>
+          <div class="stat__label">Anos de experiência</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">10K+</div>
+          <div class="stat__label">Pacientes atendidos</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">98%</div>
+          <div class="stat__label">Voltam a sorrir</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">4.9</div>
+          <div class="stat__label">Nota no Google</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANTES/DEPOIS -->
+  <section class="section" id="resultados">
+    <div class="container">
+      <div class="section__label">Transformações</div>
+      <div class="section__title">Arrasta e vê a mágica</div>
+      <div class="ba" id="ba">
+        <div class="ba__before">ANTES</div>
+        <div class="ba__after">DEPOIS</div>
+        <div class="ba__overlay"></div>
+        <div class="ba__handle">⇔</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUIPE -->
+  <section class="section" id="equipe" style="padding-top:0;">
+    <div class="container">
+      <div class="section__label">Equipe</div>
+      <div class="section__title">Quem cuida do<br>seu sorriso</div>
+      <p class="section__desc" style="margin-bottom:48px;">Profissionais que não só sabem o que fazem — gostam do que fazem. E isso faz diferença.</p>
+      <div class="team">
+        <div class="member">
+          <div class="member__photo">🩺</div>
+          <h3>Dr. Ricardo Silva</h3>
+          <p>Implantodontista</p>
+        </div>
+        <div class="member">
+          <div class="member__photo">🦷</div>
+          <h3>Dra. Ana Costa</h3>
+          <p>Ortodontista</p>
+        </div>
+        <div class="member">
+          <div class="member__photo">✨</div>
+          <h3>Dr. Marcos Oliveira</h3>
+          <p>Periodontista</p>
+        </div>
+        <div class="member">
+          <div class="member__photo">💎</div>
+          <h3>Dra. Lucia Ferreira</h3>
+          <p>Endodontista</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="section">
+    <div class="container">
+      <div class="section__label">Depoimentos</div>
+      <div class="section__title">Gente real,<br>sorriso real</div>
+      <div class="reviews" style="margin-top:48px;">
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p>"Pela primeira vez na vida, eu não tive medo de ir ao dentista. O Dr. Ricardo explicou tudo com paciência e o resultado ficou incrível."</p>
+          <div class="review__author">
+            <div class="review__avatar">CM</div>
+            <div>
+              <div class="review__name">Camila Mendes</div>
+              <div class="review__src">Google Reviews</div>
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p>"Fiz clareamento e lentes. Meu espelho não me reconheceu. Preço justo e equipe animal. 10/10."</p>
+          <div class="review__author">
+            <div class="review__avatar">PS</div>
+            <div>
+              <div class="review__name">Pedro Santos</div>
+              <div class="review__src">Google Reviews</div>
+            </div>
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p>"Minha filha de 14 anos fez ortodontia aqui e agora não para de sorrir. Preço acessível e resultado profissional."</p>
+          <div class="review__author">
+            <div class="review__avatar">RO</div>
+            <div>
+              <div class="review__name">Renata Oliveira</div>
+              <div class="review__src">Google Reviews</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top:0;" id="agendar">
+    <div class="container">
+      <div class="cta-box">
+        <div>
+          <div class="section__label">Vamos lá</div>
+          <h2>Avaliação 100%<br>grátis. Sério.</h2>
+          <p>Primeira consulta sem custo. Sem pegadinha. A gente só quer te ver sorrindo.</p>
+          <a href="#" class="btn btn--coral btn--lg">Quero agendar agora</a>
+        </div>
+        <div style="text-align:center;font-size:6rem;">🎉</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="duvidas" style="padding-top:0;">
+    <div class="container">
+      <div class="section__label">Dúvidas</div>
+      <div class="section__title">Perguntas que a gente<br>sempre ouve</div>
+      <div class="faq" style="margin-top:40px;">
+        <div class="faq__item">
+          <button class="faq__btn">
+            A primeira consulta é realmente grátis?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__body">
+            <p>Sim. 100% grátis. Inclusive com panorâmica digital. A gente não esconde nada.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__btn">
+            Vocês atendem por convênio?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__body">
+            <p>Sim! Trabalhamos com os principais convênios. Pergunta no WhatsApp que a gente confirma.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__btn">
+            Clareamento faz sensibilidade?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__body">
+            <p>Pode ter uma sensibilidade leve por 24-48h. É normal e passa rápido.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__btn">
+            Implante dura a vida toda?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__body">
+            <p>Com os cuidados certos, sim. A gente usa titânio de primeira e dá todas as orientações.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__btn">
+            Tem estacionamento?
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__body">
+            <p>Sim, temos vaga gratuita para pacientes. É só avisar no agendamento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="logo">sorriso<span>.</span></div>
+          <p>Clínica odontológica em Vila Mariana. Fazendo gente sorrir desde 2011.</p>
+        </div>
+        <div>
+          <h4>Serviços</h4>
+          <a href="#">Implante</a>
+          <a href="#">Clareamento</a>
+          <a href="#">Ortodontia</a>
+          <a href="#">Lentes</a>
+        </div>
+        <div>
+          <h4>Clínica</h4>
+          <a href="#">Sobre</a>
+          <a href="#">Equipe</a>
+          <a href="#">Blog</a>
+          <a href="#">Carreiras</a>
+        </div>
+        <div>
+          <h4>Contato</h4>
+          <a href="#">(11) 3456-7890</a>
+          <a href="#">WhatsApp</a>
+          <a href="#">Rua Vergueiro, 1234</a>
+          <a href="#">Vila Mariana, SP</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Sorriso Perfeito. Todos os direitos reservados.</span>
+        <span>CRO-SP 12345</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="wa-float" aria-label="WhatsApp">💬</a>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

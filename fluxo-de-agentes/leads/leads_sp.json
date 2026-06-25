@@ -1,0 +1,233 @@
+[
+  {
+    "nome": "Barbearia Vera Cruz",
+    "segmento": "barbearia",
+    "url": "https://www.barbeariaveracruz.com.br/",
+    "telefone": "(11) 3637-5300",
+    "whatsapp": "5511953030479",
+    "email": "",
+    "endereco": "Rua Voluntários da Pátria, 3604 - Santana, São Paulo - SP, CEP: 02402-300",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbudos Barbearia",
+    "segmento": "barbearia",
+    "url": "https://barbudos.com.br/",
+    "telefone": "(11) 2659-7695",
+    "whatsapp": "",
+    "email": "atendimento@barbudosbarbearia.com.br",
+    "endereco": "Av. Engenheiro Caetano Álvares, 5699 - Imirim, São Paulo - SP, CEP: 02413-100",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Corleone - Itaim",
+    "segmento": "barbearia",
+    "url": "https://www.barbeariacorleone.com.br/",
+    "telefone": "(11) 2538-8009",
+    "whatsapp": "",
+    "email": "",
+    "endereco": "Rua Dr. Renato Paes de Barros, 390 - Itaim Bibi, São Paulo - SP, CEP: 04530-000",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Corleone - Marvel",
+    "segmento": "barbearia",
+    "url": "https://www.barbeariacorleone.com.br/",
+    "telefone": "(11) 3167-7110",
+    "whatsapp": "",
+    "email": "",
+    "endereco": "Av. Brig. Faria Lima, 2902 - Jd. Paulistano, São Paulo - SP, CEP: 01451-000",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Corleone - Shopping Morumbi",
+    "segmento": "barbearia",
+    "url": "https://www.barbeariacorleone.com.br/",
+    "telefone": "(11) 5181-2444",
+    "whatsapp": "",
+    "email": "",
+    "endereco": "Av. Roque Petroni Júnior, 1089 - Piso térreo, Loja 46-47 - Morumbi, São Paulo - SP, CEP: 04583-110",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Bearzil Barber Shop",
+    "segmento": "barbearia",
+    "url": "https://bearzilbarbershop.com.br/",
+    "telefone": "",
+    "whatsapp": "5511976567032",
+    "email": "contato@bearzilbarbershop.com.br",
+    "endereco": "Alameda Joaquim Eugênio de Lima, 1756 - Jardim Paulista, São Paulo - SP, CEP: 01403-002",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Comendador",
+    "segmento": "barbearia",
+    "url": "https://barbeariacomendador.com.br/",
+    "telefone": "(11) 3360-2600",
+    "whatsapp": "5511933944815",
+    "email": "contato@barbeariacomedador.com.br",
+    "endereco": "São Paulo - SP",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Tarantino",
+    "segmento": "barbearia",
+    "url": "https://www.barbeariatarantino.com.br/",
+    "telefone": "(11) 3384-5530",
+    "whatsapp": "551133845530",
+    "email": "contato@barbeariatarantino.com.br",
+    "endereco": "Rua Américo Brasiliense, 1729 - loja 02 - Chácara Santo Antônio, São Paulo - SP, CEP: 04715-005",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia do Seu Zé",
+    "segmento": "barbearia",
+    "url": "https://barbeariadoseuze.com.br/",
+    "telefone": "(11) 2614-2576",
+    "whatsapp": "5511964604085",
+    "email": "",
+    "endereco": "Av. Marquês de São Vicente, 2219 - Várzea da Barra Funda, São Paulo - SP, CEP: 05036-040",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Cavalcante",
+    "segmento": "barbearia",
+    "url": "https://barbeariacavalcante.com.br/",
+    "telefone": "(11) 5184-2062",
+    "whatsapp": "551151842062",
+    "email": "",
+    "endereco": "Rua Alexandre Dumas, 1314 - Chácara Santo Antônio, São Paulo - SP, CEP: 04717-004",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Bartô Cabelo e Barba",
+    "segmento": "barbearia",
+    "url": "https://bartocabeloebarba.com.br/",
+    "telefone": "",
+    "whatsapp": "5511914394565",
+    "email": "",
+    "endereco": "Rua Desembargador do Vale, 100 - Perdizes, São Paulo - SP",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Don Pablo - Santana",
+    "segmento": "barbearia",
+    "url": "https://barbeariadonpablo.com.br/",
+    "telefone": "",
+    "whatsapp": "5511941437128",
+    "email": "",
+    "endereco": "Av. Eng. Caetano Álvares, 4710 - Santana, São Paulo - SP",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Don Pablo - Tatuapé",
+    "segmento": "barbearia",
+    "url": "https://barbeariadonpablo.com.br/",
+    "telefone": "",
+    "whatsapp": "5511945556113",
+    "email": "",
+    "endereco": "Rua Itapura, 957 - Tatuapé, São Paulo - SP",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "José Barbearia",
+    "segmento": "barbearia",
+    "url": "https://josebarbearia.com.br/",
+    "telefone": "(11) 3884-8947",
+    "whatsapp": "5511982124010",
+    "email": "josebarbearia@josebarbearia.com.br",
+    "endereco": "Rua José Maria Lisboa, 670 - Jardins, São Paulo - SP, CEP: 01423-001",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Barbalhada - Guaipá",
+    "segmento": "barbearia",
+    "url": "https://barbeariabarbalhada.com.br/",
+    "telefone": "",
+    "whatsapp": "5511996819276",
+    "email": "",
+    "endereco": "Rua Guaipá, nº 1044 - Vila Leopoldina, São Paulo - SP",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Barbalhada - Brentano",
+    "segmento": "barbearia",
+    "url": "https://barbeariabarbalhada.com.br/",
+    "telefone": "",
+    "whatsapp": "5511964901323",
+    "email": "",
+    "endereco": "Rua Brentano, nº 400 - Vila Leopoldina, São Paulo - SP",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Medina",
+    "segmento": "barbearia",
+    "url": "https://www.barbeariamedina.com.br/",
+    "telefone": "(11) 2592-9823",
+    "whatsapp": "5511999674843",
+    "email": "paulofl.jr@gmail.com",
+    "endereco": "Santana, São Paulo - SP",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Cruz Barbearia Clássica",
+    "segmento": "barbearia",
+    "url": "https://cruzbarbearia.com/",
+    "telefone": "(11) 5196-9818",
+    "whatsapp": "5511973291743",
+    "email": "suporte@cruzbarbearia.com",
+    "endereco": "Rua Melanésia 100 - Jardim Ícarai, São Paulo - SP",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Fernando - Jardim São Luiz",
+    "segmento": "barbearia",
+    "url": "https://barbeariafernando.com.br/",
+    "telefone": "",
+    "whatsapp": "5511959172079",
+    "email": "contato@barbeariafernando.com.br",
+    "endereco": "R. Humberto de Almeida, 174 - Jardim São Luiz, São Paulo - SP, CEP: 05831-000",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Fernando - Jardim Novo Santo Amaro",
+    "segmento": "barbearia",
+    "url": "https://barbeariafernando.com.br/",
+    "telefone": "",
+    "whatsapp": "5511959172079",
+    "email": "contato@barbeariafernando.com.br",
+    "endereco": "Rua Capitanias Hereditárias, 912 - Jardim Novo Santo Amaro, São Paulo - SP, CEP: 05820-120",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  },
+  {
+    "nome": "Barbearia Bar - Shopping Vila Olímpia",
+    "segmento": "barbearia",
+    "url": "https://www.barbeariabar.com.br/",
+    "telefone": "(11) 3044-0542",
+    "whatsapp": "5511977232048",
+    "email": "",
+    "endereco": "Shopping Vila Olímpia - 1º piso - Rua Olimpíadas, 360 - Vila Olímpia, São Paulo - SP, CEP: 03178-200",
+    "cidade": "São Paulo",
+    "estado": "SP"
+  }
+]

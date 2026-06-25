@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LÍNEA DENTAL — Mockups do Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #0a0a0f;
+      color: #fff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(180deg, #0a0a0f 0%, #111118 100%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+      background: linear-gradient(135deg, #fff 0%, #C9A84C 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #888;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .mockup-section {
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #C9A84C;
+      margin-bottom: -20px;
+    }
+
+    /* DESKTOP */
+    .desktop-frame {
+      width: 100%;
+      max-width: 1100px;
+      background: #1a1a22;
+      border-radius: 16px;
+      padding: 12px 12px 0;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05);
+      position: relative;
+    }
+    .desktop-topbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      margin-bottom: 8px;
+    }
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-red { background: #ff5f57; }
+    .dot-yellow { background: #ffbd2e; }
+    .dot-green { background: #28c840; }
+    .desktop-url {
+      flex: 1;
+      background: #0d0d12;
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-size: 0.7rem;
+      color: #666;
+      margin-left: 12px;
+    }
+    .desktop-screen {
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 4px 4px 0 0;
+      overflow: hidden;
+      background: #FAF8F5;
+    }
+    .desktop-screen iframe {
+      width: 200%;
+      height: 200%;
+      border: none;
+      transform: scale(0.5);
+      transform-origin: top left;
+    }
+
+    /* TABLET */
+    .tablet-frame {
+      width: 380px;
+      background: #1a1a22;
+      border-radius: 24px;
+      padding: 16px;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05);
+    }
+    .tablet-screen {
+      width: 100%;
+      aspect-ratio: 3/4;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #FAF8F5;
+    }
+    .tablet-screen iframe {
+      width: 200%;
+      height: 200%;
+      border: none;
+      transform: scale(0.5);
+      transform-origin: top left;
+    }
+
+    /* PHONE */
+    .phone-frame {
+      width: 280px;
+      background: #1a1a22;
+      border-radius: 36px;
+      padding: 12px;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.05);
+      position: relative;
+    }
+    .phone-notch {
+      width: 100px;
+      height: 24px;
+      background: #1a1a22;
+      border-radius: 0 0 16px 16px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+    }
+    .phone-screen {
+      width: 100%;
+      aspect-ratio: 9/19;
+      border-radius: 24px;
+      overflow: hidden;
+      background: #FAF8F5;
+      position: relative;
+    }
+    .phone-screen iframe {
+      width: 200%;
+      height: 200%;
+      border: none;
+      transform: scale(0.5);
+      transform-origin: top left;
+    }
+
+    .devices-row {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .page-section {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .page-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: #C9A84C;
+    }
+
+    .footer-mockup {
+      text-align: center;
+      padding: 60px 20px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+      margin-top: 40px;
+    }
+    .footer-mockup p {
+      color: #555;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .desktop-frame { max-width: 100%; }
+      .devices-row { gap: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>LÍNEA DENTAL</h1>
+    <p>Mockups do site — visualização em Desktop, Tablet e Celular</p>
+  </div>
+
+  <!-- HOME - DESKTOP -->
+  <div class="mockup-section">
+    <span class="section-label">Página Inicial — Desktop</span>
+    <div class="desktop-frame">
+      <div class="desktop-topbar">
+        <div class="dot dot-red"></div>
+        <div class="dot dot-yellow"></div>
+        <div class="dot dot-green"></div>
+        <div class="desktop-url">localhost:4173/#/</div>
+      </div>
+      <div class="desktop-screen">
+        <iframe src="http://localhost:4173/#/" title="Home Desktop"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOME - ALL DEVICES -->
+  <div class="mockup-section">
+    <span class="section-label">Responsividade — Todos os Dispositivos</span>
+    <div class="devices-row">
+      <div class="tablet-frame">
+        <div class="tablet-screen">
+          <iframe src="http://localhost:4173/#/" title="Home Tablet"></iframe>
+        </div>
+      </div>
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <iframe src="http://localhost:4173/#/" title="Home Mobile"></iframe>
+        </div>
+      </div>
+      <div class="tablet-frame">
+        <div class="tablet-screen">
+          <iframe src="http://localhost:4173/#/servicos" title="Serviços Tablet"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVIÇOS - DESKTOP -->
+  <div class="mockup-section">
+    <span class="section-label">Serviços — Desktop</span>
+    <div class="desktop-frame">
+      <div class="desktop-topbar">
+        <div class="dot dot-red"></div>
+        <div class="dot dot-yellow"></div>
+        <div class="dot dot-green"></div>
+        <div class="desktop-url">localhost:4173/#/servicos</div>
+      </div>
+      <div class="desktop-screen">
+        <iframe src="http://localhost:4173/#/servicos" title="Serviços Desktop"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROTOCOLO - DESKTOP -->
+  <div class="mockup-section">
+    <span class="section-label">Protocolo — Desktop</span>
+    <div class="desktop-frame">
+      <div class="desktop-topbar">
+        <div class="dot dot-red"></div>
+        <div class="dot dot-yellow"></div>
+        <div class="dot dot-green"></div>
+        <div class="desktop-url">localhost:4173/#/protocolo</div>
+      </div>
+      <div class="desktop-screen">
+        <iframe src="http://localhost:4173/#/protocolo" title="Protocolo Desktop"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTATO - DESKTOP -->
+  <div class="mockup-section">
+    <span class="section-label">Contato — Desktop</span>
+    <div class="desktop-frame">
+      <div class="desktop-topbar">
+        <div class="dot dot-red"></div>
+        <div class="dot dot-yellow"></div>
+        <div class="dot dot-green"></div>
+        <div class="desktop-url">localhost:4173/#/contato</div>
+      </div>
+      <div class="desktop-screen">
+        <iframe src="http://localhost:4173/#/contato" title="Contato Desktop"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE ALL PAGES -->
+  <div class="mockup-section">
+    <span class="section-label">Todas as Páginas — Celular</span>
+    <div class="devices-row">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <iframe src="http://localhost:4173/#/" title="Home"></iframe>
+        </div>
+      </div>
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <iframe src="http://localhost:4173/#/servicos" title="Serviços"></iframe>
+        </div>
+      </div>
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <iframe src="http://localhost:4173/#/protocolo" title="Protocolo"></iframe>
+        </div>
+      </div>
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <iframe src="http://localhost:4173/#/contato" title="Contato"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-mockup">
+    <p>LÍNEA DENTAL — Mockups de apresentação</p>
+  </div>
+
+</body>
+</html>

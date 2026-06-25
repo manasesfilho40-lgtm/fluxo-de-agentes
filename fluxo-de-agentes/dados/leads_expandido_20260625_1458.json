@@ -1,0 +1,1121 @@
+{
+  "campanha": "apify-expandido-novas-cidades",
+  "data_geracao": "2026-06-25T14:58:59.364013",
+  "cidades_buscadas": [
+    "Salvador",
+    "Florianopolis",
+    "Joinville",
+    "Blumenau",
+    "Niteroi",
+    "Campinas",
+    "Santos",
+    "Ribeirao Preto",
+    "Uberlandia",
+    "Juiz de Fora",
+    "Feira de Santana",
+    "Caxias do Sul",
+    "Gramado",
+    "Londrina",
+    "Maringa",
+    "Olinda"
+  ],
+  "total_resultados_brutos": 39,
+  "total_leads": 16,
+  "leads_prioridade": 15,
+  "leads_qualificados": 1,
+  "leads_rejeitados": 23,
+  "leads_prioridade_dados": [
+    {
+      "nome": "O Dentista - Clinica Odontológica em Salvador",
+      "segmento": "odontologia",
+      "url": "http://www.odentistabrasil.com.br/",
+      "telefone": "+55 71 3242-7486",
+      "whatsapp": "557132427486",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "endereco": "edf Serra da Raiz - R. da Grécia, 165 - Loja 06 Térreo - Comércio, Salvador - BA, 40010-010, Brasil",
+      "avaliacoes": 98,
+      "categoria_oficial": [
+        "Cirurgião dentista",
+        "Clínica de implante dentário",
+        "Endodontista",
+        "Ortodontista"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJX4lcC-UEFgcRpZF8wSf9p7M",
+      "latitude": -12.9715699,
+      "longitude": -38.5142753,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 12:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363180",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Clinic Odontologia",
+      "segmento": "odontologia",
+      "url": "https://clinicodontologia.com.br/",
+      "telefone": "+55 71 99255-4058",
+      "whatsapp": "5571992554058",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "endereco": "Rua do Uruguay, N 10 - Mares, Salvador - BA, 40445-040, Brasil",
+      "avaliacoes": 64,
+      "categoria_oficial": [
+        "Dentista"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJdXILq0YFFgcRVgJH7qIHvt8",
+      "latitude": -12.9419975,
+      "longitude": -38.5006991,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 17:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 17:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 12:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 17:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 17:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 17:00"
+        }
+      ],
+      "sinais_dor": [
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363322",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Clínica Odonto Centro",
+      "segmento": "odontologia",
+      "url": "http://odontocentroclinica.com/",
+      "telefone": "+55 71 99206-6996",
+      "whatsapp": "5571992066996",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "endereco": "Rua Conselheiro Junqueira Ayres, 92 - sala 05 - Barris, Salvador - BA, 40070-080, Brasil",
+      "avaliacoes": 47,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista",
+        "Endodontista",
+        "Ortodontista"
+      ],
+      "rating": 4.7,
+      "place_id": "ChIJzcUTFIsFFgcRM2rHCHI1qMI",
+      "latitude": -12.9838256,
+      "longitude": -38.513975,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 12:00, 13:30 to 17:00"
+        }
+      ],
+      "sinais_dor": [
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363387",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Clínica Viotto Salvador",
+      "segmento": "odontologia",
+      "url": "https://clinicaviottosalvador.com.br/",
+      "telefone": "+55 71 99684-7764",
+      "whatsapp": "5571996847764",
+      "cidade": "Salvador",
+      "estado": "BA",
+      "endereco": "Edifício CEO Salvador Shopping Avenida - Tancredo Neves, 2539 Sala 2811, 2812 torre Nova Iorque - Caminho das Árvores, Salvador - BA, 41820-021, Brasil",
+      "avaliacoes": 224,
+      "categoria_oficial": [
+        "Clínica de implante dentário",
+        "Clínica odontológica",
+        "Dentista",
+        "Clínica da saúde da mulher",
+        "Cirurgião",
+        "Clínica para viajantes internacionais"
+      ],
+      "rating": 5,
+      "place_id": "ChIJByXpuBcbFgcRREvf4kwVoC0",
+      "latitude": -12.9793478,
+      "longitude": -38.4520249,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 13:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363443",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Dental Arte Salvador - Clínica Odontológica, Dentistas em Salvador BA",
+      "segmento": "odontologia",
+      "url": "http://www.dentalarteclinicas.com.br/",
+      "telefone": "+55 71 99214-8006",
+      "whatsapp": "5571992148006",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "endereco": "R. Prof. Plínio Garcez de Sena, 1 - setor A - Mussurunga l, Salvador - BA, 41490-340, Brasil",
+      "avaliacoes": 57,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJ8R-6tdQXFgcR8hqY8qFum84",
+      "latitude": -12.9201405,
+      "longitude": -38.3632495,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:30 to 12:30"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363477",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Instituto Patrícia Cotrim | Dentista Patrícia Cotrim em Salvador",
+      "segmento": "odontologia",
+      "url": "https://www.institutopatriciacotrim.com.br/",
+      "telefone": "+55 71 3248-2568",
+      "whatsapp": "557132482568",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "endereco": "Edf Empresarial Mundo Plaza - Av. Tancredo Neves, 620 - sala 410 - Caminho das Árvores, Salvador - BA, 41820-620, Brasil",
+      "avaliacoes": 140,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista cosmético",
+        "Periodontia e implantes dentários",
+        "Dentista",
+        "Endodontista",
+        "Cirurgião dentista",
+        "Ortodontista",
+        "Periodontista"
+      ],
+      "rating": 5,
+      "place_id": "ChIJK9l_xGYbFgcRctMntk0H-Qw",
+      "latitude": -12.9791021,
+      "longitude": -38.4608229,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)",
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363562",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Salvador Dental Studio",
+      "segmento": "odontologia",
+      "url": "https://www.salvadordentalstudio.com.br/",
+      "telefone": "+55 71 99953-5070",
+      "whatsapp": "5571999535070",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "endereco": "Edf. Tancredo Neves Trade Center - R. Alceu Amoroso Lima, 786 - Sala 901 - Ed - Caminho das Árvores, Salvador - BA, 41820-770, Brasil",
+      "avaliacoes": 93,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista cosmético",
+        "Periodontia e implantes dentários",
+        "Clínica de implante dentário",
+        "Ortodontista"
+      ],
+      "rating": 5,
+      "place_id": "ChIJ-6WQFA0bFgcRwiiWTkPLeVw",
+      "latitude": -12.9819883,
+      "longitude": -38.4529942,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 12:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363582",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Núcleo Odontológico de Salvador",
+      "segmento": "odontologia",
+      "url": "https://www.nosodontosalvador.com.br/",
+      "telefone": "+55 71 3488-8861",
+      "whatsapp": "557134888861",
+      "cidade": "Salvador",
+      "estado": "BA",
+      "endereco": "716 EDF tk tower - Av. Prof. Magalhães Neto 1856, EDF TKTower, sala 715 - Pituba, Salvador - BA, 40301-155, Brasil",
+      "avaliacoes": 170,
+      "categoria_oficial": [
+        "Dentista"
+      ],
+      "rating": 4.8,
+      "place_id": "ChIJsfAVmVsDFgcRfPxpGFGOK8k",
+      "latitude": -12.9846301,
+      "longitude": -38.451513,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "Fechado"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 12:00, 13:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 12:00, 13:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)",
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363725",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Drª Anita Beatriz/ Dentista Salvador/ Dentista Caminho das Árvores/ Invisalign/ SouSmile",
+      "segmento": "odontologia",
+      "url": "https://anitabeatrizvieira.meudoutor.com/",
+      "telefone": "+55 71 98700-3052",
+      "whatsapp": "5571987003052",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "endereco": "Empresarial Thomé De Souza - Av. Antônio Carlos Magalhães, 3244 - Sala: 1119 - Caminho das Árvores, Salvador - BA, 41820-000, Brasil",
+      "avaliacoes": 211,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista cosmético",
+        "Periodontia e implantes dentários",
+        "Clínica de implante dentário",
+        "Dentista",
+        "Endodontista",
+        "Cirurgião dentista",
+        "Ortodontista",
+        "Serviço de clareamento dental"
+      ],
+      "rating": 5,
+      "place_id": "ChIJM3wxH7MbFgcRxzmmJqqlPJg",
+      "latitude": -12.9878418,
+      "longitude": -38.4667182,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 12:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363773",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Oral Unic Implantes Salvador",
+      "segmento": "odontologia",
+      "url": "https://www.oralunic.com.br/salvador-ba",
+      "telefone": "+55 71 3034-2222",
+      "whatsapp": "557130342222",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "endereco": "Av. Paulo VI, 1805 - Pituba, Salvador - BA, 41810-000, Brasil",
+      "avaliacoes": 631,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Periodontia e implantes dentários",
+        "Dentista",
+        "Endodontista",
+        "Ortodontista",
+        "Periodontista",
+        "Serviço de clareamento dental"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJCejGmjEbFgcRknzHcSHmx_Y",
+      "latitude": -12.9899968,
+      "longitude": -38.45927,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "08:00 to 12:00"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363821",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Dentista Florianópolis | COEI Clinica Odontológica",
+      "segmento": "odontologia",
+      "url": "https://odontologiacoei.com.br/",
+      "telefone": "+55 48 99616-4087",
+      "whatsapp": "5548996164087",
+      "cidade": "Florianópolis",
+      "estado": "Santa Catarina",
+      "endereco": "Av. Pref. Osmar Cunha, 183 - 302 - Centro, Florianópolis - SC, 88015-900, Brasil",
+      "avaliacoes": 124,
+      "categoria_oficial": [
+        "Dentista",
+        "Clínica odontológica",
+        "Periodontia e implantes dentários",
+        "Clínica de implante dentário",
+        "Endodontista",
+        "Cirurgião oral e maxilofacial",
+        "Cirurgião dentista",
+        "Ortodontista",
+        "Odontopediatra",
+        "Periodontista"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJ3UJ8YCI4J5UR4hxyarTaP4Y",
+      "latitude": -27.5939155,
+      "longitude": -48.5511756,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "Fechado"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)",
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363862",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Clínica Odontológica White Lounge - Dentistas na Trindade, Florianópolis",
+      "segmento": "odontologia",
+      "url": "https://whitelounge.com.br/",
+      "telefone": "+55 48 3206-2864",
+      "whatsapp": "554832062864",
+      "cidade": "Florianópolis",
+      "estado": "Santa Catarina",
+      "endereco": "R. Cônego Bernardo, 101 - Trindade, Florianópolis - SC, 88036-570, Brasil",
+      "avaliacoes": 118,
+      "categoria_oficial": [
+        "Dentista",
+        "Periodontia e implantes dentários",
+        "Clínica de implante dentário",
+        "Centro de cuidados com dentaduras",
+        "Endodontista",
+        "Cirurgião dentista",
+        "Ortodontista",
+        "Periodontista",
+        "Serviço de clareamento dental"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJzV646VU4J5URYw6U49JzU10",
+      "latitude": -27.5949679,
+      "longitude": -48.5201882,
+      "horario_funcionamento": [],
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)",
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363918",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Clínica Odontológica TAG",
+      "segmento": "odontologia",
+      "url": "https://www.tagodontologia.com/",
+      "telefone": "+55 48 99177-7766",
+      "whatsapp": "5548991777766",
+      "cidade": "Florianópolis",
+      "estado": "Santa Catarina",
+      "endereco": "R. Presidente Coutinho, 579 - Sala 604 - Centro, Florianópolis - SC, 88015-231, Brasil",
+      "avaliacoes": 202,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Clínica de implante dentário",
+        "Radiologia odontológica",
+        "Endodontista",
+        "Cirurgião oral e maxilofacial",
+        "Ortodontista",
+        "Odontopediatra",
+        "Periodontista",
+        "Prostodontista"
+      ],
+      "rating": 4.7,
+      "place_id": "ChIJ_W85HzM5J5URzb_KPpmCbz4",
+      "latitude": -27.5908405,
+      "longitude": -48.5472151,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "sábado",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "domingo",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "Atendimento 24 horas"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "Atendimento 24 horas"
+        }
+      ],
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)",
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363944",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Dentistas Florianópolis",
+      "segmento": "odontologia",
+      "url": "https://dracinaraduarte.com/",
+      "telefone": "+55 48 3223-2460",
+      "whatsapp": "554832232460",
+      "cidade": "Florianópolis",
+      "estado": "Santa Catarina",
+      "endereco": "Premier Office Center - Rua Padre Roma, 482 - sala 1104 - Centro, Florianópolis - SC, 88010-090, Brasil",
+      "avaliacoes": 195,
+      "categoria_oficial": [
+        "Dentista",
+        "Clínica odontológica",
+        "Periodontia e implantes dentários",
+        "Cirurgião dentista",
+        "Ortodontista",
+        "Periodontista"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJu3W_L3Y5J5URatgO6ePeGLQ",
+      "latitude": -27.5925439,
+      "longitude": -48.5550344,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "Fechado"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "09:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "09:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363970",
+      "score_validacao": "prioridade"
+    },
+    {
+      "nome": "Clínica Odontológica Sorrir",
+      "segmento": "odontologia",
+      "url": "https://clinicasorrir.odo.br/",
+      "telefone": "+55 48 3028-1399",
+      "whatsapp": "554830281399",
+      "cidade": "Florianópolis",
+      "estado": "Santa Catarina",
+      "endereco": "Ed. HS Prime - R. Irmã Benwarda, 83 - 2 andar - Centro, Florianópolis - SC, 88015-100, Brasil",
+      "avaliacoes": 112,
+      "categoria_oficial": [
+        "Clínica odontológica",
+        "Dentista"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJKUrCDiM4J5URHteHQfL4QyI",
+      "latitude": -27.5901249,
+      "longitude": -48.5510605,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "07:30 to 19:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "07:30 to 19:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "Fechado"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "07:30 to 19:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "07:30 to 19:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "07:30 to 19:00"
+        }
+      ],
+      "sinais_dor": [
+        "Possivel multi-dentistas (100+ avaliacoes)",
+        "Nome sugere multi-dentistas"
+      ],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363987",
+      "score_validacao": "prioridade"
+    }
+  ],
+  "leads_qualificados_dados": [
+    {
+      "nome": "Dra Ilana Neves- Dentista Salvador- Implantes Dentários Salvador",
+      "segmento": "odontologia",
+      "url": "http://www.implantesdentariossalvador.com/",
+      "telefone": "+55 71 99126-6087",
+      "whatsapp": "5571991266087",
+      "cidade": "Salvador",
+      "estado": "Bahia",
+      "endereco": "Empresarial Tancredo Neves - R. Edístio Pondé, 353 - salas 304 e 305 - STIEP, Salvador - BA, 41770-395, Brasil",
+      "avaliacoes": 64,
+      "categoria_oficial": [
+        "Dentista",
+        "Clínica odontológica",
+        "Periodontia e implantes dentários",
+        "Clínica de implante dentário",
+        "Cirurgião dentista",
+        "Periodontista"
+      ],
+      "rating": 5,
+      "place_id": "ChIJB4cifQ8bFgcRPUFwAuP4WvY",
+      "latitude": -12.98399,
+      "longitude": -38.4502288,
+      "horario_funcionamento": [
+        {
+          "day": "quinta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sexta-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "sábado",
+          "hours": "Fechado"
+        },
+        {
+          "day": "domingo",
+          "hours": "Fechado"
+        },
+        {
+          "day": "segunda-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "terça-feira",
+          "hours": "08:00 to 18:00"
+        },
+        {
+          "day": "quarta-feira",
+          "hours": "08:00 to 18:00"
+        }
+      ],
+      "sinais_dor": [],
+      "observacoes": "Qualificado",
+      "data_coleta": "2026-06-25T14:58:59.363512",
+      "score_validacao": "qualificado"
+    }
+  ],
+  "rejeitados_resumo": [
+    {
+      "nome": "Dentista em Salvador I Dr João Marques I Implante Dentário I Clareamento Dental I Clínica Odontológica da Barra",
+      "motivo": "URL rejeitada: https://wa.me/5571982668909",
+      "place_id": "ChIJ48vlJ9ADFgcRP4JVycRPMPg",
+      "website_original": "https://wa.me/5571982668909"
+    },
+    {
+      "nome": "Núcleo de Odontologia",
+      "motivo": "Sem site valido",
+      "place_id": "ChIJXRsqHRAbFgcRUb0Tnl_HIgo",
+      "website_original": null
+    },
+    {
+      "nome": "CISO Centro Integrado de Saude Odontologica",
+      "motivo": "Segmento nao identificado",
+      "place_id": "ChIJyauFXEIbFgcR9Nnwz60Mms0",
+      "categorias": [
+        "Clínica odontológica"
+      ]
+    },
+    {
+      "nome": "Dentelle Clínica Odontológica | Ortodontia | Prótese | Salvador-Ba",
+      "motivo": "Menos de 40 avaliacoes (37)",
+      "place_id": "ChIJ0zyMFC0bFgcR-SeLdFbNr0E",
+      "avaliacoes": 37,
+      "categorias": [
+        "Clínica odontológica",
+        "Clínica de implante dentário",
+        "Endodontista",
+        "Ortodontista"
+      ]
+    },
+    {
+      "nome": "Anma Odontologia Integrada, Clínica Odontológica em Salvador, Parque Bela Vista.",
+      "motivo": "Segmento nao identificado",
+      "place_id": "ChIJXV3HCQ0bFgcRsjadXjisvjk",
+      "categorias": [
+        "Clínica odontológica"
+      ]
+    },
+    {
+      "nome": "Dra. Amanda Pergentino | Dentista | Clinica Odontológica | Barra | Salvador",
+      "motivo": "URL rejeitada: https://www.instagram.com/dramandapergentino/",
+      "place_id": "ChIJwT10s9QDFgcRlXsenxJfUEg",
+      "website_original": "https://www.instagram.com/dramandapergentino/"
+    },
+    {
+      "nome": "Clínica Adente",
+      "motivo": "Sem site valido",
+      "place_id": "ChIJkSeNUP4FFgcRMpcop_kgNIU",
+      "website_original": null
+    },
+    {
+      "nome": "Odontoface - Clínica Odontológica em Salvador",
+      "motivo": "Sem site valido",
+      "place_id": "ChIJBcPwM0YbFgcRDqaB4WfA3KE",
+      "website_original": null
+    },
+    {
+      "nome": "Dentista em Salvador Centro Odontológico Medrado I Clínica Odontológica da Graça",
+      "motivo": "Menos de 40 avaliacoes (12)",
+      "place_id": "ChIJ-ZX_dYYFFgcRmUx_Z3xt19Y",
+      "avaliacoes": 12,
+      "categorias": [
+        "Dentista",
+        "Clínica odontológica",
+        "Clínica de implante dentário",
+        "Endodontista",
+        "Cirurgião dentista",
+        "Ortodontista",
+        "Odontopediatra",
+        "Periodontista",
+        "Serviço de clareamento dental"
+      ]
+    },
+    {
+      "nome": "Dr Adauto Mascarenhas|Centro Médico Salvador",
+      "motivo": "Sem site valido",
+      "place_id": "ChIJz_SQCDUbFgcRnccbAynk4Cs",
+      "website_original": null
+    },
+    {
+      "nome": "Dra. Juliana Mattos - Dentista Ortodontista, Ortopedista Facial, Sono. Salvador e Feira de Santana",
+      "motivo": "URL rejeitada: https://linktr.ee/drajulianamattos",
+      "place_id": "ChIJq6qaWkIbFgcRKbHHfvpxTsg",
+      "website_original": "https://linktr.ee/drajulianamattos"
+    },
+    {
+      "nome": "DENTISTA SALVADOR",
+      "motivo": "Menos de 40 avaliacoes (18)",
+      "place_id": "ChIJPQBpeg8bFgcRLz-TUEcQucs",
+      "avaliacoes": 18,
+      "categorias": [
+        "Cirurgião dentista",
+        "Clínica odontológica",
+        "Periodontia e implantes dentários",
+        "Clínica de implante dentário",
+        "Dentista",
+        "Endodontista",
+        "Ortodontista"
+      ]
+    },
+    {
+      "nome": "Clinica Novo Sorriso - Odontologia Salvador",
+      "motivo": "URL rejeitada: https://www.instagram.com/clinicanovosorrisoo?igsh=MTNqeGwzZHpyaWlnNA==",
+      "place_id": "ChIJ3ekjDEQFFgcRLP8bfTYydu4",
+      "website_original": "https://www.instagram.com/clinicanovosorrisoo?igsh=MTNqeGwzZHpyaWlnNA=="
+    },
+    {
+      "nome": "Dentista Salvador - Ornatti",
+      "motivo": "Segmento nao identificado",
+      "place_id": "ChIJG_D1BsobFgcRxt20gmxkhZg",
+      "categorias": [
+        "Clínica odontológica"
+      ]
+    },
+    {
+      "nome": "Odonto Salvador - Dentista em Salvador",
+      "motivo": "URL rejeitada: https://www.instagram.com/odontosalvador_",
+      "place_id": "ChIJj7HVFNEbFgcREN7ck4kX5EI",
+      "website_original": "https://www.instagram.com/odontosalvador_"
+    },
+    {
+      "nome": "Dra Camila Andrade I Dentista em Salvador",
+      "motivo": "URL rejeitada: https://wa.me/5571981121661",
+      "place_id": "ChIJgS7S9TobFgcRKvGNNXr-qrQ",
+      "website_original": "https://wa.me/5571981121661"
+    },
+    {
+      "nome": "Dra. Tatiana Mendes",
+      "motivo": "URL rejeitada: https://wa.me/557199544452",
+      "place_id": "ChIJkd6Q5EcbFgcReakkJTW2vG4",
+      "website_original": "https://wa.me/557199544452"
+    },
+    {
+      "nome": "Dentista em Salvador | Dra. Camila Andrade",
+      "motivo": "URL rejeitada: https://www.instagram.com/dracamilacandrade?igsh=dWkydTFsaXA2cWow",
+      "place_id": "ChIJaVlL8QIbFgcRjO3nzsy94jI",
+      "website_original": "https://www.instagram.com/dracamilacandrade?igsh=dWkydTFsaXA2cWow"
+    },
+    {
+      "nome": "Dra. Daniela Barbosa | Implantes Dentários | Salvador | Clinica Odontológica",
+      "motivo": "Menos de 40 avaliacoes (14)",
+      "place_id": "ChIJww6kbzUbFgcRvgh8IMG44Vw",
+      "avaliacoes": 14,
+      "categorias": [
+        "Dentista",
+        "Clínica odontológica"
+      ]
+    },
+    {
+      "nome": "banho e tosa Clau",
+      "motivo": "Sem site valido",
+      "place_id": "ChIJZw72_NEPFgcRsEI5rQWTzrc",
+      "website_original": null
+    },
+    {
+      "nome": "Aqua Dental Clínica Odontológica",
+      "motivo": "Segmento nao identificado",
+      "place_id": "ChIJE8RwsO5WkIURR7vPQ0U6PFU",
+      "categorias": [
+        "Clínica odontológica"
+      ]
+    },
+    {
+      "nome": "Petz Love",
+      "motivo": "URL rejeitada: http://instagram.com/petzlovesalvador",
+      "place_id": "ChIJwbiI5moFFgcRrvK3apNVB84",
+      "website_original": "http://instagram.com/petzlovesalvador"
+    },
+    {
+      "nome": "Dentista Baiano - Especialista em Implantes Dentários em Salvador",
+      "motivo": "Sem site valido",
+      "place_id": "ChIJW3E9aoAFFgcR8gQhTEEmNX4",
+      "website_original": null
+    }
+  ]
+}

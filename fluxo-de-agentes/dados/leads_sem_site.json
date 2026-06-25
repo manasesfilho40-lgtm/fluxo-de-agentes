@@ -1,0 +1,994 @@
+{
+  "campanha": "leads-sem-site-com-whatsapp",
+  "data_geracao": "2026-06-25T16:04:52.451506",
+  "total_brutos": 81,
+  "total_leads": 52,
+  "odonto": 12,
+  "pet_shop": 37,
+  "outros": 3,
+  "erros": [
+    {
+      "cidade": "Rio de Janeiro",
+      "erro": "Dataset is locked because you have reached your monthly usage limit. Please upgrade your subscription to continue unlimited access to Apify services. If you have any questions, contact support."
+    },
+    {
+      "cidade": "Belo Horizonte",
+      "erro": "Monthly usage hard limit exceeded"
+    }
+  ],
+  "leads": [
+    {
+      "nome": "Amil Hapvida Itaú Metlife Santander Sulamérica Unimed",
+      "segmento": "odontologia",
+      "website": "https://bit.ly/3jArQkj",
+      "tem_site": false,
+      "telefone": "+55 11 4637-8838",
+      "whatsapp": "+551146378838",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "Av. Paulista, 2444 - conjunto 54 - Consolação, São Paulo - SP, 01310-933, Brasil",
+      "avaliacoes": 443,
+      "categorias": [
+        "Dentista"
+      ],
+      "rating": 4.3,
+      "place_id": "ChIJpeGLeyJZzpQRCQxMjtB9RK8",
+      "data_coleta": "2026-06-25T16:00:39.437081"
+    },
+    {
+      "nome": "Amo Pets banho e tosa a domicílio ( dentro da casa do cliente)",
+      "segmento": "pet_shop",
+      "website": "http://www.facebook.com/amopetsdomicilio",
+      "tem_site": false,
+      "telefone": "+55 11 95152-2842",
+      "whatsapp": "+5511951522842",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Plácido Nunes Vieira - Jardim Consorcio, São Paulo - SP, 04436-040, Brasil",
+      "avaliacoes": 348,
+      "categorias": [
+        "Banho e tosa",
+        "Passeador de cães",
+        "Babá de animais de estimação"
+      ],
+      "rating": 5,
+      "place_id": "ChIJg1oW-t5RzpQRsSNX0IhUohc",
+      "data_coleta": "2026-06-25T16:00:39.437179"
+    },
+    {
+      "nome": "Banho e Tosa e Pet Shop JB",
+      "segmento": "pet_shop",
+      "website": "http://www.instagram.com/banhoetosajb",
+      "tem_site": false,
+      "telefone": "+55 11 2546-2011",
+      "whatsapp": "+551125462011",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Arraial de Catas Altas, 198 - Vila Santa Ines, São Paulo - SP, 03812-000, Brasil",
+      "avaliacoes": 326,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJsU4DvAhhzpQRmuEFZ-SXb2I",
+      "data_coleta": "2026-06-25T16:00:39.437165"
+    },
+    {
+      "nome": "Pet Premium Av Capitão Júlio Bezerra I pet shop - consultório veterinário - banho e tosa",
+      "segmento": "pet_shop",
+      "website": "https://linktr.ee/petpremiumrr",
+      "tem_site": false,
+      "telefone": "+55 95 99157-2774",
+      "whatsapp": "+5595991572774",
+      "cidade": "Boa Vista",
+      "estado": "Roraima",
+      "endereco": "Av. Cap. Júlio Bezerra, 342 - Centro, Boa Vista - RR, 69301-410, Brasil",
+      "avaliacoes": 298,
+      "categorias": [
+        "Pet Shop",
+        "Acupunturista",
+        "Hospital Veterinário",
+        "Serviço veterinário de emergência",
+        "Banho e tosa",
+        "Loja de suprimentos para animais de estimação",
+        "Veterinário",
+        "Farmácia veterinária"
+      ],
+      "rating": 4.8,
+      "place_id": "ChIJ3z7KIwsGk40RkYp9zMSP-DE",
+      "data_coleta": "2026-06-25T16:00:39.437383"
+    },
+    {
+      "nome": "Petloko - Pet Shop em Boa Vista",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 95 98107-1954",
+      "whatsapp": "+5595981071954",
+      "cidade": "Boa Vista",
+      "estado": "Roraima",
+      "endereco": "Av. Ville Roy, 5036 - São Francisco, Boa Vista - RR, 69305-098, Brasil",
+      "avaliacoes": 295,
+      "categorias": [
+        "Pet Shop",
+        "Banho e tosa",
+        "Veterinário",
+        "Farmácia veterinária"
+      ],
+      "rating": 4.7,
+      "place_id": "ChIJ67QdUMcHk40RGXDa-oOMQDc",
+      "data_coleta": "2026-06-25T16:00:39.437420"
+    },
+    {
+      "nome": "Bicho Sadio, há 25 anos cuidando do seu fiel amigo.",
+      "segmento": "pet_shop",
+      "website": "https://www.instagram.com/veterinariabichosadio/",
+      "tem_site": false,
+      "telefone": "+55 94 99195-4152",
+      "whatsapp": "+5594991954152",
+      "cidade": "Marabá",
+      "estado": "Pará",
+      "endereco": "Av. Tocantins, 593 - Novo Horizonte, Marabá - PA, 68503-660, Brasil",
+      "avaliacoes": 231,
+      "categorias": [
+        "Veterinário",
+        "Pet Shop"
+      ],
+      "rating": 4.5,
+      "place_id": "ChIJofX1Fyanw5IRzS9n1qZSlzE",
+      "data_coleta": "2026-06-25T16:00:39.437630"
+    },
+    {
+      "nome": "Pet Vitalle",
+      "segmento": "desconhecido",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 86 3085-4141",
+      "whatsapp": "+558630854141",
+      "cidade": "Teresina",
+      "estado": "Piauí",
+      "endereco": "Av. Pres. Kennedy, Número 1870 - São Cristóvão, Teresina - PI, 64052-675, Brasil",
+      "avaliacoes": 173,
+      "categorias": [
+        "Veterinário"
+      ],
+      "rating": 4.6,
+      "place_id": "ChIJg3e9-zc7jgcRPKQnRRq7jzU",
+      "data_coleta": "2026-06-25T16:00:39.437608"
+    },
+    {
+      "nome": "PETS PEW - Pet Shop e Banho e Tosa.",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 97791-0644",
+      "whatsapp": "+5511977910644",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Bento Freitas, 146 - Vila Buarque, São Paulo - SP, 01220-010, Brasil",
+      "avaliacoes": 172,
+      "categorias": [
+        "Pet Shop",
+        "Banho e tosa"
+      ],
+      "rating": 5,
+      "place_id": "ChIJWadNYglZzpQR_4PYwGzhRx0",
+      "data_coleta": "2026-06-25T16:00:39.437091"
+    },
+    {
+      "nome": "Dog Center Ipiranga - Banho & Tosa",
+      "segmento": "pet_shop",
+      "website": "https://linktr.ee/dogcenteripiranga",
+      "tem_site": false,
+      "telefone": "+55 11 98354-6780",
+      "whatsapp": "+5511983546780",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Antônio Marcondes, 276 - Ipiranga, São Paulo - SP, 04267-020, Brasil",
+      "avaliacoes": 131,
+      "categorias": [
+        "Pet Shop",
+        "Banho e tosa"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJ84q-pYhbzpQRdttxxpJeE2o",
+      "data_coleta": "2026-06-25T16:00:39.437429"
+    },
+    {
+      "nome": "MAISPet - Ração pra Cães e Gatos e Atendimento Veterinário, Banho e tosa",
+      "segmento": "pet_shop",
+      "website": "https://instagram.com/animal_petrr?igshid=YmMyMTA2M2Y=",
+      "tem_site": false,
+      "telefone": "+55 95 99113-0682",
+      "whatsapp": "+5595991130682",
+      "cidade": "Boa Vista",
+      "estado": "Roraima",
+      "endereco": "Av. Centenário, 1762 - Cinturão Verde, Boa Vista - RR, 69312-663, Brasil",
+      "avaliacoes": 123,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 4.6,
+      "place_id": "ChIJnw9EG1EEk40R0o4iK0UBu58",
+      "data_coleta": "2026-06-25T16:00:39.437315"
+    },
+    {
+      "nome": "Dough Dog Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 95106-7101",
+      "whatsapp": "+5511951067101",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Várzea da Palma, 232 - Parque Paulistano, São Paulo - SP, 08080-560, Brasil",
+      "avaliacoes": 102,
+      "categorias": [
+        "Banho e tosa"
+      ],
+      "rating": 5,
+      "place_id": "ChIJq2l5BMZjzpQRCTAXTHHm0Io",
+      "data_coleta": "2026-06-25T16:00:39.437111"
+    },
+    {
+      "nome": "Tica Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": "https://wa.me/5511969645933",
+      "tem_site": false,
+      "telefone": "+55 11 96964-5933",
+      "whatsapp": "+5511969645933",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "Av. Braz Leme, 722 - Santana, São Paulo - SP, 02511-000, Brasil",
+      "avaliacoes": 95,
+      "categorias": [
+        "Banho e tosa"
+      ],
+      "rating": 5,
+      "place_id": "ChIJD_PvWtL3zpQRA2GDmAcRzA8",
+      "data_coleta": "2026-06-25T16:00:39.437362"
+    },
+    {
+      "nome": "Clínica Spaço Odonto",
+      "segmento": "odontologia",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 99 99229-7692",
+      "whatsapp": "+5599992297692",
+      "cidade": "Imperatriz",
+      "estado": "Maranhão",
+      "endereco": "Av. Bernardo Sayão, 1120 - Nova Imperatriz, Imperatriz - MA, 65907-000, Brasil",
+      "avaliacoes": 90,
+      "categorias": [
+        "Dentista",
+        "Clínica odontológica"
+      ],
+      "rating": 5,
+      "place_id": "ChIJkdAgEPVfxZIRJWXPe3i-Uh0",
+      "data_coleta": "2026-06-25T16:00:39.437493"
+    },
+    {
+      "nome": "Pet's Fran - Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": "https://www.facebook.com/petsfran/",
+      "tem_site": false,
+      "telefone": "+55 11 96751-7513",
+      "whatsapp": "+5511967517513",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "Av. João dos Santos Abreu, 629 - Cachoeirinha, São Paulo - SP, 02556-020, Brasil",
+      "avaliacoes": 81,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJHyZcspz3zpQRVJ4WB7DZs-Y",
+      "data_coleta": "2026-06-25T16:00:39.437056"
+    },
+    {
+      "nome": "Pellaria Pet Shop",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 91463-6357",
+      "whatsapp": "+5511914636357",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Dr. Luís Barreto, 344 - Bela Vista, São Paulo - SP, 01328-020, Brasil",
+      "avaliacoes": 74,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 5,
+      "place_id": "ChIJk47c-7BZzpQRzQ2_mKqJ7Zo",
+      "data_coleta": "2026-06-25T16:00:39.437151"
+    },
+    {
+      "nome": "Snoopet Banho E Tosa Azul E Rosa",
+      "segmento": "pet_shop",
+      "website": "https://www.instagram.com/roseli_da_silva01?igsh=MzRlODBiNWFlZA==",
+      "tem_site": false,
+      "telefone": "+55 14 99126-2728",
+      "whatsapp": "+5514991262728",
+      "cidade": "Bauru",
+      "estado": "São Paulo",
+      "endereco": "R. Nicanor Rodrigues, 2-3 - Jardim Andorfato, Bauru - SP, 17066-096, Brasil",
+      "avaliacoes": 72,
+      "categorias": [
+        "Banho e tosa"
+      ],
+      "rating": 5,
+      "place_id": "ChIJL_Iecz5nv5QR2mGWNsUrTcw",
+      "data_coleta": "2026-06-25T16:00:39.437572"
+    },
+    {
+      "nome": "Dr. Frank Daniel Odontologia de Alta Performance",
+      "segmento": "odontologia",
+      "website": "https://www.instagram.com/dr.frankdanielbacabal/",
+      "tem_site": false,
+      "telefone": "+55 99 98475-0665",
+      "whatsapp": "+5599984750665",
+      "cidade": "Bacabal",
+      "estado": "Maranhão",
+      "endereco": "R. Magalhães de Almeida, 472 - Centro, Bacabal - MA, 65700-000, Brasil",
+      "avaliacoes": 66,
+      "categorias": [
+        "Dentista",
+        "Periodontia e implantes dentários",
+        "Clínica de implante dentário"
+      ],
+      "rating": 5,
+      "place_id": "ChIJpevsftJuigcRCoW3xoWVOCk",
+      "data_coleta": "2026-06-25T16:00:39.437447"
+    },
+    {
+      "nome": "Dr Paulo Tamloc - Referência em Cirurgia da Face em Boa Vista",
+      "segmento": "odontologia",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 95 99135-3003",
+      "whatsapp": "+5595991353003",
+      "cidade": "Boa Vista",
+      "estado": "RR",
+      "endereco": "Av Mário Homem de Melo, 1333, Mecejana CEP:, Av. Mário Homem de Melo, 1333 - Mecejana, Boa Vista - RR, 69304-350, Brasil",
+      "avaliacoes": 64,
+      "categorias": [
+        "Dentista"
+      ],
+      "rating": 5,
+      "place_id": "ChIJBayPB8MFk40Ry0YVqTsAJ5c",
+      "data_coleta": "2026-06-25T16:00:39.437304"
+    },
+    {
+      "nome": "África Banho & Tosa",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 94151-4356",
+      "whatsapp": "+5511941514356",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "Av. Leôncio de Magalhães, 745 - Jardim São Paulo, São Paulo - SP, 02042-010, Brasil",
+      "avaliacoes": 63,
+      "categorias": [
+        "Banho e tosa",
+        "Pet Shop"
+      ],
+      "rating": 4.7,
+      "place_id": "ChIJgbxpg5D3zpQRTCoZkYImI5s",
+      "data_coleta": "2026-06-25T16:00:39.437044"
+    },
+    {
+      "nome": "Fonsecão Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 3862-9400",
+      "whatsapp": "+551138629400",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Min. Ferreira Alves, 593 - Pompeia, São Paulo - SP, 05009-060, Brasil",
+      "avaliacoes": 51,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 4.7,
+      "place_id": "ChIJVXY363xXzpQRp7-2DdO_wKI",
+      "data_coleta": "2026-06-25T16:00:39.437324"
+    },
+    {
+      "nome": "Sunny Pet",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 99 98156-1710",
+      "whatsapp": "+5599981561710",
+      "cidade": "Imperatriz",
+      "estado": "Maranhão",
+      "endereco": "Av. Dorgival Pinheiro de Sousa, 1643 - Entroncamento, Imperatriz - MA, 65907-230, Brasil",
+      "avaliacoes": 48,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 4.7,
+      "place_id": "ChIJpc_KduJfxZIR_I7d-yYHdd8",
+      "data_coleta": "2026-06-25T16:00:39.437513"
+    },
+    {
+      "nome": "Pet.Aleluia",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 93015-2674",
+      "whatsapp": "+5511930152674",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Ipiroldes Martins Borges, 259 - Vila Joao Batista, São Paulo - SP, 02837-150, Brasil",
+      "avaliacoes": 43,
+      "categorias": [
+        "Banho e tosa"
+      ],
+      "rating": 5,
+      "place_id": "ChIJDZGasCP5zpQRaJlcoGhMhe8",
+      "data_coleta": "2026-06-25T16:00:39.437502"
+    },
+    {
+      "nome": "Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 95 99157-0397",
+      "whatsapp": "+5595991570397",
+      "cidade": "Boa Vista",
+      "estado": "Roraima",
+      "endereco": "R. Laura Pinheiro Maia, 2018 - Pintolândia, Boa Vista - RR, 69316-738, Brasil",
+      "avaliacoes": 35,
+      "categorias": [
+        "Banho e tosa"
+      ],
+      "rating": 4.5,
+      "place_id": "ChIJDRf38tkEk40RHiTg_Ja3ZBo",
+      "data_coleta": "2026-06-25T16:00:39.437235"
+    },
+    {
+      "nome": "GRANFIINOS BANHO E TOSA O MELHOR DA CIDADE",
+      "segmento": "pet_shop",
+      "website": "https://www.instagram.com/granfiinosbanhoetosa_petshop/profilecard/?igsh=bzgwN3E3M2R6dnBl",
+      "tem_site": false,
+      "telefone": "+55 95 99120-2037",
+      "whatsapp": "+5595991202037",
+      "cidade": "Boa Vista",
+      "estado": "RR",
+      "endereco": "na parte interna do petshop AMIGU PET - Rua cabo da polícia militar Lawrence melo 604 De esquina com a, Av. Parimé Brasil - Caranã, Boa Vista - RR, 69313-640, Brasil",
+      "avaliacoes": 29,
+      "categorias": [
+        "Banho e tosa",
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJFSppwP8Fk40RNABb8HXRHK8",
+      "data_coleta": "2026-06-25T16:00:39.437278"
+    },
+    {
+      "nome": "Baby's Pet Shop e Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 3666-1757",
+      "whatsapp": "+551136661757",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Canuto do Val, 205 - Santa Cecilia, São Paulo - SP, 01224-040, Brasil",
+      "avaliacoes": 28,
+      "categorias": [
+        "Pet Shop",
+        "Banho e tosa"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJgwXvN6dZzpQRCC8zQrftft4",
+      "data_coleta": "2026-06-25T16:00:39.437202"
+    },
+    {
+      "nome": "Pet shop perto de mim | Banho e tosa sao Paulo | Cãollection | Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 97616-2754",
+      "whatsapp": "+5511976162754",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Dr. Miranda de Azevedo, 911 - Vila Anglo Brasileira, São Paulo - SP, 05027-000, Brasil",
+      "avaliacoes": 26,
+      "categorias": [
+        "Banho e tosa"
+      ],
+      "rating": 5,
+      "place_id": "ChIJkTJGNBFXzpQRD_80d9DLBoM",
+      "data_coleta": "2026-06-25T16:00:39.437265"
+    },
+    {
+      "nome": "Clínica Odontológica Sorria Boa Vista",
+      "segmento": "odontologia",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 95 99112-8649",
+      "whatsapp": "+5595991128649",
+      "cidade": "Boa Vista",
+      "estado": "Roraima",
+      "endereco": "Av. das Guianas, 718-1 - Treze de Setembro, Boa Vista - RR, 69308-160, Brasil",
+      "avaliacoes": 21,
+      "categorias": [
+        "Clínica odontológica"
+      ],
+      "rating": 4.3,
+      "place_id": "ChIJ97-CNjoFk40RNxh2EDE3KlQ",
+      "data_coleta": "2026-06-25T16:00:39.437293"
+    },
+    {
+      "nome": "Xingó Pets",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 82 98176-6088",
+      "whatsapp": "+5582981766088",
+      "cidade": "Piranhas",
+      "estado": "Alagoas",
+      "endereco": "Av. Paulo Jacinto, 6 - Piranhas, AL, 57460-000, Brasil",
+      "avaliacoes": 21,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJAZDoB_ozDwcRhX9sztkN19g",
+      "data_coleta": "2026-06-25T16:00:39.437551"
+    },
+    {
+      "nome": "Pet Premium Av. Venezuela | Pet Shop",
+      "segmento": "pet_shop",
+      "website": "https://linktr.ee/petpremiumrr",
+      "tem_site": false,
+      "telefone": "+55 95 99150-4070",
+      "whatsapp": "+5595991504070",
+      "cidade": "Boa Vista",
+      "estado": "Roraima",
+      "endereco": "Av. Venezuela, 1951 - Liberdade, Boa Vista - RR, 69309-005, Brasil",
+      "avaliacoes": 19,
+      "categorias": [
+        "Pet Shop",
+        "Banho e tosa",
+        "Loja de suprimentos para animais de estimação",
+        "Farmácia veterinária"
+      ],
+      "rating": 4.6,
+      "place_id": "ChIJjUtSad4Fk40R1GSMxWdIegU",
+      "data_coleta": "2026-06-25T16:00:39.437215"
+    },
+    {
+      "nome": "SatisfaCÃO Pet Shop - Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": "http://instagram.com/@satisfacaopet",
+      "tem_site": false,
+      "telefone": "+55 11 99242-2535",
+      "whatsapp": "+5511992422535",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Dr. Márcio da Costa Bueno, 269 - Jardim Primavera, São Paulo - SP, 02756-110, Brasil",
+      "avaliacoes": 17,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 5,
+      "place_id": "ChIJe1-Ld8_5zpQR3Bz2TaOyvC8",
+      "data_coleta": "2026-06-25T16:00:39.436997"
+    },
+    {
+      "nome": "Pet Premium Ville Roy I Pet Shop - Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": "https://linktr.ee/petpremiumrr",
+      "tem_site": false,
+      "telefone": "+55 95 99120-6507",
+      "whatsapp": "+5595991206507",
+      "cidade": "Boa Vista",
+      "estado": "Roraima",
+      "endereco": "Av. Ville Roy, 4768 - Aparecida, Boa Vista - RR, 69306-405, Brasil",
+      "avaliacoes": 17,
+      "categorias": [
+        "Pet Shop",
+        "Banho e tosa",
+        "Loja de suprimentos para animais de estimação",
+        "Farmácia veterinária"
+      ],
+      "rating": 4.8,
+      "place_id": "ChIJ_ThiAAAHk40R2y-XjrFq68M",
+      "data_coleta": "2026-06-25T16:00:39.437226"
+    },
+    {
+      "nome": "Amor de Bicho Banho & Tosa - Casa Verde | Zona Norte",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 97628-5355",
+      "whatsapp": "+5511976285355",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Ouro Grosso, 682 - Parque Peruche, São Paulo - SP, 02531-012, Brasil",
+      "avaliacoes": 17,
+      "categorias": [
+        "Banho e tosa"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJl91zjoT3zpQRhVksIUUVtEo",
+      "data_coleta": "2026-06-25T16:00:39.437332"
+    },
+    {
+      "nome": "PET SHOP NINO E SIMBA",
+      "segmento": "pet_shop",
+      "website": "https://wa.me/c/559984404249",
+      "tem_site": false,
+      "telefone": "+55 99 98440-4249",
+      "whatsapp": "+5599984404249",
+      "cidade": "Imperatriz",
+      "estado": "Maranhão",
+      "endereco": "R. Pernambuco, 67 - Juçara, Imperatriz - MA, 65907-270, Brasil",
+      "avaliacoes": 15,
+      "categorias": [
+        "Banho e tosa",
+        "Táxi"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJA5e9rnJfxZIRR4uOI2sNZGk",
+      "data_coleta": "2026-06-25T16:00:39.437484"
+    },
+    {
+      "nome": "Theo Banho & Tosa",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 4563-3792",
+      "whatsapp": "+551145633792",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "Rua Thomaz Antônio Villani, 240 - Vila Santa Maria, São Paulo - SP, 02562-000, Brasil",
+      "avaliacoes": 12,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 4.8,
+      "place_id": "ChIJFe01aSv4zpQRO41SwF0z_z0",
+      "data_coleta": "2026-06-25T16:00:39.437030"
+    },
+    {
+      "nome": "Pet Shop Mundo Animal",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 94 99242-4244",
+      "whatsapp": "+5594992424244",
+      "cidade": "Parauapebas",
+      "estado": "Pará",
+      "endereco": "Av. Paulo Afonso, 156 - Da Paz, Parauapebas - PA, 68515-000, Brasil",
+      "avaliacoes": 12,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 4.3,
+      "place_id": "ChIJo_ouZApR3ZIRiOm-qQRAECQ",
+      "data_coleta": "2026-06-25T16:00:39.437456"
+    },
+    {
+      "nome": "Centro Odontológico Europa",
+      "segmento": "odontologia",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 94786-2171",
+      "whatsapp": "+5511947862171",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "Rua André Ampére, 153 - 8° andar, conj. 85 - Cidade Monções, São Paulo - SP, 04562-080, Brasil",
+      "avaliacoes": 11,
+      "categorias": [
+        "Endodontista"
+      ],
+      "rating": 5,
+      "place_id": "ChIJ0a9Q95hRzpQRC4pTCQml4_I",
+      "data_coleta": "2026-06-25T16:00:39.437120"
+    },
+    {
+      "nome": "Centro Odontológico Paulista",
+      "segmento": "odontologia",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 3079-0668",
+      "whatsapp": "+551130790668",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "Av. Nove de Julho, 5483 - Pinheiros, São Paulo - SP, 01407-200, Brasil",
+      "avaliacoes": 11,
+      "categorias": [
+        "Clínica odontológica",
+        "Centro de saúde e beleza"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJlVYhAmdXzpQRIRs3IzG3Lk4",
+      "data_coleta": "2026-06-25T16:00:39.437137"
+    },
+    {
+      "nome": "Instituto Yamaguchi",
+      "segmento": "odontologia",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 99 98235-1971",
+      "whatsapp": "+5599982351971",
+      "cidade": "Balsas",
+      "estado": "Maranhão",
+      "endereco": "R. Dezenove - São Félix, Balsas - MA, 65800-000, Brasil",
+      "avaliacoes": 11,
+      "categorias": [
+        "Ortodontista",
+        "Clínica odontológica",
+        "Clínica de implante dentário"
+      ],
+      "rating": 5,
+      "place_id": "ChIJX0whlRXv1ZIRtjfMHu6oQxE",
+      "data_coleta": "2026-06-25T16:00:39.437410"
+    },
+    {
+      "nome": "Lovepet Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 11 98877-2704",
+      "whatsapp": "+5511988772704",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "endereco": "Rua: Therezinha Di Spagna Lobo, 121 - Vila Portuguesa, São Paulo - SP, 02832-140, Brasil",
+      "avaliacoes": 9,
+      "categorias": [
+        "Pet Shop"
+      ],
+      "rating": 5,
+      "place_id": "ChIJ35dITPT5zpQRMwNw8XozpIw",
+      "data_coleta": "2026-06-25T16:00:39.437065"
+    },
+    {
+      "nome": "São Paulo Odontologia",
+      "segmento": "odontologia",
+      "website": "https://www.instagram.com/saopaulodontologia/",
+      "tem_site": false,
+      "telefone": "+55 11 5535-7778",
+      "whatsapp": "+551155357778",
+      "cidade": "São Paulo",
+      "estado": "São Paulo",
+      "endereco": "R. Geórgia, 241 - Brooklin, São Paulo - SP, 04559-010, Brasil",
+      "avaliacoes": 8,
+      "categorias": [
+        "Clínica odontológica"
+      ],
+      "rating": 5,
+      "place_id": "ChIJDQCjmqVQzpQRbspytLY0EpQ",
+      "data_coleta": "2026-06-25T16:00:39.437543"
+    },
+    {
+      "nome": "Petland Ville Roy - Referência em Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 95 98117-9239",
+      "whatsapp": "+5595981179239",
+      "cidade": "Boa Vista",
+      "estado": "Roraima",
+      "endereco": "Av. Ville Roy, 4390 - Bloco 1 - Aparecida, Boa Vista - RR, 69306-405, Brasil",
+      "avaliacoes": 7,
+      "categorias": [
+        "Banho e tosa"
+      ],
+      "rating": 5,
+      "place_id": "ChIJFzaGpHUHk40Rqljjni3GI9o",
+      "data_coleta": "2026-06-25T16:00:39.437398"
+    },
+    {
+      "nome": "PetDogVilaSaoPauloVeterinário",
+      "segmento": "desconhecido",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 14 98800-1195",
+      "whatsapp": "+5514988001195",
+      "cidade": "Bauru",
+      "estado": "São Paulo",
+      "endereco": "R. Benedito Viêira, 3-32 - Vila Sao Paulo, Bauru - SP, 17022-123, Brasil",
+      "avaliacoes": 7,
+      "categorias": [
+        "Veterinário"
+      ],
+      "rating": 4.9,
+      "place_id": "ChIJu6es9CFpv5QRdb6DlH7lF5g",
+      "data_coleta": "2026-06-25T16:00:39.437525"
+    },
+    {
+      "nome": "Expresso Animal - Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 95 99158-0345",
+      "whatsapp": "+5595991580345",
+      "cidade": "Boa Vista",
+      "estado": "Roraima",
+      "endereco": "Av. Carlos Pereira de Melo, 3356 - Caranã, Boa Vista - RR, 69313-630, Brasil",
+      "avaliacoes": 5,
+      "categorias": [
+        "Banho e tosa"
+      ],
+      "rating": 5,
+      "place_id": "ChIJTT0YOGQFk40RGFgKAryRU-Q",
+      "data_coleta": "2026-06-25T16:00:39.437249"
+    },
+    {
+      "nome": "Pet Show - Pet Shop - Curionópolis",
+      "segmento": "pet_shop",
+      "website": "https://www.instagram.com/petshowcurionopolis?igsh=cjRpc3p3YW56b3o5",
+      "tem_site": false,
+      "telefone": "+55 94 99233-3008",
+      "whatsapp": "+5594992333008",
+      "cidade": "Curionópolis",
+      "estado": "Pará",
+      "endereco": "Av. São Paulo, 188b, Curionópolis - PA, 68523-000, Brasil",
+      "avaliacoes": 2,
+      "categorias": [
+        "Banho e tosa",
+        "Pet Shop"
+      ],
+      "rating": 5,
+      "place_id": "ChIJ8Y-8qPg73ZIRVUpFhHsKtXw",
+      "data_coleta": "2026-06-25T16:00:39.437465"
+    },
+    {
+      "nome": "Dra Karina Lima , Odontologia",
+      "segmento": "odontologia",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 86 99406-5929",
+      "whatsapp": "+5586994065929",
+      "cidade": "Teresina",
+      "estado": "PI",
+      "endereco": "Q A, Casa 22 - Conjunto sao paulo, Teresina - PI, 64085-012, Brasil",
+      "avaliacoes": 1,
+      "categorias": [
+        "Clínica odontológica"
+      ],
+      "rating": 5,
+      "place_id": "ChIJ8-Cz9bUxjgcRuXnodBbz3IE",
+      "data_coleta": "2026-06-25T16:00:39.437351"
+    },
+    {
+      "nome": "PetDog - Veterinário & Banho Tosa",
+      "segmento": "desconhecido",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 14 98127-7771",
+      "whatsapp": "+5514981277771",
+      "cidade": "Bauru",
+      "estado": "São Paulo",
+      "endereco": "R. Benedito Viêira, 3-32 - Vila Sao Paulo, Bauru - SP, 17022-123, Brasil",
+      "avaliacoes": 1,
+      "categorias": [
+        "Veterinário"
+      ],
+      "rating": 5,
+      "place_id": "ChIJI0MMkhZpv5QRtXGvC93y74s",
+      "data_coleta": "2026-06-25T16:00:39.437534"
+    },
+    {
+      "nome": "AMAPET - Pet shop - Banho e Tosa",
+      "segmento": "pet_shop",
+      "website": "https://www.instagram.com/ajopetshop/",
+      "tem_site": false,
+      "telefone": "+55 15 99664-0763",
+      "whatsapp": "+5515996640763",
+      "cidade": "Sao Paulo",
+      "estado": "",
+      "endereco": "",
+      "avaliacoes": 1,
+      "categorias": [
+        "Pet Shop",
+        "Service establishment"
+      ],
+      "rating": 5,
+      "place_id": "ChIJLz31DXqNw5QREcGaXg2I1b0",
+      "data_coleta": "2026-06-25T16:00:39.437562"
+    },
+    {
+      "nome": "CLÍNICA ODONTO COMPANY",
+      "segmento": "odontologia",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 98 98437-9182",
+      "whatsapp": "+5598984379182",
+      "cidade": "Paulo Ramos",
+      "estado": "Maranhão",
+      "endereco": "R. Vila Gomes Um, 10 - A Definir, Paulo Ramos - MA, 65716-000, Brasil",
+      "avaliacoes": 0,
+      "categorias": [
+        "Dentista"
+      ],
+      "rating": null,
+      "place_id": "ChIJJ_WktKBdy5IRz7YM22H-gmw",
+      "data_coleta": "2026-06-25T16:00:39.437343"
+    },
+    {
+      "nome": "Centro Odontológico São Paulo Dr Luís Japonês",
+      "segmento": "odontologia",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 99 3524-7191",
+      "whatsapp": "+559935247191",
+      "cidade": "Imperatriz",
+      "estado": "Maranhão",
+      "endereco": "Av. Getúlio Vargas, 623 - Centro, Imperatriz - MA, 65901-450, Brasil",
+      "avaliacoes": 0,
+      "categorias": [
+        "Dentista"
+      ],
+      "rating": null,
+      "place_id": "ChIJD-jyNgdfxZIRfXDyDStTQIs",
+      "data_coleta": "2026-06-25T16:00:39.437438"
+    },
+    {
+      "nome": "Laços e Cia Pet",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 16 99792-6807",
+      "whatsapp": "+5516997926807",
+      "cidade": "Sao Paulo",
+      "estado": "",
+      "endereco": "",
+      "avaliacoes": 0,
+      "categorias": [
+        "Pet Shop",
+        "Service establishment",
+        "Banho e tosa"
+      ],
+      "rating": null,
+      "place_id": "ChIJs1RSjQbu0YARnQcZaW3gqQ8",
+      "data_coleta": "2026-06-25T16:00:39.437585"
+    },
+    {
+      "nome": "Antunes Petshop",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 15 99692-8597",
+      "whatsapp": "+5515996928597",
+      "cidade": "Sao Paulo",
+      "estado": "",
+      "endereco": "",
+      "avaliacoes": 0,
+      "categorias": [
+        "Pet Shop",
+        "Service establishment"
+      ],
+      "rating": null,
+      "place_id": "ChIJJyGCsZIIW4QRVYpD_D0ybNc",
+      "data_coleta": "2026-06-25T16:00:39.437618"
+    },
+    {
+      "nome": "Studio Pet",
+      "segmento": "pet_shop",
+      "website": null,
+      "tem_site": false,
+      "telefone": "+55 14 99709-9614",
+      "whatsapp": "+5514997099614",
+      "cidade": "Sao Paulo",
+      "estado": "",
+      "endereco": "",
+      "avaliacoes": 0,
+      "categorias": [
+        "Banho e tosa",
+        "Service establishment"
+      ],
+      "rating": null,
+      "place_id": "ChIJ6Qg_XB5fxpQRRYXmGO-IQXc",
+      "data_coleta": "2026-06-25T16:00:39.437639"
+    }
+  ]
+}

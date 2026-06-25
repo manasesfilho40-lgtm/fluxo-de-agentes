@@ -1,0 +1,193 @@
+{
+  "data_analise": "2026-06-18",
+  "empresa": {
+    "nome": "Imobiliária Silva Machado",
+    "razao_social": "Silva Machado Imobiliária",
+    "segmento": "Imobiliária",
+    "creci": "2102J",
+    "endereco": "Av. Tancredo Neves, 274, Centro Empresarial Iguatemi Bloco B, Sala 627, Caminho das Árvores, Salvador - BA",
+    "cep": "41.820-907",
+    "telefones": [
+      "(71) 99240-9150",
+      "(71) 97400-2244",
+      "(71) 3599-7811"
+    ],
+    "whatsapp": "5571992409150",
+    "whatsapp_2": "5571999077431",
+    "email": "NÃO ENCONTRADO",
+    "horarios": "NÃO ENCONTRADO",
+    "cnpj": "NÃO ENCONTRADO",
+    "site": "https://www.silvamachado.com.br"
+  },
+  "historia": "Fundada em 2019 por Telmo Alexandre e Lilian Machado, a Imobiliária Silva Machado se destaca no mercado imobiliário da Bahia por sua excelência, dedicação e atendimento personalizado. Telmo e Lilian adquiriram vasta experiência no setor desde 2011, quando iniciaram suas carreiras no mercado imobiliário, antes de fundarem a própria empresa. A história da Silva Machado é marcada por integridade e profissionalismo, construindo uma sólida reputação ao longo dos anos.",
+  "missao": "Proporcionar atendimento de qualidade, ajudando clientes a encontrar o imóvel dos seus sonhos ou a vender suas propriedades com tranquilidade e confiança.",
+  "diferenciais": [
+    "Mais de uma década de experiência no mercado imobiliário (desde 2011)",
+    "Atendimento personalizado e soluções sob medida para cada cliente",
+    "Transparência e compromisso em todas as transações",
+    "Conhecimento profundo do mercado imobiliário da Bahia",
+    "Foco em áreas de alta valorização em Salvador e região metropolitana",
+    "Parcerias com construtoras nacionais para lançamentos"
+  ],
+  "servicos": [
+    {
+      "nome": "Venda de Imóveis Novos",
+      "descricao": "Comercialização de imóveis novos em lançamentos de construtoras nacionais, com foco em áreas de alta valorização em Salvador e região metropolitana.",
+      "indicacoes": ["Compra de imóvel novo", "Investimento imobiliário"]
+    },
+    {
+      "nome": "Venda de Imóveis Usados",
+      "descricao": "Intermediação na venda de imóveis usados, garantindo processo seguro e transparente para vendedores e compradores.",
+      "indicacoes": ["Venda de imóvel próprio", "Compra de imóvel usado"]
+    },
+    {
+      "nome": "Locação de Imóveis",
+      "descricao": "Gestão e intermediação de locações residenciais e comerciais, oferecendo segurança para proprietários e inquilinos.",
+      "indicacoes": ["Alugar imóvel", "Locar imóvel"]
+    },
+    {
+      "nome": "Correspondente Bancário",
+      "descricao": "Serviços de correspondente bancário para facilitar processos financeiros relacionados a imóveis.",
+      "indicacoes": ["Financiamento imobiliário", "Documentação bancária"]
+    },
+    {
+      "nome": "Consultoria Imobiliária",
+      "descricao": "Assessoria personalizada para compra, venda ou investimento imobiliário, com base no conhecimento profundo do mercado local.",
+      "indicacoes": ["Investimento", "Planejamento financeiro"]
+    }
+  ],
+  "areas_atuacao": [
+    "Salvador",
+    "Região Metropolitana",
+    "Lauro de Freitas",
+    "Camaçari",
+    "Mata de São João",
+    "Vilas do Atlântico",
+    "Guarajuba",
+    "Abrantes",
+    "Praia do Forte",
+    "Stella Maris",
+    "Barra",
+    "Ondina",
+    "Horto Florestal"
+  ],
+  "tipos_imoveis": [
+    "Apartamentos (1, 2, 3, 4 quartos)",
+    "Casas em Condomínio",
+    "Casas Duplex",
+    "Casas Triplex",
+    "Coberturas Duplex",
+    "Lofts",
+    "Studios",
+    "Salas Comerciais",
+    "Lotes",
+    "Terrenos",
+    "Lotes em Condomínio Fechado",
+    "Sítios"
+  ],
+  "construtoras_parceiras": [
+    "Moura Dubeux",
+    "BRL INCORP",
+    "Busca Vida Side Concept",
+    "Colorado",
+    "MRV",
+    "Tenda",
+    "Monvert",
+    "Infinity Salvador"
+  ],
+  "redes_sociais": {
+    "facebook": "https://www.facebook.com/silvamachadoimobiliaria",
+    "instagram": "https://www.instagram.com/imobiliariasilvamachado",
+    "youtube": "https://www.youtube.com/channel/UCA9y_Gl_Jfm3NKjTGk8rIuQ",
+    "tiktok": "https://www.tiktok.com/@imobiliariasilvamachado"
+  },
+  "equipe": [
+    {
+      "nome": "Telmo Alexandre",
+      "cargo": "Proprietário e Fundador"
+    },
+    {
+      "nome": "Lilian Machado",
+      "cargo": "Proprietária e Fundadora"
+    }
+  ],
+  "infraestrutura": [
+    "Escório no Centro Empresarial Iguatemi, Caminho das Árvores",
+    "Sala 627, Bloco B",
+    "Equipe comercial dedicada",
+    "Plataforma de busca de imóveis completa",
+    "Calculadora de financiamento online"
+  ],
+  "tom_de_voz": "profissional",
+  "palavras_chave": [
+    "imobiliária Salvador",
+    "imóveis venda Salvador",
+    "imóveis locação Salvador",
+    "imobiliária Bahia",
+    "imóveis Camaçari",
+    "imóveis Lauro de Freitas",
+    "lotes Guarajuba",
+    "casas duplex Salvador",
+    "apartamentos Salvador",
+    "imóveis lançamento Bahia",
+    "correspondente bancário imobiliário",
+    "investimento imobiliário Bahia"
+  ],
+  "design_insights": {
+    "tom_visual": "profissional e limpo",
+    "cores_detectadas": ["#FFFFFF", "#000000", "#E67E22", "#2C3E50"],
+    "funciona_bem": [
+      "Busca de imóveis completa com filtros",
+      "WhatsApp visível no header",
+      "Seção de lançamentos em destaque",
+      "Fotos reais dos imóveis",
+      "Informações claras de contato"
+    ],
+    "nao_funciona": [
+      "Design genérico de plataforma imobiliaria",
+      "Falta de personalização visual da marca",
+      "Ausência de formulário de contato na página sobre",
+      "Horários de funcionamento não informados",
+      "Email de contato não encontrado"
+    ]
+  },
+  "score": 6,
+  "problemas": [
+    {
+      "categoria": "Contato",
+      "severidade": "media",
+      "descricao": "Email de contato não disponível no site"
+    },
+    {
+      "categoria": "Conteúdo",
+      "severidade": "media",
+      "descricao": "Horários de funcionamento não informados"
+    },
+    {
+      "categoria": "Conteúdo",
+      "severidade": "baixa",
+      "descricao": "CNPJ não disponível no site"
+    },
+    {
+      "categoria": "Design",
+      "severidade": "media",
+      "descricao": "Layout genérico de plataforma imobiliária sem diferenciação visual da marca"
+    },
+    {
+      "categoria": "Navegação",
+      "severidade": "baixa",
+      "descricao": "Formulário de contato com código CAPTCHA pode dificultar o envio"
+    }
+  ],
+  "melhorias": [
+    "Adicionar email de contato visível no footer e página de contato",
+    "Incluir horários de funcionamento em destaque",
+    "Exibir CNPJ para aumentar credibilidade",
+    "Personalizar design com identidade visual única da marca",
+    "Adicionar mapa com localização do escritório",
+    "Criar seção de depoimentos de clientes",
+    "Melhorar formulário de contato removendo CAPTCHA ou simplificando"
+  ],
+  "imoveis_em_destaque": 30,
+  "total_imoveis_estimado": 100
+}
