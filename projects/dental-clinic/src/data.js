@@ -1,38 +1,8 @@
-import { Scan, Shield, Target } from 'lucide-react'
-
 export const BRAND = {
   name: 'LÍNEA DENTAL',
   tagline: 'Odontologia de precisão e excelência.',
   purpose: 'Clínica odontológica de excelência com diagnóstico digital avançado.',
 }
-
-export const VALUE_PROPS = [
-  {
-    title: 'Diagnóstico Digital Avançado',
-    description: 'Scanner intraoral 3D de última geração para mapeamento completo da sua saúde bucal.',
-    icon: Scan,
-    shufflerLabels: ['Scanner 3D Intraoral', 'Análise Automatizada', 'Relatório Instantâneo'],
-  },
-  {
-    title: 'Tratamentos Minimamente Invasivos',
-    description: 'Técnicas que preservam o máximo de estrutura saudável com resultados superiores.',
-    icon: Shield,
-    typewriterMessages: [
-      '> Iniciando protocolo de preservação...',
-      '> Mapeamento de estrutura saudável...',
-      '> Selecionando técnica minimamente invasiva...',
-      '> Executando com precisão milimétrica...',
-      '> Verificando integridade do tratamento...',
-    ],
-  },
-  {
-    title: 'Resultados Previsíveis',
-    description: 'Planejamento digital com simulação do sorriso antes mesmo de iniciar o tratamento.',
-    icon: Target,
-    schedulerDays: ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
-    schedulerLabel: 'Agendar Avaliação',
-  },
-]
 
 export const PROTOCOL_STEPS = [
   {

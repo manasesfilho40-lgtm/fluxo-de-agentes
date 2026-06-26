@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Scan, Shield, Target, ChevronRight, Check } from 'lucide-react'
-import { BRAND } from '../data'
 
 gsap.registerPlugin(ScrollTrigger)
 
