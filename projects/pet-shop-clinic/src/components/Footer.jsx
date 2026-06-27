@@ -3,7 +3,7 @@ import { BRAND, NAV_LINKS } from '../data'
 
 export default function Footer() {
   return (
-    <footer className="bg-primary rounded-t-[4rem] pt-16 pb-8 px-6">
+    <footer className="bg-primary pt-16 pb-8 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-2">
@@ -26,7 +26,7 @@ export default function Footer() {
             <h4 className="font-heading font-semibold text-white mb-4">Contato</h4>
             <ul className="space-y-3">
               <li className="font-heading text-white/50 text-sm">(11) 99999-9999</li>
-              <li className="font-heading text-white/50 text-sm">contato@lineadental.com.br</li>
+              <li className="font-heading text-white/50 text-sm">contato@pawfectpet.com.br</li>
               <li className="font-heading text-white/50 text-sm">São Paulo, SP</li>
             </ul>
           </div>
@@ -34,8 +34,8 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-heading text-white/30 text-sm">© 2026 {BRAND.name}. Todos os direitos reservados.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="font-heading text-white/30 text-sm link-hover hover:text-white">Política de Privacidade</a>
-            <a href="#" className="font-heading text-white/30 text-sm link-hover hover:text-white">Termos de Uso</a>
+            <Link to="/privacidade" className="font-heading text-white/30 text-sm link-hover hover:text-white">Política de Privacidade</Link>
+            <Link to="/termos" className="font-heading text-white/30 text-sm link-hover hover:text-white">Termos de Uso</Link>
           </div>
         </div>
       </div>

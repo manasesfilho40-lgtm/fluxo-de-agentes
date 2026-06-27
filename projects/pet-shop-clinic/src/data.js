@@ -13,13 +13,13 @@ export const PROTOCOL_STEPS = [
   },
   {
     number: '02',
-    title: 'Planejamento do Servicio',
+    title: 'Planejamento do Serviço',
     description: 'Escolha do estilo de tosa, tratamentos e produtos ideais para cada raça.',
     animation: 'scan',
   },
   {
     number: '03',
-    title: 'Execucao Impecavel',
+    title: 'Execução Impecável',
     description: 'Serviço realizado por profissionais certificados com produtos premium.',
     animation: 'ekg',
   },
@@ -29,32 +29,32 @@ export const PRICING_PLANS = [
   {
     name: 'Essencial',
     price: 'R$ 89',
-    period: '/servico',
-    description: 'Cuidados basicos para a rotina do seu pet.',
+    period: '/serviço',
+    description: 'Cuidados básicos para a rotina do seu pet.',
     features: ['Banho completo', 'Secagem', 'Limpeza de orelhas', 'Corte de unhas'],
     highlighted: false,
   },
   {
     name: 'Premium',
     price: 'R$ 149',
-    period: '/servico',
-    description: 'Experiencia completa com tosa e tratamentos.',
-    features: ['Banho premium', 'Tosa padrao', 'Hidrataçao', 'Limpeza de ouvidos', 'Corte de unhas', ' perfume'],
+    period: '/serviço',
+    description: 'Experiência completa com tosa e tratamentos.',
+    features: ['Banho premium', 'Tosa padrão', 'Hidratação', 'Limpeza de ouvidos', 'Corte de unhas', 'Perfume'],
     highlighted: true,
   },
   {
     name: 'VIP',
     price: 'R$ 249',
-    period: '/servico',
-    description: 'O maximo em cuidados para pets exigentes.',
-    features: ['Spa completo', 'Tosa japonesa', 'Tratamento capilar', 'Hidrataçao profunda', 'Acessorios exclusivos', '保証 premium'],
+    period: '/serviço',
+    description: 'O máximo em cuidados para pets exigentes.',
+    features: ['Spa completo', 'Tosa japonesa', 'Tratamento capilar', 'Hidratação profunda', 'Acessórios exclusivos', 'Garantia premium'],
     highlighted: false,
   },
 ]
 
 export const NAV_LINKS = [
-  { label: 'Inicio', path: '/' },
-  { label: 'Servicos', path: '/servicos' },
+  { label: 'Início', path: '/' },
+  { label: 'Serviços', path: '/servicos' },
   { label: 'Protocolo', path: '/protocolo' },
   { label: 'Contato', path: '/contato' },
 ]

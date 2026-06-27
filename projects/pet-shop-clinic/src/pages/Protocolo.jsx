@@ -18,7 +18,7 @@ function ProtocolCard({ step, index }) {
 
   const anim = step.animation === 'helix' ? (
     <svg viewBox="0 0 200 200" className="w-full h-full opacity-20">
-      <defs><linearGradient id={`g${index}`} x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stopColor="#C9A84C" /><stop offset="100%" stopColor="#C9A84C" stopOpacity="0.3" /></linearGradient></defs>
+      <defs><linearGradient id={`g${index}`} x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stopColor="#2563EB" /><stop offset="100%" stopColor="#2563EB" stopOpacity="0.3" /></linearGradient></defs>
       <path d="M100 20 C130 50, 170 80, 100 100 C30 120, 70 150, 100 180" fill="none" stroke={`url(#g${index})`} strokeWidth="2" className="animate-pulse" />
       <path d="M100 20 C70 50, 30 80, 100 100 C170 120, 130 150, 100 180" fill="none" stroke={`url(#g${index})`} strokeWidth="2" className="animate-pulse" />
     </svg>
@@ -29,7 +29,7 @@ function ProtocolCard({ step, index }) {
     </div>
   ) : (
     <svg viewBox="0 0 400 100" className="w-full h-full opacity-20">
-      <path d="M0 50 L50 50 L70 20 L90 80 L110 30 L130 70 L150 50 L200 50 L220 20 L240 80 L260 30 L280 70 L300 50 L350 50 L370 20 L390 80 L400 50" fill="none" stroke="#C9A84C" strokeWidth="2" className="ekg-path" />
+      <path d="M0 50 L50 50 L70 20 L90 80 L110 30 L130 70 L150 50 L200 50 L220 20 L240 80 L260 30 L280 70 L300 50 L350 50 L370 20 L390 80 L400 50" fill="none" stroke="#2563EB" strokeWidth="2" className="ekg-path" />
     </svg>
   )
 

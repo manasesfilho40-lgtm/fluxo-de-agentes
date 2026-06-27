@@ -7,23 +7,18 @@ import { Scissors, Sparkles, Heart, ChevronRight, Check } from 'lucide-react'
 gsap.registerPlugin(ScrollTrigger)
 
 function DiagnosticShuffler({ labels }) {
-  const [cards, setCards] = useState(labels)
-  const containerRef = useRef(null)
+  const [active, setActive] = useState(0)
   useEffect(() => {
-    const iv = setInterval(() => setCards(p => { const n = [...p]; n.unshift(n.pop()); return n }), 3000)
+    const iv = setInterval(() => setActive(p => (p + 1) % labels.length), 3000)
     return () => clearInterval(iv)
-  }, [])
-  useEffect(() => {
-    if (containerRef.current) {
-      gsap.fromTo(containerRef.current.querySelectorAll('.shuffler-card'), { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.5, ease: 'back.out(1.7)' })
-    }
-  }, [cards])
+  }, [labels.length])
   return (
-    <div ref={containerRef} className="relative h-32 overflow-hidden">
-      {cards.map((label, i) => (
-        <div key={label} className="shuffler-card absolute inset-x-0 bg-white border border-dark/10 rounded-2xl p-4 flex items-center shadow-sm" style={{ top: `${i * 44}px` }}>
-          <div className="w-2 h-2 rounded-full bg-accent mr-3 flex-shrink-0" />
-          <span className="font-heading font-medium text-dark">{label}</span>
+    <div className="space-y-3">
+      {labels.map((label, i) => (
+        <div key={label} className={`relative flex items-center gap-4 bg-white rounded-2xl px-5 py-4 transition-all duration-500 ${active === i ? 'shadow-lg scale-[1.02] border border-accent/20' : 'shadow-sm border border-dark/5 opacity-60'}`}>
+          <div className={`w-1 h-8 rounded-full transition-all duration-500 ${active === i ? 'bg-accent' : 'bg-dark/10'}`} />
+          <span className={`font-heading font-medium text-sm transition-colors duration-500 ${active === i ? 'text-dark' : 'text-dark/50'}`}>{label}</span>
+          {active === i && <div className="absolute bottom-0 left-5 right-5 h-0.5 bg-accent/20 rounded-full"><div className="h-full bg-accent rounded-full animate-[shrink_3s_linear]" /></div>}
         </div>
       ))}
     </div>
@@ -62,7 +57,7 @@ function CursorScheduler({ days, label }) {
         ))}
         {show && (
           <div className="absolute w-4 h-4 pointer-events-none transition-all duration-1000 ease-out z-10" style={{ left: `${pos.x - 8}px`, top: `${pos.y - 8}px` }}>
-            <svg viewBox="0 0 24 24" fill="none" className="w-full h-full"><path d="M5 3l14 8-6 2-2 6L5 3z" fill="#C9A84C" stroke="#0D0D12" strokeWidth="1" /></svg>
+            <svg viewBox="0 0 24 24" fill="none" className="w-full h-full"><path d="M5 3l14 8-6 2-2 6L5 3z" fill="#2563EB" stroke="#0D0D12" strokeWidth="1" /></svg>
           </div>
         )}
       </div>
@@ -127,7 +122,7 @@ const SERVICES = [
       'Acompanhamento de saúde',
     ],
     image: 'https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=800&q=80',
-    interactive: <CursorScheduler days={['S', 'T', 'Q', 'Q', 'S', 'S', 'D']} label="Agendar Consulta" />,
+    interactive: <CursorScheduler days={['S', 'T', 'Q', 'Q', 'S', 'S', 'D']} label="Agendar Serviço" />,
   },
 ]
 

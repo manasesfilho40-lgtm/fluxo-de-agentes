@@ -38,7 +38,7 @@ export default function Navbar() {
         ))}
       </div>
       <Link to="/contato" className="hidden md:flex btn-magnetic bg-accent text-primary px-5 py-2 rounded-full text-sm font-semibold items-center gap-2">
-        <span className="relative z-10">Agendar Consulta</span>
+        <span className="relative z-10">Agendar Serviço</span>
         <ArrowRight size={14} className="relative z-10" />
       </Link>
       <button onClick={() => setMobileOpen(!mobileOpen)} className={`md:hidden ${text}`}>
@@ -50,7 +50,7 @@ export default function Navbar() {
             {NAV_LINKS.map((l) => (
               <Link key={l.label} to={l.path} className="text-dark font-medium py-2">{l.label}</Link>
             ))}
-            <Link to="/contato" className="btn-magnetic bg-accent text-primary px-5 py-3 rounded-full text-sm font-semibold text-center">Agendar Consulta</Link>
+            <Link to="/contato" className="btn-magnetic bg-accent text-primary px-5 py-3 rounded-full text-sm font-semibold text-center">Agendar Serviço</Link>
           </div>
         </div>
       )}

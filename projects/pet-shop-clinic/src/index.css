@@ -41,12 +41,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C9A84C;
+  background: #2563EB;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b8973f;
+  background: #1D4ED8;
 }
 
 /* Magnetic Button Effect */
@@ -72,7 +72,7 @@ body {
   display: inline-block;
   width: 2px;
   height: 1em;
-  background-color: #C9A84C;
+  background-color: #2563EB;
   animation: blink 1s step-end infinite;
   margin-left: 2px;
 }
@@ -130,7 +130,7 @@ body {
 
 /* Gradient Text */
 .gradient-text {
-  background: linear-gradient(135deg, #C9A84C 0%, #e8d48b 100%);
+  background: linear-gradient(135deg, #2563EB 0%, #93C5FD 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

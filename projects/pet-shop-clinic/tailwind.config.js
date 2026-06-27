@@ -8,11 +8,11 @@ export default {
     extend: {
       colors: {
         primary: '#0D0D12',
-        accent: '#C9A84C',
+        accent: '#2563EB',
         background: '#FAF8F5',
         dark: '#2A2A35',
         ivory: '#FAF8F5',
-        champagne: '#C9A84C',
+        champagne: '#2563EB',
         obsidian: '#0D0D12',
         slate: '#2A2A35',
       },
@@ -38,6 +38,10 @@ export default {
         wave: {
           '0%, 100%': { strokeDashoffset: '0' },
           '50%': { strokeDashoffset: '50' },
+        },
+        shrink: {
+          '0%': { width: '100%' },
+          '100%': { width: '0%' },
         },
       },
     },
