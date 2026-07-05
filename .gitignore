@@ -1,54 +1,29 @@
-# Environment variables (API keys)
-.env
-config/.env
+# Browser sessions
+fluxo-de-agentes/whatsapp-bot/session/
+*.pma
+*.db
+*.db-shm
+*.db-wal
 
-# Python
+# Temp files
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-venv/
-.venv/
-*.egg-info/
-dist/
-build/
+*.pyc
+*.pyo
 
-# Node
-node_modules/
-
-# WhatsApp Bot session (sensitive)
-whatsapp-bot/session/
+# Large data files
+links_ja_coletados_backup.txt
 
 # Screenshots
-data/screenshots/
+fluxo-de-agentes/data/screenshots/
 
-# Uploads
-uploads/
+# Images (keep only code)
+*.jfif
+*.webp
+*.png
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+# Node modules
+node_modules/
 
-# OS
-.DS_Store
+# OS files
 Thumbs.db
-desktop.ini
-
-# Logs
-*.log
-server.log
-server_err.log
-
-# Backup
-backup/
-
-# Temporary files
-*.tmp
-*.bak
-
-# Apify cache
-.cache/
+.DS_Store
