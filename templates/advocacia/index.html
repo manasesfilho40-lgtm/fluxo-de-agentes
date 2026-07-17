@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Escritório Silva & Associados</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f7f9fb;--card:#ffffff;--text:#0f1724;--muted:#6b7280;--accent:#0b5cff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Arial;background:var(--bg);color:var(--text);margin:0}
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7fb3ff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    h1{font-size:1.4rem;margin:0}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px;align-items:center}
+    .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 6px 18px rgba(15,23,36,0.06)}
+    .areas{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
+    .area{background:linear-gradient(180deg,#fafbff,#ffffff);padding:14px;border-radius:8px}
+    form label{display:block;font-size:0.82rem;color:var(--muted);margin-bottom:6px}
+    input,textarea{width:100%;padding:10px;border:1px solid #e6edf6;border-radius:8px;font-size:0.95rem}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:0.9rem}
+    @media(max-width:880px){.hero{grid-template-columns:1fr} .areas{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SA</div>
+        <div>
+          <h1>Escritório Silva & Associados</h1>
+          <p class="lead">Consultoria e representação jurídica em diversas áreas do direito</p>
+        </div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-weight:600">Contato</div>
+        <div style="color:var(--muted);font-size:0.95rem">contato@exemplo.com • +55 11 99999-9999</div>
+      </div>
+    </header>
+
+    <main class="hero">
+      <section>
+        <div class="card">
+          <h2>Bem-vindo</h2>
+          <p style="color:var(--muted);margin-top:8px">Somos um escritório de advocacia especializado em fornecer soluções jurídicas sob medida para pessoas e empresas. Trabalhamos com foco em resultados, ética e acompanhamento próximo ao cliente.</p>
+
+          <h3 style="margin-top:18px">Áreas de atuação</h3>
+          <div class="areas">
+            <div class="area"><strong>Direito Civil</strong><div style="color:var(--muted);margin-top:6px">Contratos, responsabilidade civil, família e sucessões.</div></div>
+            <div class="area"><strong>Direito Trabalhista</strong><div style="color:var(--muted);margin-top:6px">Assessoria em reclamações trabalhistas e defesa em processos.</div></div>
+            <div class="area"><strong>Direito Tributário</strong><div style="color:var(--muted);margin-top:6px">Planejamento tributário e defesa em execuções fiscais.</div></div>
+            <div class="area"><strong>Direito Empresarial</strong><div style="color:var(--muted);margin-top:6px">Contratos comerciais, compliance e consultoria societária.</div></div>
+          </div>
+
+          <h3 style="margin-top:18px">Sobre nós</h3>
+          <p style="color:var(--muted);margin-top:8px">Nossa equipe reúne advogados com experiência prática e atuação estratégica para proteger seus direitos e otimizar resultados. Atuamos com transparência e comunicação constante.</p>
+        </div>
+
+        <div style="display:flex;gap:12px;margin-top:16px">
+          <a class="btn" href="mailto:contato@exemplo.com"><i class="fas fa-envelope"></i> Enviar e-mail</a>
+          <a class="btn" href="tel:+5511999999999" style="background:#0a47b8"><i class="fas fa-phone"></i> Ligar</a>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>Agende uma consulta</h3>
+          <p style="color:var(--muted);margin-top:6px">Preencha o formulário abaixo que entraremos em contato para confirmar.</p>
+          <form style="margin-top:12px" onsubmit="event.preventDefault();alert('Obrigado! Entraremos em contato.');">
+            <label for="nome">Nome</label>
+            <input id="nome" placeholder="Seu nome" required>
+            <label for="email" style="margin-top:10px">Email</label>
+            <input id="email" type="email" placeholder="seu@exemplo.com" required>
+            <label for="telefone" style="margin-top:10px">Telefone</label>
+            <input id="telefone" placeholder="(11) 99999-9999">
+            <label for="assunto" style="margin-top:10px">Assunto</label>
+            <textarea id="assunto" rows="4" placeholder="Descreva brevemente" ></textarea>
+            <div style="margin-top:12px">
+              <button class="btn" type="submit">Solicitar contato</button>
+            </div>
+          </form>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card">
+          <h4>Endereço</h4>
+          <div style="color:var(--muted);margin-top:6px">Av. Exemplo, 123 - Centro<br>São Paulo - SP</div>
+          <div style="margin-top:10px"><strong style="color:var(--muted)">Horário</strong><div style="color:var(--muted);margin-top:4px">Seg–Sex: 9h–18h</div></div>
+        </div>
+      </aside>
+
+    </main>
+
+    <footer>
+      © 2026 Escritório Silva & Associados — Todos os direitos reservados
+    </footer>
+  </div>
+</body>
+</html>
