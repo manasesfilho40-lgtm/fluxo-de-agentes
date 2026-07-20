@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Logo Ejercicios de Fútbol</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #f5f5f5; }
+    .logo-card {
+      width: 512px; height: 512px;
+      background: #0D0D12;
+      border-radius: 64px;
+      display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      position: relative; overflow: hidden;
+    }
+    .logo-card::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 250px; height: 250px;
+      background: radial-gradient(circle, rgba(192,57,43,0.3), transparent 70%);
+      border-radius: 50%;
+    }
+    .logo-card::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -60px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, rgba(192,57,43,0.15), transparent 70%);
+      border-radius: 50%;
+    }
+    .ball {
+      width: 120px; height: 120px;
+      position: relative; z-index: 2;
+      margin-bottom: 24px;
+    }
+    .ball svg { width: 100%; height: 100%; }
+    .brand {
+      position: relative; z-index: 2;
+      text-align: center;
+    }
+    .brand .name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 28px; font-weight: 800;
+      color: #FAF8F5;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .brand .accent {
+      color: #C0392B;
+    }
+    .brand .tag {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px; font-weight: 500;
+      color: rgba(250,248,245,0.5);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 8px;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="logo-card">
+    <div class="ball">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="60" cy="60" r="56" fill="#FAF8F5" stroke="#C0392B" stroke-width="3"/>
+        <path d="M60 4 L60 18 M60 102 L60 116 M4 60 L18 60 M102 60 L116 60" stroke="#C0392B" stroke-width="2" stroke-linecap="round"/>
+        <polygon points="60,28 73,48 60,42 47,48" fill="#C0392B"/>
+        <polygon points="92,60 73,48 78,60 73,72" fill="#C0392B"/>
+        <polygon points="60,92 47,72 60,78 73,72" fill="#C0392B"/>
+        <polygon points="28,60 47,48 42,60 47,72" fill="#C0392B"/>
+        <polygon points="60,28 73,48 60,60 47,48" fill="#C0392B" opacity="0.6"/>
+        <polygon points="92,60 73,72 60,60 73,48" fill="#C0392B" opacity="0.6"/>
+        <polygon points="60,92 47,72 60,60 73,72" fill="#C0392B" opacity="0.6"/>
+        <polygon points="28,60 47,72 60,60 47,48" fill="#C0392B" opacity="0.6"/>
+      </svg>
+    </div>
+    <div class="brand">
+      <div class="name">Ejercicios de<br><span class="accent">Fútbol</span></div>
+      <div class="tag">+3.000 entrenamientos</div>
+    </div>
+  </div>
+</body>
+</html>
