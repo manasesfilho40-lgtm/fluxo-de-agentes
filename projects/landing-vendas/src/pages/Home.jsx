@@ -1,64 +1,46 @@
-import { useEffect, useRef, useState } from 'react'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import { ChevronRight, Check, Shield, Star } from 'lucide-react'
+import { useState } from 'react'
+import { ChevronRight, Check, Shield, Star, ArrowRight } from 'lucide-react'
 import { BRAND, CATEGORIES, PAINS, BENEFITS, TESTIMONIALS, FAQS } from '../data'
 
-gsap.registerPlugin(ScrollTrigger)
-
 function Hero() {
-  const heroRef = useRef(null)
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ delay: 0.8 })
-      tl.fromTo('.hero-line-1', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power3.out' })
-        .fromTo('.hero-line-2', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }, '-=0.7')
-        .fromTo('.hero-cta', { y: 40, opacity: 0 }, { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }, '-=0.5')
-    }, heroRef)
-    return () => ctx.revert()
-  }, [])
-
   return (
-    <section ref={heroRef} className="relative h-screen min-h-[600px] flex items-end overflow-hidden">
-      <div className="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=1920&q=80" alt="Fútbol" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-transparent" />
-      </div>
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-24 md:pb-32">
+    <section className="min-h-screen flex items-center bg-primary text-white">
+      <div className="max-w-6xl mx-auto px-6 py-24">
         <div className="max-w-3xl">
-          <p className="hero-line-1 font-mono text-accent text-sm md:text-base tracking-widest uppercase mb-4 opacity-0">Acceso Inmediato &middot; Pago Único</p>
-          <h1 className="mb-6">
-            <span className="hero-line-1 block font-heading font-bold text-4xl md:text-6xl lg:text-7xl text-white leading-tight opacity-0">
-              Más de 300 Ejercicios de Fútbol
-            </span>
-            <span className="hero-line-2 block font-drama italic text-5xl md:text-7xl lg:text-8xl text-accent leading-none mt-2 opacity-0">
-              Prontos para Usar.
-            </span>
+          <p className="font-mono text-accent text-sm tracking-widest uppercase mb-6">
+            Acesso Imediato · Pagamento Único
+          </p>
+          <h1 className="font-heading font-bold text-5xl md:text-7xl leading-tight mb-6">
+            +300 Exercícios de Futebol
+            <span className="block text-accent mt-2">Prontos para Usar.</span>
           </h1>
-          <p className="hero-line-2 font-heading text-white/70 text-lg md:text-xl max-w-xl mb-8 opacity-0">{BRAND.purpose}</p>
-          <div className="hero-cta flex flex-col sm:flex-row gap-4 opacity-0">
-              <a href="https://pay.cakto.com.br/9fuib6v_992374" target="_blank" rel="noopener noreferrer" className="btn-magnetic inline-flex items-center justify-center gap-2 bg-accent text-primary px-8 py-4 rounded-full font-heading font-semibold text-base">
-              <span className="relative z-10">Quiero Acceder Ahora</span>
-              <ChevronRight size={18} className="relative z-10" />
+          <p className="text-white/60 text-lg md:text-xl max-w-xl mb-10 leading-relaxed">
+            {BRAND.purpose}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a
+              href="https://pay.cakto.com.br/9fuib6v_992374"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-accent text-white px-8 py-4 rounded-lg font-semibold text-base hover:bg-accent/90 transition-colors"
+            >
+              Quero Acessar Agora
+              <ArrowRight size={18} />
             </a>
-            <a href="#categorias" className="btn-magnetic inline-flex items-center justify-center gap-2 border border-white/30 text-white px-8 py-4 rounded-full font-heading font-medium text-base hover:bg-white/10 transition-colors">
+            <a
+              href="#categorias"
+              className="inline-flex items-center justify-center gap-2 border border-white/20 text-white px-8 py-4 rounded-lg font-medium text-base hover:bg-white/5 transition-colors"
+            >
               Ver Categorias
-              <ChevronRight size={18} />
             </a>
           </div>
-          <div className="hero-cta mt-8 flex items-center gap-6 opacity-0">
-            <div className="flex -space-x-2">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className="w-8 h-8 rounded-full border-2 border-primary bg-gradient-to-br from-accent/30 to-accent/60" />
+          <div className="mt-10 flex items-center gap-4">
+            <div className="flex items-center gap-1 text-amber-400">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} size={14} fill="currentColor" />
               ))}
             </div>
-            <div>
-              <div className="flex items-center gap-1 text-amber-400">
-                <Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" />
-              </div>
-              <p className="mt-0.5 text-xs text-white/40"><span className="font-semibold text-white/70">4.9/5</span> — +230 entrenadores ya lo usan</p>
-            </div>
+            <span className="text-white/40 text-sm">4.9/5 — +230 treinadores já usam</span>
           </div>
         </div>
       </div>
@@ -67,29 +49,23 @@ function Hero() {
 }
 
 function PainPoints() {
-  const ref = useRef(null)
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo('.pain-item', { y: 40, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.2, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: ref.current, start: 'top 75%' } })
-    }, ref)
-    return () => ctx.revert()
-  }, [])
-
   return (
-    <section ref={ref} className="relative py-24 md:py-32 overflow-hidden">
-      <div className="absolute inset-0 bg-primary" />
-      <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1920&q=80" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.04]" />
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
+    <section className="py-24 bg-background">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="pain-item font-mono text-accent text-sm tracking-widest uppercase mb-4">¿Te pasa esto?</p>
-          <h2 className="pain-item font-heading text-white text-3xl md:text-5xl font-bold leading-tight">Si sos entrenador, esto te suena</h2>
+          <p className="font-mono text-accent text-sm tracking-widest uppercase mb-4">
+            Isso acontece com você?
+          </p>
+          <h2 className="font-heading text-dark text-3xl md:text-4xl font-bold">
+            Se você é treinador, isso é familiar
+          </h2>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3">
           {PAINS.map((p, i) => (
-            <div key={i} className="pain-item rounded-2xl border border-white/5 bg-white/[0.03] p-8">
+            <div key={i} className="p-8 rounded-2xl border border-dark/10 bg-white">
               <span className="text-3xl">{p.icon}</span>
-              <h3 className="mt-5 font-heading font-bold text-white text-lg">{p.title}</h3>
-              <p className="mt-3 font-heading text-white/50 text-sm leading-relaxed">{p.desc}</p>
+              <h3 className="mt-5 font-heading font-bold text-dark text-lg">{p.title}</h3>
+              <p className="mt-3 text-dark/60 leading-relaxed">{p.desc}</p>
             </div>
           ))}
         </div>
@@ -99,29 +75,25 @@ function PainPoints() {
 }
 
 function Categories() {
-  const ref = useRef(null)
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo('.cat-item', { y: 30, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.08, duration: 0.6, ease: 'power3.out', scrollTrigger: { trigger: ref.current, start: 'top 75%' } })
-    }, ref)
-    return () => ctx.revert()
-  }, [])
-
   return (
-    <section id="categorias" ref={ref} className="py-24 md:py-32 bg-background">
+    <section id="categorias" className="py-24 bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <p className="cat-item font-mono text-accent text-sm tracking-widest uppercase mb-4">Lo que incluye</p>
-          <h2 className="cat-item font-heading text-dark text-3xl md:text-5xl font-bold leading-tight">Todo lo que necesitás en un solo catálogo</h2>
+          <p className="font-mono text-accent text-sm tracking-widest uppercase mb-4">
+            O que está incluído
+          </p>
+          <h2 className="font-heading text-dark text-3xl md:text-4xl font-bold">
+            Tudo que você precisa em um catálogo
+          </h2>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {CATEGORIES.map((cat, i) => (
-            <div key={i} className="cat-item group relative rounded-2xl border border-dark/10 bg-white p-6 transition-all hover:border-accent/30 hover:-translate-y-1 hover:shadow-lg">
-              <div className="absolute -right-6 -top-6 h-16 w-16 rounded-full bg-accent/5 transition-all group-hover:bg-accent/10" />
-              <div className="relative">
-                <span className="text-2xl">{cat.icon}</span>
-                <h3 className="mt-3 font-heading text-sm font-bold text-dark">{cat.name}</h3>
-              </div>
+            <div
+              key={i}
+              className="p-6 rounded-xl border border-dark/10 hover:border-accent/30 hover:-translate-y-1 transition-all cursor-default"
+            >
+              <span className="text-2xl">{cat.icon}</span>
+              <h3 className="mt-3 font-heading text-sm font-bold text-dark">{cat.name}</h3>
             </div>
           ))}
         </div>
@@ -131,29 +103,23 @@ function Categories() {
 }
 
 function Benefits() {
-  const ref = useRef(null)
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo('.ben-item', { y: 40, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.15, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: ref.current, start: 'top 75%' } })
-    }, ref)
-    return () => ctx.revert()
-  }, [])
-
   return (
-    <section ref={ref} className="relative py-32 md:py-40 overflow-hidden">
-      <div className="absolute inset-0 bg-primary" />
-      <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1920&q=80" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.04]" />
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
+    <section className="py-24 bg-primary text-white">
+      <div className="max-w-6xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="ben-item font-mono text-accent text-sm tracking-widest uppercase mb-4">Beneficios</p>
-          <h2 className="ben-item font-heading text-white text-3xl md:text-5xl font-bold leading-tight">Más que un catálogo, tu herramienta de venta</h2>
+          <p className="font-mono text-accent text-sm tracking-widest uppercase mb-4">
+            Benefícios
+          </p>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold">
+            Mais que um catálogo, sua ferramenta de venda
+          </h2>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3">
           {BENEFITS.map((b, i) => (
-            <div key={i} className="ben-item rounded-2xl border border-white/[0.06] bg-white/[0.03] p-6 transition-all hover:border-accent/20">
+            <div key={i} className="p-6 rounded-2xl border border-white/10">
               <span className="text-3xl">{b.icon}</span>
-              <h3 className="mt-4 font-heading font-bold text-white text-lg">{b.title}</h3>
-              <p className="mt-2 font-heading text-white/50 text-sm leading-relaxed">{b.desc}</p>
+              <h3 className="mt-4 font-heading font-bold text-lg">{b.title}</h3>
+              <p className="mt-2 text-white/50 leading-relaxed">{b.desc}</p>
             </div>
           ))}
         </div>
@@ -163,42 +129,37 @@ function Benefits() {
 }
 
 function Testimonials() {
-  const ref = useRef(null)
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo('.test-item', { y: 40, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.15, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: ref.current, start: 'top 75%' } })
-    }, ref)
-    return () => ctx.revert()
-  }, [])
-
   return (
-    <section id="testimonios" ref={ref} className="py-32 md:py-40 bg-background">
+    <section className="py-24 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="test-item font-mono text-accent text-sm tracking-widest uppercase mb-4">Testimonios</p>
-          <h2 className="test-item font-heading text-dark text-3xl md:text-5xl font-bold leading-tight">Lo que dicen los que ya lo usan</h2>
+          <p className="font-mono text-accent text-sm tracking-widest uppercase mb-4">
+            Depoimentos
+          </p>
+          <h2 className="font-heading text-dark text-3xl md:text-4xl font-bold">
+            O que dizem quem já usa
+          </h2>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
           {TESTIMONIALS.map((t, i) => (
-            <div key={i} className="test-item rounded-2xl border border-dark/10 bg-white p-6 transition-all hover:border-accent/20 hover:shadow-lg">
+            <div key={i} className="p-6 rounded-2xl border border-dark/10 bg-white">
               <div className="flex items-center gap-1 text-amber-500">
-                <Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" />
+                {[...Array(5)].map((_, j) => (
+                  <Star key={j} size={14} fill="currentColor" />
+                ))}
               </div>
-              <p className="mt-4 font-drama italic text-dark/80 text-lg leading-relaxed">&ldquo;{t.text}&rdquo;</p>
+              <p className="mt-4 text-dark/80 italic leading-relaxed">"{t.text}"</p>
               <div className="mt-5 flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-sm font-bold text-primary">{t.name.charAt(0)}</div>
+                <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-sm font-bold text-white">
+                  {t.name.charAt(0)}
+                </div>
                 <div>
                   <p className="font-heading text-sm font-bold text-dark">{t.name}</p>
-                  <p className="font-mono text-xs text-dark/50">{t.role}</p>
+                  <p className="text-xs text-dark/50">{t.role}</p>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-        <div className="test-item mt-10 text-center">
-          <div className="inline-flex items-center gap-2 rounded-full border border-accent/20 bg-accent/5 px-5 py-2">
-            <span className="font-heading text-sm text-dark/60">⭐ +230 entrenadores ya transformaron su equipo con este catálogo</span>
-          </div>
         </div>
       </div>
     </section>
@@ -206,42 +167,47 @@ function Testimonials() {
 }
 
 function CTA() {
-  const ref = useRef(null)
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo('.cta-item', { y: 40, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.15, duration: 0.8, ease: 'power3.out', scrollTrigger: { trigger: ref.current, start: 'top 75%' } })
-    }, ref)
-    return () => ctx.revert()
-  }, [])
-
   return (
-    <section id="comprar" ref={ref} className="relative py-32 md:py-40 overflow-hidden">
-      <div className="absolute inset-0 bg-primary" />
-      <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?w=1920&q=80" alt="" className="absolute inset-0 w-full h-full object-cover opacity-[0.04]" />
-      <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
-        <p className="cta-item font-mono text-accent text-sm tracking-widest uppercase mb-4">Oferta por tiempo limitado</p>
-        <h2 className="cta-item font-heading text-white text-3xl md:text-5xl font-bold leading-tight">
-          Dejá de perder tiempo creando entrenamientos.
+    <section className="py-24 bg-primary text-white">
+      <div className="max-w-3xl mx-auto px-6 text-center">
+        <p className="font-mono text-accent text-sm tracking-widest uppercase mb-4">
+          Oferta por tempo limitado
+        </p>
+        <h2 className="font-heading text-3xl md:text-4xl font-bold leading-tight mb-6">
+          Pare de perder tempo criando treinos.
           <br />
-          <span className="gradient-text">Empezá a cerrar trabajos hoy.</span>
+          <span className="text-accent">Comece a fechar trabalhos hoje.</span>
         </h2>
-        <p className="cta-item mx-auto mt-4 max-w-xl font-heading text-white/50 text-lg">Accedé a +300 ejercicios de fútbol organizados por categoría con medidas, equipamientos y planos incluidos. Pago único, acceso de por vida.</p>
-        <div className="cta-item mt-10 inline-flex items-center gap-4 rounded-2xl bg-white/[0.05] px-8 py-4 border border-white/[0.08]">
-          <span className="font-drama italic text-2xl text-white/40 line-through decoration-accent/50">{BRAND.oldPrice} USD</span>
-          <span className="font-mono text-5xl font-bold text-accent">{BRAND.price}</span>
-          <span className="font-mono text-sm text-white/40">USD</span>
-          <span className="rounded-full bg-accent/20 px-3 py-1 font-mono text-xs font-bold text-accent">-74%</span>
+        <p className="text-white/50 text-lg mb-10 max-w-xl mx-auto">
+          Acesse +300 exercícios de futebol organizados por categoria com medições, equipamentos e planos incluídos. Pagamento único, acesso vitalício.
+        </p>
+        <div className="inline-flex items-center gap-4 rounded-xl bg-white/5 px-8 py-4 border border-white/10 mb-8">
+          <span className="text-2xl text-white/40 line-through">{BRAND.oldPrice} USD</span>
+          <span className="text-5xl font-bold text-accent">{BRAND.price}</span>
+          <span className="text-sm text-white/40">USD</span>
+          <span className="rounded-full bg-accent/20 px-3 py-1 text-xs font-bold text-accent">-74%</span>
         </div>
-        <div className="cta-item mt-8">
-          <a href="https://pay.cakto.com.br/9fuib6v_992374" target="_blank" rel="noopener noreferrer" className="btn-magnetic inline-flex items-center justify-center gap-2 bg-accent text-primary px-10 py-5 rounded-full font-heading text-lg font-bold">
-            <span className="relative z-10">Quiero Acceder Ahora</span>
-            <ChevronRight size={20} className="relative z-10" />
+        <div className="mb-6">
+          <a
+            href="https://pay.cakto.com.br/9fuib6v_992374"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 bg-accent text-white px-10 py-5 rounded-lg text-lg font-bold hover:bg-accent/90 transition-colors"
+          >
+            Quero Acessar Agora
+            <ArrowRight size={20} />
           </a>
         </div>
-        <div className="cta-item mt-6 flex flex-wrap items-center justify-center gap-6 font-heading text-sm text-white/40">
-          <span className="flex items-center gap-1.5"><Shield size={16} className="text-emerald-400" /> Garantía 7 días</span>
-          <span className="flex items-center gap-1.5"><Check size={16} className="text-emerald-400" /> Acceso inmediato</span>
-          <span className="flex items-center gap-1.5"><Check size={16} className="text-emerald-400" /> Pago único</span>
+        <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/40">
+          <span className="flex items-center gap-1.5">
+            <Shield size={16} className="text-emerald-400" /> Garantia 7 dias
+          </span>
+          <span className="flex items-center gap-1.5">
+            <Check size={16} className="text-emerald-400" /> Acesso imediato
+          </span>
+          <span className="flex items-center gap-1.5">
+            <Check size={16} className="text-emerald-400" /> Pagamento único
+          </span>
         </div>
       </div>
     </section>
@@ -250,31 +216,35 @@ function CTA() {
 
 function FAQ() {
   const [openIndex, setOpenIndex] = useState(null)
-  const ref = useRef(null)
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      gsap.fromTo('.faq-item', { y: 30, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.6, ease: 'power3.out', scrollTrigger: { trigger: ref.current, start: 'top 75%' } })
-    }, ref)
-    return () => ctx.revert()
-  }, [])
 
   return (
-    <section id="faq" ref={ref} className="py-32 md:py-40 bg-background">
+    <section id="faq" className="py-24 bg-white">
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="faq-item font-mono text-accent text-sm tracking-widest uppercase mb-4">FAQ</p>
-          <h2 className="faq-item font-heading text-dark text-3xl md:text-5xl font-bold leading-tight">Preguntas frecuentes</h2>
+          <p className="font-mono text-accent text-sm tracking-widest uppercase mb-4">FAQ</p>
+          <h2 className="font-heading text-dark text-3xl md:text-4xl font-bold">
+            Perguntas frequentes
+          </h2>
         </div>
         <div className="space-y-3">
           {FAQS.map((faq, i) => (
-            <div key={i} className="faq-item rounded-2xl border border-dark/10 bg-white overflow-hidden transition-all">
-              <button onClick={() => setOpenIndex(openIndex === i ? null : i)} className="flex w-full items-center justify-between px-6 py-5 text-left">
-                <span className="font-heading text-sm font-bold text-dark sm:text-base">{faq.q}</span>
-                <span className={`ml-4 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-dark/5 text-dark/40 text-xs transition-transform font-mono ${openIndex === i ? 'rotate-45' : ''}`}>+</span>
+            <div key={i} className="rounded-xl border border-dark/10 bg-background overflow-hidden">
+              <button
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                className="flex w-full items-center justify-between px-6 py-5 text-left"
+              >
+                <span className="font-heading font-bold text-dark">{faq.q}</span>
+                <span
+                  className={`ml-4 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-dark/5 text-dark/40 text-xs transition-transform font-mono ${
+                    openIndex === i ? 'rotate-45' : ''
+                  }`}
+                >
+                  +
+                </span>
               </button>
               {openIndex === i && (
                 <div className="px-6 pb-5">
-                  <p className="font-heading text-sm leading-relaxed text-dark/60">{faq.a}</p>
+                  <p className="text-dark/60 leading-relaxed">{faq.a}</p>
                 </div>
               )}
             </div>
@@ -294,6 +264,7 @@ export default function Home() {
       <Benefits />
       <Testimonials />
       <CTA />
+      <FAQ />
     </>
   )
 }

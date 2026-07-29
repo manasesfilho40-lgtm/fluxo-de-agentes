@@ -2,7 +2,6 @@ import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import NoiseOverlay from './components/NoiseOverlay'
 import Home from './pages/Home'
 
 function ScrollToTop() {
@@ -16,7 +15,6 @@ export default function App() {
     <>
       <ScrollToTop />
       <div className="min-h-screen bg-background">
-        <NoiseOverlay />
         <Navbar />
         <main>
           <Routes>
