@@ -3,7 +3,7 @@ import {
   Check, Shield, ArrowRight, ChevronDown, ChevronUp, 
   Zap, Clock, Target, TrendingUp, Play, Users,
   Flame, CircleDot, RotateCcw, Crosshair, Heart, Dumbbell,
-  Brain, Grid3X3, BarChart3, BookOpen, Package, Gift
+  Brain, Grid3X3, BarChart3, BookOpen, Package, Gift, Star
 } from 'lucide-react'
 import { BRAND, CATEGORIES, FAQS } from '../data'
 
@@ -315,7 +315,7 @@ function VideoGallery() {
       </div>
 
       <div className="text-center mt-8">
-        <p className="text-2xs text-gray-300">+300 entrenamientos organizados por categoría y nivel</p>
+        <p className="text-2xs text-gray-300 italic">Ejemplos de ejercicios inclusos en el pack</p>
       </div>
     </section>
   )
@@ -354,6 +354,72 @@ function Authority() {
                 <h3 className="font-bold text-white mb-1 text-small">{point.title}</h3>
                 <p className="text-gray-200 text-xs">{point.desc}</p>
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// ============================================
+// DEPOIMENTOS
+// ============================================
+function Testimonials() {
+  const [ref, isVisible] = useScrollAnimation()
+
+  const testimonials = [
+    {
+      name: 'Carlos Medina',
+      role: 'Entrenador Sub-15',
+      text: 'Antes pasaba 3 horas por semana armando entrenamientos. Ahora abro el pack, elijo la categoría y aplico. Mis jugadores están evolucionando mucho más rápido.',
+    },
+    {
+      name: 'Fernanda López',
+      role: 'Profesora de Ed. Física',
+      text: 'Lo uso con toda la clase en la escuela. Los alumnos adoran porque parece entrenamiento de jugador profesional. Y yo ahorro un tiempo absurdo de planificación.',
+    },
+    {
+      name: 'Rafael Sánchez',
+      role: 'Dueño de escuelita',
+      text: 'Ya probé varios materiales y este es el más completo. La progresión por nivel hace la diferencia. Lo recomiendo para cualquier entrenador.',
+    },
+    {
+      name: 'Pedro Herrera',
+      role: 'Entrenador de Base',
+      text: 'Los entrenamientos son cortos, directos y fáciles de explicar. Perfecto para quien trabaja con grupos grandes y poco tiempo.',
+    },
+  ]
+
+  return (
+    <section ref={ref} className={`py-section-lg bg-dark-50 border-y border-white/[0.06] transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-10">
+          <span className="section-label mb-3 block">Resultados reales</span>
+          <h2 className="section-title mb-3">LO QUE DICEN LOS ENTRENADORES</h2>
+          <p className="section-desc max-w-xl mx-auto">
+            Profesionales de toda Latinoamérica ya están transformando sus entrenamientos
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+          {testimonials.map((t, i) => (
+            <div key={i} className="card-base p-5 flex flex-col">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-full bg-neon flex items-center justify-center shrink-0">
+                  <span className="text-dark font-bold text-xs">{t.name.split(' ').map(n => n[0]).join('')}</span>
+                </div>
+                <div className="min-w-0">
+                  <p className="font-bold text-white text-xs truncate">{t.name}</p>
+                  <p className="text-gray-300 text-2xs truncate">{t.role}</p>
+                </div>
+              </div>
+              <div className="flex gap-0.5 mb-2">
+                {[...Array(5)].map((_, s) => (
+                  <Star key={s} size={12} className="fill-yellow-400 text-yellow-400" />
+                ))}
+              </div>
+              <p className="text-gray-200 text-2xs leading-relaxed">"{t.text}"</p>
             </div>
           ))}
         </div>
@@ -432,7 +498,7 @@ function Offer({ onCheckout }) {
   ]
 
   return (
-    <section ref={ref} className={`relative py-section-lg overflow-hidden transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <section id="offer-section" ref={ref} className={`relative py-section-lg overflow-hidden transition-all duration-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {/* Fundo verde escuro com glow sutil */}
       <div className="absolute inset-0 bg-[#0a1f15]" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-neon/8 rounded-full blur-[100px]" />
@@ -442,9 +508,17 @@ function Offer({ onCheckout }) {
           ¿Cuánto vale todo esto?
         </h2>
 
-        {/* Card com sombra suave e cantos arredondados */}
-        <div className="bg-white rounded-[20px] p-card-lg mb-7 max-w-lg mx-auto shadow-[0_8px_40px_rgba(0,0,0,0.4)]">
-          <div className="space-y-2.5 mb-5 text-left">
+        {/* Card com glow neon e badge de urgência */}
+        <div className="relative bg-white rounded-[20px] p-7 md:p-card-lg mb-7 max-w-lg mx-auto shadow-[0_0_30px_rgba(0,255,135,0.25),0_0_60px_rgba(0,255,135,0.1),0_8px_40px_rgba(0,0,0,0.4)] border-2 border-neon/40 scale-[1.03]">
+          {/* Badge de urgência */}
+          <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 z-10">
+            <span className="inline-flex items-center gap-1 bg-gradient-to-r from-orange to-red-500 text-white text-2xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
+              <Flame size={12} />
+              Oferta por tempo limitado
+            </span>
+          </div>
+
+          <div className="space-y-2.5 mb-5 text-left mt-2">
             {benefits.map((benefit, i) => (
               <div key={i} className="flex items-center gap-2.5">
                 <Check size={15} className="text-neon-500 shrink-0" />
@@ -611,8 +685,9 @@ function FinalCTA({ onCheckout }) {
 // ============================================
 // CTA FIJO MOBILE
 // ============================================
-function StickyMobileCTA({ onCheckout }) {
+function StickyMobileCTA() {
   const [show, setShow] = useState(false)
+  const [atOffer, setAtOffer] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -622,24 +697,47 @@ function StickyMobileCTA({ onCheckout }) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    const offerEl = document.getElementById('offer-section')
+    if (!offerEl) return
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setAtOffer(entry.isIntersecting)
+      },
+      { threshold: 0.15 }
+    )
+    observer.observe(offerEl)
+    return () => observer.disconnect()
+  }, [])
+
+  const isVisible = show && !atOffer
+
+  const scrollToOffer = (e) => {
+    e.preventDefault()
+    const offerEl = document.getElementById('offer-section')
+    if (offerEl) {
+      offerEl.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   return (
     <div 
-      className="fixed bottom-0 left-0 right-0 z-50 bg-dark border-t border-white/[0.06] p-3 lg:hidden transition-transform duration-300"
-      style={{ transform: show ? 'translateY(0)' : 'translateY(100%)' }}
+      className="fixed bottom-0 left-0 right-0 z-50 bg-dark border-t border-white/[0.06] px-4 py-3 lg:hidden transition-transform duration-300"
+      style={{ transform: isVisible ? 'translateY(0)' : 'translateY(100%)' }}
     >
-      <a
-        href="https://pay.cakto.com.br/9fuib6v_992374"
-        target="_blank"
-        rel="noopener noreferrer"
-        onClick={onCheckout}
-        className="btn-primary w-full py-3 text-sm"
-      >
-        QUIERO MI ACCESO — {BRAND.price}
-        <ArrowRight size={16} />
-      </a>
-      <p className="text-center text-2xs text-gray-300 mt-1.5">
-        7 días de garantía · Acceso inmediato
-      </p>
+      <div className="flex items-center justify-between gap-3">
+        <span className="text-white font-bold text-sm shrink-0">
+          $7 <span className="text-gray-300 font-normal text-2xs">por acceso de por vida</span>
+        </span>
+        <a
+          href="#offer-section"
+          onClick={scrollToOffer}
+          className="btn-primary px-5 py-2.5 text-sm shrink-0"
+        >
+          Quiero mi acceso
+          <ArrowRight size={15} />
+        </a>
+      </div>
     </div>
   )
 }
@@ -678,11 +776,12 @@ export default function Home() {
       <Solution />
       <Categories />
       <Authority />
+      <Testimonials />
       <Offer onCheckout={handleCheckout} />
       <Guarantee />
       <FAQ />
       <FinalCTA onCheckout={handleCheckout} />
-      <StickyMobileCTA onCheckout={handleCheckout} />
+      <StickyMobileCTA />
     </>
   )
 }
