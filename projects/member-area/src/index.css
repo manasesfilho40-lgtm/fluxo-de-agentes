@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #0a0f0a;
+  color: #ffffff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0f0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00c853;
+  border-radius: 2px;
+}
+
+::selection {
+  background: #00c853;
+  color: #0a0f0a;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2
+           bg-green text-dark font-bold
+           rounded-xl transition-all duration-200;
+  }
+
+  .btn-primary:hover {
+    @apply bg-green/90;
+  }
+
+  .card {
+    @apply bg-dark-100 rounded-2xl border border-green/10
+           transition-all duration-200;
+  }
+
+  .card:hover {
+    @apply border-green/30 shadow-[0_0_20px_rgba(0,200,83,0.1)];
+  }
+
+  .section-title {
+    @apply font-display text-2xl md:text-3xl font-extrabold uppercase tracking-tight text-white;
+  }
+
+  .section-label {
+    @apply text-xs font-bold text-green uppercase tracking-widest;
+  }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.animate-fade-in-up-delay-1 {
+  animation: fadeInUp 0.6s ease 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-fade-in-up-delay-2 {
+  animation: fadeInUp 0.6s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
