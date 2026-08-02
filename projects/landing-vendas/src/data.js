@@ -3,7 +3,8 @@ export const BRAND = {
   tagline: '+300 Entrenamientos Listos para Usar',
   purpose: 'Ejercicios de táctica, habilidad, resistencia y mucho más — organizados por categoría para que entrenes con eficiencia y mejores tu rendimiento.',
   price: '$7',
-  oldPrice: '$27',
+  oldPrice: '$47',
+  discount: '-85%',
 }
 
 export const CATEGORIES = [

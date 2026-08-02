@@ -4,6 +4,8 @@ import { gsap } from 'gsap'
 import { Menu, X, ArrowRight } from 'lucide-react'
 import { BRAND, NAV_LINKS } from '../data'
 
+const CHECKOUT_URL = 'https://pay.cakto.com.br/9fuib6v_992374'
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -37,10 +39,10 @@ export default function Navbar() {
           <Link key={l.label} to={l.path} className={`text-sm font-medium link-hover ${muted}`}>{l.label}</Link>
         ))}
       </div>
-      <Link to="https://pay.cakto.com.br/9fuib6v_992374" target="_blank" rel="noopener noreferrer" className="hidden md:flex btn-magnetic bg-accent text-primary px-5 py-2 rounded-full text-sm font-semibold items-center gap-2">
+      <a href={CHECKOUT_URL} target="_blank" rel="noopener noreferrer" className="hidden md:flex btn-magnetic bg-accent text-primary px-5 py-2 rounded-full text-sm font-semibold items-center gap-2">
         <span className="relative z-10">Quiero Acceder</span>
         <ArrowRight size={14} className="relative z-10" />
-      </Link>
+      </a>
       <button onClick={() => setMobileOpen(!mobileOpen)} className={`md:hidden ${text}`}>
         {mobileOpen ? <X size={24} /> : <Menu size={24} />}
       </button>

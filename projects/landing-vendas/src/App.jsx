@@ -1,8 +1,7 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import Home from './pages/Home'
+import FitnessHome from './pages/FitnessHome'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -14,15 +13,14 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
-      <div className="min-h-screen bg-background">
-        <Navbar />
-        <main>
-          <Routes>
-            <Route path="/*" element={<Home />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/treinamentos" element={<Home />} />
+          <Route path="/fitness" element={<FitnessHome />} />
+          <Route path="/*" element={<Home />} />
+        </Routes>
+      </main>
     </>
   )
 }
