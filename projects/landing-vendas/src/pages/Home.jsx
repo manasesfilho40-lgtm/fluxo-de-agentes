@@ -52,52 +52,6 @@ const COMPLETE_PACK = {
 }
 
 // ============================================
-// EBOOK 3D - PERFORMANCE STRATEGY
-// ============================================
-function Ebook3D({ size = 'small' }) {
-  const isSmall = size === 'small'
-  const w = isSmall ? 'w-[70px]' : 'w-[120px]'
-  const h = isSmall ? 'h-[95px]' : 'h-[160px]'
-
-  return (
-    <div className={`${w} ${h} shrink-0 relative`} style={{ perspective: '500px' }}>
-      <div
-        className="relative w-full h-full"
-        style={{ transformStyle: 'preserve-3d', transform: 'rotateY(-22deg) rotateX(4deg)' }}
-      >
-        {/* Pages */}
-        <div className="absolute top-[4%] right-0 h-[92%] w-[5px] rounded-r-sm" style={{ background: 'linear-gradient(to right, #e0dcd4, #f0ede6, #e0dcd4)', transform: 'translateZ(-2px)', boxShadow: '2px 0 4px rgba(0,0,0,0.2)' }} />
-        <div className="absolute top-[5%] right-0 h-[90%] w-[3px] rounded-r-sm" style={{ background: '#d8d3ca', transform: 'translateZ(-4px)' }} />
-
-        {/* Spine */}
-        <div className="absolute top-0 left-0 h-full w-[12px] rounded-l" style={{ background: 'linear-gradient(to right, #b5ada0, #c5beb2, #b5ada0)', transform: 'rotateY(90deg) translateZ(-6px)', transformOrigin: 'left center' }} />
-
-        {/* Front Cover */}
-        <div className="absolute inset-0 rounded-md overflow-hidden" style={{ background: 'linear-gradient(155deg, #f2efe8 0%, #eae6de 35%, #e0dcd3 100%)', boxShadow: '3px 3px 12px rgba(0,0,0,0.35), 6px 6px 24px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.6)' }}>
-          {/* Top accent */}
-          <div className="absolute top-0 left-0 right-0 h-[2px]" style={{ background: 'linear-gradient(to right, transparent, rgba(0,180,100,0.4), transparent)' }} />
-
-          {/* Content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center px-2">
-            <div className="w-6 h-[2px] rounded-full mb-1.5" style={{ background: 'rgba(0,0,0,0.15)' }} />
-            <div className="w-4 h-4 rounded-full border-[1.5px] mb-2 flex items-center justify-center" style={{ borderColor: 'rgba(0,0,0,0.15)' }}>
-              <div className="w-1 h-1 rounded-full" style={{ background: 'rgba(0,0,0,0.15)' }} />
-            </div>
-            <div className="text-center leading-none">
-              <span className="block font-black uppercase tracking-wider text-dark" style={{ fontSize: isSmall ? '7px' : '11px', fontFamily: "'Inter', sans-serif" }}>Performance</span>
-              <span className="block font-black uppercase tracking-wider mt-px" style={{ fontSize: isSmall ? '7px' : '11px', color: '#00b464', fontFamily: "'Inter', sans-serif" }}>Strategy</span>
-            </div>
-          </div>
-
-          {/* Edge highlight */}
-          <div className="absolute top-0 left-0 bottom-0 w-[1px] bg-white/40" />
-        </div>
-      </div>
-    </div>
-  )
-}
-
-// ============================================
 // TOP BANNER
 // ============================================
 function TopBanner() {
@@ -278,7 +232,11 @@ function UpsellModal({ isOpen, onClose, onCheckout }) {
               </ul>
               <div className="mt-4 rounded-xl overflow-hidden border border-yellow-400/30 bg-gradient-to-br from-[#2a1f00] via-[#1a1500] to-[#0f0d00]">
                 <div className="p-3 sm:p-4 flex items-center gap-3">
-                  <Ebook3D size="small" />
+                  <img
+                    src="/images/guia-mockup.png"
+                    alt="Cartilha"
+                    className="w-[50px] sm:w-[60px] shrink-0 drop-shadow-[0_4px_12px_rgba(250,204,21,0.3)]"
+                  />
                   <div>
                     <div className="inline-flex items-center gap-1 bg-yellow-400/20 border border-yellow-400/30 rounded-full px-2 py-0.5 mb-1.5">
                       <Gift size={10} className="text-yellow-400" />
@@ -512,7 +470,11 @@ function PricingCards({ onCheckout }) {
                 {/* Bônus Turbo */}
                 <div className="mt-4 rounded-xl overflow-hidden border border-yellow-400/30 bg-gradient-to-br from-[#2a1f00] via-[#1a1500] to-[#0f0d00]">
                   <div className="p-3 sm:p-4 flex items-center gap-3">
-                    <Ebook3D size="small" />
+                    <img 
+                      src="/images/guia-mockup.png" 
+                      alt="Cartilha"
+                      className="w-[50px] sm:w-[60px] shrink-0 drop-shadow-[0_4px_12px_rgba(250,204,21,0.3)]"
+                    />
                     <div>
                       <div className="inline-flex items-center gap-1 bg-yellow-400/20 border border-yellow-400/30 rounded-full px-2 py-0.5 mb-1.5">
                         <Gift size={10} className="text-yellow-400" />
@@ -867,7 +829,11 @@ function BonusSection({ onCheckout }) {
 
         <div className="relative inline-block mb-8">
           <div className="absolute inset-0 bg-neon/20 blur-[60px] rounded-full" />
-          <Ebook3D size="normal" />
+          <img 
+            src="/images/guia-mockup.png" 
+            alt="Guía de Entrenamientos en Casa"
+            className="relative w-full max-w-[280px] drop-shadow-[0_20px_60px_rgba(0,255,135,0.3)]"
+          />
         </div>
 
         <div className="mb-8">
