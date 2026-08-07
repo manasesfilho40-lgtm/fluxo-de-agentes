@@ -1,54 +1,58 @@
 export const BRAND = {
-  name: 'Ejercicios de Fútbol',
-  tagline: '+300 Entrenamientos Listos para Usar',
-  purpose: 'Ejercicios de táctica, habilidad, resistencia y mucho más — organizados por categoría para que entrenes con eficiencia y mejores tu rendimiento.',
+  name: 'Preparatório PRF',
+  tagline: 'Material Completo para Aprovação na Polícia Rodoviária Federal',
+  purpose: 'Estudo completo com PDFs de todas as disciplinas, bônus exclusivos e plano de estudos para garantir sua aprovação na PRF.',
   price: '$7',
   oldPrice: '$47',
   discount: '-85%',
 }
 
 export const CATEGORIES = [
-  { name: 'Entrenamientos Tácticos', icon: '⚽' },
-  { name: 'Calentamiento', icon: '🏃' },
-  { name: 'Habilidades', icon: '🎯' },
-  { name: 'Resistencia', icon: '💪' },
-  { name: 'Definición', icon: '🥅' },
-  { name: 'Defensa', icon: '🛡️' },
-  { name: 'Tiro Libre', icon: '🚩' },
-  { name: 'Velocidad', icon: '⚡' },
-  { name: 'Coordinación', icon: '🦵' },
-  { name: 'Vuelta a la Forma', icon: '🔄' },
+  { name: 'CTB - Código de Trânsito', icon: '🚗' },
+  { name: 'Direito Administrativo', icon: '⚖️' },
+  { name: 'Direito Constitucional', icon: '📜' },
+  { name: 'Direito Penal', icon: '🔨' },
+  { name: 'Direito Processual Penal', icon: '📋' },
+  { name: 'Direitos Humanos', icon: '人权' },
+  { name: 'Ética e Cidadania', icon: '⭐' },
+  { name: 'Física', icon: '⚛️' },
+  { name: 'Geopolítica', icon: '🌍' },
+  { name: 'Informática', icon: '💻' },
+  { name: 'Legislação Especial', icon: '📖' },
+  { name: 'Língua Estrangeira', icon: '🌐' },
+  { name: 'Raciocínio Lógico', icon: '🧠' },
 ]
 
 export const PAINS = [
-  { icon: '⏱️', title: 'Pierdes horas creando entrenamientos desde cero', desc: 'Cada sesión requiere planificación. Podrías estar usando ese tiempo para entrenar de verdad.' },
-  { icon: '😰', title: 'Dificultad para mostrar el entrenamiento al jugador', desc: 'Sin un catálogo visual, explicás con palabras lo que el jugador quiere ver en segundos.' },
-  { icon: '🏃', title: 'Tu competencia ya tiene un catálogo', desc: 'Mientras vos arrancás de cero, ellos presentan opciones al instante y se quedan con el trabajo.' },
+  { icon: '😰', title: 'Dificuldade em organizar os estudos', desc: 'São muitas disciplinas e você não sabe por onde começar ou como dividir o tempo.' },
+  { icon: '📚', title: 'Material desorganizado e incompleto', desc: 'Encontra material solto na internet, sem ordem e sem saber se é o conteúdo certo para a PRF.' },
+  { icon: '⏰', title: 'Falta de tempo para estudar', desc: 'Trabalha o dia todo e sobra pouco tempo para sentar e estudar de forma eficiente.' },
 ]
 
 export const BENEFITS = [
-  { icon: '📏', title: 'Medidas y distancias incluidas', desc: 'Cada ejercicio trae dimensiones y marcos para que apliques al instante.' },
-  { icon: '⚡', title: 'Acceso inmediato y de por vida', desc: 'Descargás todo hoy, lo tenés para siempre. Sin suscripciones.' },
-  { icon: '🤝', title: 'Herramienta de venta para el jugador', desc: 'Mostrale ejercicios reales desde tu celular y cerrá el trabajo al instante.' },
+  { icon: '✅', title: 'Material 100% focado na PRF', desc: 'Conteúdo selecionado e organizado especificamente para o edital da Polícia Rodoviária Federal.' },
+  { icon: '⚡', title: 'Acesso imediato e vitalício', desc: 'Baixe todo o material agora e estude no seu ritmo, sem prazo de validade.' },
+  { icon: '🎯', title: 'Plano de estudos completo', desc: 'Saiba exatamente o que estudar e quando, com um plano organizado para todas as disciplinas.' },
 ]
 
 export const TESTIMONIALS = [
-  { name: 'Carlos Mendoza', role: 'Entrenador · Córdoba, Argentina', text: 'Antes perdía mínimo un día entero creando cada entrenamiento. Ahora abro el catálogo, elijo y en 10 minutos ya tengo la sesión lista. Vale cada centavo.' },
-  { name: 'Luis Fernando Rojas', role: 'Preparador Físico · Bogotá, Colombia', text: 'Lo que más me ayudó es poder mostrarle los ejercicios al jugador directamente desde mi teléfono. Cierro más trabajos porque el jugador ve exactamente lo que va a recibir.' },
-  { name: 'Andrés Álvarez', role: 'Club Deportivo · Lima, Perú', text: 'Compré pensando que era solo táctica, pero tiene de todo: calentamiento, resistencia, coordinación. Ya recuperé la inversión con dos trabajos.' },
-  { name: 'Jorge Luis Sánchez', role: 'Entrenador · Santiago, Chile', text: 'Las medidas y las referencias de distancia me ahorran un montón de errores. Antes marcaba de menos o de más, ahora ya sé exactamente qué pedir.' },
+  { name: 'Lucas Silva', role: 'Aprovado na PRF · Brasília, DF', text: 'O material é incrivelmente completo. Consegui organizar meus estudos com o plano de estudos e passei em primeiro lugar na minha região.' },
+  { name: 'Ana Paula Costa', role: 'Candidata · São Paulo, SP', text: 'Estava perdida com tanta informação na internet. Esse material organizou tudo para mim. Hoje sei exatamente o que estudar todos os dias.' },
+  { name: 'Carlos Eduardo Santos', role: 'Aprovado PRF · Minas Gerais', text: 'Os bônus de memorização e aprendizado fazem toda a diferença. Consegui absorver o conteúdo muito mais rápido.' },
+  { name: 'Mariana Oliveira', role: 'Candidata · Paraná', text: 'O Guia do Concurso Público mudou minha estratégia de estudo. Recomendo para qualquer pessoa que queira passar em concurso.' },
 ]
 
 export const FAQS = [
-  { q: '¿En qué formato vienen los ejercicios?', a: 'Los ejercicios vienen en formato PDF con planos detallados, distancias y lista de equipamientos. También incluimos imágenes para que puedas mostrarle al jugador.' },
-  { q: '¿Es apto para principiantes?', a: 'Sí, está diseñado tanto para entrenadores con experiencia como para quienes empiezan. Cada ejercicio incluye instrucciones claras y referencias visuales.' },
-  { q: '¿Cómo recibo el material después de la compra?', a: 'El acceso es inmediato. Al confirmar tu pago recibís un enlace de descarga y acceso de por vida a la plataforma con todo el catálogo organizado.' },
-  { q: '¿Tienen garantía?', a: 'Sí, ofrecemos 7 días de garantía. Si el catálogo no cumple con tus expectativas, te reembolsamos el 100% de tu inversión.' },
+  { q: 'Em que formato vem o material?', a: 'Todo o material viene em formato PDF de alta qualidade, organizado por disciplina. Você pode baixar e estudar no celular, tablet ou computador.' },
+  { q: 'O material é atualizado?', a: 'Sim! Todas as atualizações de edital e conteúdo são incluídas sem custo adicional. Você recebe acesso vitalício a todas as atualizações.' },
+  { q: 'Como recebo o material após a compra?', a: 'O acesso é imediato. Ao confirmar o pagamento, você recebe um link para acessar a plataforma com todo o material organizado e pronto para estudar.' },
+  { q: 'Tem garantia?', a: 'Sim, oferecemos 7 dias de garantia. Se o material não cumprir suas expectativas, devolvemos 100% do seu investimento.' },
+  { q: 'Preciso de material extra?', a: 'Não! O material é completo. Inclui todas as disciplinas do edital da PRF, bônus de estudo e plano de organização.' },
 ]
 
 export const NAV_LINKS = [
-  { label: 'Categorías', path: '/categorias' },
-  { label: 'Beneficios', path: '/beneficios' },
-  { label: 'Testimonios', path: '/testimonios' },
+  { label: 'Disciplinas', path: '/disciplinas' },
+  { label: 'Benefícios', path: '/beneficios' },
+  { label: 'Depoimentos', path: '/depoimentos' },
   { label: 'FAQ', path: '/faq' },
 ]
